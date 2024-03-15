@@ -5,3 +5,6 @@ if __name__ == "__main__":
 
 def print_header():
     print("Thanks, now I'll print your string reversed, and twice")
+
+def test():
+    return 0

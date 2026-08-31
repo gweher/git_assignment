@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stres a jeho zvládání — SZZk Management</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic-id="t14">
+
+<nav class="navbar">
+  <a class="navbar__brand" href="../index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="../index.html">Dashboard</a>
+    <a class="navbar__link" href="../simulation.html">Simulace</a>
+    <a class="navbar__link" href="../revision.html">Rychlá revize</a>
+    <a class="navbar__link" href="13-osobnost-manazera.html">← Předchozí</a>
+    <a class="navbar__link" href="15-marketingove-rizeni.html">Další →</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="breadcrumb"><a href="../index.html">Dashboard</a><span>Téma 14</span></div>
+
+  <div class="recall-bar">
+    <strong>🎯 Recall mód: Přemyslete si odpověď — pak odkryjte blueprint</strong>
+    <button id="recall-toggle-btn" class="btn btn--small btn--secondary">🎯 Recall mód</button>
+    <button id="mastered-btn" class="btn btn--small btn--success">✓ Označit jako zvládnuté</button>
+  </div>
+
+  <div class="topic-header">
+    <div class="topic-header__num">14</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Stres a jeho zvládání</div>
+      <div class="topic-header__subtitle">Okruh: Management · FIM UHK · ~15 min ústní odpověď</div>
+    </div>
+  </div>
+
+  <div class="recall-overlay">
+    <div class="section-block">
+      <div class="section-block__header"><span class="section-block__title">💡 Memory triggers</span></div>
+      <div class="section-block__body">
+        <div class="memory-map">
+          <div class="memory-map__title">Rekonstrukce odpovědi</div>
+          <div class="memory-map__chain">
+            <span class="memory-map__kw">homeostáza</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">stresor</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">GAS — Selye</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">3 fáze</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">Lazarus</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">coping</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">prevence</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">burnout</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem" class="text-muted text-small">Přemyslete si strukturu. Pak klikněte "Zobrazit odpověď".</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blueprint-content">
+
+    <!-- 1. STRUKTURA ODPOVĚDI -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⏱</span> Struktura odpovědi (~15 min)</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="time-table">
+          <thead><tr><th>Část</th><th>Obsah</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr><td class="time-table__section">Úvod</td><td>Stres jako fenomén moderní doby; definice homeostázy a adaptace</td><td>1 min</td></tr>
+            <tr><td class="time-table__section">Stres a stresory</td><td>Definice stresu (Selye), eustres vs. distres, typy stresorů (fyzikální, psychologické, pracovní, sociální)</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">GAS (Selye)</td><td>Tři fáze: poplachová reakce → stadium odolání → stadium vyčerpání; kortizol, fight-or-flight, endorfiny</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Lazarusův model</td><td>Transakční model; primární a sekundární hodnocení situace; coping jako výsledek</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Strategie zvládání</td><td>Coping: problémově orientovaný vs. emocionálně orientovaný; příklady</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Prevence a burnout</td><td>Fyzická/psychologická/organizační prevence; burnout — 3 dimenze (Maslach); civilizační nemoci</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Závěr</td><td>Stres jako součást manažerské profese; proaktivní přístup k prevenci</td><td>1 min</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 2. CO MUSÍM ŘÍCT -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">📋</span> Co musím říct</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="must-say">
+          <li><strong>Homeostáza:</strong> stálost vnitřního prostředí organismu (teplota, pH, hladina cukru); základní fyziologická rovnováha; stresor tuto rovnováhu narušuje</li>
+          <li><strong>Adaptace:</strong> schopnost organismu přizpůsobit se změnám prostředí; biologická, psychologická i sociální rovina; základ odolnosti vůči stresu</li>
+          <li><strong>Stres (Selye):</strong> nespecifická reakce organismu na nadměrné požadavky; <em>eustres</em> = pozitivní (motivuje), <em>distres</em> = negativní (poškozuje); akutní × chronický</li>
+          <li><strong>Stresor:</strong> podnět způsobující stres; typy — fyzikální (hluk, teplo, únava), psychologické (konflikt, nejistota, strach), sociální (mezilidské vztahy), pracovní (přetížení, role ambiguity, časové tlaky)</li>
+          <li><strong>Fight-or-flight reakce:</strong> aktivace sympatiku; uvolnění kortizolu a adrenalinu; fyziologické projevy: zvýšený TK, zrychlený tep, dech, svalové napětí, snížená aktivita trávicí soustavy</li>
+          <li><strong>Endorfiny:</strong> přirozené „hormony štěstí"; produkce při pohybu, smíchu, pozitivním prožitku; tlumí bolest a stres; přírodní protistresová ochrana</li>
+          <li><strong>GAS — General Adaptation Syndrome (Selye, 1936):</strong> tři fáze:
+            <ol style="margin-top:0.4rem;padding-left:1.4rem">
+              <li><em>Poplachová reakce (alarm reaction):</em> mobilizace zdrojů, kortizol, fight-or-flight</li>
+              <li><em>Stadium odolání (resistance):</em> přizpůsobení stresoru, udržení zvýšené reaktivity, zdánlivá normalita</li>
+              <li><em>Stadium vyčerpání (exhaustion):</em> rezervy vyčerpány, riziko fyzické/psychické nemoci, burnout</li>
+            </ol>
+          </li>
+          <li><strong>Místo nejmenšího odporu:</strong> každý jedinec má orgán/systém, který selhává první pod dlouhodobým tlakem — individuálně různé (srdce, trávicí trakt, imunitní systém, kůže, psychika)</li>
+          <li><strong>Lazarusův transakční model (1984):</strong> stres = výsledek transakce (interakce) mezi osobou a prostředím; <em>primární hodnocení:</em> je to hrozba/výzva/irelevantní?; <em>sekundární hodnocení:</em> mám zdroje to zvládnout? → výsledek: coping strategie</li>
+          <li><strong>Coping strategie:</strong> <em>problémově orientovaný</em> — řeší příčinu (plánování, hledání informací, asertivita); <em>emocionálně orientovaný</em> — reguluje emoce (relaxace, sociální podpora, kognitivní přeformulování)</li>
+          <li><strong>Prevence:</strong> fyzická (pohyb, spánek 7–9 hod, výživa), psychologická (mindfulness, time management, asertivita, kognitivní restrukturace), sociální (podpůrné vztahy), organizační (workplace wellness, work-life balance, EAP)</li>
+          <li><strong>Burnout (Maslach):</strong> syndrom vyhoření z chronického pracovního stresu; 3 dimenze: emoční vyčerpání, depersonalizace (cynismus), snížení osobního výkonu</li>
+          <li><strong>Civilizační nemoci:</strong> kardiovaskulární onemocnění, hypertenze, diabetes 2. typu, obezita, deprese, úzkostné poruchy, žaludeční vředy</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. KLÍČOVÉ POJMY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔑</span> Klíčové pojmy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="concept-tags">
+          <span class="concept-tag">homeostáza</span>
+          <span class="concept-tag">adaptace</span>
+          <span class="concept-tag">stres (Selye)</span>
+          <span class="concept-tag">eustres</span>
+          <span class="concept-tag">distres</span>
+          <span class="concept-tag">stresor</span>
+          <span class="concept-tag">fight-or-flight</span>
+          <span class="concept-tag">kortizol</span>
+          <span class="concept-tag">endorfiny</span>
+          <span class="concept-tag">GAS</span>
+          <span class="concept-tag">poplachová reakce</span>
+          <span class="concept-tag">stadium odolání</span>
+          <span class="concept-tag">stadium vyčerpání</span>
+          <span class="concept-tag">místo nejmenšího odporu</span>
+          <span class="concept-tag">Lazarusův model</span>
+          <span class="concept-tag">primární hodnocení</span>
+          <span class="concept-tag">sekundární hodnocení</span>
+          <span class="concept-tag">coping</span>
+          <span class="concept-tag">problémový coping</span>
+          <span class="concept-tag">emocionální coping</span>
+          <span class="concept-tag">burnout</span>
+          <span class="concept-tag">Maslach</span>
+          <span class="concept-tag">mindfulness</span>
+          <span class="concept-tag">EAP</span>
+          <span class="concept-tag">civilizační nemoci</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. KLÍČOVÉ VZTAHY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔗</span> Klíčové vztahy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+
+        <div style="margin-bottom:1.5rem">
+          <strong>GAS — tři fáze (Selye 1936):</strong>
+          <div class="relation-flow" style="display:flex;gap:0.5rem;margin-top:0.6rem;flex-wrap:wrap;align-items:center">
+            <div style="background:var(--warning-light,#fff3cd);border:1px solid #ffc107;padding:0.6rem 1rem;border-radius:6px;text-align:center">
+              <div style="font-weight:700;font-size:0.85rem">1. POPLACH</div>
+              <div style="font-size:0.8rem">Kortizol ↑<br>Mobilizace</div>
+            </div>
+            <div style="font-size:1.5rem;color:var(--text-muted)">→</div>
+            <div style="background:var(--info-light,#d1ecf1);border:1px solid #17a2b8;padding:0.6rem 1rem;border-radius:6px;text-align:center">
+              <div style="font-weight:700;font-size:0.85rem">2. ODOLÁNÍ</div>
+              <div style="font-size:0.8rem">Přizpůsobení<br>Zvýšená reaktivita</div>
+            </div>
+            <div style="font-size:1.5rem;color:var(--text-muted)">→</div>
+            <div style="background:var(--danger-light,#f8d7da);border:1px solid #dc3545;padding:0.6rem 1rem;border-radius:6px;text-align:center">
+              <div style="font-weight:700;font-size:0.85rem">3. VYČERPÁNÍ</div>
+              <div style="font-size:0.8rem">Rezervy vyčerpány<br>Burnout / nemoc</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:1.5rem">
+          <strong>Lazarusův transakční model:</strong>
+          <div class="relation-flow" style="display:flex;gap:0.5rem;margin-top:0.6rem;flex-wrap:wrap;align-items:center">
+            <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.6rem 1rem;border-radius:6px">Podnět / Situace</div>
+            <div style="font-size:1.2rem">→</div>
+            <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.6rem 1rem;border-radius:6px"><strong>Primární hodnocení</strong><br><small>Hrozba / Výzva / Irelevantní?</small></div>
+            <div style="font-size:1.2rem">→</div>
+            <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.6rem 1rem;border-radius:6px"><strong>Sekundární hodnocení</strong><br><small>Mám zdroje?</small></div>
+            <div style="font-size:1.2rem">→</div>
+            <div style="background:var(--primary-light,#cce5ff);border:1px solid var(--primary);padding:0.6rem 1rem;border-radius:6px"><strong>Coping strategie</strong></div>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead><tr><th>Typ copingu</th><th>Zaměření</th><th>Příklady</th></tr></thead>
+          <tbody>
+            <tr><td>Problémově orientovaný</td><td>Odstranění příčiny stresu</td><td>Plánování, hledání informací, asertivita, time management</td></tr>
+            <tr><td>Emocionálně orientovaný</td><td>Regulace emocí a distresu</td><td>Relaxace, meditace, sociální podpora, kognitivní přeformulování</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5. TYPICKÉ CHYBY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⚠️</span> Typické chyby</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="mistake-list">
+          <li class="mistake-item">Přeskočit homeostázu na začátku — je to základ, od kterého se odvíjí celé téma</li>
+          <li class="mistake-item">Zaměnit eustres a distres — eustres je pozitivní (motivuje k výkonu), distres škodí</li>
+          <li class="mistake-item">Popsat GAS jen jako „3 fáze" bez pojmenování — nutno říct: poplachová reakce, stadium odolání, stadium vyčerpání</li>
+          <li class="mistake-item">Opomenout Lazarusův model — je explicitně v sylabu a liší se od Selyeho biologického přístupu tím, že zahrnuje kognitivní hodnocení</li>
+          <li class="mistake-item">Plést burnout s akutním stresem — burnout je chronický proces, ne jednorázová reakce; rozvíjí se postupně</li>
+          <li class="mistake-item">Vynechat 3 dimenze burnoutu (Maslach): emoční vyčerpání, depersonalizace, snížení výkonu</li>
+          <li class="mistake-item">Říci, že stres je vždy negativní — eustres je nezbytný pro výkon a motivaci (Yerkes-Dodson křivka)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6. DOPLŇUJÍCÍ OTÁZKY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">❓</span> Možné doplňující otázky</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="follow-up-list">
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak se Lazarusův model liší od Selyeho GAS a proč je pro management relevantní?</div>
+            <div class="follow-up-a">• Selye popisuje biologickou (fyziologickou) reakci — tělo reaguje automaticky bez ohledu na subjektivní hodnocení<br>• Lazarus zdůrazňuje kognitivní mediaci — záleží na tom, jak jedinec situaci vnímá a hodnotí dostupné zdroje<br>• Pro management: manažer může ovlivnit subjektivní hodnocení situace (reframing, trénink), snížit počet situací hodnocených jako hrozba</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak rozpoznat burnout u zaměstnance a co by měl manažer udělat?</div>
+            <div class="follow-up-a">• Příznaky: chronická únava, cynismus, odpoutanost od práce, snížená produktivita, časté absence, fyzické symptomy<br>• Manažer by měl: zahájit individuální rozhovor, nabídnout snížení zátěže / přerozdělení úkolů, odkázat na EAP<br>• Preventivně: pravidelný 1-on-1 check-in, jasné vymezení rolí, podpora work-life balance</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co jsou nejčastější pracovní stresory pro manažery?</div>
+            <div class="follow-up-a">• Role conflict a role ambiguity — nejasné nebo protichůdné požadavky na pozici<br>• Přetíženost (overload) — příliš mnoho úkolů, nedostatek zdrojů, časové tlaky<br>• Nedostatek kontroly — pocit ztráty autonomie v rozhodování<br>• Mezilidské konflikty, kariérní nejistota, odpovědnost za výsledky týmu</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co je mindfulness a jak konkrétně pomáhá při zvládání stresu?</div>
+            <div class="follow-up-a">• Mindfulness = záměrné, nehodnotící věnování pozornosti přítomnému okamžiku (Kabat-Zinn)<br>• Snižuje aktivitu amygdaly (centrum strachu), posiluje prefrontální kortex (racionalita)<br>• Praktiky: meditace, vědomé dýchání, body scan — 10 min denně prokazatelně snižuje kortizol<br>• Organizačně: MBSR programy (Mindfulness-Based Stress Reduction) v corporate prostředí</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jaký je rozdíl mezi adaptačním mechanismem a coping strategií?</div>
+            <div class="follow-up-a">• Adaptační mechanismus = biologická/fyziologická odpověď organismu na stres — automatický, nevědomý (GAS, fight-or-flight)<br>• Coping strategie = vědomý, záměrný behaviorální nebo kognitivní způsob zvládání stresové situace<br>• Adaptace je základní fyziologická schopnost, coping je naučená, volitelná dovednost, kterou lze trénovat</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MEMORY MAP -->
+    <div class="memory-map" style="margin-bottom:2rem">
+      <div class="memory-map__title">⚡ Memory mapa — rekonstrukce 15minutové odpovědi</div>
+      <div class="memory-map__chain">
+        <span class="memory-map__kw">homeostáza</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">adaptace</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">stresor</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">fyzikální/psychol./pracovní</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">eustres / distres</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">fight-or-flight</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">kortizol + endorfiny</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">GAS (Selye)</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">poplach → odolání → vyčerpání</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">Lazarus 1984</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">primární hodnocení</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">sekundární hodnocení</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">coping</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">problémový / emocionální</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">prevence</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">pohyb + spánek + mindfulness</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">EAP</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">burnout (Maslach)</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">civilizační nemoci</span>
+      </div>
+    </div>
+
+  </div><!-- /.blueprint-content -->
+
+  <hr class="section-divider">
+  <div class="quiz-section">
+    <div class="quiz-title">🧠 Procvičení <span class="quiz-counter">(15 otázek)</span></div>
+    <div class="quiz-grid">
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q1</span>
+          <span class="quiz-card__q-text">Co je homeostáza a jak ji narušuje stres?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Homeostáza = stálost vnitřního prostředí organismu (tělesná teplota, pH, hladina cukru v krvi, krevní tlak). Jde o základní fyziologickou rovnováhu.<br>
+          Stres tuto rovnováhu narušuje aktivací stresové osy (HPA osa — hypotalamus-hypofýza-nadledvinky), uvolněním kortizolu a adrenalinu, a aktivací sympatického nervového systému. Organismus musí vynaložit energii na obnovu homeostázy.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q2</span>
+          <span class="quiz-card__q-text">Popište tři fáze GAS (General Adaptation Syndrome) dle Selyeho.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>1. Poplachová reakce (alarm reaction):</strong> akutní mobilizace zdrojů, uvolnění kortizolu a adrenalinu, fight-or-flight, fyziologické projevy (zvýšený TK, srdeční tep, svalové napětí).<br>
+          <strong>2. Stadium odolání (resistance):</strong> organismus se přizpůsobí stresoru, udržuje zvýšenou reaktivitu — zdánlivě normální, ale za cenu zvýšeného „spalování" rezerv.<br>
+          <strong>3. Stadium vyčerpání (exhaustion):</strong> rezervy organismu jsou vyčerpány; riziko fyzické a psychické nemoci, burnout, kolaps imunity.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q3</span>
+          <span class="quiz-card__q-text">Co je Lazarusův transakční model stresu?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Lazarus (1984): stres není objektivní vlastností situace, ale výsledkem <em>transakce</em> (interakce) mezi osobou a prostředím, závislé na subjektivním hodnocení.<br>
+          <strong>Primární hodnocení:</strong> je situace hrozba, výzva, nebo irelevantní?<br>
+          <strong>Sekundární hodnocení:</strong> mám zdroje (schopnosti, podpora, čas) ke zvládnutí?<br>
+          Výsledek tohoto hodnocení určuje, zda bude situace prožívána jako stresující, a jakou coping strategii jedinec zvolí.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q4</span>
+          <span class="quiz-card__q-text">Jaký je rozdíl mezi eustresem a distresem?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Eustres</strong> (eu = dobrý): pozitivní stres — motivuje, zlepšuje výkon, přináší vzrušení a soustředění (příklady: první den v nové práci, sportovní závod, tvůrčí projekt). Krátkodobý, přiměřený.<br>
+          <strong>Distres</strong> (dis = špatný): negativní stres — přetěžuje, poškozuje zdraví, snižuje výkon, vede k chronickým nemocem (příklady: burnout, šikana, existenční ohrožení). Chronický nebo intenzivní.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q5</span>
+          <span class="quiz-card__q-text">Co jsou coping strategie — popište dva typy.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Coping = vědomé strategie zvládání stresové situace (Lazarus a Folkman).<br>
+          <strong>Problémově orientovaný coping:</strong> zaměřen na odstranění nebo změnu příčiny stresu — plánování kroků, hledání informací, asertivní komunikace, time management.<br>
+          <strong>Emocionálně orientovaný coping:</strong> zaměřen na regulaci negativních emocí — relaxace, meditace, vyhledání sociální podpory, kognitivní přeformulování (reframing), ventilácia emocí.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q6</span>
+          <span class="quiz-card__q-text">Co jsou endorfiny a jaký mají vliv na stres?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Endorfiny jsou přirozené neuropeptidy (opioidní peptidy) produkované hypofýzou a CNS. Nazývají se „hormony štěstí".<br>
+          Produkce: při aerobním pohybu (runners' high), smíchu, fyzickém kontaktu, pozitivních sociálních interakcích, poslechu hudby.<br>
+          Účinek: tlumí vnímání bolesti, navozují pocit pohody a klidu, snižují kortizol a efektivně tlumí stresovou reakci — jsou přirozenou, bez-vedlejšinovou protistresovou ochranou.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q7</span>
+          <span class="quiz-card__q-text">Co je burnout a jaké jsou jeho 3 dimenze (Maslach)?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Burnout = syndrom vyhoření vzniklý z chronického, nezvládnutého pracovního stresu (WHO ho zařadila do MKN-11).<br>
+          Tři dimenze (Maslach Burnout Inventory):<br>
+          <strong>1. Emoční vyčerpání:</strong> pocit prázdnoty, vyčerpanosti citových zdrojů, neschopnost empatizovat.<br>
+          <strong>2. Depersonalizace (cynismus):</strong> odtažitost, cynický postoj ke klientům/kolegům, ztráta empatie.<br>
+          <strong>3. Snížení osobního výkonu:</strong> pocit neefektivity, ztráta kompetence a smyslu práce.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q8</span>
+          <span class="quiz-card__q-text">Jaké jsou fyziologické reakce na stres (fight-or-flight)?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Aktivace sympatického nervového systému a nadledvinek při vnímání hrozby:<br>
+          • Zvýšení krevního tlaku a srdečního tepu<br>
+          • Zrychlení dýchání (více kyslíku pro svaly)<br>
+          • Zvýšení svalového napětí<br>
+          • Uvolnění glukózy do krve (energie pro útěk/boj)<br>
+          • Rozšíření zornic<br>
+          • Útlum trávicí soustavy a imunity (energeticky nákladné při hrozbě)<br>
+          • Hormony: kortizol (dlouhodobý), adrenalin a noradrenalin (okamžitá reakce)
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q9</span>
+          <span class="quiz-card__q-text">Co je „místo nejmenšího odporu" v organismu?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Každý jedinec má svůj „slabý článek" — orgán nebo systém, který pod chronickým stresem selhává jako první. Toto místo je individuálně odlišné, podmíněno geneticky i životní historií.<br>
+          Příklady: kardiovaskulární systém (infarkt, hypertenze), trávicí trakt (vředy, IBS), imunitní systém (časté infekce), kůže (psoriáza, ekzém), psychika (úzkost, deprese). Znát své slabé místo pomáhá při prevenci.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q10</span>
+          <span class="quiz-card__q-text">Vyjmenujte 3 civilizační nemoci spojené s chronickým stresem.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Chronický stres je rizikovým faktorem pro: kardiovaskulární onemocnění (ICHS, infarkt myokardu), arteriální hypertenze, diabetes mellitus 2. typu, obezita (kortizol → ukládání tuku), depresivní a úzkostné poruchy, syndrom vyhoření (burnout), peptické vředy žaludku a dvanáctníku, oslabení imunity (chronické infekce, autoimunní onemocnění).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q11</span>
+          <span class="quiz-card__q-text">Jak funguje primární hodnocení situace dle Lazaruse?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Primární hodnocení (primary appraisal) je první kognitívní krok v Lazarusově modelu: jedinec automaticky posuzuje, co pro něj situace znamená.<br>
+          Tři výsledky: <strong>irelevantní</strong> (situace se mě netýká), <strong>pozitivní/benigní</strong> (situace je příznivá), <strong>stresující</strong> — dále děleno na hrozbu (budoucí ztráta), ztrátu (již nastalá) nebo výzvu (potenciální zisk).<br>
+          Teprve pokud je situace hodnocena jako stresující, nastupuje sekundární hodnocení.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q12</span>
+          <span class="quiz-card__q-text">Co je mindfulness a jak pomáhá zvládat stres?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Mindfulness (Kabat-Zinn) = záměrné, nehodnotící věnování plné pozornosti přítomnému okamžiku — tělu, dechu, myšlenkám a pocitům bez snahy je měnit.<br>
+          Pomáhá při stresu: snižuje reaktivitu amygdaly (centra strachu), posiluje prefrontální kortex (racionální myšlení), snižuje hladinu kortizolu. Praxe MBSR (Mindfulness-Based Stress Reduction) snižuje symptomy stresu, úzkosti a burnoutu — dnes běžně v korporátním prostředí.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q13</span>
+          <span class="quiz-card__q-text">Co je EAP (Employee Assistance Program)?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          EAP = zaměstnanecký asistenční program — organizační intervence na podporu duševního zdraví a pohody zaměstnanců. Poskytuje: anonymní psychologické poradenství, právní a finanční poradenství, krizové intervence, koučink.<br>
+          Financováno zaměstnavatelem; dostupné mimo pracovní dobu; pomáhá předcházet burnoutu, absenteeismu a fluktuaci. Efektivní součást strategie organizačního wellbeingu.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q14</span>
+          <span class="quiz-card__q-text">Jaké jsou pracovní stresory typické pro manažerskou profesi?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Typické pracovní stresory manažerů:<br>
+          • Role conflict — protichůdné požadavky (od nadřízených vs. podřízených)<br>
+          • Role ambiguity — nejasné vymezení odpovědnosti a pravomocí<br>
+          • Přetíženost (quantitative / qualitative overload)<br>
+          • Odpovědnost za výsledky a lidi bez přiměřené kontroly<br>
+          • Kariérní nejistota, strach z neúspěchu<br>
+          • Interpersonální konflikty, mediace sporů<br>
+          • Permanentní dostupnost (e-mail, telefon, online)
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q15</span>
+          <span class="quiz-card__q-text">Jak se odlišuje adaptační mechanismus od coping strategie?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Adaptační mechanismus:</strong> biologická, automatická, evolučně naprogramovaná fyziologická odpověď organismu na stresor (GAS, fight-or-flight, neuroendokrinní kaskáda) — vědomou vůlí ho nelze přímo ovlivnit.<br>
+          <strong>Coping strategie:</strong> vědomý, záměrný behaviorální nebo kognitivní způsob zvládání stresové situace — lze se ho naučit, trénovat a volit situačně. Coping využívá kognitivní hodnocení (Lazarus), adaptace je jeho biologickým základem.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /.page -->
+<script src="../assets/app.js"></script>
+</body>
+</html>

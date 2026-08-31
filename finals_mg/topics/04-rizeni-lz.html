@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Řízení lidských zdrojů — SZZk Management</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic-id="t04">
+
+<nav class="navbar">
+  <a class="navbar__brand" href="../index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="../index.html">Dashboard</a>
+    <a class="navbar__link" href="../simulation.html">Simulace</a>
+    <a class="navbar__link" href="../revision.html">Rychlá revize</a>
+    <a class="navbar__link" href="03-organizovani.html">← Předchozí</a>
+    <a class="navbar__link" href="05-vedeni-motivace.html">Další →</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb"><a href="../index.html">Dashboard</a><span>Téma 04</span></div>
+
+  <!-- RECALL MODE BAR -->
+  <div class="recall-bar">
+    <strong>🎯 Recall mód: Přemyslete si odpověď — pak odkryjte blueprint</strong>
+    <button id="recall-toggle-btn" class="btn btn--small btn--secondary">🎯 Recall mód</button>
+    <button id="mastered-btn" class="btn btn--small btn--success">✓ Označit jako zvládnuté</button>
+  </div>
+
+  <!-- TOPIC HEADER -->
+  <div class="topic-header">
+    <div class="topic-header__num">04</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Řízení lidských zdrojů</div>
+      <div class="topic-header__subtitle">Okruh: Management · FIM UHK · ~15 min ústní odpověď</div>
+    </div>
+  </div>
+
+  <!-- RECALL OVERLAY -->
+  <div class="recall-overlay">
+    <div class="section-block">
+      <div class="section-block__header"><span class="section-block__title">💡 Memory triggers</span></div>
+      <div class="section-block__body">
+        <div class="memory-map">
+          <div class="memory-map__title">Rekonstrukce odpovědi</div>
+          <div class="memory-map__chain">
+            <span class="memory-map__kw">ŘLZ</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">analýza potřeb</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">získávání</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">interní/externí</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">výběr</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">AC</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">adaptace</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">rozvoj</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">hodnocení (MBO/360°)</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">odměňování</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">PP vznik/zánik</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">práva/povinnosti</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem" class="text-muted text-small">Přemyslete si strukturu. Pak klikněte "Zobrazit odpověď".</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLUEPRINT CONTENT -->
+  <div class="blueprint-content">
+
+    <!-- SECTION 1: Struktura odpovědi -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⏱</span> Struktura odpovědi (~15 min)</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="time-table">
+          <thead><tr><th>Část</th><th>Obsah</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-table__section">Úvod: ŘLZ jako strategická funkce</td>
+              <td class="time-table__content">Definice ŘLZ, lidský kapitál, strategická role (HRM vs. personalistika)</td>
+              <td>1 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Plánování a získávání LZ</td>
+              <td class="time-table__content">Analýza potřeb (kvant./kval.); interní vs. externí zdroje získávání</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Výběr a adaptace</td>
+              <td class="time-table__content">Výběrový proces (CV, testy, AC, rozhovor, reference); adaptační proces a mentoring</td>
+              <td>3 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Rozvoj a hodnocení</td>
+              <td class="time-table__content">On-the-job vs. off-the-job vzdělávání; kariérní plánování; metody hodnocení: MBO, 360°, hodnotící pohovor</td>
+              <td>3 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Odměňování</td>
+              <td class="time-table__content">Složky odměny (základní mzda, pohyblivá složka, benefity); zákoník práce — minimální mzda</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Pracovní poměr — vznik a zánik</td>
+              <td class="time-table__content">Pracovní smlouva (povinné náležitosti); způsoby zániku PP</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Práva a povinnosti + závěr</td>
+              <td class="time-table__content">Základní práva zaměstnanců a povinnosti obou stran dle zákoníku práce</td>
+              <td>2 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Co musím říct -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">📋</span> Co musím říct</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="must-say">
+          <li><strong>ŘLZ (HRM):</strong> soubor aktivit, jimiž organizace přitahuje, rozvíjí a udržuje lidský kapitál; posun od administrativní personalistiky ke strategické funkci</li>
+          <li><strong>Analýza potřeb LZ:</strong> kvantitativní (kolik pracovníků) + kvalitativní (jaké kompetence, dovednosti); plánovací horizont; srovnání potřeby s dostupností → interní nebo externí zdroje</li>
+          <li><strong>Získávání — interní:</strong> povýšení, přeložení, kariérní rozvoj stávajících zaměstnanců; výhody: zná prostředí, motivace; nevýhoda: uzavřenost, nedostatek nových impulsů</li>
+          <li><strong>Získávání — externí:</strong> pracovní portály (Jobs.cz, LinkedIn), inzeráty, personální agentury, headhunting, spolupráce se školami, veletrhy práce</li>
+          <li><strong>Výběr pracovníků:</strong> životopis/CV → psychologické testy → <strong>assessment centrum (AC)</strong> → strukturovaný rozhovor → reference; cíl: predikovat pracovní výkon</li>
+          <li><strong>Assessment centrum (AC):</strong> komplexní výběrová metoda; skupinové i individuální úkoly (případové studie, hraní rolí, in-basket); hodnotí více assessorů; výhoda: objektivita, komplexnost</li>
+          <li><strong>Adaptační proces:</strong> formální (vstupní školení, mentoring, plán adaptace) + neformální (zaučení kolegou); cíl: dosáhnout plné produktivity a integrace do kultury; obvykle 1–6 měsíců</li>
+          <li><strong>Rozvoj zaměstnanců:</strong> on-the-job (koučink, mentoring, rotace práce, pověřování úkoly) vs. off-the-job (kurzy, semináře, e-learning, stáže)</li>
+          <li><strong>Hodnocení výkonu — metody:</strong> MBO (řízení podle cílů — Drucker), 360° zpětná vazba (hodnotí nadřízení + kolegové + podřízení + zákazníci + sám), hodnotící pohovor, grafická hodnoticí stupnice, BARS</li>
+          <li><strong>Odměňování:</strong> složky: základní mzda (za čas nebo výkon) + pohyblivá složka (bonusy, prémie) + benefity (stravenky, penzijní připojištění, sick days); min. mzda dle ZP (aktuálně 20 800 Kč/měs.)</li>
+          <li><strong>Pracovní poměr — vznik:</strong> pracovní smlouva (písemná; povinné náležitosti: druh práce, místo výkonu, datum nástupu); jmenování (veřejný sektor); dohody o pracích konaných mimo pracovní poměr: DPP (max. 300 hod/rok) a DPČ (max. poloviční úvazek)</li>
+          <li><strong>Zánik PP:</strong> (1) dohodou, (2) výpovědí (výpovědní lhůta min. 2 měsíce; zaměstnavatel jen z taxativních důvodů), (3) okamžitým zrušením (závažné porušení), (4) uplynutím sjednané doby, (5) smrtí zaměstnance</li>
+          <li><strong>Práva zaměstnanců:</strong> mzda/plat, bezpečné pracovní podmínky (BOZP), min. dovolená 4 týdny, přestávky, ochrana před diskriminací, odborová organizace</li>
+          <li><strong>Povinnosti zaměstnanců:</strong> vykonávat práci osobně, dodržovat pokyny zaměstnavatele, loajalita, mlčenlivost o obchodním tajemství</li>
+          <li><strong>Povinnosti zaměstnavatele:</strong> přidělovat práci dle smlouvy, platit mzdu, zajistit BOZP, rovné zacházení</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Klíčové pojmy -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔑</span> Klíčové pojmy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="concept-tags">
+          <span class="concept-tag">lidský kapitál</span>
+          <span class="concept-tag">analýza pracovních míst</span>
+          <span class="concept-tag">headhunting</span>
+          <span class="concept-tag">assessment centrum (AC)</span>
+          <span class="concept-tag">strukturovaný rozhovor</span>
+          <span class="concept-tag">adaptační proces</span>
+          <span class="concept-tag">mentoring vs. koučink</span>
+          <span class="concept-tag">on-the-job / off-the-job</span>
+          <span class="concept-tag">MBO (Management by Objectives)</span>
+          <span class="concept-tag">360° zpětná vazba</span>
+          <span class="concept-tag">základní mzda</span>
+          <span class="concept-tag">benefity</span>
+          <span class="concept-tag">pracovní smlouva</span>
+          <span class="concept-tag">DPP / DPČ</span>
+          <span class="concept-tag">výpovědní lhůta</span>
+          <span class="concept-tag">BOZP</span>
+          <span class="concept-tag">zákoník práce</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: Klíčové vztahy -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔗</span> Klíčové vztahy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="relation-flow">
+          <strong>Proces ŘLZ:</strong>
+          <span class="flow-box">Plánování potřeb LZ</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Získávání (int./ext.)</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Výběr (CV→AC→rozhovor)</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Adaptace</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Rozvoj + hodnocení</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Odměňování</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Zánik PP</span>
+        </div>
+        <table class="data-table" style="margin-top:1rem">
+          <thead><tr><th>Metoda hodnocení</th><th>Charakteristika</th><th>Výhoda/Nevýhoda</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>MBO</strong></td>
+              <td>Hodnocení plnění dohodnutých cílů (Drucker)</td>
+              <td>Propojení s výkonem; náročné na nastavení cílů</td>
+            </tr>
+            <tr>
+              <td><strong>360° zpětná vazba</strong></td>
+              <td>Hodnotí nadřízení, kolegové, podřízení, zákazníci, sám</td>
+              <td>Komplexní; časově náročné, riziko zkreslení</td>
+            </tr>
+            <tr>
+              <td><strong>Hodnotící pohovor</strong></td>
+              <td>Přímý rozhovor manažer–podřízený o výkonu</td>
+              <td>Zpětná vazba a cíle; subjektivita hodnotitele</td>
+            </tr>
+            <tr>
+              <td><strong>Graf. hodnoticí stupnice</strong></td>
+              <td>Škála dimenzí výkonu (1–5 bodů)</td>
+              <td>Jednoduché; riziko halo efektu</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="data-table" style="margin-top:1rem">
+          <thead><tr><th>Typ PP/dohody</th><th>Omezení</th><th>Povinnosti zaměstnavatele</th></tr></thead>
+          <tbody>
+            <tr><td>Pracovní smlouva (PP)</td><td>Žádné hodiny navíc bez přesčasu</td><td>Plná práva dle ZP</td></tr>
+            <tr><td>DPP</td><td>Max. 300 hod/rok u 1 zaměstnavatele</td><td>Bez povinné SS a ZP (do limitu)</td></tr>
+            <tr><td>DPČ</td><td>Max. polovina stanovené týd. prac. doby</td><td>Odvody SS+ZP nad zákon. hranicí</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 5: Typické chyby -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⚠️</span> Typické chyby</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="mistake-list">
+          <li class="mistake-item">Záměna mzdy a platu — mzda = soukromý sektor (smluvní), plat = veřejný sektor (tarifní stupnice dle nařízení vlády)</li>
+          <li class="mistake-item">DPP a DPČ jsou dohody mimo pracovní poměr — neposkytují automaticky všechna práva jako PP (výpovědní lhůta, dovolená)</li>
+          <li class="mistake-item">AC (assessment centrum) je metoda výběru, ne hodnocení stávajících zaměstnanců (ačkoli se dá použít i pro rozvoj)</li>
+          <li class="mistake-item">MBO není jen "nastavení cílů" — je to cyklický proces: nastavení cílů → průběžný monitoring → hodnocení → nové cíle</li>
+          <li class="mistake-item">Výpovědní lhůta = 2 měsíce (minimální), nikoliv 1 měsíc; počítá se od 1. dne následujícího měsíce po doručení výpovědi</li>
+          <li class="mistake-item">Adaptační proces neznamená jen podpis smlouvy a přidělení počítače — zahrnuje systematické zaučení, mentoring a sociální integraci</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 6: Doplňující otázky -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">❓</span> Možné doplňující otázky</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="follow-up-list">
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jaké jsou zákonné podmínky pro platné okamžité zrušení pracovního poměru ze strany zaměstnavatele?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Zákoník práce §55: zaměstnavatel může okamžitě zrušit PP, byl-li zaměstnanec pravomocně odsouzen pro úmyslný trestný čin k nepodmíněnému trestu, nebo porušil-li povinnost zvlášť hrubým způsobem</li>
+                <li>Forma: písemně, s přesným vymezením důvodu; doručeno zaměstnanci; lhůta: do 2 měsíců od zjištění důvodu (subjektivní), nejdéle do 1 roku od jeho vzniku (objektivní)</li>
+                <li>Zaměstnavatel musí projednat se zástupci zaměstnanců (odborovou organizací), pokud existuje</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Proč je 360° zpětná vazba považována za přesnější metodu hodnocení než tradiční hodnocení nadřízeným?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Nadřízený vidí jen část výkonu — kolegové, podřízení a zákazníci mají odlišný pohled na jiné kompetence</li>
+                <li>Snižuje halo efekt a osobní sympatie — více zdrojů = objektivnější obraz</li>
+                <li>Zvyšuje sebeuvědomění zaměstnance; ale: riziko zkreslení (politické hlasování), nutná kultura otevřené zpětné vazby</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak se liší strategické ŘLZ od tradiční personalistiky?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Tradiční personalistika: administrativní (mzdy, docházka, pracovní smlouvy), reaktivní, taktická</li>
+                <li>Strategické ŘLZ: propojuje HR s businessovými cíli, proaktivní, účastní se tvorby strategie, buduje organizační kapacity pro budoucnost</li>
+                <li>Rozdíl v pozici HR: z podpůrného útvaru na strategického partnera vedení (HR Business Partner model — Ulrich)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co je tzv. "talent management" a jak se vztahuje k ŘLZ?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Talent management = cílené ŘLZ zaměřené na identifikaci, rozvoj a udržení klíčových (talentovaných) zaměstnanců</li>
+                <li>Nástroje: succession planning, kariérní programy, rozvojová centra, mentoring pro vysokopotenciální zaměstnance</li>
+                <li>Cíl: mít správné lidi na správných místech v kritických rolích — klíčové pro konkurenceschopnost</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak ovlivňuje špatně nastavený systém odměňování motivaci zaměstnanců?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Percepce nespravedlnosti (Adams: teorie ekvity) → demotivace, ztráta loajality, fluktuace</li>
+                <li>Příliš fixní mzda bez variabilní složky = nízká vazba na výkon → "free riding"</li>
+                <li>Špatné KPI v pohyblivé složce → dysfunkční chování (krátkodobé cíle vs. dlouhodobé hodnoty); efekt Goodhartova zákona</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MEMORY MAP -->
+    <div class="memory-map" style="margin-bottom:2rem">
+      <div class="memory-map__title">⚡ Memory mapa — rekonstrukce 15minutové odpovědi</div>
+      <div class="memory-map__chain">
+        <span class="memory-map__kw">ŘLZ</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">analýza potřeb</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">získávání</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">interní / externí</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">výběr</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">CV → AC → rozhovor</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">adaptace + mentoring</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">rozvoj</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">on-job / off-job</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">hodnocení</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">MBO + 360°</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">odměňování</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">mzda + benefity</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">PP: smlouva (druh, místo, datum)</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">zánik PP (5 způsobů)</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">práva + povinnosti</span>
+      </div>
+    </div>
+
+  </div><!-- /.blueprint-content -->
+
+  <!-- QUIZ SECTION -->
+  <hr class="section-divider">
+  <div class="quiz-section">
+    <div class="quiz-title">🧠 Procvičení <span class="quiz-counter">(15 otázek)</span></div>
+    <div class="quiz-grid">
+
+      <div class="quiz-card" data-answer="Assessment centrum (AC) = komplexní výběrová metoda, při níž kandidáti procházejí sérií skupinových i individuálních úkolů (případové studie, skupinové diskuze, in-basket, hraní rolí). Hodnotí více vyškolených assessorů nezávisle. Výhoda: objektivita, prediktivní validita; hodnotí kompetence v praxi, ne jen na papíře.">
+        <div class="quiz-card__q">1. Co je assessment centrum a jakou roli hraje při výběru zaměstnanců?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Povinné náležitosti pracovní smlouvy dle ZP (§34): (1) druh práce, (2) místo nebo místa výkonu práce, (3) den nástupu do práce. Vše v písemné formě; bez těchto tří náležitostí je smlouva neplatná. Ostatní podmínky (mzda, pracovní doba) mohou být dohodnuty nebo vyplývají z vnitřních předpisů.">
+        <div class="quiz-card__q">2. Jaké jsou povinné náležitosti pracovní smlouvy dle zákoníku práce?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="DPČ: rozsah práce nepřekračuje polovinu stanovené týdenní pracovní doby v průměru; zaměstnanec má nárok na dovolenou a další práva. Pracovní smlouva (PP): plný nebo zkrácený pracovní poměr, plná ochrana ZP, výpovědní lhůta 2 měsíce, zaměstnavatel může dát výpověď jen ze zákonných důvodů.">
+        <div class="quiz-card__q">3. Jaký je rozdíl mezi dohodou o pracovní činnosti (DPČ) a pracovní smlouvou?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Metody hodnocení výkonu: (1) MBO — hodnocení plnění cílů; (2) 360° zpětná vazba — hodnotí nadřízení, kolegové, podřízení, zákazníci; (3) Hodnotící pohovor — přímý rozhovor manažer–zaměstnanec; (4) Grafická hodnoticí stupnice — škála dimenzí; (5) BARS (behaviorálně ukotvené hodnoticí stupnice); (6) Ranking (pořadí zaměstnanců).">
+        <div class="quiz-card__q">4. Vyjmenujte alespoň 4 metody hodnocení výkonu zaměstnanců.</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="MBO (Management by Objectives — řízení podle cílů, Drucker): manažer a zaměstnanec společně definují SMART cíle na dané období → průběžný monitoring → hodnocení splnění na konci období → nastavení nových cílů. Výhody: zaměstnanec ví, co se od něj čeká, cíle jsou měřitelné, propojení s odměňováním.">
+        <div class="quiz-card__q">5. Co je metoda MBO (Management by Objectives)?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Způsoby zániku PP: (1) Dohoda (oboustranná, písemná); (2) Výpověď (zaměstnanec — bez důvodu; zaměstnavatel — jen ze zákonných důvodů §52 ZP; výpovědní lhůta 2 měsíce); (3) Okamžité zrušení (hrubé porušení ze strany zaměstnance nebo zdravotní důvod); (4) Uplynutím sjednané doby (PP na dobu určitou); (5) Smrt zaměstnance.">
+        <div class="quiz-card__q">6. Jaké jsou způsoby zániku pracovního poměru?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="360° zpětná vazba = metoda hodnocení, kde zaměstnanec dostává zpětnou vazbu od všech, s nimiž pracuje: nadřízený, kolegové (peers), podřízení, interní i externí zákazníci a sám (sebehodnocení). Poskytuje komplexní obraz kompetencí. Výhody: objektivita, rozvoj sebeuvědomění. Nevýhody: časová náročnost, anonymita může být zneužita.">
+        <div class="quiz-card__q">7. Co je 360° zpětná vazba?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="On-the-job vzdělávání: přímo na pracovišti během práce — koučink (cíleně rozvíjí dovednosti), mentoring (zkušený kolega/mentor), rotace práce (různé role), pověřování náročnějšími úkoly. Off-the-job: mimo pracoviště — kurzy, semináře, workshopy, e-learning, stáže, MBA programy.">
+        <div class="quiz-card__q">8. Jaký je rozdíl mezi on-the-job a off-the-job vzděláváním?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Základní práva zaměstnanců dle ZP: (1) mzda/plat za vykonanou práci (min. minimální mzda); (2) bezpečné pracovní podmínky (BOZP); (3) dovolená — min. 4 týdny/rok; (4) přestávky v práci; (5) ochrana před diskriminací; (6) právo na odborové zastoupení; (7) ochrana při propouštění (zákonné důvody).">
+        <div class="quiz-card__q">9. Jaká jsou základní práva zaměstnanců dle zákoníku práce?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Adaptační proces = systematický příjmový program pro nového zaměstnance. Formální: vstupní školení (BOZP, systémy, procesy), adaptační plán, přidělení mentora. Neformální: zaučení kolegou, poznání týmu a kultury. Důležitý proto, že: snižuje fluktuaci nových zaměstnanců, zkracuje dobu do plné produktivity, posiluje loajalitu.">
+        <div class="quiz-card__q">10. Co je adaptační proces a proč je důležitý?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Mzda: odměna za práci v soukromém sektoru, sjednaná smluvně nebo stanovená vnitřním mzdovým předpisem; výše je věcí dohody (min. minimální mzda). Plat: odměna za práci ve veřejném sektoru (státní správa, školy, nemocnice), stanovená zákonem a nařízením vlády — tarifní stupnice, platové třídy.">
+        <div class="quiz-card__q">11. Jaký je rozdíl mezi mzdou a platem?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Headhunting = přímé oslovování vybraných (pasivních) kandidátů na klíčové pozice, kteří sami aktivně práci nehledají. Provádějí specializované personální agentury (executive search). Využívá se pro top management, vysoce specializované odborníky nebo při nutnosti diskrétnosti.">
+        <div class="quiz-card__q">12. Co je headhunting a kdy ho organizace využívají?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Výhody interního získávání: (1) kandidát zná kulturu, procesy, kolegy → kratší adaptace; (2) motivační efekt — signál růstových příležitostí; (3) nižší náklady na nábor; (4) nižší riziko — výkon stávajícího zaměstnance je ověřený. Nevýhoda: uzavřenost, nedostatek nových myšlenek, vnitřní konflikty při povýšení jednoho z kandidátů.">
+        <div class="quiz-card__q">13. Uveďte výhody interního získávání pracovníků oproti externímu.</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Benefity = nepeněžní část odměny nad rámec mzdy. Nejčastější typy: stravenky/stravenkový paušál, penzijní/životní připojištění, sick days (dny volna při nemoci bez neschopenky), firemní auto/telefon/notebook, příspěvky na vzdělávání, sport, wellness, home office, 5. týden dovolené, firemní školka.">
+        <div class="quiz-card__q">14. Co jsou benefity a jaké typy jsou nejčastější?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Rozvoj zaměstnanců je strategicky důležitý, protože: (1) udržuje a zvyšuje konkurenceschopnost organizace (aktuální dovednosti); (2) zvyšuje motivaci a loajalitu — zaměstnanec vnímá investici do sebe; (3) snižuje fluktuaci; (4) připravuje nástupce (succession planning); (5) umožňuje adaptaci na technologické změny (digitalizace).">
+        <div class="quiz-card__q">15. Proč je rozvoj zaměstnanců strategicky důležitý pro organizaci?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /.page -->
+<script src="../assets/app.js"></script>
+</body>
+</html>

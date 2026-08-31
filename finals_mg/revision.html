@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rychlá revize — SZZk Management</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .rev-grid { display:grid; grid-template-columns:1fr 1fr; gap:.9rem; }
+  @media (max-width:640px) { .rev-grid { grid-template-columns:1fr; } }
+  .rev-card { background:var(--info); color:#fff; border-radius:var(--radius-lg); padding:.85rem 1rem; }
+  .rev-card a { color:rgba(255,255,255,.75); text-decoration:none; font-size:.72rem; }
+  .rev-card a:hover { color:#fff; text-decoration:underline; }
+  .rev-card__num { font-size:.7rem; opacity:.55; font-weight:700; text-transform:uppercase; margin-bottom:.15rem; }
+  .rev-card__name { font-size:.88rem; font-weight:700; margin-bottom:.5rem; line-height:1.2; }
+  .rev-card__chain { font-size:.76rem; font-family:var(--font-mono); line-height:2; }
+  .rev-card__kw { background:rgba(255,255,255,.15); border-radius:3px; padding:.05rem .3rem; margin:.05rem; display:inline-block; }
+  .rev-card__arrow { opacity:.4; margin:0 .1rem; font-size:.7rem; }
+  @media print {
+    body { font-size: 9pt; }
+    .navbar, .action-bar { display:none!important; }
+    .rev-grid { grid-template-columns:1fr 1fr; }
+    .rev-card { -webkit-print-color-adjust:exact; print-color-adjust:exact; break-inside:avoid; }
+    .page { padding:0; max-width:100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="navbar__brand" href="index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="index.html">Dashboard</a>
+    <a class="navbar__link" href="simulation.html">Simulace</a>
+    <a class="navbar__link navbar__link--active" href="revision.html">Rychlá revize</a>
+  </div>
+</nav>
+
+<div class="page page--wide">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem">
+    <div>
+      <h1 style="font-size:1.3rem;font-weight:800;color:var(--accent)">⚡ Rychlá revize</h1>
+      <p class="text-muted text-small">Memory mapy pro všech 18 témat — ideální pro revizi těsně před zkouškou</p>
+    </div>
+    <div class="action-bar" style="margin:0">
+      <button class="btn btn--secondary btn--small" onclick="window.print()">🖨 Vytisknout</button>
+      <a class="btn btn--primary btn--small" href="simulation.html">🎲 Simulace</a>
+    </div>
+  </div>
+
+  <div class="callout callout--info" style="margin-bottom:1.5rem">
+    Přečtěte si klíčová slova a zkuste mentálně rekonstruovat celou 15minutovou odpověď. Pak klikněte na číslo tématu pro plný blueprint.
+  </div>
+
+  <div class="rev-grid">
+
+    <div class="rev-card">
+      <div class="rev-card__num">01 · <a href="topics/01-principy-managementu.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Východiska a základní principy managementu</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">management</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">3 pojetí</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Taylor</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">vědecký</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">normování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Mayo</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Hawthornské</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Fayol</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">5 funkcí</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">top/middle/lower</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">USA/Japonsko</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kaizen</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">TQM</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">PDCA</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">systém</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">vstupy→výstupy</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">02 · <a href="topics/02-planovani-strategie.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Plánování a strategické řízení organizace</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">plánování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">poslání</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">vize</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SMART</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SWOT</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SO/ST/WO/WT</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">STEP</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">BSC</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">4 perspektivy</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Porter 5 sil</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">BCG matice</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hvězdy/krávy</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">změna</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Lewin</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">krize</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">03 · <a href="topics/03-organizovani.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Organizování</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">organizování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">org. struktura</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">byrokratická</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">adaptivní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">strmá/plochá</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">liniová</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">funkcionální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">štábní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">divizní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">maticová</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">centralizace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">decentralizace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">delegování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">pravomoc</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">rozpětí 5-8</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">04 · <a href="topics/04-rizeni-lz.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Řízení lidských zdrojů</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">ŘLZ</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">analýza potřeb</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">získávání</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">interní/extern.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">výběr</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">AC</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">adaptace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">rozvoj</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hodnocení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">MBO</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">360°</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">odměňování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">PP vznik/zánik</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">práva</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">povinnosti</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">05 · <a href="topics/05-vedeni-motivace.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Vedení a motivace zaměstnanců</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">vedení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">styly</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">autokrat./demokr.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">mřížka 9.9</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Fiedler</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">EI Goleman</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">McGregor X/Y</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">motivace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Maslow 5</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Herzberg</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hygienické/motiv.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">McClelland nAch</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">odměňování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">škoda 4,5×</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">06 · <a href="topics/06-kontrola.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Kontrola</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">kontrola</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">fáze</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">standardy→měření→korekce</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">předběžná/průběžná/následná</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">audit</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">rozpočet</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">BEP</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">FC/(p-vc)</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">ROE/ROA/ROS</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">likvidita</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">soudy</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">NKÚ</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">ČOI</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">07 · <a href="topics/07-firemni-kultura.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Firemní kultura a komunikace</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">kultura</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Schein 3 vrstvy</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">artefakty</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hodnoty</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">předpoklady</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hrdinové/rituály</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">identita</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">image</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">komunikace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">šum</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">neverbální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">proxemika</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">rétorika</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">BATNA</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Hofstede</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">08 · <a href="topics/08-rozhodovani-informace.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Rozhodování a informace</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">rozhodování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">programované/neprogramované</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">jistota/riziko/nejistota</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Simon</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">7 fází</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">groupthink</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">org. učení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">single/double loop</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">IT/ERP/BI</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">OSŘ</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">správní řízení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">trestní řízení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">GDPR</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">09 · <a href="topics/09-podnikani.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Podnikání a podnikatelská odpovědnost</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">podnikání</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">podnikatel</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">záměr</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">OR</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">hospod. soutěž</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">ÚOHS</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">v.o.s./k.s.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">s.r.o. 1Kč</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">a.s. 2mil.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">živnosti</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">řemeslná/vázaná/volná</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">CSR Carroll</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">ESG</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">CSRD</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">10 · <a href="topics/10-soukrome-pravo.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Základy českého soukromého práva</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">OZ 89/2012</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">FO/PO</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">věcná práva</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">vlastnictví</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">zástavní právo</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">věcné břemeno</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">závazkové vztahy</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">odpovědnost za škodu</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">protiprávní+škoda+příčinná</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">bezdůvodné obohacení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">dědění</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">6 skupin</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">testament</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">manželství</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">výživné</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">11 · <a href="topics/11-verejne-pravo.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Základy českého veřejného práva</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">dělba moci</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">zákonodárná/výkonná/soudní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">PS+Senát</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">vláda</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">prezident</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Ústava</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">LZPS</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">práva polit./soc.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">ombudsman</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">státní správa</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">samospráva</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">obec/kraj</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">trestní odpovědnost</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">min. 15 let</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">úmysl/nedbalost</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">12 · <a href="topics/12-psychologicke-smery.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Moderní psychologické směry</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">Wundt 1879</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">behaviorismus</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Watson</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">S-R</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Skinner</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">operantní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Bandura</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">modelování</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">psychoanalýza</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Freud</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Id/Ego/Superego</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">nevědomí</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kognitivní</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">humanistická</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Maslow/Rogers</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">13 · <a href="topics/13-osobnost-manazera.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Osobnost manažera</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">Mintzberg 10 rolí</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">interpersonální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">informační</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">rozhodovací</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">time mgmt</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Pareto 80/20</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Eisenhower</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">4 kvadranty</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kvadrant II</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">porady/e-mail</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">temperament</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">IQ/EQ</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">charakter</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">MBTI</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Big Five</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">14 · <a href="topics/14-stres.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Stres a jeho zvládání</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">homeostáza</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">adaptace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">stresor</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">eustres/distres</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">fight-or-flight</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kortizol</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">GAS Selye</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">poplach/odolání/vyčerpání</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">burnout</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Lazarus</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">primární/sekundární hodnocení</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">coping</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">problémový/emocionální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">prevence</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">mindfulness</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">15 · <a href="topics/15-marketingove-rizeni.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Marketingové řízení</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">marketing Kotler</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">koncepce</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">výrobní→prodejní→marketingová</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">STP</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">segmentace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">targeting</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">positioning</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">marketingový plán</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">portfolio</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SBU</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">PEST/mikro</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">MIS</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">CRM/CLV</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">inovace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Ansoff/Rogers</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">16 · <a href="topics/16-chovani-zakazniku.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Chování zákazníků</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">B2C black box</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">faktory</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kulturní/soc./osobní/psychol.</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">typy nákupu</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">komplexní/habituální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">5 kroků B2C</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">B2B</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">nákupní centrum</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">7 rolí</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">typologie zákazníků</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">výzkum</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">primární/sekundární</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">segmentace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">pokrytí trhu</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">17 · <a href="topics/17-marketingovy-mix.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Marketingový mix (tvorba a řízení)</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">4P</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">produkt 3 úrovně</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">PLC</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">zavedení/růst/zralost/úpadek</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">cena</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">skimming/penetrace</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">psychologická</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">distribuce</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">přímá/nepřímá</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">komunikační mix</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">reklama AIDA</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">os. prodej/PR</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">podpora prodeje</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">IMC</span>
+      </div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-card__num">18 · <a href="topics/18-internetovy-marketing.html">→ Plný blueprint</a></div>
+      <div class="rev-card__name">Internetový marketing</div>
+      <div class="rev-card__chain">
+        <span class="rev-card__kw">e-commerce</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">B2C/B2B/C2C/D2C</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SEO</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">on/off-page</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">SEM</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">Google Ads PPC</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">sociální sítě</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">e-mail marketing</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">content</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">kampaň</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">funnel TOFU/MOFU/BOFU</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">KPI CTR/CPC/ROAS</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">virální</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">GA4</span><span class="rev-card__arrow">→</span>
+        <span class="rev-card__kw">GDPR</span>
+      </div>
+    </div>
+
+  </div><!-- /.rev-grid -->
+
+  <div style="margin-top:2rem;text-align:center">
+    <a class="btn btn--primary" href="simulation.html">🎲 Spustit simulaci zkoušky</a>
+    <a class="btn btn--secondary" href="index.html" style="margin-left:.5rem">← Dashboard</a>
+  </div>
+
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

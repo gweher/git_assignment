@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 4: Trh kapitálu a investiční rozhodování</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="04">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 4 / 20</div>
+  <h1>Trh kapitálu a investiční rozhodování</h1>
+  <p class="official-question">Trh kapitálu a investiční rozhodování (kapitál, investice, nabídka na trhu kapitálu, úrok a úroková míra, mezní náklady na kapitál, příjem z mezního produktu kapitálu, poptávka na trhu kapitálu, rovnováha na trhu kapitálu, současná hodnota toku očekávaných budoucích výnosů, Tobinovo q; výnosnost, riziko, likvidita, doba návratnosti, index rentability, vnitřní výnosové procento)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="03-konkurence.html" class="nav-prev">← Téma 3: Firma v podmínkách konkurence</a>
+  <a href="05-odvetvi.html" class="nav-next">Téma 5: Odvětvová struktura →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- BLUEPRINT TAB -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>1 min</td><td>Kapitál a investice</td><td>Reálný vs. finanční kapitál; investice = tok přírůstku kapitálu</td></tr>
+          <tr><td>3 min</td><td>Trh kapitálu: poptávka, nabídka, rovnováha</td><td>MRPK = r (poptávka); úspory závislé na r (nabídka); D_K = S_K</td></tr>
+          <tr><td>2 min</td><td>Úroková míra – typy, Fisherova rovnice</td><td>Nominální vs. reálná r; Fischer: r_real ≈ r_nom − π; MCC</td></tr>
+          <tr><td>2 min</td><td>Současná hodnota a Tobinovo q</td><td>PV vzorec; Tobinovo q: q &gt; 1 → investuj, q &lt; 1 → nekupuj</td></tr>
+          <tr><td>5 min</td><td>Metody hodnocení investic</td><td>DN, NPV, PI, IRR — vzorce, kritéria přijetí, výhody a nevýhody</td></tr>
+          <tr><td>1 min</td><td>Výnosnost, riziko, likvidita</td><td>Trade-off trilemma; diverzifikace snižuje nesystematické riziko</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>Investiční rozhodování: NPV &gt; 0 → tvorba hodnoty; IRR &gt; WACC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. Kapitál a investice</h3>
+      <ul>
+        <li>Reálný (fyzický) kapitál: výrobní stroje, budovy, zásoby — kapitálové statky</li>
+        <li>Finanční kapitál: peněžní pohledávky, cenné papíry — nárok na reálný kapitál</li>
+        <li>Investice = tok přírůstku kapitálových statků za období (ne zásoby, ale přírůstek)</li>
+        <li>Brutto investice = čisté investice + odpisy (opotřebení kapitálu)</li>
+      </ul>
+
+      <h3>2. Trh kapitálu: poptávka, nabídka, rovnováha</h3>
+      <ul>
+        <li>Poptávka po kapitálu: firmy poptávají kapitál do bodu, kde <span class="formula">MRPK = r</span> (mezní výnosový produkt kapitálu = úroková míra)</li>
+        <li>MRPK klesá s množstvím kapitálu (zákon klesajícího MP) → poptávka po kapitálu klesá s r</li>
+        <li>Nabídka kapitálu = úspory domácností; roste s r (vyšší r → větší ochota odložit spotřebu)</li>
+        <li>Rovnováha na trhu kapitálu: D_K = S_K určuje rovnovážnou r a objem kapitálu</li>
+        <li>Mezní náklady na kapitál (MCC): náklady na financování další investice; firma investuje dokud MRPK ≥ MCC</li>
+      </ul>
+
+      <h3>3. Úroková míra — typy a Fisherova rovnice</h3>
+      <ul>
+        <li>Nominální úroková míra (r_nom): sjednaná sazba bez korekce o inflaci</li>
+        <li>Reálná úroková míra: <span class="formula">r_real ≈ r_nom − π</span> (Fisherova rovnice; přesněji: (1+r_real) = (1+r_nom)/(1+π))</li>
+        <li>Pro investiční rozhodování je klíčová reálná r — vyjadřuje skutečné náklady kapitálu</li>
+        <li>Inflace snižuje reálnou r → stimuluje investice; deflace zvyšuje reálnou r → brzdí investice</li>
+      </ul>
+
+      <h3>4. Současná hodnota (PV) a Tobinovo q</h3>
+      <ul>
+        <li>Princip časové hodnoty peněz: koruna dnes je více než koruna zítra (alternativní výnos)</li>
+        <li>Současná hodnota: <span class="formula">PV = CF₁/(1+r) + CF₂/(1+r)² + ... + CFₙ/(1+r)ⁿ</span></li>
+        <li>Tobinovo q: <span class="formula">q = tržní hodnota firmy / reprodukční náklady kapitálu</span></li>
+        <li>q &gt; 1: tržní hodnota firmy převyšuje náklady kapitálu → investuj (přidání kapitálu je výhodné)</li>
+        <li>q &lt; 1: levnější koupit existující firmu než stavět novou → nepřidávej nový kapitál</li>
+      </ul>
+
+      <h3>5. Metody hodnocení investic</h3>
+      <ul>
+        <li><strong>Doba návratnosti (DN):</strong> počet let do splacení investice I₀ z kumulovaných CF; jednoduchá, ale ignoruje CF po splacení a časovou hodnotu peněz</li>
+        <li><strong>NPV (Čistá současná hodnota, ČSH):</strong> <span class="formula">NPV = Σ CFₜ/(1+r)ᵗ − I₀</span>; NPV &gt; 0 → přijmout (tvorba hodnoty); nejlepší metoda (zohledňuje časovou hodnotu i všechny CF)</li>
+        <li><strong>Index rentability (PI):</strong> <span class="formula">PI = PV(CF) / I₀</span>; PI &gt; 1 → přijmout; vhodné pro porovnání investic různého rozsahu</li>
+        <li><strong>IRR (Vnitřní výnosové procento, VVP):</strong> diskontní sazba r*, při které NPV = 0; přijmout pokud <span class="formula">IRR &gt; WACC</span> (náklady kapitálu)</li>
+        <li>WACC = vážené průměrné náklady kapitálu (cost of capital firmy)</li>
+      </ul>
+
+      <h3>6. Výnosnost, riziko, likvidita</h3>
+      <ul>
+        <li>Trilemma investora: vysoká výnosnost + nízké riziko + vysoká likvidita — nelze mít vše najednou</li>
+        <li>Riziko: systematické (tržní, nelze diverzifikovat) vs. nesystematické (specifické, diverzifikací eliminovatelné)</li>
+        <li>Diverzifikace portfolia snižuje nesystematické riziko (zákon velkých čísel)</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><div class="term-name">Kapitál (reálný)</div><div class="term-def">Vyrobené výrobní prostředky (stroje, budovy, zásoby) použité ve výrobě</div></div>
+        <div class="term-item"><div class="term-name">Investice</div><div class="term-def">Tok přírůstku reálného kapitálu za dané období; rozdíl oproti zásobě kapitálu</div></div>
+        <div class="term-item"><div class="term-name">MRPK</div><div class="term-def">Mezní výnosový produkt kapitálu; přírůstek TR z použití další jednotky K; klesá s Q</div></div>
+        <div class="term-item"><div class="term-name">Úroková míra (r)</div><div class="term-def">Cena za zapůjčení kapitálu; rovnováha trhu kapitálu ji určuje</div></div>
+        <div class="term-item"><div class="term-name">Nominální vs. reálná r</div><div class="term-def">Nominální: sjednaná sazba; reálná: korigována o inflaci (Fisher: r_real ≈ r_nom − π)</div></div>
+        <div class="term-item"><div class="term-name">Fisherova rovnice</div><div class="term-def">r_real ≈ r_nom − π; spojuje nominální a reálnou úrokovou míru přes inflaci</div></div>
+        <div class="term-item"><div class="term-name">MCC</div><div class="term-def">Mezní náklady na kapitál; náklady na financování přírůstku kapitálu</div></div>
+        <div class="term-item"><div class="term-name">Současná hodnota (PV)</div><div class="term-def">Hodnota budoucích peněžních toků diskontovaných na dnešní okamžik</div></div>
+        <div class="term-item"><div class="term-name">Tobinovo q</div><div class="term-def">Poměr tržní hodnoty firmy k reprodukčním nákladům kapitálu; indikátor investiční aktivity</div></div>
+        <div class="term-item"><div class="term-name">NPV (ČSH)</div><div class="term-def">Čistá současná hodnota; PV budoucích CF minus investice; NPV &gt; 0 → investice tvoří hodnotu</div></div>
+        <div class="term-item"><div class="term-name">IRR (VVP)</div><div class="term-def">Vnitřní výnosové procento; r*, při níž NPV = 0; přijmout pokud IRR &gt; WACC</div></div>
+        <div class="term-item"><div class="term-name">Index rentability (PI)</div><div class="term-def">PV(CF)/I₀; PI &gt; 1 → přijmout; vhodné pro srovnání projektů různé velikosti</div></div>
+        <div class="term-item"><div class="term-name">Doba návratnosti (DN)</div><div class="term-def">Počet let do splacení investice; jednoduchá, ale ignoruje CF po splacení a časovou hodnotu</div></div>
+        <div class="term-item"><div class="term-name">WACC</div><div class="term-def">Vážené průměrné náklady kapitálu; hurdle rate pro NPV a IRR</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+
+      <div class="relation-box">
+Trh kapitálu:
+  Poptávka: MRPK klesá s K  →  D_K klesá s r
+  Nabídka:  úspory rostou s r  →  S_K roste s r
+  Rovnováha: D_K = S_K  →  r*, K*
+
+  Podmínka investice firmy:
+  MRPK ≥ MCC  →  investuj
+  MRPK &lt; MCC  →  neinvestuj
+      </div>
+
+      <div class="relation-box">
+Fisherova rovnice:
+  r_real ≈ r_nom − π
+  (přesněji: 1 + r_real = (1 + r_nom) / (1 + π))
+
+  π ↑  →  r_real ↓  →  investice ↑ (caeteris paribus)
+  π ↓  →  r_real ↑  →  investice ↓
+      </div>
+
+      <div class="relation-box">
+Současná hodnota:
+  PV = CF₁/(1+r) + CF₂/(1+r)² + ... + CFₙ/(1+r)ⁿ
+
+  NPV = PV(CF) − I₀
+  NPV &gt; 0  →  investice tvoří hodnotu  →  přijmout
+  NPV &lt; 0  →  investice ničí hodnotu   →  odmítnout
+  NPV = 0  →  indiferentní
+
+  PI = PV(CF) / I₀
+  PI &gt; 1  →  přijmout  (NPV &gt; 0 ↔ PI &gt; 1)
+
+  IRR: r* kde NPV = 0
+  IRR &gt; WACC  →  přijmout
+      </div>
+
+      <div class="relation-box">
+Tobinovo q:
+  q = tržní hodnota firmy / reprodukční náklady K
+  q &gt; 1  →  investuj (tvoř nový kapitál)
+  q = 1  →  rovnováha na trhu kapitálu
+  q &lt; 1  →  nekupuj nový K, koupi existující firmu
+
+Trilemma investora:
+  Výnosnost ↑  →  Riziko ↑  nebo  Likvidita ↓
+  (nelze maximalizovat všechny tři zároveň)
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Příklad 1 – NPV vs. DN:</strong> Investice I₀ = 100 000 Kč. CF₁ = CF₂ = CF₃ = 40 000 Kč, pak CF₄ = CF₅ = 5 000 Kč. WACC = 8 %. Doba návratnosti = 2,5 roku (zdánlivě výborná). NPV = 40000/1,08 + 40000/1,08² + 40000/1,08³ + 5000/1,08⁴ + 5000/1,08⁵ − 100 000 ≈ 103 084 − 100 000 = 3 084 Kč &gt; 0 → přijmout. DN ignoruje malé CF v letech 4–5. NPV dává správný obraz.</p>
+      <p><strong>Příklad 2 – Tobinovo q v praxi:</strong> Firma má tržní kapitalizaci 500 mil. Kč. Reprodukční náklady aktiv = 350 mil. Kč. q = 500/350 ≈ 1,43 &gt; 1 → pro investory je výhodné investovat do nového kapitálu, protože trh oceňuje firmu výše než stojí aktiva. Pokud by q &lt; 1, trh říká: kupte existující firmu (M&A) spíše než stavte novou.</p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <div class="mistake-item">Záměna nominální a reálné úrokové míry — pro investiční rozhodování je relevantní reálná r; ignorování inflace vede k nadhodnocení výnosnosti.</div>
+      <div class="mistake-item">Použití doby návratnosti jako hlavního kritéria — DN ignoruje CF po splacení a časovou hodnotu peněz; NPV je teoreticky správnějším kritériem.</div>
+      <div class="mistake-item">Říci, že IRR = WACC je přijatelné — projekt s IRR = WACC má NPV = 0; přijmeme ho jako indiferentní, ale nevytváří hodnotu. Kritérium je IRR &gt; WACC.</div>
+      <div class="mistake-item">Zaměňování kapitálu (zásoby) a investic (tok) — kapitál je stav k danému okamžiku, investice je přírůstek za období. Analogicky: voda v nádrži (K) vs. přítok (I).</div>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Co je Tobinovo q a jak ho firma využije při investičním rozhodování?</div>
+        <div class="followup-a">Odpověď: Tobinovo q = tržní hodnota firmy / reprodukční náklady kapitálu. Pokud q &gt; 1, trh oceňuje firmu výše než stojí fyzický kapitál → signál pro nové investice (výnosnost &gt; náklady). Pokud q &lt; 1, levnější je koupit existující firmu než vybudovat novou. Na makroúrovni q &gt; 1 koreluje s investičním boomem.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč je NPV považována za lepší metodu než dobu návratnosti?</div>
+        <div class="followup-a">Odpověď: NPV zohledňuje (1) časovou hodnotu peněz (diskontování), (2) veškeré peněžní toky po celou dobu životnosti projektu, (3) absolutní tvorbu hodnoty pro vlastníky. DN tyto faktory ignoruje — projekt s rychlou návratností ale nízkými CF po splacení může mít záporné NPV. DN je vhodná jen jako rychlý indikátor likvidity investice.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Jaký je vztah mezi IRR a diskontní sazbou (WACC)?</div>
+        <div class="followup-a">Odpověď: IRR je diskontní sazba, při které NPV = 0. Pokud IRR &gt; WACC, projekt generuje výnos nad náklady kapitálu → NPV &gt; 0 → přijmout. Pokud IRR &lt; WACC, projekt ničí hodnotu → odmítnout. IRR a NPV dávají stejné rozhodnutí pro nezávislé projekty; liší se při vzájemně se vylučujících projektech (v tom případě NPV je správnějším kritériem).</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Jak reálná úroková míra ovlivňuje poptávku po kapitálu?</div>
+        <div class="followup-a">Odpověď: Vyšší reálná r zvyšuje náklady na pořízení kapitálu (MCC). Firma investuje dokud MRPK ≥ r. Pokud r roste, část projektů s nižším MRPK se stává nevýnosnou → poptávka po kapitálu klesá. Nižší r podporuje investice do projektů s nižší výnosností. Fisherova rovnice: reálná r = nominální r − inflace.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Co způsobuje, že křivka poptávky po kapitálu klesá?</div>
+        <div class="followup-a">Odpověď: Firma investuje do kapitálu podle zákona klesajícího mezního produktu. Každá další jednotka K přidává méně k výstupu (MRPK klesá). Firma investuje, dokud MRPK = r. Při vyšší r jsou výhodné pouze projekty s vysokým MRPK (méně projektů) → poptávané množství K klesá. Křivka poptávky D_K je totožná s křivkou MRPK.</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- RECALL TAB -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 4</h2>
+      <p class="recall-question">Trh kapitálu a investiční rozhodování (kapitál, investice, nabídka na trhu kapitálu, úrok a úroková míra, mezní náklady na kapitál, příjem z mezního produktu kapitálu, poptávka na trhu kapitálu, rovnováha na trhu kapitálu, současná hodnota toku očekávaných budoucích výnosů, Tobinovo q; výnosnost, riziko, likvidita, doba návratnosti, index rentability, vnitřní výnosové procento)</p>
+    </div>
+
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="trigger-pill">MRPK = r</span>
+        <span class="trigger-pill">Fisherova rovnice</span>
+        <span class="trigger-pill">Tobinovo q</span>
+        <span class="trigger-pill">PV / NPV</span>
+        <span class="trigger-pill">IRR &gt; WACC</span>
+        <span class="trigger-pill">Index rentability PI</span>
+        <span class="trigger-pill">Doba návratnosti</span>
+        <span class="trigger-pill">Riziko / Likvidita</span>
+      </div>
+    </div>
+
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>1 min</td><td>Kapitál a investice</td><td>Reálný vs. finanční; investice = tok přírůstku K</td></tr>
+          <tr><td>3 min</td><td>Trh kapitálu: D, S, rovnováha</td><td>MRPK = r; úspory; D_K = S_K</td></tr>
+          <tr><td>2 min</td><td>Úroková míra – typy, Fisher</td><td>Nominální vs. reálná; r_real ≈ r_nom − π; MCC</td></tr>
+          <tr><td>2 min</td><td>PV a Tobinovo q</td><td>PV vzorec; q &gt; 1 → investuj</td></tr>
+          <tr><td>5 min</td><td>Metody hodnocení investic</td><td>DN, NPV, PI, IRR — vzorce, kritéria</td></tr>
+          <tr><td>1 min</td><td>Výnosnost, riziko, likvidita</td><td>Trilemma; diverzifikace</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>NPV &gt; 0 → tvorba hodnoty; IRR &gt; WACC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>Trh kapitálu</h3>
+      <ul>
+        <li>Poptávka: firmy investují do bodu <span class="formula">MRPK = r</span>; D_K klesá s r</li>
+        <li>Nabídka: úspory rostou s r; rovnováha: D_K = S_K</li>
+        <li>Fisherova rovnice: <span class="formula">r_real ≈ r_nom − π</span></li>
+      </ul>
+      <h3>PV a Tobinovo q</h3>
+      <ul>
+        <li><span class="formula">PV = Σ CFₜ/(1+r)ᵗ</span></li>
+        <li>Tobinovo q: q = tržní hodnota / reprodukční náklady; q &gt; 1 → investuj</li>
+      </ul>
+      <h3>Metody hodnocení investic</h3>
+      <ul>
+        <li>Doba návratnosti: jednoduchá, ignoruje CF po splacení</li>
+        <li><span class="formula">NPV = Σ CFₜ/(1+r)ᵗ − I₀</span>; NPV &gt; 0 → přijmout</li>
+        <li><span class="formula">PI = PV(CF)/I₀</span>; PI &gt; 1 → přijmout</li>
+        <li>IRR: r* kde NPV = 0; přijmout pokud <span class="formula">IRR &gt; WACC</span></li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <div class="followup-item">
+        <div class="followup-q">Q: Co je Tobinovo q a jak ho využít?</div>
+        <div class="followup-a">q = tržní hodnota/reprodukční náklady; q &gt; 1 → investuj (nový kapitál), q &lt; 1 → kupuj existující firmy.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč je NPV lepší než DN?</div>
+        <div class="followup-a">NPV diskontuje všechny CF po celou dobu životnosti; DN ignoruje CF po splacení a časovou hodnotu.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Vztah IRR a WACC?</div>
+        <div class="followup-a">IRR = r* kde NPV = 0; IRR &gt; WACC → NPV &gt; 0 → přijmout; při vzájemně se vylučujících projektech NPV je správnější.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Jak reálná r ovlivňuje poptávku po kapitálu?</div>
+        <div class="followup-a">r_real ↑ → MCC ↑ → méně projektů splňuje MRPK ≥ r → D_K ↓.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč D_K klesá?</div>
+        <div class="followup-a">Zákon klesajícího MP: každá další jednotka K přidává méně k TR; MRPK klesá → firma investuje méně při vyšší r.</div>
+      </div>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- MEMORY MAP TAB -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 4: Trh kapitálu a investiční rozhodování</div>
+      <div class="memory-chain">
+        <span class="kw">Reálný kapitál</span><span class="arr">→</span>
+        <span class="kw">Investice = tok ΔK</span><span class="arr">→</span>
+        <span class="kw">MRPK = r</span><span class="arr">→</span>
+        <span class="kw">D_K klesá s r</span><span class="arr">→</span>
+        <span class="kw">S_K (úspory)</span><span class="arr">→</span>
+        <span class="kw">Rovnováha D_K = S_K</span><span class="arr">→</span>
+        <span class="kw">MCC</span><span class="arr">→</span>
+        <span class="kw">Fisherova rovnice</span><span class="arr">→</span>
+        <span class="kw">Reálná vs. nominální r</span><span class="arr">→</span>
+        <span class="kw">PV = Σ CF/(1+r)ᵗ</span><span class="arr">→</span>
+        <span class="kw">Tobinovo q</span><span class="arr">→</span>
+        <span class="kw">NPV &gt; 0 → přijmout</span><span class="arr">→</span>
+        <span class="kw">IRR &gt; WACC</span><span class="arr">→</span>
+        <span class="kw">PI &gt; 1</span><span class="arr">→</span>
+        <span class="kw">Doba návratnosti</span><span class="arr">→</span>
+        <span class="kw">Výnosnost / Riziko / Likvidita</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaký je rozdíl mezi kapitálem a investicemi?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q1">Zobrazit odpověď</button>
+        <div id="t04-q1" class="hidden quiz-a">Kapitál je stavová veličina — zásoby fyzických nebo finančních aktiv (stroje, budovy, zásoby) existující v daném okamžiku. Investice jsou tokovou veličinou — přírůstek kapitálové zásoby za určité období, tedy nově pořízená kapitálová aktiva. Vztah lze zapsat jako K(t+1) = K(t) + I − δK, kde δ je míra opotřebení (depreciace). Investice zvyšují budoucí kapitálovou zásobu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Co je mezní výnosový produkt kapitálu (MRPK) a jak ho firma používá?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q2">Zobrazit odpověď</button>
+        <div id="t04-q2" class="hidden quiz-a">Mezní výnosový produkt kapitálu (MRPK) je přírůstek příjmu firmy z použití jedné další jednotky kapitálu: MRPK = MPK · MR. Firma optimalizuje kapitálové vstupy tak, aby se MRPK rovnal ceně kapitálu (úrokové sazbě r). Dokud MRPK > r, přidání kapitálu zvyšuje zisk; při MRPK = r je kapitál optimálně alokován. Křivka MRPK je zároveň křivkou poptávky firmy po kapitálu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Jak firmy poptávají kapitál a kde leží optimum?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q3">Zobrazit odpověď</button>
+        <div id="t04-q3" class="hidden quiz-a">Firmy poptávají kapitál tak dlouho, dokud mezní výnosový produkt kapitálu (MRPK) převyšuje náklady na kapitál (úrokovou sazbu r). Optimum nastane v bodě MRPK = r — zde je mezní příspěvek kapitálu k zisku roven jeho ceně. Při poklesu r se poptávka po kapitálu zvyšuje (pohyb po klesající křivce MRPK); změny produktivity posouvají celou křivku poptávky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co určuje nabídku kapitálu na trhu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q4">Zobrazit odpověď</button>
+        <div id="t04-q4" class="hidden quiz-a">Nabídka kapitálu pochází z úspor domácností a podniků — ze vzdání se současné spotřeby ve prospěch budoucí. Domácnosti porovnávají mezní časovou preferenci (MTP) s reálnou úrokovou sazbou r: při vyšším r jsou ochotny více spořit. Nabídková křivka kapitálu je proto rostoucí funkcí úrokové sazby. Na agreg­átní nabídku kapitálu působí také demografické faktory, instituce a veřejná politika (daňové úlevy na spoření).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Napište Fisherovu rovnici a vysvětlete ji.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q5">Zobrazit odpověď</button>
+        <div id="t04-q5" class="hidden quiz-a">Fisherova rovnice vyjadřuje vztah mezi nominální úrokovou sazbou (i), reálnou úrokovou sazbou (r) a mírou inflace (π): i ≈ r + π, přesněji (1 + i) = (1 + r)(1 + π). Reálná úroková sazba tak odpovídá nominální sazbě snížené o inflaci: r ≈ i − π. Fisherova rovnice říká, že racionální věřitelé požadují nominální sazbu kryjící jak reálný výnos, tak ztrátu kupní síly způsobenou inflací.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co jsou mezní náklady na kapitál (MCC) a k čemu slouží?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q6">Zobrazit odpověď</button>
+        <div id="t04-q6" class="hidden quiz-a">Mezní náklady na kapitál (MCC) jsou náklady na získání jedné další koruny financování pro investice — tedy náklady poslední, nejdražší koruny kapitálu. S rostoucím objemem financování MCC zpravidla rostou (levnější zdroje se vyčerpají dříve). Při investičním rozhodování firma přijímá projekty, jejichž výnosnost přesahuje MCC, a srovnává křivku MCC s křivkou mezní výnosnosti investic.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Napište vzorec pro současnou hodnotu (PV) toku budoucích výnosů.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q7">Zobrazit odpověď</button>
+        <div id="t04-q7" class="hidden quiz-a">Současná hodnota (Present Value) toku budoucích výnosů Ct v čase t při diskontní sazbě r: PV = Σ [Ct / (1 + r)^t], kde součet probíhá přes všechna období t = 1, 2, …, n. Pro věčnou rentu (perpetuitu) platí PV = C/r. Čím vyšší je diskontní sazba r nebo čím vzdálenější jsou výnosy, tím nižší je jejich současná hodnota — peníze dnes mají větší hodnotu než peníze v budoucnu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je Tobinovo q a jak se interpretuje?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q8">Zobrazit odpověď</button>
+        <div id="t04-q8" class="hidden quiz-a">Tobinovo q je poměr tržní hodnoty firmy (nebo kapitálového aktiva) k jeho reprodukčním nákladům: q = tržní hodnota / náklady na pořízení. Je-li q > 1, firma se obchoduje nad reprodukční cenou svého kapitálu — investice do nového kapitálu se vyplatí, protože trh oceňuje aktiva výše než stojí jejich pořízení. Je-li q < 1, je výhodné koupit existující firmu spíše než budovat novou kapacitu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Co je čistá současná hodnota (NPV) a kdy investici přijmeme?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q9">Zobrazit odpověď</button>
+        <div id="t04-q9" class="hidden quiz-a">Čistá současná hodnota (Net Present Value) je rozdíl mezi současnou hodnotou budoucích peněžních toků investice a jejími počátečními náklady: NPV = Σ [Ct / (1 + r)^t] − I₀. Investici přijmeme, pokud NPV ≥ 0 — tvorba hodnoty přesahuje náklady kapitálu. Při výběru mezi více projekty zvolíme ten s nejvyšším NPV. NPV je obecně považována za nejpřesnější metodu hodnocení investic.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Co je index rentability (PI) a jak ho interpretujeme?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q10">Zobrazit odpověď</button>
+        <div id="t04-q10" class="hidden quiz-a">Index rentability (Profitability Index) je poměr současné hodnoty budoucích peněžních toků k počátečním investičním nákladům: PI = PV(budoucí CF) / I₀ = 1 + NPV/I₀. Projekt přijmeme, pokud PI ≥ 1 (odpovídá NPV ≥ 0). PI je užitečný při kapitálovém omezení (rationing) — umožňuje seřadit projekty podle výnosnosti na investovanou korunu a maximalizovat celkové NPV portfolia projektů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co je vnitřní výnosové procento (IRR)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q11">Zobrazit odpověď</button>
+        <div id="t04-q11" class="hidden quiz-a">Vnitřní výnosové procento (Internal Rate of Return) je taková diskontní sazba r*, při níž se NPV projektu rovná nule: Σ [Ct / (1 + r*)^t] − I₀ = 0. Představuje výnosnost projektu vyjádřenou jako roční procento z investovaného kapitálu. IRR se graficky nachází v průsečíku NPV profilu s osou x. Výpočet IRR se provádí numericky (iteračně), protože rovnici nelze analyticky uzavřeně vyřešit pro obecné peněžní toky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Kdy přijmeme investiční projekt na základě kritéria IRR?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q12">Zobrazit odpověď</button>
+        <div id="t04-q12" class="hidden quiz-a">Projekt přijmeme, pokud jeho IRR převyšuje náklady na kapitál (diskontní sazbu r): IRR > r. V takovém případě je NPV kladné. IRR a NPV vedou ke stejnému rozhodnutí u konvenčních projektů (s jednou změnou znaménka peněžních toků), ale mohou se lišit při vzájemném srovnání projektů různé velikosti nebo délky — v takovém případě je NPV spolehlivějším kritériem.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co je doba návratnosti investice a jaké jsou její nevýhody?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q13">Zobrazit odpověď</button>
+        <div id="t04-q13" class="hidden quiz-a">Doba návratnosti je počet let, za které kumulativní peněžní toky z investice uhradí počáteční výdaj. Nevýhody: (1) ignoruje časovou hodnotu peněz (neodiskonuje toky), (2) nebere v úvahu peněžní toky po uplynutí doby návratnosti, (3) zvýhodňuje krátkodobé projekty na úkor dlouhodobě výnosnějších. Diskontovaná doba návratnosti tyto problémy částečně řeší, ale stále ignoruje toky po splacení počáteční investice.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jaký je trade-off mezi výnosností, rizikem a likviditou investice?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q14">Zobrazit odpověď</button>
+        <div id="t04-q14" class="hidden quiz-a">Výnosnost, riziko a likvidita tvoří tzv. investiční trojúhelník — nelze optimalizovat všechny tři najednou. Vyšší výnosnost je zpravidla dosažitelná pouze za cenu vyššího rizika (nebo nižší likvidity). Likvidní aktiva (státní pokladniční poukázky) mají nízké riziko i nízký výnos; akcie rozvíjejících se trhů nabízejí vysoký potenciální výnos, ale vysoké riziko i nízkou likviditu. Každý investor volí kombinaci podle svých preferencí a investičního horizontu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Proč je NPV považována za nejlepší metodu hodnocení investic?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t04-q15">Zobrazit odpověď</button>
+        <div id="t04-q15" class="hidden quiz-a">NPV je považována za nejlepší metodu, protože: (1) respektuje časovou hodnotu peněz (diskontuje všechny peněžní toky), (2) bere v úvahu všechny peněžní toky po celou dobu životnosti projektu, (3) je aditivní — NPV portfolia projektů se rovná součtu NPV jednotlivých projektů, (4) přímo měří přidanou hodnotu pro vlastníky firmy. Na rozdíl od IRR nevede k chybným závěrům při srovnávání projektů různé velikosti nebo nekonvenčních peněžních tocích.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

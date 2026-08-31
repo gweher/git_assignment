@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 18: Trh peněz a bankovní systém</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="18">
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 18 / 20</div>
+  <h1>Trh peněz a bankovní systém</h1>
+  <p class="official-question">Trh peněz a bankovní systém (nominální a reálná úroková sazba, generování bankovních peněz, multiplikátor bankovních peněz, destrukce vkladů; komerční banky v ČR, depozita, úvěry, platební styk, služby, finanční trhy; centrální banka, nepřímé nástroje monetární politiky, přímé nástroje monetární politiky, expanzivní a restriktivní měnová politika, kvantitativní teorie peněz; diskontní sazba ČNB)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="17-dane.html">← Téma 17</a>
+  <a href="19-inflace.html">Téma 19 →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1,5 min</td><td>Nominální vs. reálná úroková sazba</td><td>Fisherova rovnice: r_reál ≈ r_nom − π; důsledky pro investiční rozhodnutí</td></tr>
+          <tr><td>1,5 min</td><td>Peněžní agregáty a bankovní systém ČR</td><td>M0→M3; dvoustupňový systém; ČNB + komerční banky</td></tr>
+          <tr><td>3 min</td><td>Generování bankovních peněz a multiplikátor</td><td>Frakční rezervní bankovnictví; m = 1/RR; destrukce vkladů</td></tr>
+          <tr><td>1,5 min</td><td>Centrální banka — ČNB</td><td>Zákon č. 6/1993 Sb.; inflační cíl 2 %; funkce; dohled</td></tr>
+          <tr><td>4 min</td><td>Nepřímé nástroje MP</td><td>Repo operace (2T repo sazba); PMR; devizové intervence; diskontní/lombardní sazba</td></tr>
+          <tr><td>1 min</td><td>Diskontní sazba ČNB</td><td>Podlaha (depozitní facilita); 2T repo = klíčová; lombardní = strop</td></tr>
+          <tr><td>1 min</td><td>Expanzivní vs. restriktivní MP</td><td>↓r → ↑AD; ↑r → ↓AD; vhodné podmínky</td></tr>
+          <tr><td>1,5 min</td><td>Kvantitativní teorie peněz</td><td>M × V = P × Q; monetaristický závěr: ΔM → ΔP</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+      <ul>
+        <li><strong>Fisherova rovnice:</strong> <span class="formula">r_reál ≈ r_nom − π</span>; reálná sazba = kupní síla výnosu; rozhodující pro reálné investiční rozhodnutí.</li>
+        <li><strong>Multiplikátor bankovních peněz:</strong> <span class="formula">m = 1 / RR</span> (maximální); v realitě závisí na RR a ochotě veřejnosti držet hotovost: <span class="formula">m = (1 + c) / (c + RR)</span>.</li>
+        <li><strong>Destrukce vkladů:</strong> splátka úvěru → zánik vkladu → kontrakce peněžní zásoby (obrácený proces multiplikace).</li>
+        <li><strong>ČNB — inflační cíl:</strong> 2 %; primárně cenová stabilita; sekundárně finanční stabilita; zákon č. 6/1993 Sb.</li>
+        <li><strong>2T repo sazba:</strong> klíčová sazba ČNB; diskontní sazba = podlaha (depozitní facilita); lombardní sazba = strop (marginální zápůjční facilita).</li>
+        <li><strong>Kvantitativní teorie:</strong> <span class="formula">M × V = P × Q</span>; při konstantním V a Q: ΔM → ΔP (inflace) — monetaristický závěr.</li>
+        <li><strong>Devizové intervence ČNB 2013–2017:</strong> kurzový závazek 27 CZK/EUR — nákup EUR pro udržení slabé koruny.</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-card"><div class="term-name">Nominální úroková sazba</div><div class="term-def">Sazba viditelná v úvěrové smlouvě; nezohledňuje inflaci</div></div>
+        <div class="term-card"><div class="term-name">Reálná úroková sazba</div><div class="term-def">r_reál ≈ r_nom − π; vyjadřuje skutečnou kupní sílu výnosu</div></div>
+        <div class="term-card"><div class="term-name">Peněžní agregáty M0–M3</div><div class="term-def">M0 = hotovost; M1 = M0 + vklady na viděnou; M2 = M1 + termínované; M3 = M2 + repo, MMF</div></div>
+        <div class="term-card"><div class="term-name">Povinné minimální rezervy (PMR)</div><div class="term-def">Povinný podíl vkladů, který banky drží u ČNB; limituje multiplikaci peněz</div></div>
+        <div class="term-card"><div class="term-name">Multiplikátor bankovních peněz</div><div class="term-def">m = 1/RR (max.); vyjadřuje, kolikrát se původní vklad multiplikuje v peněžní zásobě</div></div>
+        <div class="term-card"><div class="term-name">2T repo sazba</div><div class="term-def">Klíčová úroková sazba ČNB; sazba pro 2týdenní repo operace (stahování likvidity z trhu)</div></div>
+        <div class="term-card"><div class="term-name">Diskontní sazba</div><div class="term-def">Podlaha sazeb ČNB (depozitní facilita); sazba, za kterou ČNB přijímá přebytečnou likviditu bank</div></div>
+        <div class="term-card"><div class="term-name">Lombardní sazba</div><div class="term-def">Strop sazeb ČNB (marginální zápůjční facilita); sazba pro overnight úvěry bankám od ČNB</div></div>
+        <div class="term-card"><div class="term-name">Operace na volném trhu (OMO)</div><div class="term-def">Nákup/prodej cenných papírů nebo repo operace; hlavní nástroj ČNB pro řízení likvidity</div></div>
+        <div class="term-card"><div class="term-name">Kvantitativní teorie peněz</div><div class="term-def">M × V = P × Q; při const. V a Q platí: ΔM → ΔP (inflace)</div></div>
+        <div class="term-card"><div class="term-name">Expanzivní MP</div><div class="term-def">↓r → ↑investice, ↑spotřeba → ↑AD; vhodné v recesi; riziko inflace</div></div>
+        <div class="term-card"><div class="term-name">Restriktivní MP</div><div class="term-def">↑r → ↓AD → potlačení inflace; riziko recese</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Fisherova rovnice (přesná):</strong>
+        <span class="formula">(1 + r_reál) = (1 + r_nom) / (1 + π)</span>
+        — aproximace: <span class="formula">r_reál ≈ r_nom − π</span>
+      </div>
+      <div class="relation-box">
+        <strong>Multiplikace vkladů — příklad:</strong> PMR = 10 %; počáteční vklad 1 000 Kč → banka půjčí 900 Kč → vklad v jiné bance → půjčí 810 Kč → ... → celkové vklady = 1 000 / 0,1 = 10 000 Kč; m = 10
+      </div>
+      <div class="relation-box">
+        <strong>Soustava sazeb ČNB:</strong>
+        <span class="formula">diskontní sazba (podlaha) &lt; 2T repo sazba (střed) &lt; lombardní sazba (strop)</span>
+      </div>
+      <div class="relation-box">
+        <strong>Kvantitativní teorie peněz:</strong>
+        <span class="formula">M × V = P × Q</span>; monetaristé: V = const., Q = const. (krátkodobě) → ΔM = ΔP; důsledek: inflace je vždy a všude peněžní jev (Friedman)
+      </div>
+      <div class="relation-box">
+        <strong>Repo operace ČNB (reverse repo):</strong> banky ukládají přebytečnou likviditu u ČNB za 2T repo sazbu → ČNB stahuje peníze z oběhu → ↓peněžní zásoba; zdražení peněz = restriktivní efekt
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady a aplikace</div>
+      <ul>
+        <li><strong>Devizové intervence 2013–2017:</strong> ČNB nakupovala EUR za CZK, čímž držela kurz nad 27 CZK/EUR; cíl: zamezit deflaci a podpořit export; použila přímé nástroje (kursový závazek) i nepřímé (úrokové sazby blízko nule).</li>
+        <li><strong>Cyklus zvyšování sazeb 2021–2023:</strong> inflace vzrostla → ČNB zvýšila 2T repo sazbu z 0,25 % na ~7 % (nejvyšší od 1999); restriktivní MP → ↓úvěrování, ↑výnosy dluhopisů; poté snižování 2024–2025.</li>
+        <li><strong>Destrukce vkladů:</strong> zákazník splatí hypotéku 3 mil. Kč → banka zruší vklad (peníze zanikají z M1); kontrakce peněžní zásoby bez tisknutí hotovosti.</li>
+        <li><strong>COVID a kvantitativní teorie:</strong> centrální banky (ECB, Fed) expandovaly M3 o desítky % → V zůstal nízký (likvidity past) → inflace zpožděně explodovala 2021–2022.</li>
+      </ul>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li>Záměna diskontní a lombardní sazby — diskontní = podlaha (banky ukládají přebytky u ČNB); lombardní = strop (banky si od ČNB půjčují).</li>
+        <li>Tvrzení, že 2T repo sazba = diskontní sazba — jsou to tři různé sazby (diskontní &lt; 2T repo &lt; lombardní).</li>
+        <li>Multiplikátor m = 1/RR je maximum — v realitě je nižší, protože veřejnost část hotovosti neukládá.</li>
+        <li>Záměna expanzivní MP s tisknutím peněz — expanzivní MP = snížení sazeb nebo OMO nákupy; tisk bankovek je emisní funkce, ne standardní nástroj MP.</li>
+        <li>Tvrzení, že kvantitativní teorie platí i v krátkém období — V a Q se mění; QT je dlouhodobá teorie.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Jak funguje multiplikátor bankovních peněz?</li>
+        <li>Jaký je rozdíl mezi diskontní a lombardní sazbou ČNB?</li>
+        <li>Co jsou repo operace a jak je ČNB používá?</li>
+        <li>Jaký je inflační cíl ČNB a jak ho plní?</li>
+        <li>Co říká kvantitativní teorie peněz o příčinách inflace?</li>
+        <li>Co je destrukce vkladů a jak k ní dochází?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 18</h2>
+      <p class="recall-question">Trh peněz a bankovní systém (nominální a reálná úroková sazba, generování bankovních peněz, multiplikátor bankovních peněz, destrukce vkladů; komerční banky v ČR; centrální banka, nepřímé a přímé nástroje monetární politiky, expanzivní a restriktivní měnová politika, kvantitativní teorie peněz; diskontní sazba ČNB)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">r_reál = r_nom − π</span>
+        <span class="pill">M0–M3</span>
+        <span class="pill">frakční rezervy</span>
+        <span class="pill">multiplikátor 1/RR</span>
+        <span class="pill">destrukce vkladů</span>
+        <span class="pill">ČNB inflační cíl 2 %</span>
+        <span class="pill">2T repo sazba</span>
+        <span class="pill">diskontní/lombardní</span>
+        <span class="pill">OMO (repo)</span>
+        <span class="pill">PMR</span>
+        <span class="pill">deviz. intervence</span>
+        <span class="pill">M × V = P × Q</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>1,5 min</td><td>Nominální vs. reálná sazba</td><td>r_reál ≈ r_nom − π; Fisherova rovnice</td></tr>
+          <tr><td>1,5 min</td><td>Peněžní agregáty + bankovní systém</td><td>M0→M3; dvoustupňový; ČNB + komerční banky</td></tr>
+          <tr><td>3 min</td><td>Generování peněz + multiplikátor</td><td>PMR; m = 1/RR; destrukce vkladů</td></tr>
+          <tr><td>1,5 min</td><td>ČNB — cíle a funkce</td><td>Inflační cíl 2 %; zákon 6/1993; dohled</td></tr>
+          <tr><td>4 min</td><td>Nepřímé nástroje MP</td><td>Repo operace; diskontní/lombardní sazba; PMR; devizové intervence</td></tr>
+          <tr><td>1 min</td><td>Diskontní sazba</td><td>Podlaha; 2T repo = střed; lombardní = strop</td></tr>
+          <tr><td>1 min</td><td>Expanzivní vs. restriktivní MP</td><td>↓r → ↑AD; ↑r → ↓AD</td></tr>
+          <tr><td>1,5 min</td><td>Kvantitativní teorie</td><td>M × V = P × Q; ΔM → ΔP</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <ul>
+        <li>r_reál ≈ r_nom − π (Fisherova rovnice); reálná sazba = skutečný výnos po inflaci</li>
+        <li>Multiplikátor m = 1/RR (max.); realita: m = (1+c)/(c+RR); PMR limituje multiplikaci</li>
+        <li>Destrukce vkladů: splátka úvěru → zánik vkladu → ↓M1 (peněžní kontrakce)</li>
+        <li>ČNB: zákon č. 6/1993 Sb.; inflační cíl 2 %; emisní banka, banka bank, dohled</li>
+        <li>Soustava sazeb: diskontní (podlaha) &lt; 2T repo (klíčová) &lt; lombardní (strop)</li>
+        <li>Repo operace = hlavní nástroj; ČNB přijímá likviditu bank za 2T repo sazbu → stahuje peníze</li>
+        <li>M × V = P × Q; monetaristé: ΔM → ΔP při const. V a Q</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Jak funguje multiplikátor bankovních peněz?</li>
+        <li>Jaký je rozdíl mezi diskontní a lombardní sazbou ČNB?</li>
+        <li>Co jsou repo operace a jak je ČNB používá?</li>
+        <li>Jaký je inflační cíl ČNB a jak ho plní?</li>
+        <li>Co říká kvantitativní teorie peněz o příčinách inflace?</li>
+        <li>Co je destrukce vkladů a jak k ní dochází?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 18: Trh peněz a bankovní systém</div>
+      <div class="memory-chain">
+        <div class="memory-node">r_nom vs. r_reál (Fisherova rovnice)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Peněžní agregáty M0 → M3</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Dvoustupňový bankovní systém (ČNB + komerční banky)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Frakční rezervní bankovnictví → PMR</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Multiplikátor m = 1/RR</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Destrukce vkladů (obrácený proces)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">ČNB: inflační cíl 2 % / zákon 6/1993</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Repo operace (2T repo sazba)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Diskontní (podlaha) / Lombardní (strop)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Devizové intervence (2013–2017: 27 CZK/EUR)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Expanzivní MP (↓r → ↑AD) / Restriktivní MP (↑r → ↓AD)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Kvantitativní teorie: M × V = P × Q</div>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Napište Fisherovu rovnici a vysvětlete ji.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q1">Zobrazit odpověď</button>
+        <div id="t18-q1" class="hidden quiz-a">Fisherova rovnice zní: i ≈ r + π, kde i je nominální úroková sazba, r je reálná úroková sazba a π je očekávaná míra inflace. Říká, že nominální sazba v sobě odráží požadovanou reálnou odměnu věřitele plus kompenzaci za ztrátu kupní síly způsobenou inflací. Přesná verze je (1 + i) = (1 + r)(1 + π).</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Jaký je rozdíl mezi nominální a reálnou úrokovou sazbou?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q2">Zobrazit odpověď</button>
+        <div id="t18-q2" class="hidden quiz-a">Nominální úroková sazba je sazba sjednaná ve smlouvě a vyjadřuje přírůstek peněžní částky bez zohlednění inflace. Reálná úroková sazba zohledňuje inflaci a vyjadřuje skutečný nárůst kupní síly – přibližně r = i − π. Při vysoké inflaci může být reálná sazba záporná, i když nominální je kladná, což výrazně ovlivňuje investiční rozhodování.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co obsahuje peněžní agregát M1?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q3">Zobrazit odpověď</button>
+        <div id="t18-q3" class="hidden quiz-a">Agregát M1 zahrnuje oběživo (bankovky a mince v oběhu mimo bankovní sektor) a jednodenní vklady (běžné účty), tedy nejlikvidnější formy peněz. M1 je zároveň jádrem širších agregátů M2 a M3. Představuje „úzké peníze" a slouží primárně k měření transakčních potřeb ekonomiky.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Jaký je rozdíl mezi M1 a M2?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q4">Zobrazit odpověď</button>
+        <div id="t18-q4" class="hidden quiz-a">M2 = M1 + vklady se splatností do 2 let + vklady s výpovědní lhůtou do 3 měsíců (termínové a spořicí účty). M1 tedy obsahuje jen nejlikvidnější instrumenty (hotovost a běžné účty), zatímco M2 přidává méně likvidní, ale stále relativně krátkodobé uložení peněz. M2 bývá používáno jako hlavní indikátor peněžní zásoby v analýzách centrálních bank.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co je dvoustupňový bankovní systém?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q5">Zobrazit odpověď</button>
+        <div id="t18-q5" class="hidden quiz-a">Dvoustupňový bankovní systém tvoří první stupeň – centrální banka (ČNB), která provádí měnovou politiku, reguluje bankovní sektor a vystupuje jako věřitel poslední instance. Druhý stupeň tvoří komerční banky, které přijímají vklady od veřejnosti, poskytují úvěry a provádějí platební styk. Komerční banky nesmějí emitovat bankovky a jsou podřízeny regulaci a dohledu centrální banky.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Jak vznikají bankovní peníze? Popište mechanismus.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q6">Zobrazit odpověď</button>
+        <div id="t18-q6" class="hidden quiz-a">Bankovní peníze vznikají prostřednictvím úvěrové expanze na základě částečných rezerv. Když banka přijme vklad, ponechá si povinnou rezervu (PMR) a zbytek zapůjčí dalšímu klientovi. Ten vloží peníze do jiné banky, která opět zapůjčí jejich část – tento proces se opakuje. Výsledkem je multiplikované zvýšení celkové peněžní zásoby v ekonomice nad úroveň původního primárního vkladu.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Napište vzorec pro maximální multiplikátor bankovních peněz.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q7">Zobrazit odpověď</button>
+        <div id="t18-q7" class="hidden quiz-a">Maximální peněžní multiplikátor je m = 1 / RR, kde RR je sazba povinných minimálních rezerv. Například při RR = 2 % je multiplikátor 50 – každá koruna primárního vkladu může vygenerovat až 50 korun celkových vkladů v ekonomice. V praxi je skutečný multiplikátor nižší, protože část peněz „uniká" do oběhu v hotovosti a banky udržují i dobrovolné přebytečné rezervy.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je destrukce vkladů?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q8">Zobrazit odpověď</button>
+        <div id="t18-q8" class="hidden quiz-a">Destrukce vkladů je obrácený proces ke vzniku bankovních peněz. Nastává, když jsou poskytnuté úvěry spláceny – splátka úvěru snižuje pohledávku banky i závazky vůči vkladatelům, čímž se peněžní zásoba zmenšuje. Stejný multiplikační efekt, který při expanzi peníze tvoří, při splácení úvěrů peníze ničí. Je to přirozený mechanismus udržující rovnováhu peněžní zásoby.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Jaký je hlavní cíl ČNB?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q9">Zobrazit odpověď</button>
+        <div id="t18-q9" class="hidden quiz-a">Hlavním cílem České národní banky je péče o cenovou stabilitu, tedy udržení míry inflace v blízkosti stanoveného inflačního cíle (aktuálně 2 % s tolerančním pásmem ±1 procentní bod). Cenová stabilita je podmínkou zdravého hospodářského vývoje. ČNB zároveň dohlíží na finanční stabilitu, reguluje banky, pojišťovny a kapitálový trh a spravuje devizové rezervy.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Co jsou repo operace ČNB a k čemu slouží?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q10">Zobrazit odpověď</button>
+        <div id="t18-q10" class="hidden quiz-a">Repo operace jsou hlavním nepřímým nástrojem ČNB v oblasti měnové politiky. Při repo operaci ČNB prodá komerčním bankám cenné papíry s dohodou o zpětném odkupu po 14 dnech (2T repo) – tím stahuje přebytečnou likviditu z bankovního sektoru. Sazba 2T repo (repo sazba) je klíčová úroková sazba, která ovlivňuje mezibankovní trh a skrze něj celou ekonomiku.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Jaký je vztah mezi diskontní sazbou, 2T repo sazbou a lombardní sazbou ČNB?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q11">Zobrazit odpověď</button>
+        <div id="t18-q11" class="hidden quiz-a">Tři klíčové sazby ČNB tvoří tzv. úrokový koridor. Diskontní sazba je nejnižší – za tuto sazbu si banky mohou uložit přebytečnou likviditu u ČNB přes noc (podlaha koridoru). Repo sazba je středová sazba 2T repo operací. Lombardní sazba je nejvyšší – za tuto sazbu si banky mohou půjčit od ČNB přes noc (strop koridoru). Koridor vymezuje, v jakém pásmu se mohou pohybovat krátkodobé tržní sazby.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co jsou povinné minimální rezervy (PMR)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q12">Zobrazit odpověď</button>
+        <div id="t18-q12" class="hidden quiz-a">Povinné minimální rezervy jsou část přijatých vkladů, kterou musí komerční banky povinně uložit na účtu u centrální banky. Sazba PMR v ČR i eurozóně je stanovena centrální bankou a slouží jako nástroj regulace peněžní zásoby a likvidity bankovního systému. Zvýšením sazby PMR centrální banka snižuje množství peněz, které banky mohou půjčovat, a tím tlumí úvěrovou expanzi.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co jsou devizové intervence? Popište kurzový závazek ČNB 2013–2017.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q13">Zobrazit odpověď</button>
+        <div id="t18-q13" class="hidden quiz-a">Devizové intervence jsou nákupy nebo prodeje cizích měn centrální bankou za účelem ovlivnění kurzu domácí měny. ČNB v listopadu 2013 zavedla kurzový závazek – jednostranný závazek udržovat kurz koruny vůči euru na úrovni „poblíž 27 CZK/EUR" intervencemi na devizovém trhu. Cílem bylo zamezit deflaci a podpořit ekonomiku v podmínkách nulových úrokových sazeb. Závazek byl ukončen v dubnu 2017.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jak expanzivní monetární politika ovlivní ekonomiku?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q14">Zobrazit odpověď</button>
+        <div id="t18-q14" class="hidden quiz-a">Expanzivní monetární politika (snížení repo sazby nebo nákupy aktiv) snižuje úrokové sazby v ekonomice, čímž zlevňuje úvěry a stimuluje spotřebu a investice. Vyšší agregátní poptávka vede krátkodobě k růstu HDP a zaměstnanosti. Při přehřáté ekonomice může expanzivní politika zvýšit inflaci, proto je nutné pečlivě sledovat inflační cíl a fázi hospodářského cyklu.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Formulujte kvantitativní teorii peněz (rovnici směny).</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t18-q15">Zobrazit odpověď</button>
+        <div id="t18-q15" class="hidden quiz-a">Rovnice směny zní M × V = P × Q, kde M je peněžní zásoba, V je rychlost oběhu peněz, P je cenová hladina a Q je reálný objem transakcí (reálný HDP). Za předpokladu stabilního V a Q na úrovni potenciálního produktu platí, že růst peněžní zásoby M se přímo promítá do růstu cen P. Kvantitativní teorie peněz je základem monetaristického přístupu k inflaci.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

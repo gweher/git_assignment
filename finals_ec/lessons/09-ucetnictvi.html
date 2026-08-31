@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 9: Zásady účetnictví a účetní výkazy</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="09">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 9 / 20</div>
+  <h1>Zásady účetnictví a účetní výkazy</h1>
+  <p class="official-question">Zásady účetnictví a účetní výkazy (podstata a funkce účetnictví, obecně platné zásady a principy, účet a soustava účtů, účetní doklady, podvojnost a souvztažnost účetních zápisů, účetní knihy, právní úprava účetnictví; bilanční rovnováha, majetek a zdroje, náklady a výnosy, obsah a tvorba účetních výkazů, jejich vzájemné vazby a využití)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="08-banka-podnik.html">← Téma 8: Banka jako podnik</a>
+  <a href="10-manazerske-uctv.html">Téma 10: Manažerské účetnictví →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2 min</td><td>Podstata a funkce + právní úprava</td><td>systematické zachycení; 4 funkce; zákon 563/1991 Sb.; ČÚS; IFRS</td></tr>
+          <tr><td>3 min</td><td>Základní zásady a principy</td><td>true and fair view; akruální princip; opatrnost; going concern; konzistence; bilanční kontinuita</td></tr>
+          <tr><td>2,5 min</td><td>Účet, podvojnost, souvztažnost</td><td>T-forma; MD/D; aktivní vs. pasivní účet; nákladový/výnosový; účetní věta</td></tr>
+          <tr><td>1,5 min</td><td>Bilanční rovnováha A = P</td><td>aktiva = pasiva; stálá + oběžná; VK + cizí zdroje; platí vždy</td></tr>
+          <tr><td>5 min</td><td>Účetní výkazy – rozvaha, VZZ, CF</td><td>rozvaha (stav k datu); VZZ (náklady/výnosy; provozní+finanční VH); CF (přímá/nepřímá)</td></tr>
+          <tr><td>1 min</td><td>Vazby mezi výkazy</td><td>VZZ čistý zisk → VK v rozvaze; nepřímá metoda CF vychází z VH</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. Podstata a funkce účetnictví + právní úprava</h3>
+      <ul>
+        <li>Podstata: systematické, úplné a průkazné zachycení hospodářských operací v peněžním vyjádření</li>
+        <li>Funkce: <strong>informační</strong> (stakeholdeři), <strong>kontrolní</strong> (srovnání plán vs. skutečnost), <strong>daňová</strong> (základ daně z příjmů), <strong>manažerská</strong> (podklad pro rozhodování)</li>
+        <li>Právní úprava v ČR: zákon č. 563/1991 Sb. o účetnictví; prováděcí vyhláška č. 500/2002 Sb. (podnikatelé); České účetní standardy (ČÚS)</li>
+        <li>IFRS: pro kótované společnosti povinné dle nařízení EU 1606/2002; pro ostatní dobrovolné nebo dle národní regulace</li>
+      </ul>
+
+      <h3>2. Základní účetní zásady a principy</h3>
+      <ul>
+        <li><strong>Věrné a poctivé zobrazení</strong> (true and fair view): nejvyšší princip; účetnictví musí věrně odrážet skutečnost</li>
+        <li><strong>Akruální princip</strong>: náklady a výnosy se zachycují do období, do kterého věcně a časově patří (nikoliv kdy dojde k peněžnímu toku)</li>
+        <li><strong>Zásada opatrnosti</strong>: uznávat ztráty a rizika ihned, nerealizované zisky nikoliv; rezervy, opravné položky, odpisy</li>
+        <li><strong>Going concern</strong>: předpoklad pokračující činnosti účetní jednotky; jinak jiná ocenění</li>
+        <li><strong>Bilanční kontinuita</strong>: počáteční stavy účtů = konečné stavy z předchozího období</li>
+        <li><strong>Konzistence</strong>: neměnnost účetních metod v čase; změna pouze z vážných důvodů + zveřejnění v příloze</li>
+        <li><strong>Materiality (podstatnost)</strong>: zachycovat jen položky, které jsou pro uživatele výkazů podstatné</li>
+      </ul>
+
+      <h3>3. Účet, podvojnost, souvztažnost</h3>
+      <ul>
+        <li>Účet = základní evidenční prvek; T-forma: <strong>Má Dáti (MD)</strong> vlevo, <strong>Dal (D)</strong> vpravo</li>
+        <li><strong>Aktivní účty:</strong> počáteční stav na MD; přírůstky MD, úbytky D; konečný zůstatek na MD (nebo nula)</li>
+        <li><strong>Pasivní účty:</strong> počáteční stav na D; přírůstky D, úbytky MD; konečný zůstatek na D</li>
+        <li><strong>Nákladové účty:</strong> přírůstky na MD (náklad roste na MD)</li>
+        <li><strong>Výnosové účty:</strong> přírůstky na D (výnos roste na D)</li>
+        <li><strong>Podvojnost:</strong> každá hospodářská operace se zapíše na dvou stranách dvou různých účtů (MD = D)</li>
+        <li><strong>Souvztažnost:</strong> oba dotčené účty spolu věcně a logicky souvisejí; <em>účetní věta</em> = MD / D / částka / odkaz na doklad</li>
+      </ul>
+
+      <h3>4. Bilanční rovnováha</h3>
+      <ul>
+        <li><span class="formula">AKTIVA = PASIVA</span> (platí vždy, bez výjimky)</li>
+        <li>Aktiva = stálá aktiva (DM hmotný, nehmotný, finanční) + oběžná aktiva (zásoby, pohledávky, krátkodobý fin. majetek, peníze) + přechodná aktiva (náklady příštích období, příjmy příštích období)</li>
+        <li>Pasiva = vlastní kapitál (ZK, kapitálové fondy, fondy ze zisku, VH minulých let, VH běžného roku) + cizí zdroje (rezervy, závazky, bankovní úvěry) + přechodná pasiva (výdaje příštích období, výnosy příštích období)</li>
+      </ul>
+
+      <h3>5. Účetní výkazy</h3>
+      <ul>
+        <li><strong>Rozvaha (bilance):</strong> stav majetku a zdrojů k <em>určitému dni</em> (statický pohled); bilanční rovnováha A = P; povinná součást účetní závěrky</li>
+        <li><strong>Výkaz zisku a ztráty (VZZ):</strong> zachycuje náklady a výnosy za <em>účetní období</em> (tokový pohled); struktura: provozní VH + finanční VH = VH před zdaněním → – daň = VH po zdanění (čistý zisk); druhové nebo účelové členění</li>
+        <li><strong>Výkaz peněžních toků (Cash Flow):</strong> změny stavu peněz a peněžních ekvivalentů za období; tři sekce: provozní CF + investiční CF + finanční CF</li>
+        <li>Sestavení CF: <strong>přímá metoda</strong> = skutečné peněžní příjmy a výdaje; <strong>nepřímá metoda</strong> = úprava VH o nepeněžní položky (odpisy, změny pracovního kapitálu)</li>
+        <li><strong>Příloha k účetní závěrce:</strong> vysvětlení použitých metod, doplňující informace k rozvaze a VZZ; povinná součást</li>
+      </ul>
+
+      <h3>6. Vazby mezi výkazy</h3>
+      <ul>
+        <li>VZZ → čistý zisk přechází do <strong>VH běžného roku</strong> v pasivech rozvahy → zvyšuje vlastní kapitál</li>
+        <li>CF (provozní část, nepřímá metoda) vychází z VH a upravuje jej o nepeněžní položky a změny pracovního kapitálu</li>
+        <li>Počáteční stav peněz v CF = stav krátkodobého finančního majetku na začátku roku v rozvaze; konečný stav = v rozvaze na konci roku</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><span class="term-name">Podvojné účetnictví</span><span class="term-def">každá operace = zápis na MD jednoho a D jiného účtu</span></div>
+        <div class="term-item"><span class="term-name">Souvztažnost</span><span class="term-def">věcná a logická vazba mezi dvěma dotčenými účty</span></div>
+        <div class="term-item"><span class="term-name">Akruální princip</span><span class="term-def">N a V do období, do nějž patří; bez ohledu na platbu</span></div>
+        <div class="term-item"><span class="term-name">Zásada opatrnosti</span><span class="term-def">zachycovat ztráty ihned; nerealizované zisky ne; rezervy, OP</span></div>
+        <div class="term-item"><span class="term-name">Going concern</span><span class="term-def">předpoklad pokračování činnosti; vliv na oceňování</span></div>
+        <div class="term-item"><span class="term-name">Bilanční rovnováha</span><span class="term-def">AKTIVA = PASIVA; platí vždy</span></div>
+        <div class="term-item"><span class="term-name">MD / D</span><span class="term-def">Má Dáti (levá strana) / Dal (pravá strana) účtu</span></div>
+        <div class="term-item"><span class="term-name">Rozvaha</span><span class="term-def">stav majetku (A) a zdrojů (P) k určitému dni</span></div>
+        <div class="term-item"><span class="term-name">VZZ</span><span class="term-def">náklady a výnosy za období → VH; tokový výkaz</span></div>
+        <div class="term-item"><span class="term-name">Cash flow</span><span class="term-def">přírůstky a úbytky peněžních prostředků; 3 části</span></div>
+        <div class="term-item"><span class="term-name">Zákon č. 563/1991 Sb.</span><span class="term-def">zákon o účetnictví; hlavní právní norma v ČR</span></div>
+        <div class="term-item"><span class="term-name">IFRS</span><span class="term-def">Mezinárodní standardy účetního výkaznictví; pro kótované společnosti</span></div>
+        <div class="term-item"><span class="term-name">Účetní doklad</span><span class="term-def">průkazný doklad o hospodářské operaci; náležitosti §11 ZoÚ</span></div>
+        <div class="term-item"><span class="term-name">Hlavní kniha</span><span class="term-def">systematická účetní kniha; záznamy na syntetických účtech</span></div>
+        <div class="term-item"><span class="term-name">Výsledek hospodaření</span><span class="term-def">výnosy – náklady; čistý zisk nebo ztráta za období</span></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Bilanční rovnováha – vliv operací:</strong><br>
+        Každá účetní operace buď:<br>
+        (a) mění strukturu aktiv (A↑, A↓),<br>
+        (b) mění strukturu pasiv (P↑, P↓),<br>
+        (c) zvyšuje A i P (+A, +P) — bilanční suma roste,<br>
+        (d) snižuje A i P (–A, –P) — bilanční suma klesá.<br>
+        Ve všech případech A = P platí.
+      </div>
+      <div class="relation-box">
+        <strong>Vazba VZZ → Rozvaha:</strong><br>
+        <span class="formula">VH běžného roku = Výnosy – Náklady (z VZZ)</span><br>
+        VH se promítá do pasiv rozvahy (vlastní kapitál: položka VH běžného roku).
+      </div>
+      <div class="relation-box">
+        <strong>Akruální princip vs. cash flow:</strong><br>
+        VZZ (akruální) a CF (peněžní) mohou za stejné období ukazovat jiná čísla.<br>
+        Příklad: Firma vydá fakturu (výnos ve VZZ), ale peníze nedostane → CF neroste, VZZ ano.<br>
+        → Proto je sledování obou výkazů nutné.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Příklad účetní věty – nákup materiálu na fakturu:</strong><br>
+      MD 112 – Materiál na skladě / D 321 – Závazky z obchodních vztahů / 50 000 Kč<br>
+      (aktivum roste: materiál; pasivum roste: závazek; bilanční suma +50 000 Kč)</p>
+
+      <p><strong>Příklad vazby výkazů:</strong><br>
+      VZZ: výnosy 10 mil., náklady 8 mil. → čistý zisk 2 mil. Kč<br>
+      → Rozvaha: vlastní kapitál vzrostl o 2 mil. Kč (VH běžného roku)<br>
+      → CF (nepřímá): startujeme od VH 2 mil. + odpisy + změny ČPK = provozní CF</p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li><strong>Záměna akruálního principu a hotovostní báze:</strong> Akruální = uznávání N/V do správného období; hotovostní = až při platbě. Účetnictví ČR = akruální.</li>
+        <li><strong>Tvrzení, že rozvaha zachycuje VH za rok:</strong> Rozvaha zachycuje STAV k datu; VH za rok zachycuje VZZ. Rozvaha uvádí kumulovaný VH jako jednu položku vlastního kapitálu.</li>
+        <li><strong>Záměna přímé a nepřímé metody CF:</strong> Přímá = reálné příjmy a výdaje; nepřímá = úprava VH o nepeněžní položky. V ČR nejčastěji nepřímá metoda (pro provozní CF).</li>
+        <li><strong>Záměna zásady opatrnosti a going concern:</strong> Opatrnost = uznávání ztrát, ne zisků; going concern = předpoklad pokračování. Jsou to různé principy.</li>
+        <li><strong>Tvrzení, že MD = příjem a D = výdaj:</strong> MD a D jsou účetní strany; přírůstky na MD aktivní účet, přírůstky na D pasivní účet; nemají přímou vazbu na příjmy/výdaje.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Co je akruální princip a proč je důležitý?</li>
+        <li>Jaké jsou povinné náležitosti účetního dokladu?</li>
+        <li>Jak spolu souvisejí rozvaha, VZZ a cash flow?</li>
+        <li>Co je zásada opatrnosti a jak se projevuje v praxi?</li>
+        <li>Jaký je rozdíl mezi přímou a nepřímou metodou sestavení CF?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 9</h2>
+      <p class="recall-question">Zásady účetnictví a účetní výkazy (podstata, funkce, zásady, účet MD/D, podvojnost, bilanční rovnováha, rozvaha, VZZ, cash flow, vzájemné vazby)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">zákon 563/1991 Sb.</span>
+        <span class="pill">4 funkce účetnictví</span>
+        <span class="pill">7 zásad: true&fair, akruál, opatrnost…</span>
+        <span class="pill">MD/D; aktivní vs. pasivní účet</span>
+        <span class="pill">podvojnost = MD vždy = D</span>
+        <span class="pill">AKTIVA = PASIVA</span>
+        <span class="pill">rozvaha (stav) vs. VZZ (tok)</span>
+        <span class="pill">CF: provozní + investiční + finanční</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2 min</td><td>Podstata a funkce + právní úprava</td><td>systematické zachycení; 4 funkce; zákon 563/1991 Sb.; ČÚS; IFRS</td></tr>
+          <tr><td>3 min</td><td>Základní zásady a principy</td><td>true and fair view; akruální princip; opatrnost; going concern; konzistence; bilanční kontinuita</td></tr>
+          <tr><td>2,5 min</td><td>Účet, podvojnost, souvztažnost</td><td>T-forma; MD/D; aktivní vs. pasivní účet; nákladový/výnosový; účetní věta</td></tr>
+          <tr><td>1,5 min</td><td>Bilanční rovnováha A = P</td><td>aktiva = pasiva; stálá + oběžná; VK + cizí zdroje; platí vždy</td></tr>
+          <tr><td>5 min</td><td>Účetní výkazy – rozvaha, VZZ, CF</td><td>rozvaha (stav k datu); VZZ (N/V; prov.+fin. VH); CF (přímá/nepřímá)</td></tr>
+          <tr><td>1 min</td><td>Vazby mezi výkazy</td><td>VZZ čistý zisk → VK v rozvaze; CF (nepřímá) vychází z VH</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>Podstata a právní rámec</h3>
+      <ul>
+        <li>Systematické zachycení hospodářských operací v penězích; 4 funkce: informační, kontrolní, daňová, manažerská</li>
+        <li>Zákon 563/1991 Sb.; vyhláška 500/2002 Sb.; ČÚS; IFRS pro kótované</li>
+      </ul>
+      <h3>7 klíčových zásad</h3>
+      <ul>
+        <li>True and fair view; akruální princip; opatrnost; going concern; bilanční kontinuita; konzistence; materiality</li>
+      </ul>
+      <h3>Účet a podvojnost</h3>
+      <ul>
+        <li>T-forma: MD vlevo, D vpravo</li>
+        <li>Aktivní: přírůstky MD; pasivní: přírůstky D; nákladový: přírůstky MD; výnosový: přírůstky D</li>
+        <li>Podvojnost: každá operace na dvou stranách; MD = D vždy</li>
+        <li>Souvztažnost: účty spolu věcně souvisejí; účetní věta = MD/D/částka/doklad</li>
+      </ul>
+      <h3>Bilanční rovnováha</h3>
+      <ul>
+        <li><span class="formula">A = P</span>; stálá + oběžná aktiva = vlastní kapitál + cizí zdroje</li>
+      </ul>
+      <h3>Účetní výkazy</h3>
+      <ul>
+        <li>Rozvaha: stav A a P k určitému dni; statický</li>
+        <li>VZZ: N a V za období; provozní + finanční VH = VH před daní; tokový</li>
+        <li>CF: 3 části (provozní, investiční, finanční); přímá vs. nepřímá metoda</li>
+        <li>Příloha: metody, doplňující informace</li>
+      </ul>
+      <h3>Vazby</h3>
+      <ul>
+        <li>Čistý zisk z VZZ → VH běžného roku v rozvaze (VK)</li>
+        <li>CF (nepřímá) začíná od VH a upravuje o nepeněžní položky</li>
+        <li>Konečný stav peněz v CF = krátkodobý fin. majetek v rozvaze</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Co je akruální princip a proč je důležitý?</li>
+        <li>Jaké jsou povinné náležitosti účetního dokladu?</li>
+        <li>Jak spolu souvisejí rozvaha, VZZ a cash flow?</li>
+        <li>Co je zásada opatrnosti a jak se projevuje v praxi?</li>
+        <li>Jaký je rozdíl mezi přímou a nepřímou metodou sestavení CF?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY MAP TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 9: Zásady účetnictví a účetní výkazy</div>
+      <div class="memory-chain">
+        <span class="kw">zákon 563/1991 Sb.</span><span class="arr">→</span>
+        <span class="kw">4 funkce účetnictví</span><span class="arr">→</span>
+        <span class="kw">true and fair view</span><span class="arr">→</span>
+        <span class="kw">akruální princip</span><span class="arr">→</span>
+        <span class="kw">zásada opatrnosti</span><span class="arr">→</span>
+        <span class="kw">going concern</span><span class="arr">→</span>
+        <span class="kw">konzistence + materialita</span><span class="arr">→</span>
+        <span class="kw">účet T-forma MD/D</span><span class="arr">→</span>
+        <span class="kw">aktivní vs. pasivní účet</span><span class="arr">→</span>
+        <span class="kw">podvojnost MD = D</span><span class="arr">→</span>
+        <span class="kw">souvztažnost = účetní věta</span><span class="arr">→</span>
+        <span class="kw">AKTIVA = PASIVA</span><span class="arr">→</span>
+        <span class="kw">rozvaha (stav k datu)</span><span class="arr">→</span>
+        <span class="kw">VZZ (N a V za období)</span><span class="arr">→</span>
+        <span class="kw">provozní + finanční VH</span><span class="arr">→</span>
+        <span class="kw">CF: provozní + investiční + fin.</span><span class="arr">→</span>
+        <span class="kw">přímá vs. nepřímá metoda</span><span class="arr">→</span>
+        <span class="kw">vazba: zisk → VK v rozvaze</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaké jsou funkce účetnictví?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q1">Zobrazit odpověď</button>
+        <div id="t09-q1" class="hidden quiz-a">Účetnictví plní tři základní funkce: (1) informační – poskytuje věrný obraz o majetku, závazcích a finanční situaci podniku uživatelům (manažeři, investoři, věřitelé, stát); (2) kontrolní – umožňuje ověřit hospodaření se svěřeným majetkem a odhalit nesrovnalosti; (3) důkazní – účetní záznamy slouží jako právní důkaz v obchodních sporech a vůči finančnímu úřadu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Jaký zákon upravuje účetnictví v ČR?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q2">Zobrazit odpověď</button>
+        <div id="t09-q2" class="hidden quiz-a">Základním právním předpisem je zákon č. 563/1991 Sb., o účetnictví. Zákon stanoví okruh účetních jednotek, povinnosti při vedení účetnictví, požadavky na účetní výkazy a jejich zveřejňování. Prováděcím předpisem jsou vyhlášky Ministerstva financí a České účetní standardy (ČÚS), které detailně upravují postupy účtování pro různé kategorie účetních jednotek.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co je zásada věrného a poctivého zobrazení?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q3">Zobrazit odpověď</button>
+        <div id="t09-q3" class="hidden quiz-a">Zásada věrného a poctivého zobrazení (true and fair view) je nejvyšší zásadou účetnictví – účetní výkazy musí věrně zobrazovat skutečný stav majetku, závazků, vlastního kapitálu a výsledku hospodaření. Pokud by aplikace konkrétního pravidla vedla k zavádějícímu zobrazení, musí účetní jednotka toto pravidlo přizpůsobit tak, aby bylo dosaženo věrnosti. Jde o princip nadřazený ostatním pravidlům.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co je akruální princip?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q4">Zobrazit odpověď</button>
+        <div id="t09-q4" class="hidden quiz-a">Akruální (časový) princip vyžaduje, aby náklady a výnosy byly zachyceny v účetním období, ke kterému věcně a časově přísluší, bez ohledu na to, kdy dojde k peněžnímu toku. Například tržby za zboží dodané v prosinci se zaúčtují v prosinci, i když zákazník zaplatí až v lednu. Nástrojem pro dodržení tohoto principu jsou časové rozlišení a dohadné položky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co je zásada opatrnosti v účetnictví?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q5">Zobrazit odpověď</button>
+        <div id="t09-q5" class="hidden quiz-a">Zásada opatrnosti říká, že účetní jednotka nesmí nadhodnocovat aktiva a výnosy ani podhodnocovat závazky a náklady. Prakticky se projevuje tvorbou opravných položek (snížení hodnoty aktiv při dočasném poklesu), odpisů, rezerv (na budoucí závazky) a oceňováním aktiv v nižší z hodnot – pořizovací cena nebo čistá realizovatelná hodnota. Cílem je ochrana věřitelů a věrné zobrazení rizik.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co je princip going concern?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q6">Zobrazit odpověď</button>
+        <div id="t09-q6" class="hidden quiz-a">Princip going concern (předpoklad nepřetržitého trvání) předpokládá, že účetní jednotka bude ve své činnosti pokračovat v dohledné budoucnosti a nemá v úmyslu ani z nutnosti svou činnost ukončit nebo ji podstatně omezit. Na základě tohoto předpokladu se majetek oceňuje pořizovací cenou, nikoli likvidační hodnotou. Pokud nastane pochybnost o schopnosti pokračovat, musí být tato skutečnost zveřejněna v příloze účetní závěrky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je T-forma účtu? Popište strany MD a D.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q7">Zobrazit odpověď</button>
+        <div id="t09-q7" class="hidden quiz-a">T-forma účtu je grafické znázornění účtu ve tvaru písmene T – levá strana se nazývá Má dáti (MD, debet) a pravá strana Dal (D, kredit). U aktivních účtů (majetek) přírůstky zachycujeme na MD a úbytky na D; počáteční a konečný zůstatek je na straně MD. U pasivních účtů (zdroje) je tomu naopak: přírůstky na D a úbytky na MD. Nákladové účty mají přírůstky na MD, výnosové na D.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je princip podvojnosti?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q8">Zobrazit odpověď</button>
+        <div id="t09-q8" class="hidden quiz-a">Princip podvojnosti znamená, že každá účetní operace musí být zaznamenána na dvou účtech – vždy na straně MD jednoho účtu a D jiného účtu ve stejné výši. Díky tomu je součet všech zápisů na MD vždy roven součtu zápisů na D (bilanční rovnováha). Porušení podvojnosti vede k nerovnováze v účetnictví a signalizuje chybu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Co je souvztažnost účetních zápisů?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q9">Zobrazit odpověď</button>
+        <div id="t09-q9" class="hidden quiz-a">Souvztažnost (kontace) je vazba mezi dvěma nebo více účty, na nichž je zaúčtována táž hospodářská operace. Každý účetní doklad musí obsahovat označení účtů (kontaci), tj. číselné nebo slovní označení účtů MD a D se stejnou částkou. Souvztažné účty spolu věcně a logicky souvisejí – např. nákup zboží hotovostí: MD Zboží / D Pokladna.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Jaké jsou povinné náležitosti účetního dokladu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q10">Zobrazit odpověď</button>
+        <div id="t09-q10" class="hidden quiz-a">Podle § 11 zákona č. 563/1991 Sb. musí účetní doklad obsahovat: (1) označení účetního dokladu; (2) obsah účetního případu a označení jeho účastníků; (3) peněžní částku nebo informaci o ceně za měrnou jednotku a vyjádřené množství; (4) okamžik vyhotovení dokladu; (5) okamžik uskutečnění účetního případu; (6) podpisový záznam osoby odpovědné za účetní případ a osoby odpovědné za zaúčtování.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Jaký je rozdíl mezi deníkem a hlavní knihou?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q11">Zobrazit odpověď</button>
+        <div id="t09-q11" class="hidden quiz-a">Deník (účetní deník) zachycuje účetní zápisy chronologicky – v pořadí, ve kterém nastaly; slouží k průkaznosti a kontrole úplnosti zápisů. Hlavní kniha (syntetická evidence) třídí záznamy systematicky podle jednotlivých účtů a umožňuje zjistit zůstatek každého účtu k danému datu. Oba jsou účetními knihami, které musí vést každá účetní jednotka vedoucí podvojné účetnictví.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je bilanční rovnováha?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q12">Zobrazit odpověď</button>
+        <div id="t09-q12" class="hidden quiz-a">Bilanční rovnováha vyjadřuje základní účetní identitu: AKTIVA = PASIVA. Každý majetek (aktivum) musí mít svůj zdroj financování (pasivum), a tedy celková suma aktiv se vždy rovná celkové sumě pasiv. Tato rovnost musí platit k libovolnému okamžiku a každá hospodářská operace ji zachovává, protože se vždy mění nejméně dvě položky ve stejné výši.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co zobrazuje rozvaha a k jakému okamžiku?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q13">Zobrazit odpověď</button>
+        <div id="t09-q13" class="hidden quiz-a">Rozvaha (bilance) je stavový výkaz zachycující k určitému okamžiku (rozvahovému dni – zpravidla 31. 12.) strukturu majetku podniku (aktiva) a zdroje jeho financování (pasiva). Aktiva se třídí podle likvidity (od nejméně likvidních – dlouhodobý majetek – po nejlikvidnější – peníze), pasiva se dělí na vlastní kapitál a cizí zdroje. Rozvaha nedává informaci o pohybech za období, pouze o stavu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Co zobrazuje výkaz zisku a ztráty (VZZ)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q14">Zobrazit odpověď</button>
+        <div id="t09-q14" class="hidden quiz-a">Výkaz zisku a ztráty (VZZ, výsledovka) zobrazuje tokové veličiny – náklady a výnosy za určité účetní období a jejich rozdíl, tedy hospodářský výsledek (zisk nebo ztrátu). VZZ odpovídá na otázku: Jak byl zisk dosažen? Rozlišuje provozní, finanční a mimořádnou část. Na rozdíl od rozvahy zachycuje změny za celé období, nikoli stav k jednomu okamžiku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Jak spolu souvisejí rozvaha, VZZ a cash flow?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t09-q15">Zobrazit odpověď</button>
+        <div id="t09-q15" class="hidden quiz-a">Tři základní výkazy jsou vzájemně provázány: Hospodářský výsledek z VZZ (zisk po zdanění) se promítá do vlastního kapitálu v rozvaze (nerozdělený zisk). Výkaz cash flow vysvětluje změnu stavu peněžních prostředků, která se odráží v položce peněz na straně aktiv rozvahy. Zisk (VZZ) se liší od cash flow, protože VZZ respektuje akruální princip, zatímco cash flow sleduje skutečné peněžní toky.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

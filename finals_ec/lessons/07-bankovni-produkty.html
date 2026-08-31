@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 7: Bankovní produkty a služby</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="07">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 7 / 20</div>
+  <h1>Bankovní produkty a služby</h1>
+  <p class="official-question">Bankovní produkty a služby (jednoduché a složené úročení, úroková sazba v praxi, význam pasivních operací z hlediska banky, typy hladkých plateb a způsob vypořádání, čtyřstranný model platby kartou, význam aktivních operací z hlediska banky, spotřebitelský úvěr s a bez umořovacího plánu, stavební spoření)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="06-soutez.html">← Téma 6: Regulace hospodářské soutěže</a>
+  <a href="08-banka-podnik.html">Téma 8: Banka jako podnik →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2,5 min</td><td>Jednoduché vs. složené úročení</td><td>FV = PV·(1+r·t) vs. FV = PV·(1+r)ᵗ; efektivní sazba; RPSN</td></tr>
+          <tr><td>2 min</td><td>Pasivní operace banky</td><td>banka jako dlužník; vklady (BÚ, termínované, spořicí); zdroj pro aktivní operace</td></tr>
+          <tr><td>3 min</td><td>Platební styk + čtyřstranný model</td><td>hladká platba; SEPA; CERTIS (ČNB); čtyřstranný model – issuer, acquirer, interchange fee</td></tr>
+          <tr><td>1,5 min</td><td>Aktivní operace banky</td><td>banka jako věřitel; úvěry; hlavní zdroj výnosů; kreditní riziko</td></tr>
+          <tr><td>4 min</td><td>Spotřebitelský úvěr bez/s umořovacím plánem</td><td>bullet loan; anuitní splácení; vzorec anuity; RPSN povinné</td></tr>
+          <tr><td>2 min</td><td>Stavební spoření</td><td>zákon 96/1993 Sb.; spořicí + úvěrová fáze; státní podpora; překlenovací úvěr</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. Jednoduché a složené úročení</h3>
+      <ul>
+        <li><strong>Jednoduché úročení:</strong> <span class="formula">FV = PV · (1 + r · t)</span> — úrok se počítá pouze z původní jistiny; vhodné pro kratší období (&lt; 1 rok)</li>
+        <li><strong>Složené úročení:</strong> <span class="formula">FV = PV · (1 + r)ᵗ</span> — úrok se připisuje k jistině a dále se sám úročí (compounding)</li>
+        <li><strong>Efektivní roční sazba:</strong> <span class="formula">i<sub>eff</sub> = (1 + r<sub>nom</sub>/m)ᵐ – 1</span> — kde m = počet úročicích období za rok</li>
+        <li><strong>RPSN</strong> (roční procentní sazba nákladů) = zahrnuje úroky + veškeré poplatky; povinné uvádět u spotřebitelských úvěrů (zákon č. 257/2016 Sb.); RPSN &gt; úroková sazba</li>
+      </ul>
+
+      <h3>2. Pasivní operace banky</h3>
+      <ul>
+        <li>Banka vystupuje jako <strong>dlužník</strong>: přijímá vklady od veřejnosti, emituje dluhopisy</li>
+        <li>Typy vkladů: netermínované (běžné účty – vysoká likvidita, nízký úrok), termínované (fixní splatnost, vyšší úrok), spořicí (flexibilní, výpovědní lhůta)</li>
+        <li>Účel: získání zdrojů pro aktivní operace; pasivní operace jsou podmínkou aktivních</li>
+        <li>Pojištění vkladů: zákon č. 374/2015 Sb.; limit 100 000 EUR/vkladatel/banka (Garanční systém finančního trhu)</li>
+      </ul>
+
+      <h3>3. Platební styk a čtyřstranný model</h3>
+      <ul>
+        <li><strong>Hladká platba</strong> = bezhotovostní mezibankovní převod; tuzemský (CZK přes CERTIS – ČNB clearingový systém) nebo přeshraniční (SEPA v EUR; SWIFT)</li>
+        <li><strong>SEPA</strong> (Single Euro Payments Area): standardizace plateb v EUR v Evropě; IBAN, BIC</li>
+        <li><strong>Čtyřstranný model platby kartou:</strong></li>
+      </ul>
+      <table class="structure-table">
+        <thead><tr><th>Subjekt</th><th>Role</th><th>Tok peněz / informací</th></tr></thead>
+        <tbody>
+          <tr><td>Držitel karty</td><td>plátce</td><td>platí obchodníkovi</td></tr>
+          <tr><td>Vydavatel (issuer)</td><td>banka držitele</td><td>povoluje transakci; dostává interchange fee</td></tr>
+          <tr><td>Obchodník</td><td>příjemce platby</td><td>platí merchant fee acquirerovi</td></tr>
+          <tr><td>Acquirer</td><td>banka obchodníka</td><td>zpracovává platbu; platí interchange fee issuerovi</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Karetní asociace (Visa, Mastercard) = síťová infrastruktura, nastavuje pravidla a interchange fee</li>
+      </ul>
+
+      <h3>4. Aktivní operace banky</h3>
+      <ul>
+        <li>Banka vystupuje jako <strong>věřitel</strong>: poskytuje úvěry klientům (spotřebitelské, hypoteční, firemní)</li>
+        <li>Hlavní zdroj výnosů banky: úrokové výnosy z úvěrového portfolia</li>
+        <li>Riziko: kreditní riziko (dlužník nesplatí) → tvoří opravné položky a kapitálové rezervy</li>
+      </ul>
+
+      <h3>5. Spotřebitelský úvěr – bez a s umořovacím plánem</h3>
+      <ul>
+        <li><strong>Bez umořovacího plánu (bullet/interest-only loan):</strong> po dobu trvání se splácejí pouze úroky; jistina splacena jednorázově na konci; nenáročné pro cash flow, ale riziko splacení jistiny</li>
+        <li><strong>S umořovacím plánem – anuitní splácení:</strong> každá splátka = část úroku + část jistiny; výše splátky konstantní</li>
+        <li><span class="formula">Anuita: A = PV · [r(1+r)ⁿ] / [(1+r)ⁿ – 1]</span> — kde r = úroková sazba za období, n = počet období</li>
+        <li>Degresivní struktura úroků: zpočátku splátka obsahuje více úroku, ke konci více jistiny</li>
+        <li>Povinné uvádění RPSN dle zákona č. 257/2016 Sb. o spotřebitelském úvěru</li>
+      </ul>
+
+      <h3>6. Stavební spoření</h3>
+      <ul>
+        <li>Zákon č. 96/1993 Sb. o stavebním spoření; produkt typický pro ČR a SR</li>
+        <li><strong>Spořicí fáze:</strong> min. 6 let; klient spoří; stát přispívá 10 % z ročních vkladů, max. 2 000 Kč/rok (z vkladů do 20 000 Kč/rok)</li>
+        <li><strong>Úvěrová fáze:</strong> po splnění podmínek (naspořeno min. 40 % cílové částky, splněn bodový ohodnocovací systém); úvěr za zvýhodněnou sazbu</li>
+        <li><strong>Překlenovací úvěr (meziúvěr):</strong> poskytuje se před dosažením nároku na řádný úvěr; obvykle vyšší sazba</li>
+        <li>Instituce: specializované stavební spořitelny (Buřinka = Českomoravská stavební spořitelna, Raiffeisen stavební spořitelna)</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><span class="term-name">Jednoduché úročení</span><span class="term-def">FV = PV·(1+r·t); úrok z původní jistiny; kratší období</span></div>
+        <div class="term-item"><span class="term-name">Složené úročení</span><span class="term-def">FV = PV·(1+r)ᵗ; úrok z úroku; compounding</span></div>
+        <div class="term-item"><span class="term-name">RPSN</span><span class="term-def">roční procentní sazba nákladů; úroky + všechny poplatky</span></div>
+        <div class="term-item"><span class="term-name">Efektivní úroková sazba</span><span class="term-def">(1+r_nom/m)ᵐ – 1; zohledňuje frekvenci úročení</span></div>
+        <div class="term-item"><span class="term-name">Pasivní operace</span><span class="term-def">banka jako dlužník; přijímání vkladů, emise dluhopisů</span></div>
+        <div class="term-item"><span class="term-name">Aktivní operace</span><span class="term-def">banka jako věřitel; poskytování úvěrů; hlavní výnosový zdroj</span></div>
+        <div class="term-item"><span class="term-name">Termínovaný vklad</span><span class="term-def">vklad s pevnou splatností; vyšší úrok, horší likvidita</span></div>
+        <div class="term-item"><span class="term-name">Hladká platba</span><span class="term-def">bezhotovostní mezibankovní převod (bez dokumentárního zajištění)</span></div>
+        <div class="term-item"><span class="term-name">SEPA</span><span class="term-def">Single Euro Payments Area; standardizované EUR platby v Evropě</span></div>
+        <div class="term-item"><span class="term-name">CERTIS</span><span class="term-def">clearingový systém ČNB pro tuzemské CZK platby</span></div>
+        <div class="term-item"><span class="term-name">Interchange fee</span><span class="term-def">poplatek od acquirera issuerovi za zpracování karetní platby</span></div>
+        <div class="term-item"><span class="term-name">Anuita</span><span class="term-def">pravidelná konstantní splátka (úrok + jistina); vzorec A = PV·r(1+r)ⁿ/((1+r)ⁿ–1)</span></div>
+        <div class="term-item"><span class="term-name">Umořovací plán</span><span class="term-def">harmonogram splátek s rozpisem jistiny a úroku</span></div>
+        <div class="term-item"><span class="term-name">Stavební spoření</span><span class="term-def">státem podporovaný spořicí+úvěrový produkt; zákon 96/1993 Sb.</span></div>
+        <div class="term-item"><span class="term-name">Státní podpora</span><span class="term-def">10 % z ročních vkladů, max. 2 000 Kč/rok (z vkladů do 20 000 Kč)</span></div>
+        <div class="term-item"><span class="term-name">Překlenovací úvěr</span><span class="term-def">meziúvěr před dosažením nároku na řádný stavební úvěr</span></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Jednoduché vs. složené úročení – rozdíl roste s délkou:</strong><br>
+        Pro 1 rok a malé r jsou výsledky téměř totožné.<br>
+        Pro delší horizont: složené úročení dává vyšší FV (efekt compoundingu).
+      </div>
+      <div class="relation-box">
+        <strong>Pasivní operace → umožňují aktivní operace:</strong><br>
+        Banka přijme vklad (pasivum) → zapůjčí jako úvěr (aktivum) → vydělá na úrokovém rozpětí (NIM = rozdíl sazeb).<br>
+        Bez dostatku vkladů nemůže banka poskytovat úvěry.
+      </div>
+      <div class="relation-box">
+        <strong>Čtyřstranný model – tok poplatků:</strong><br>
+        Obchodník → platí merchant fee → acquirerovi<br>
+        Acquirer → platí interchange fee → issuerovi<br>
+        Karetní asociace (Visa/MC) → nastavuje výši interchange fee
+      </div>
+      <div class="relation-box">
+        <strong>Anuita – degresivní struktura:</strong><br>
+        Splátka = konstantní A; ale složení se mění:<br>
+        Úrok = zbývající jistina × r → klesá s každou splátkou<br>
+        Jistina = A – úrok → roste s každou splátkou
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Výpočet anuity:</strong> Úvěr 100 000 Kč, úroková sazba 6 % p.a. (= 0,5 % měsíčně), splatnost 12 měsíců.<br>
+      <span class="formula">A = 100 000 · [0,005 · (1,005)¹²] / [(1,005)¹² – 1] = 100 000 · 0,005 · 1,0617 / 0,0617 ≈ 8 607 Kč/měsíc</span></p>
+
+      <p><strong>Efektivní sazba:</strong> Nominální sazba 12 % p.a., úročení čtvrtletní (m = 4).<br>
+      <span class="formula">i<sub>eff</sub> = (1 + 0,12/4)⁴ – 1 = (1,03)⁴ – 1 ≈ 12,55 % p.a.</span></p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li><strong>Záměna RPSN a úroková sazba:</strong> RPSN vždy ≥ úroková sazba; zahrnuje poplatky. Při nulovém poplatku = stejné hodnoty.</li>
+        <li><strong>Záměna pasivních a aktivních operací:</strong> Pasivní = banka PŘIJÍMÁ peníze (je dlužníkem). Aktivní = banka POSKYTUJE peníze (je věřitelem).</li>
+        <li><strong>Záměna issuer a acquirer v karetním modelu:</strong> Issuer = vydavatel karty (banka ZÁKAZNÍKA). Acquirer = banka OBCHODNÍKA.</li>
+        <li><strong>Tvrzení, že u bullet loanu se nesplácí nic:</strong> Splácejí se průběžně úroky; jen jistina je na konci.</li>
+        <li><strong>Stavební spoření – neznalost podmínek státní podpory:</strong> Podpora = 10 % z vkladů do 20 000 Kč/rok = max. 2 000 Kč/rok; min. spořicí doba 6 let.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Jak se vypočítá RPSN a proč se liší od úrokové sazby?</li>
+        <li>Jak funguje čtyřstranný model platební karty a kde vznikají poplatky?</li>
+        <li>Jaký je rozdíl mezi spotřebitelským úvěrem s a bez umořovacího plánu?</li>
+        <li>Proč jsou pasivní operace důležité pro fungování banky?</li>
+        <li>Jak funguje stavební spoření v ČR a jaké jsou podmínky státní podpory?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 7</h2>
+      <p class="recall-question">Bankovní produkty a služby (jednoduché a složené úročení, úroková sazba v praxi, pasivní operace, hladké platby, čtyřstranný model platby kartou, aktivní operace, spotřebitelský úvěr s a bez umořovacího plánu, stavební spoření)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">FV=PV(1+rt) vs (1+r)ᵗ</span>
+        <span class="pill">RPSN povinné</span>
+        <span class="pill">pasivní = banka dlužník</span>
+        <span class="pill">CERTIS / SEPA</span>
+        <span class="pill">issuer–acquirer–interchange</span>
+        <span class="pill">aktivní = úvěry</span>
+        <span class="pill">anuita A=PV·r(1+r)ⁿ/((1+r)ⁿ–1)</span>
+        <span class="pill">stavební spoření 10 % max 2 000 Kč</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2,5 min</td><td>Jednoduché vs. složené úročení</td><td>FV = PV·(1+r·t) vs. FV = PV·(1+r)ᵗ; efektivní sazba; RPSN</td></tr>
+          <tr><td>2 min</td><td>Pasivní operace banky</td><td>banka jako dlužník; vklady (BÚ, termínované, spořicí); zdroj pro aktivní operace</td></tr>
+          <tr><td>3 min</td><td>Platební styk + čtyřstranný model</td><td>hladká platba; SEPA; CERTIS (ČNB); čtyřstranný model – issuer, acquirer, interchange fee</td></tr>
+          <tr><td>1,5 min</td><td>Aktivní operace banky</td><td>banka jako věřitel; úvěry; hlavní zdroj výnosů; kreditní riziko</td></tr>
+          <tr><td>4 min</td><td>Spotřebitelský úvěr bez/s umořovacím plánem</td><td>bullet loan; anuitní splácení; vzorec anuity; RPSN povinné</td></tr>
+          <tr><td>2 min</td><td>Stavební spoření</td><td>zákon 96/1993 Sb.; spořicí + úvěrová fáze; státní podpora; překlenovací úvěr</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>Úročení</h3>
+      <ul>
+        <li><span class="formula">Jednoduché: FV = PV·(1+r·t)</span> — pro &lt; 1 rok; úrok pouze z jistiny</li>
+        <li><span class="formula">Složené: FV = PV·(1+r)ᵗ</span> — úrok z úroku; compounding</li>
+        <li><span class="formula">Efektivní sazba: i<sub>eff</sub> = (1 + r<sub>nom</sub>/m)ᵐ – 1</span></li>
+        <li>RPSN = úroky + všechny poplatky; povinné dle zák. 257/2016 Sb.</li>
+      </ul>
+      <h3>Pasivní operace</h3>
+      <ul>
+        <li>Banka = dlužník; přijímá vklady; 3 typy: BÚ, termínované, spořicí</li>
+        <li>Pojištění vkladů: Garanční systém; limit 100 000 EUR/klient/banka</li>
+      </ul>
+      <h3>Platební styk + čtyřstranný model</h3>
+      <ul>
+        <li>Hladká platba; CERTIS (ČNB, CZK); SEPA (EUR); SWIFT (mezinárodní)</li>
+        <li>Čtyřstranný model: issuer (banka zákazníka) – držitel karty – obchodník – acquirer (banka obchodníka)</li>
+        <li>Interchange fee: acquirer → issuerovi; merchant fee: obchodník → acquirerovi</li>
+      </ul>
+      <h3>Aktivní operace</h3>
+      <ul>
+        <li>Banka = věřitel; úvěry = hlavní výnosový zdroj; kreditní riziko</li>
+      </ul>
+      <h3>Spotřebitelský úvěr</h3>
+      <ul>
+        <li>Bez umořovacího plánu (bullet): průběžně splácí úroky, jistina na konci</li>
+        <li>S umořovacím plánem – anuita: <span class="formula">A = PV · r(1+r)ⁿ / ((1+r)ⁿ–1)</span></li>
+        <li>Degresivní struktura: zpočátku víc úroku, ke konci víc jistiny</li>
+      </ul>
+      <h3>Stavební spoření</h3>
+      <ul>
+        <li>Zákon 96/1993 Sb.; spořicí fáze (min. 6 let) + úvěrová fáze</li>
+        <li>Státní podpora: 10 % z vkladů do 20 000 Kč/rok → max. 2 000 Kč/rok</li>
+        <li>Překlenovací úvěr = meziúvěr před dosažením nároku na řádný úvěr</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Jak se vypočítá RPSN a proč se liší od úrokové sazby?</li>
+        <li>Jak funguje čtyřstranný model platební karty a kde vznikají poplatky?</li>
+        <li>Jaký je rozdíl mezi spotřebitelským úvěrem s a bez umořovacího plánu?</li>
+        <li>Proč jsou pasivní operace důležité pro fungování banky?</li>
+        <li>Jak funguje stavební spoření v ČR a jaké jsou podmínky státní podpory?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY MAP TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 7: Bankovní produkty a služby</div>
+      <div class="memory-chain">
+        <span class="kw">jednoduché úročení FV=PV(1+rt)</span><span class="arr">→</span>
+        <span class="kw">složené úročení (1+r)ᵗ</span><span class="arr">→</span>
+        <span class="kw">efektivní sazba</span><span class="arr">→</span>
+        <span class="kw">RPSN = úrok + poplatky</span><span class="arr">→</span>
+        <span class="kw">pasivní operace = vklady</span><span class="arr">→</span>
+        <span class="kw">BÚ / termínované / spořicí</span><span class="arr">→</span>
+        <span class="kw">hladká platba</span><span class="arr">→</span>
+        <span class="kw">CERTIS (ČNB) / SEPA / SWIFT</span><span class="arr">→</span>
+        <span class="kw">čtyřstranný model</span><span class="arr">→</span>
+        <span class="kw">issuer → interchange fee → acquirer</span><span class="arr">→</span>
+        <span class="kw">aktivní operace = úvěry</span><span class="arr">→</span>
+        <span class="kw">bullet loan (bez plánu)</span><span class="arr">→</span>
+        <span class="kw">anuita A=PV·r(1+r)ⁿ/((1+r)ⁿ–1)</span><span class="arr">→</span>
+        <span class="kw">degresivní struktura úroků</span><span class="arr">→</span>
+        <span class="kw">stavební spoření zákon 96/1993</span><span class="arr">→</span>
+        <span class="kw">státní podpora 2 000 Kč/rok</span><span class="arr">→</span>
+        <span class="kw">překlenovací úvěr</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Napište vzorec pro jednoduché úročení.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q1">Zobrazit odpověď</button>
+        <div id="t07-q1" class="hidden quiz-a">Při jednoduchém úročení se úrok počítá vždy jen z původní jistiny: FV = PV · (1 + i · n), kde PV je současná hodnota (jistina), i je roční úroková sazba (v desetinném tvaru) a n je počet let. Úrok za celou dobu je tedy I = PV · i · n. Jednoduché úročení se typicky používá pro krátká období do jednoho roku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Napište vzorec pro složené úročení.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q2">Zobrazit odpověď</button>
+        <div id="t07-q2" class="hidden quiz-a">Při složeném úročení se úroky přičítají k jistině a samy dále nesou úrok – dochází k exponenciálnímu růstu: FV = PV · (1 + i)ⁿ, kde i je roční úroková sazba a n je počet úrokových období. Pokud se úročí m-krát za rok se sazbou i/m, pak FV = PV · (1 + i/m)^(m·n). Složené úročení odráží časovou hodnotu peněz a je základem finančního modelování.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Jak se vypočítá efektivní roční úroková sazba při m úročeních za rok?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q3">Zobrazit odpověď</button>
+        <div id="t07-q3" class="hidden quiz-a">Efektivní roční úroková sazba (EAR, effective annual rate) převádí nominální sazbu i úročenou m-krát ročně na srovnatelnou roční sazbu: EAR = (1 + i/m)^m − 1. Čím vyšší je frekvence úročení m, tím vyšší je EAR oproti nominální sazbě. Například nominální 12 % p.a. měsíčně dává EAR ≈ 12,68 %.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co je RPSN a čím se liší od nominální úrokové sazby?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q4">Zobrazit odpověď</button>
+        <div id="t07-q4" class="hidden quiz-a">RPSN (roční procentní sazba nákladů) vyjadřuje celkové náklady spotřebitelského úvěru za rok, včetně úroků, poplatků za sjednání, vedení účtu a dalších povinných plateb. Na rozdíl od nominální úrokové sazby, která zachycuje jen úrok, RPSN umožňuje srovnání celkové výhodnosti různých úvěrových produktů. Povinné uvádění RPSN stanoví zákon o spotřebitelském úvěru.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co jsou pasivní operace banky? Proč jsou důležité?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q5">Zobrazit odpověď</button>
+        <div id="t07-q5" class="hidden quiz-a">Pasivní operace jsou činnosti, při nichž banka získává cizí zdroje – přijímá vklady od klientů nebo si půjčuje na mezibankovním trhu. Tvoří stranu pasiv rozvahy banky. Jsou klíčové, protože právě tyto zdroje banka následně půjčuje jako úvěry (aktivní operace) a tvoří tak základ její ziskovosti prostřednictvím úrokové marže.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Jaký je rozdíl mezi termínovaným vkladem a vkladem na viděnou?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q6">Zobrazit odpověď</button>
+        <div id="t07-q6" class="hidden quiz-a">Vklad na viděnou (demand deposit) je okamžitě dostupný – klient může prostředky kdykoli vybrat, banka za něj proto nabízí nižší nebo nulový úrok. Termínovaný vklad (time deposit) je uložen na pevně sjednanou dobu; klient se vzdává likvidity výměnou za vyšší úrokovou sazbu. Předčasný výběr termínovaného vkladu bývá spojen se sankcí.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je hladká platba?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q7">Zobrazit odpověď</button>
+        <div id="t07-q7" class="hidden quiz-a">Hladká platba je bezhotovostní převod peněžních prostředků z účtu plátce na účet příjemce bez přiložení obchodních dokumentů (na rozdíl od dokumentárních plateb). Jde o nejběžnější formu mezibankovního platebního styku, zahrnující příkazy k úhradě i inkasa. V rámci EU probíhají hladké platby v eurech prostřednictvím SEPA, v ČR korunové platby vypořádává CERTIS.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je CERTIS v ČR?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q8">Zobrazit odpověď</button>
+        <div id="t07-q8" class="hidden quiz-a">CERTIS (Czech Express Real Time Interbank Gross Settlement) je systém mezibankovního platebního styku provozovaný Českou národní bankou. Zajišťuje vypořádání korunových mezibankovních plateb v reálném čase (RTGS) – každá platba je zúčtována individuálně a okamžitě po přijetí, nikoli v dávkách. Díky tomu eliminuje mezibankovní úvěrové riziko při platebním styku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Vyjmenujte 4 strany v modelu platební karty a popište jejich role.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q9">Zobrazit odpověď</button>
+        <div id="t07-q9" class="hidden quiz-a">Čtyřstranný model zahrnuje: (1) Držitel karty – nakupující zákazník, který platí kartou; (2) Vydavatel karty (issuer) – banka zákazníka, která kartu vydala; (3) Obchodník (merchant) – přijímá platbu kartou; (4) Akceptant/acquirer – banka obchodníka, která zpracovává transakce. Karetní schéma (Visa, Mastercard) tvoří infrastrukturu a pravidla, avšak samo není stranou transakce.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Co je interchange fee a kdo ho platí?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q10">Zobrazit odpověď</button>
+        <div id="t07-q10" class="hidden quiz-a">Interchange fee je mezibankovní poplatek, který banka obchodníka (acquirer) platí vydavateli karty (issuer) při každé karetní transakci. Obchodník zaplatí acquirerovi MSC (merchant service charge), která zahrnuje interchange fee + poplatek acquirera. V EU je interchange fee regulován nařízením EU 2015/751: max. 0,2 % pro debetní a 0,3 % pro kreditní karty.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co jsou aktivní operace banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q11">Zobrazit odpověď</button>
+        <div id="t07-q11" class="hidden quiz-a">Aktivní operace jsou transakce, při nichž banka umisťuje své zdroje – zejména poskytováním úvěrů, nákupem cenných papírů nebo mezibankovním půjčováním. Figurují na straně aktiv rozvahy banky. Jsou primárním zdrojem výnosů banky, protože banka získává úroky z poskytnutých úvěrů vyšší, než kolik platí za přijaté vklady (úroková marže).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je spotřebitelský úvěr bez umořovacího plánu (bullet loan)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q12">Zobrazit odpověď</button>
+        <div id="t07-q12" class="hidden quiz-a">Spotřebitelský úvěr bez umořovacího plánu (bullet loan, jednorázové splacení) znamená, že dlužník po celou dobu trvání úvěru platí pouze úroky a celou jistinu splatí jednorázově v době splatnosti. Takový úvěr je jednodušší na výpočet (I = PV · i · n), ale vyžaduje, aby měl dlužník v okamžiku splatnosti k dispozici celou jistinu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co je anuitní splácení? Napište vzorec pro anuitu.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q13">Zobrazit odpověď</button>
+        <div id="t07-q13" class="hidden quiz-a">Anuitní splácení znamená, že dlužník platí po celou dobu úvěru stejnou periodickou splátku (anuitu) zahrnující část úroku i části jistiny. Vzorec pro výši anuity: A = PV · [i / (1 − (1 + i)^(−n))], kde PV je jistina, i je periodická úroková sazba a n je počet období. Součet všech anuit se rovná jistině plus celkovým úrokům za dobu trvání úvěru.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jak se mění poměr úroku a jistiny v anuitní splátce v průběhu času?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q14">Zobrazit odpověď</button>
+        <div id="t07-q14" class="hidden quiz-a">V prvních splátkách tvoří větší část anuity úrok, protože nesplacená jistina je vysoká. S každou splátkou se jistina snižuje, takže úroková složka klesá a složka jistiny roste. Na konci splácení je tomu naopak – téměř celá anuita je umořením jistiny a úroková složka je minimální. Celková výše anuity zůstává po celou dobu konstantní.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Jak funguje stavební spoření v ČR? Jaká je výše státní podpory?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t07-q15">Zobrazit odpověď</button>
+        <div id="t07-q15" class="hidden quiz-a">Stavební spoření je účelový spořící produkt u specializované stavební spořitelny. Spořitel pravidelně vkládá prostředky po minimálně 6 let a po splnění podmínek (naspoření min. 40 % cílové částky a dosažení hodnotícího čísla) má nárok na výhodný úvěr ze stavebního spoření. Stát přispívá státní podporou ve výši 10 % z ročních vkladů, maximálně však 2 000 Kč ročně (od roku 2024 na vklady max. 20 000 Kč).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 8: Banka jako podnik</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="08">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 8 / 20</div>
+  <h1>Banka jako podnik</h1>
+  <p class="official-question">Banka jako podnik (nejvýznamnější aktiva a pasiva komerční banky, struktura výnosů a nákladů komerční banky, riziko likviditní, úvěrové, tržní, operační, komponenty kapitálové přiměřenosti, specifické ukazatele rentability, produktivity a nákladovosti komerční banky)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="07-bankovni-produkty.html">← Téma 7: Bankovní produkty</a>
+  <a href="09-ucetnictvi.html">Téma 9: Účetnictví →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>3 min</td><td>Rozvaha banky – aktiva a pasiva</td><td>klíčové položky; úvěry klientům = největší aktivum; vklady klientů = největší pasivum</td></tr>
+          <tr><td>2,5 min</td><td>Struktura výnosů a nákladů</td><td>úrokové výnosy &gt; 60 %; poplatky; opravné položky; správní náklady</td></tr>
+          <tr><td>4,5 min</td><td>Bankovní rizika – 4 typy</td><td>úvěrové, likviditní (LCR/NSFR), tržní (VaR), operační</td></tr>
+          <tr><td>2,5 min</td><td>Kapitálová přiměřenost</td><td>CAR ≥ 8 %; Tier 1 (CET1 ≥ 4,5 % + AT1) + Tier 2; Basel III; bezpečnostní rezerva 2,5 %</td></tr>
+          <tr><td>2 min</td><td>Ukazatele rentability a efektivity</td><td>ROE, ROA, NIM, CIR, NPL ratio</td></tr>
+          <tr><td>0,5 min</td><td>Závěr</td><td>dohled ČNB; specifika banky vs. nefinanční podnik</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. Rozvaha komerční banky</h3>
+      <table class="structure-table">
+        <thead><tr><th>AKTIVA (použití zdrojů)</th><th>PASIVA (zdroje)</th></tr></thead>
+        <tbody>
+          <tr><td>Pokladní hotovost + ČNB</td><td>Závazky vůči ČNB</td></tr>
+          <tr><td>Pohledávky za bankami (mezibankovní trh)</td><td>Závazky vůči bankám</td></tr>
+          <tr><td><strong>Úvěry klientům</strong> ← největší položka</td><td><strong>Vklady klientů</strong> ← největší položka (BÚ + termínované)</td></tr>
+          <tr><td>Cenné papíry (státní dluhopisy, HZL)</td><td>Emitované dluhopisy</td></tr>
+          <tr><td>Hmotný a nehmotný majetek</td><td>Vlastní kapitál (ZK + rezervní fondy + nerozdělený zisk)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Struktura výnosů a nákladů</h3>
+      <ul>
+        <li><strong>Výnosy:</strong> úrokové výnosy (z úvěrů + CP) = &gt; 60 %; výnosy z poplatků a provizí (platební styk, správa); výnosy z obchodování (FX, deriváty)</li>
+        <li><strong>Náklady:</strong> úrokové náklady (na vklady, emitované dluhopisy); správní náklady (personální, IT, nemovitosti); opravné položky k pohledávkám (= výdaj na krytí kreditního rizika)</li>
+        <li>Čistý úrokový výnos = úrokové výnosy – úrokové náklady = základ bankovní ziskovosti</li>
+      </ul>
+
+      <h3>3. Bankovní rizika – 4 typy</h3>
+      <ul>
+        <li><strong>Úvěrové riziko (kreditní):</strong> dlužník nesplatí závazek; krytí: opravné položky + kapitálový požadavek; regulace: Basel III/CRD IV; sledují se NPL (non-performing loans)</li>
+        <li><strong>Likviditní riziko:</strong> banka nemůže splnit splatné závazky (bank run); krytí: LCR ≥ 100 % (Liquidity Coverage Ratio = likvidní aktiva / odtoky za 30 dní) a NSFR ≥ 100 % (Net Stable Funding Ratio = stabilní zdroje / potřeba stabilního financování)</li>
+        <li><strong>Tržní riziko:</strong> ztráta z pohybu tržních cen (úrokové sazby, devizové kurzy, ceny CP a komodit); měřeno VaR (Value at Risk = maximální ztráta při dané hladině spolehlivosti); podkategorie: úrokové, měnové, akciové, komoditní riziko</li>
+        <li><strong>Operační riziko:</strong> ztráta z pochybení interních procesů, lidí, systémů nebo z vnějších událostí (podvody, IT výpadky, přírodní katastrofy); Basel II zavedl kapitálový požadavek; tři přístupy (BIA, SA, AMA)</li>
+      </ul>
+
+      <h3>4. Kapitálová přiměřenost (Basel III)</h3>
+      <ul>
+        <li><span class="formula">CAR = Regulatorní kapitál / Rizikově vážená aktiva (RWA) ≥ 8 %</span></li>
+        <li><strong>Tier 1 (základní kapitál):</strong> CET1 (kmenový Tier 1) ≥ 4,5 % — splácené kmenové akcie + nerozdělený zisk; AT1 (doplňkový Tier 1) — hybridní nástroje (podmíněné dluhopisy)</li>
+        <li><strong>Tier 2 (doplňkový kapitál):</strong> podřízené dluhy se splatností &gt; 5 let; opravné položky; celkový Tier 1 + Tier 2 ≥ 8 %</li>
+        <li>Bezpečnostní kapitálová rezerva (capital conservation buffer): 2,5 % (z CET1) nad regulatorní minimum</li>
+        <li>Proticyklická kapitálová rezerva (countercyclical buffer): 0–2,5 % dle fáze ekonomického cyklu (ČNB nastavuje)</li>
+        <li>Dohled v ČR: ČNB; pro systémově důležité banky (SIB) + ECB v rámci SSM (Single Supervisory Mechanism)</li>
+      </ul>
+
+      <h3>5. Specifické ukazatele banky</h3>
+      <ul>
+        <li><span class="formula">ROE = Čistý zisk / Vlastní kapitál</span> — typicky 10–15 % zdravá banka; srovnatelný s nebankovním sektorem</li>
+        <li><span class="formula">ROA = Čistý zisk / Celková aktiva</span> — u bank nízké (~0,5–1 %); kvůli velkým bilanciím (finanční páka)</li>
+        <li><span class="formula">NIM (Net Interest Margin) = Čistý úrokový výnos / Průměrná aktiva</span> — klíčový ukazatel bankovní ziskovosti; typicky 1,5–3 %</li>
+        <li><span class="formula">CIR (Cost-to-Income Ratio) = Provozní náklady / Provozní výnosy</span> — efektivnost; čím nižší tím lépe; typicky 40–60 %; &gt; 70 % je problémové</li>
+        <li><span class="formula">NPL ratio = Objem nesplácených úvěrů / Celkové úvěry</span> — kvalita úvěrového portfolia; zdravá banka &lt; 3–5 %</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><span class="term-name">Aktiva banky</span><span class="term-def">použití zdrojů; největší: úvěry klientům + cenné papíry</span></div>
+        <div class="term-item"><span class="term-name">Pasiva banky</span><span class="term-def">zdroje; největší: vklady klientů + emitované dluhopisy</span></div>
+        <div class="term-item"><span class="term-name">Čistý úrokový výnos</span><span class="term-def">úrokové výnosy – úrokové náklady; základ zisku banky</span></div>
+        <div class="term-item"><span class="term-name">Opravné položky</span><span class="term-def">nákladová rezerva na krytí kreditního rizika; snižuje hospodářský výsledek</span></div>
+        <div class="term-item"><span class="term-name">Úvěrové riziko</span><span class="term-def">riziko nesplacení pohledávky; krytí kapitálem a OP</span></div>
+        <div class="term-item"><span class="term-name">Likviditní riziko</span><span class="term-def">neschopnost splnit splatné závazky; LCR a NSFR ≥ 100 %</span></div>
+        <div class="term-item"><span class="term-name">Tržní riziko</span><span class="term-def">ztráta z pohybu tržních cen; měřeno VaR</span></div>
+        <div class="term-item"><span class="term-name">Operační riziko</span><span class="term-def">ztráta z procesů, lidí, systémů; Basel II – kapitálový požadavek</span></div>
+        <div class="term-item"><span class="term-name">CAR</span><span class="term-def">Capital Adequacy Ratio = reg. kapitál / RWA ≥ 8 %</span></div>
+        <div class="term-item"><span class="term-name">Tier 1 / CET1</span><span class="term-def">základní kapitál; CET1 ≥ 4,5 % z RWA; kmenové akcie + nerozdělený zisk</span></div>
+        <div class="term-item"><span class="term-name">Tier 2</span><span class="term-def">doplňkový kapitál; podřízené dluhy; do 2 % z RWA</span></div>
+        <div class="term-item"><span class="term-name">Basel III</span><span class="term-def">mezinárodní standard kapitálové přiměřenosti; CRD IV/CRR v EU</span></div>
+        <div class="term-item"><span class="term-name">LCR</span><span class="term-def">Liquidity Coverage Ratio; krátkodobá likvidita (30denní stres)</span></div>
+        <div class="term-item"><span class="term-name">NIM</span><span class="term-def">Net Interest Margin = čistý úrokový výnos / průměrná aktiva</span></div>
+        <div class="term-item"><span class="term-name">CIR</span><span class="term-def">Cost-to-Income Ratio = provozní náklady / provozní výnosy; efektivnost</span></div>
+        <div class="term-item"><span class="term-name">NPL ratio</span><span class="term-def">Non-Performing Loans / celkové úvěry; kvalita portfolia</span></div>
+        <div class="term-item"><span class="term-name">VaR</span><span class="term-def">Value at Risk; max. ztráta při dané hladině spolehlivosti (99 %) za dané období</span></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Finanční páka banky:</strong><br>
+        Banka typicky financuje 90–95 % aktiv cizím kapitálem (vklady, dluhopisy).<br>
+        → ROE může být vysoké i při nízkém ROA: <span class="formula">ROE = ROA × (Aktiva / Vlastní kapitál)</span>
+      </div>
+      <div class="relation-box">
+        <strong>Kapitálová přiměřenost – hierarchie:</strong><br>
+        CET1 ≥ 4,5 % + AT1 → Tier 1 ≥ 6 % + Tier 2 → CAR ≥ 8 %<br>
+        + Bezpečnostní rezerva 2,5 % → efektivní CET1 požadavek = 7 %
+      </div>
+      <div class="relation-box">
+        <strong>LCR vs. NSFR:</strong><br>
+        LCR = krátkodobá likvidita (horizont 30 dní, stres scénář)<br>
+        NSFR = strukturální likvidita (horizont 1 rok, stabilita zdrojů)
+      </div>
+      <div class="relation-box">
+        <strong>NIM a profitabilita:</strong><br>
+        Vyšší NIM → vyšší čistý úrokový výnos → vyšší potenciál ROE.<br>
+        NIM závisí na úrokových sazbách (politika ČNB), konkurenci v sektoru a rizikovosti klientů.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Výpočet CAR:</strong> Banka má regulatorní kapitál 10 mld. Kč, rizikově vážená aktiva 100 mld. Kč.<br>
+      <span class="formula">CAR = 10 / 100 = 10 % &gt; min. 8 %</span> → splněno; přesahuje minimum o 200 bps.</p>
+
+      <p><strong>Interpretace CIR:</strong> Banka má provozní náklady 3 mld. Kč, provozní výnosy 6 mld. Kč.<br>
+      <span class="formula">CIR = 3/6 = 50 %</span> → standardní, v normě (typické rozmezí 40–60 %).</p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li><strong>Záměna Tier 1 a Tier 2:</strong> Tier 1 = primární (akcie + nerozdělený zisk); Tier 2 = doplňkový (podřízené dluhy). Tier 1 je kvalitnější a absorbuje ztráty jako první.</li>
+        <li><strong>Záměna LCR a NSFR:</strong> LCR = krátkodobá (30 dní, stress test); NSFR = strukturální (1 rok, stabilita zdrojů).</li>
+        <li><strong>Tvrzení, že CAR ≥ 8 % stačí:</strong> Reálně banky musí splnit 8 % + bezpečnostní rezerva 2,5 % + případně proticyklická rezerva + SIFI přirážka.</li>
+        <li><strong>Záměna ROA a ROE:</strong> ROA = výkonnost aktiv (nízká u bank ~1 %); ROE = výnosnost pro akcionáře (vyšší díky páce, 10–15 %).</li>
+        <li><strong>Opravné položky = ztráta:</strong> OP jsou nákladem (účetně), ale ne nutně realizovanou ztrátou; jsou odhadem budoucích ztrát z úvěrů.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Co je kapitálová přiměřenost a jaký je minimální požadavek dle Basel III?</li>
+        <li>Jak se liší likviditní riziko od úvěrového rizika?</li>
+        <li>Co je NIM a proč je klíčový pro bankovní ziskovost?</li>
+        <li>Jaký je rozdíl mezi Tier 1 a Tier 2 kapitálem?</li>
+        <li>Co měří ukazatel Cost-to-Income a jaká je jeho interpretace?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 8</h2>
+      <p class="recall-question">Banka jako podnik (aktiva a pasiva, výnosy a náklady, rizika: likviditní, úvěrové, tržní, operační; kapitálová přiměřenost, ukazatele ROE, ROA, NIM, CIR, NPL)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">úvěry klientů = největší aktivum</span>
+        <span class="pill">vklady klientů = největší pasivum</span>
+        <span class="pill">NIM = čistý úr. výnos / aktiva</span>
+        <span class="pill">4 rizika: úvěrové, lik., tržní, op.</span>
+        <span class="pill">LCR/NSFR ≥ 100 %</span>
+        <span class="pill">CAR = reg. kapitál / RWA ≥ 8 %</span>
+        <span class="pill">CET1 ≥ 4,5 %</span>
+        <span class="pill">CIR = náklady / výnosy</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>3 min</td><td>Rozvaha banky – aktiva a pasiva</td><td>klíčové položky; úvěry klientům = největší aktivum; vklady klientů = největší pasivum</td></tr>
+          <tr><td>2,5 min</td><td>Struktura výnosů a nákladů</td><td>úrokové výnosy &gt; 60 %; poplatky; opravné položky; správní náklady</td></tr>
+          <tr><td>4,5 min</td><td>Bankovní rizika – 4 typy</td><td>úvěrové, likviditní (LCR/NSFR), tržní (VaR), operační</td></tr>
+          <tr><td>2,5 min</td><td>Kapitálová přiměřenost</td><td>CAR ≥ 8 %; Tier 1 (CET1 ≥ 4,5 % + AT1) + Tier 2; Basel III; bezpečnostní rezerva 2,5 %</td></tr>
+          <tr><td>2 min</td><td>Ukazatele rentability a efektivity</td><td>ROE, ROA, NIM, CIR, NPL ratio</td></tr>
+          <tr><td>0,5 min</td><td>Závěr</td><td>dohled ČNB; specifika banky vs. nefinanční podnik</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>Rozvaha – klíčové položky</h3>
+      <ul>
+        <li>Aktiva: úvěry klientům (největší) + CP + mezibankovní pohledávky + pokladna</li>
+        <li>Pasiva: vklady klientů (největší) + emitované dluhopisy + vlastní kapitál</li>
+      </ul>
+      <h3>Výnosy a náklady</h3>
+      <ul>
+        <li>Výnosy: úrokové (&gt;60 %), poplatky, obchodování (FX, deriváty)</li>
+        <li>Náklady: úrokové (na vklady), správní, opravné položky k úvěrům</li>
+      </ul>
+      <h3>4 bankovní rizika</h3>
+      <ul>
+        <li>Úvěrové: dlužník nesplatí; opravné položky + kapitál</li>
+        <li>Likviditní: neschopnost splnit závazky; LCR ≥ 100 % (30 dní) + NSFR ≥ 100 % (1 rok)</li>
+        <li>Tržní: ztráta z cen/kurzů/sazeb; měřeno VaR</li>
+        <li>Operační: procesy/lidé/systémy/vnější; Basel II kapitálový požadavek</li>
+      </ul>
+      <h3>Kapitálová přiměřenost Basel III</h3>
+      <ul>
+        <li><span class="formula">CAR = Regulatorní kapitál / RWA ≥ 8 %</span></li>
+        <li>Tier 1: CET1 ≥ 4,5 % (akcie + nerozdělený zisk) + AT1; Tier 2: podřízené dluhy</li>
+        <li>Bezpečnostní rezerva: +2,5 % CET1 → efektivní min. CET1 = 7 %</li>
+      </ul>
+      <h3>Ukazatele</h3>
+      <ul>
+        <li>ROE = čistý zisk / VK; typicky 10–15 %</li>
+        <li>ROA = čistý zisk / aktiva; ~1 % (nízké kvůli páce)</li>
+        <li>NIM = čistý úrokový výnos / průměrná aktiva; ~2 %</li>
+        <li>CIR = provozní náklady / výnosy; čím nižší tím lépe; typicky 40–60 %</li>
+        <li>NPL ratio = nesplácené úvěry / celkové úvěry; &lt; 5 % zdravá banka</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Co je kapitálová přiměřenost a jaký je minimální požadavek dle Basel III?</li>
+        <li>Jak se liší likviditní riziko od úvěrového rizika?</li>
+        <li>Co je NIM a proč je klíčový pro bankovní ziskovost?</li>
+        <li>Jaký je rozdíl mezi Tier 1 a Tier 2 kapitálem?</li>
+        <li>Co měří ukazatel Cost-to-Income a jaká je jeho interpretace?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY MAP TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 8: Banka jako podnik</div>
+      <div class="memory-chain">
+        <span class="kw">aktiva = úvěry klientů</span><span class="arr">→</span>
+        <span class="kw">pasiva = vklady klientů</span><span class="arr">→</span>
+        <span class="kw">čistý úrokový výnos</span><span class="arr">→</span>
+        <span class="kw">opravné položky</span><span class="arr">→</span>
+        <span class="kw">4 rizika</span><span class="arr">→</span>
+        <span class="kw">úvěrové riziko</span><span class="arr">→</span>
+        <span class="kw">likviditní: LCR+NSFR ≥ 100%</span><span class="arr">→</span>
+        <span class="kw">tržní riziko: VaR</span><span class="arr">→</span>
+        <span class="kw">operační riziko</span><span class="arr">→</span>
+        <span class="kw">Basel III</span><span class="arr">→</span>
+        <span class="kw">CAR = reg. kapitál / RWA ≥ 8%</span><span class="arr">→</span>
+        <span class="kw">CET1 ≥ 4,5% + AT1 = Tier 1</span><span class="arr">→</span>
+        <span class="kw">Tier 2 = podřízené dluhy</span><span class="arr">→</span>
+        <span class="kw">bezpečnostní rezerva 2,5%</span><span class="arr">→</span>
+        <span class="kw">NIM = čistý úr. výnos / aktiva</span><span class="arr">→</span>
+        <span class="kw">CIR = náklady / výnosy</span><span class="arr">→</span>
+        <span class="kw">NPL ratio</span><span class="arr">→</span>
+        <span class="kw">ROE a ROA</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaká jsou hlavní aktiva komerční banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q1">Zobrazit odpověď</button>
+        <div id="t08-q1" class="hidden quiz-a">Hlavní aktiva komerční banky zahrnují: poskytnuté úvěry klientům (největší složka), cenné papíry v portfoliu (státní dluhopisy, akcie, AFS/HtM portfolio), pohledávky za jinými bankami (mezibankovní depozita), hotovost a prostředky u centrální banky (povinné minimální rezervy) a hmotný majetek. Úvěrové portfolio typicky tvoří 50–70 % celkových aktiv.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Jaká jsou hlavní pasiva komerční banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q2">Zobrazit odpověď</button>
+        <div id="t08-q2" class="hidden quiz-a">Pasiva banky tvoří zejména: vklady klientů (běžné účty, termínované vklady – největší zdroj financování), emitované dluhopisy a závazky z přijatých úvěrů (na mezibankovním trhu nebo od centrální banky) a vlastní kapitál (základní kapitál, fondy, nerozdělený zisk). Vklady klientů představují zpravidla 60–80 % pasiv a jsou pojištěny do výše 100 000 EUR systémem pojištění vkladů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Z čeho se skládají výnosy komerční banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q3">Zobrazit odpověď</button>
+        <div id="t08-q3" class="hidden quiz-a">Výnosy komerční banky se dělí na: (1) úrokové výnosy – úroky z poskytnutých úvěrů a z cenných papírů (dominantní složka); (2) neúrokové výnosy – poplatky a provize za platební styk, správu účtů, obchodní financování a poradenství; (3) výnosy z obchodování – zisky z finančních trhů. Celkové výnosy po odečtení úrokových nákladů tvoří čistý úrokový a neúrokový příjem.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co je čistá úroková marže (NIM)? Napište vzorec.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q4">Zobrazit odpověď</button>
+        <div id="t08-q4" class="hidden quiz-a">Čistá úroková marže (Net Interest Margin, NIM) měří ziskovost úrokových operací banky: NIM = (Úrokové výnosy − Úrokové náklady) / Průměrná úroková aktiva. Vyjadřuje, kolik korun čistého úrokového příjmu banka vydělá na každou korunu úrokových aktiv. Průměrná hodnota NIM pro evropské banky se pohybuje mezi 1,5 % a 3 %.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co je úvěrové (kreditní) riziko banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q5">Zobrazit odpověď</button>
+        <div id="t08-q5" class="hidden quiz-a">Úvěrové riziko je riziko, že dlužník (klient nebo protistrana) nesplatí svůj závazek vůči bance v plné výši nebo v dohodnutém termínu. Je nejvýznamnějším rizikem komerční banky, neboť úvěry tvoří největší část aktiv. Měří se mimo jiné NPL ratiem (podíl nevýkonných úvěrů) a výší opravných položek. Banka ho řídí úvěrovou analýzou, zajištěním a diverzifikací portfolia.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co je likviditní riziko banky?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q6">Zobrazit odpověď</button>
+        <div id="t08-q6" class="hidden quiz-a">Likviditní riziko je nebezpečí, že banka nebude schopna dostát svým splatným závazkům včas a za přiměřenou cenu. Vzniká z nesouladu splatností aktiv (typicky dlouhodobé úvěry) a pasiv (krátkodobé vklady). Regulátoři sledují LCR (krátkodobá likvidita na 30 dní) a NSFR (stabilní financování na 1 rok) jako povinné ukazatele dle Basel III.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je tržní riziko banky? Co měří VaR?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q7">Zobrazit odpověď</button>
+        <div id="t08-q7" class="hidden quiz-a">Tržní riziko je riziko ztráty plynoucí ze změn tržních cen – úrokových sazeb, měnových kurzů, cen akcií a komodit. Týká se zejména obchodní knihy banky (trading book). Value at Risk (VaR) je statistická míra tržního rizika: udává maximální ztrátu, která při daném stupni spolehlivosti (typicky 99 %) nebude v daném časovém horizontu (1 den nebo 10 dní) překročena.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je operační riziko?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q8">Zobrazit odpověď</button>
+        <div id="t08-q8" class="hidden quiz-a">Operační riziko je riziko ztráty způsobené selháním interních procesů, lidí nebo systémů, případně vnějšími událostmi. Zahrnuje: podvody, výpadky IT systémů, chyby zaměstnanců, přírodní katastrofy, kybernetické útoky nebo porušení regulatorních předpisů. Basel III vyžaduje, aby banky držely kapitál i vůči operačnímu riziku, přičemž metody výpočtu zahrnují základní ukazatelový přístup a standardizovaný přístup.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Co je kapitálová přiměřenost (CAR)? Napište vzorec.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q9">Zobrazit odpověď</button>
+        <div id="t08-q9" class="hidden quiz-a">Kapitálová přiměřenost (Capital Adequacy Ratio, CAR) měří, zda banka drží dostatečný vlastní kapitál k pokrytí rizik z aktiv: CAR = Regulatorní kapitál / Rizikově vážená aktiva (RWA) × 100 %. Čitatel zahrnuje Tier 1 a Tier 2 kapitál; jmenovatel jsou aktiva vážená koeficienty dle rizikovosti. Ukazatel zajišťuje, že banka může absorbovat ztráty bez ohrožení vkladatelů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Jaký je minimální požadavek CAR dle Basel III?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q10">Zobrazit odpověď</button>
+        <div id="t08-q10" class="hidden quiz-a">Basel III stanoví tyto minimální kapitálové požadavky: CET1 (Common Equity Tier 1) ≥ 4,5 % RWA; Tier 1 kapitál ≥ 6 % RWA; celkový kapitál (CAR) ≥ 8 % RWA. K těmto minimům se přidávají kapitálové rezervy (conservation buffer 2,5 %, countercyclical buffer 0–2,5 %, systémové buffery), čímž reálný efektivní požadavek v praxi dosahuje 10,5 % i více.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co je Tier 1 kapitál?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q11">Zobrazit odpověď</button>
+        <div id="t08-q11" class="hidden quiz-a">Tier 1 kapitál je jádrový (primární) regulatorní kapitál banky, tvořený nejkvalitnějšími složkami. Zahrnuje Common Equity Tier 1 (CET1) – základní kapitál, emisní ážio, nerozdělený zisk a jiné rezervy po odpočtech (goodwill, nehmotný majetek) – a Additional Tier 1 (AT1), kam patří hybridní nástroje jako contingent convertible bonds (CoCos). Tier 1 musí být k dispozici k absorpci ztrát za provozu banky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je Tier 2 kapitál?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q12">Zobrazit odpověď</button>
+        <div id="t08-q12" class="hidden quiz-a">Tier 2 kapitál je doplňkový regulatorní kapitál nižší kvality než Tier 1. Tvoří ho zejména podřízené dluhy (subordinated debt) se splatností nejméně 5 let, kumulativní prioritní akcie a část oceňovacích rezerv. Tier 2 slouží jako polštář pro případ likvidace banky (gone concern), nikoli pro absorpci ztrát za provozu. Celkový regulatorní kapitál = Tier 1 + Tier 2.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co je LCR (Liquidity Coverage Ratio)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q13">Zobrazit odpověď</button>
+        <div id="t08-q13" class="hidden quiz-a">LCR (Liquidity Coverage Ratio) je krátkodobý likviditní ukazatel dle Basel III: LCR = Vysoce likvidní aktiva (HQLA) / Čistý odliv hotovosti za 30 dní ≥ 100 %. Banka musí držet dostatečnou zásobu vysoce likvidních aktiv (hotovost, státní dluhopisy), aby přežila 30denní stresový scénář masivního odlivu vkladů. Platný požadavek LCR ≥ 100 % je závazný v EU od roku 2015.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Co měří ukazatel Cost-to-Income (CIR)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q14">Zobrazit odpověď</button>
+        <div id="t08-q14" class="hidden quiz-a">Cost-to-Income Ratio (CIR) měří provozní efektivnost banky: CIR = Provozní náklady / Provozní výnosy × 100 %. Nižší hodnota značí vyšší efektivnost – banka vynakládá méně korun nákladů na každou korunu výnosu. Průměrná hodnota u evropských bank se pohybuje kolem 55–65 %. Vysoký CIR (nad 70 %) signalizuje nízkou efektivitu nebo klesající výnosy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Co je NPL ratio a jak ho interpretujeme?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t08-q15">Zobrazit odpověď</button>
+        <div id="t08-q15" class="hidden quiz-a">NPL ratio (Non-Performing Loan ratio) vyjadřuje podíl nevýkonných (problematických) úvěrů na celkovém úvěrovém portfoliu banky: NPL = Nevýkonné úvěry / Celkové úvěry × 100 %. Nevýkonným se úvěr stává zpravidla po 90 dnech prodlení. Vyšší NPL ratio signalizuje horší kvalitu portfolia a vyšší úvěrové riziko. V EU je regulátory sledovaná hranice varovná při NPL nad 5 %; průměr EU bank byl v posledních letech pod 3 %.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

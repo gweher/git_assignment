@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 20: Měnový kurz, platební bilance a kapitálový trh</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="20">
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 20 / 20</div>
+  <h1>Měnový kurz, platební bilance, cenné papíry a kolektivní investování</h1>
+  <p class="official-question">Měnový kurz, platební bilance, cenné papíry a kolektivní investování (valuty a devizy, měnový kurz, absolutní a relativní forma teorie parity kupní síly; depreciace, devalvace, apreciace, revalvace; intervence centrální banky na devizových trzích; definice a struktura platební bilance, obchodní bilance; devizové rezervy ČNB; systémy měnových kurzů, fixing a plovoucí kurzy, měnové riziko, swapy, forvardy; základní druhy cenných papírů, akciové analýzy, finanční deriváty, kolektivní investování)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="19-inflace.html">← Téma 19</a>
+  <a href="../index.html">↩ Přehled témat</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1 min</td><td>Valuty, devizy, měnový kurz</td><td>Valuty = hotovost; devizy = pohledávky; přímá/nepřímá kotace; spot vs. forward</td></tr>
+          <tr><td>2 min</td><td>Parita kupní síly (PPP)</td><td>Absolutní PPP: e = P_dom/P_zahr; relativní PPP: Δe = π_dom − π_zahr</td></tr>
+          <tr><td>2 min</td><td>Kurzové změny + intervence ČNB</td><td>Depreciace/devalvace/apreciace/revalvace; kurzový závazek 2013–2017</td></tr>
+          <tr><td>2,5 min</td><td>Platební bilance — struktura</td><td>CA (obchodní bilance + služby + výnosy) + FA; PB = 0; devizové rezervy</td></tr>
+          <tr><td>2 min</td><td>Systémy kurzů + měnové riziko + hedging</td><td>Pevný/plovoucí/crawling peg; forward; swap; úroková parita</td></tr>
+          <tr><td>2 min</td><td>Cenné papíry — základní druhy</td><td>Akcie (práva); dluhopisy (YTM, kupón); podílový list; deriváty</td></tr>
+          <tr><td>1 min</td><td>Akciové analýzy</td><td>Fundamentální (P/E, YTM); technická (grafy); behaviorální</td></tr>
+          <tr><td>1,5 min</td><td>Kolektivní investování</td><td>UCITS; ETF; hedge fondy; NAV; zákon č. 240/2013 Sb.; dohled ČNB</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>Provázání kurzového rizika, PB a kapitálového trhu</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+      <ul>
+        <li><strong>Valuty vs. devizy:</strong> valuty = zahraniční bankovky (fyzická hotovost); devizy = pohledávky v cizí měně (vklady, šeky, elektronické převody); FOREX = trh deviz.</li>
+        <li><strong>Relativní PPP:</strong> <span class="formula">Δe% ≈ π_dom − π_zahr</span>; měna s vyšší inflací depreciuje; platí empiricky v dlouhém období.</li>
+        <li><strong>Terminologie kurzových změn:</strong> depreciace/apreciace = tržní pohyby (plovoucí kurz); devalvace/revalvace = administrativní rozhodnutí (pevný kurz).</li>
+        <li><strong>Platební bilance = 0:</strong> CA + FA (vč. změny rezerv) = 0 vždy; deficit CA musí být financován přebytkem FA (přílivem kapitálu) nebo poklesem devizových rezerv.</li>
+        <li><strong>Forward devizový:</strong> dohodnutý kurz pro budoucí datum; eliminuje kurzové riziko; cena: <span class="formula">F = S × (1 + r_dom) / (1 + r_zahr)</span> (úroková parita).</li>
+        <li><strong>NAV podílového fondu:</strong> <span class="formula">NAV = (Aktiva fondu − Závazky) / Počet podílových listů</span>; cena, za kterou si investor koupí/prodá podílový list.</li>
+        <li><strong>YTM (výnosnost do splatnosti):</strong> diskontní sazba, při které PV všech kupónů a JH = tržní cena dluhopisu; základní ukazatel výnosnosti dluhopisu.</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-card"><div class="term-name">Valuty</div><div class="term-def">Zahraniční bankovky a mince; fyzická cizí měna</div></div>
+        <div class="term-card"><div class="term-name">Devizy</div><div class="term-def">Pohledávky v cizí měně (vklady, šeky, el. převody); obchodovány na FOREX</div></div>
+        <div class="term-card"><div class="term-name">Parita kupní síly (PPP)</div><div class="term-def">Teorie: kurz odráží poměr cenových hladin; absolutní a relativní forma</div></div>
+        <div class="term-card"><div class="term-name">Depreciace / Apreciace</div><div class="term-def">Tržní oslabení / posílení kurzu domácí měny (plovoucí kurz)</div></div>
+        <div class="term-card"><div class="term-name">Devalvace / Revalvace</div><div class="term-def">Administrativní oslabení / posílení kurzu (pevný kurz, rozhodnutí CB)</div></div>
+        <div class="term-card"><div class="term-name">Platební bilance (PB)</div><div class="term-def">Statistický výkaz všech ekonomických transakcí rezidentů se zahraničím; vždy = 0</div></div>
+        <div class="term-card"><div class="term-name">Běžný účet (CA)</div><div class="term-def">Obchodní bilance + bilance služeb + výnosová bilance + běžné převody</div></div>
+        <div class="term-card"><div class="term-name">Finanční účet (FA)</div><div class="term-def">Přímé zahraniční investice (FDI) + portfoliové investice + ostatní + rezervy</div></div>
+        <div class="term-card"><div class="term-name">Forward devizový</div><div class="term-def">Termínový kontrakt na koupi/prodej cizí měny za předem dohodnutý kurz; hedging kurzového rizika</div></div>
+        <div class="term-card"><div class="term-name">NAV</div><div class="term-def">Čistá hodnota aktiv podílového fondu na jeden podílový list; cena pro investora</div></div>
+        <div class="term-card"><div class="term-name">YTM (výnosnost do splatnosti)</div><div class="term-def">Vnitřní výnosové procento dluhopisu; diskontní sazba equating PV cash flows s tržní cenou</div></div>
+        <div class="term-card"><div class="term-name">ETF</div><div class="term-def">Burzovně obchodovaný fond; kopíruje index; nízké náklady; obchodován jako akcie</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Absolutní vs. relativní PPP:</strong>
+        <br>Absolutní: <span class="formula">e = P_dom / P_zahr</span> (kurz = poměr cenových hladin)
+        <br>Relativní: <span class="formula">Δe% ≈ π_dom − π_zahr</span> (kurz se mění o inflační diferenciál)
+        <br>Příklad: ČR inflace 5 %, eurozóna 2 % → CZK by měla depreciovat ~3 % vůči EUR
+      </div>
+      <div class="relation-box">
+        <strong>Struktura platební bilance:</strong>
+        <table class="structure-table" style="margin-top:.5rem;">
+          <thead><tr><th>Účet</th><th>Hlavní položky</th></tr></thead>
+          <tbody>
+            <tr><td>Běžný účet (CA)</td><td>Obchodní bilance (X−M) + Bilance služeb + Výnosy (dividendy, úroky) + Transfery</td></tr>
+            <tr><td>Kapitálový účet</td><td>Kapitálové transfery (malá položka v ČR)</td></tr>
+            <tr><td>Finanční účet (FA)</td><td>FDI + Portfoliové investice + Ostatní investice + Změna devizových rezerv</td></tr>
+            <tr><td>Celkem</td><td>CA + KA + FA = 0 (vždy)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="relation-box">
+        <strong>Cena forwardového kurzu (úroková parita):</strong>
+        <span class="formula">F = S × (1 + r_dom) / (1 + r_zahr)</span>
+        — pokud r_dom &gt; r_zahr → F &gt; S (domácí měna forwardově slabší = prémie za vyšší sazbu)
+      </div>
+      <div class="relation-box">
+        <strong>NAV podílového fondu:</strong>
+        <span class="formula">NAV = (Tržní hodnota aktiv − Závazky fondu) / Počet vydaných podílových listů</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady a aplikace</div>
+      <ul>
+        <li><strong>Kurzový závazek ČNB 2013–2017:</strong> ČNB nakupovala EUR v neomezené výši za CZK, aby udržela kurz nad 27 CZK/EUR; cíl = zamezit deflaci; devizové rezervy narostly na ~150 mld. EUR; ukončení v dubnu 2017 → prudká apreciace CZK.</li>
+        <li><strong>Big Mac index (absolutní PPP):</strong> burger stojí v ČR 99 Kč, v USA 5 USD → implikovaný kurz 19,8 CZK/USD; pokud skutečný kurz = 23 CZK/USD → CZK podhodnocena; ilustrativní, ne přesná teorie.</li>
+        <li><strong>Hedging forwardem — firma:</strong> český exportér dostane 1 mil. EUR za 6 měsíců; prodá EUR forwardem za dohodnutý kurz 25 CZK/EUR; eliminuje riziko posílení CZK na 23 CZK/EUR.</li>
+        <li><strong>ETF vs. podílový fond:</strong> investor koupí ETF sledující PX index na BCPP; obchoduje ho průběžně jako akcii; nižší TER než aktivně spravovaný podílový fond; NAV se počítá kontinuálně z cen složek indexu.</li>
+      </ul>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li>Záměna depreciace a devalvace — klíčové rozlišení: tržní vs. administrativní pohyb kurzu.</li>
+        <li>Tvrzení, že platební bilance může být v přebytku nebo deficitu — celková PB je vždy 0; v přebytku/deficitu může být jen její část (CA, obchodní bilance).</li>
+        <li>Záměna absolutní a relativní PPP — absolutní říká, jaký by měl být kurz; relativní říká, jak by se měl kurz měnit.</li>
+        <li>Tvrzení, že forward odstraní všechna kurzová rizika — odstraní riziko nepříznivého pohybu, ale zároveň znemožní profitovat z příznivého pohybu kurzu.</li>
+        <li>Záměna YTM a kupónové sazby — kupón = nominální sazba z JH; YTM = skutečná výnosnost respektující tržní cenu dluhopisu.</li>
+        <li>Záměna podílového fondu a ETF — ETF se obchoduje průběžně na burze; podílový fond se kupuje/prodává za NAV obvykle jednou denně.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Jak funguje relativní PPP a co říká o vývoji kurzu?</li>
+        <li>Jaký je rozdíl mezi depreciací a devalvací?</li>
+        <li>Z čeho se skládá platební bilance a proč musí být celkově nulová?</li>
+        <li>Jak lze zajistit kurzové riziko pomocí forwardového kontraktu?</li>
+        <li>Co je NAV podílového fondu a jak se vypočítá?</li>
+        <li>Jaký je rozdíl mezi ETF a aktivně spravovaným podílovým fondem?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 20</h2>
+      <p class="recall-question">Měnový kurz, platební bilance, cenné papíry a kolektivní investování (valuty a devizy, měnový kurz, absolutní a relativní forma teorie parity kupní síly; depreciace, devalvace, apreciace, revalvace; intervence centrální banky na devizových trzích; definice a struktura platební bilance, obchodní bilance; devizové rezervy ČNB; systémy měnových kurzů, fixing a plovoucí kurzy, měnové riziko, swapy, forvardy; základní druhy cenných papírů, akciové analýzy, finanční deriváty, kolektivní investování)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">valuty ≠ devizy</span>
+        <span class="pill">přímá/nepřímá kotace</span>
+        <span class="pill">absolutní PPP</span>
+        <span class="pill">relativní PPP: Δe = π_dom−π_zahr</span>
+        <span class="pill">depreciace/devalvace</span>
+        <span class="pill">PB = 0</span>
+        <span class="pill">CA + FA = 0</span>
+        <span class="pill">obchodní bilance ČR přebytek</span>
+        <span class="pill">forward / swap</span>
+        <span class="pill">akcie / dluhopis / derivát</span>
+        <span class="pill">YTM</span>
+        <span class="pill">NAV podíl. fondu</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>1 min</td><td>Valuty, devizy, kurz</td><td>Valuty = hotovost; devizy = pohledávky; přímá kotace</td></tr>
+          <tr><td>2 min</td><td>PPP — absolutní a relativní</td><td>e = P_dom/P_zahr; Δe = π_dom − π_zahr</td></tr>
+          <tr><td>2 min</td><td>Kurzové změny + intervence ČNB</td><td>Depreciace vs. devalvace; kurzový závazek 2013–2017</td></tr>
+          <tr><td>2,5 min</td><td>Platební bilance</td><td>CA + FA = 0; obchodní bilance; devizové rezervy</td></tr>
+          <tr><td>2 min</td><td>Systémy kurzů + hedging</td><td>Pevný/plovoucí; forward F = S×(1+r_dom)/(1+r_zahr)</td></tr>
+          <tr><td>2 min</td><td>Cenné papíry</td><td>Akcie, dluhopisy, podílové listy, deriváty; YTM</td></tr>
+          <tr><td>1 min</td><td>Akciové analýzy</td><td>Fundamentální, technická, behaviorální</td></tr>
+          <tr><td>1,5 min</td><td>Kolektivní investování</td><td>UCITS, ETF, hedge fondy; NAV; zákon 240/2013</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>Propojení kurzového rizika a kapitálového trhu</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <ul>
+        <li>Valuty = zahraniční hotovost; devizy = pohledávky v cizí měně; FOREX = trh deviz</li>
+        <li>Relativní PPP: Δe% ≈ π_dom − π_zahr; vyšší inflace → depreciace</li>
+        <li>Depreciace/apreciace = tržní; devalvace/revalvace = administrativní</li>
+        <li>Platební bilance: CA + KA + FA = 0 vždy; deficit CA = příliv kapitálu (FA) nebo pokles rezerv</li>
+        <li>Forward: F = S × (1+r_dom)/(1+r_zahr); eliminuje kurzové riziko</li>
+        <li>NAV = (Aktiva − Závazky fondu) / Počet podílových listů</li>
+        <li>YTM = skutečná výnosnost dluhopisu; zohledňuje tržní cenu ≠ kupónová sazba</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Jak funguje relativní PPP a co říká o vývoji kurzu?</li>
+        <li>Jaký je rozdíl mezi depreciací a devalvací?</li>
+        <li>Z čeho se skládá platební bilance a proč musí být celkově nulová?</li>
+        <li>Jak lze zajistit kurzové riziko pomocí forwardového kontraktu?</li>
+        <li>Co je NAV podílového fondu a jak se vypočítá?</li>
+        <li>Jaký je rozdíl mezi ETF a aktivně spravovaným podílovým fondem?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 20: Měnový kurz, platební bilance a kapitálový trh</div>
+      <div class="memory-chain">
+        <div class="memory-node">Valuty (hotovost) vs. Devizy (pohledávky)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Měnový kurz: přímá kotace (1 EUR = X CZK)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Absolutní PPP: e = P_dom / P_zahr</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Relativní PPP: Δe% = π_dom − π_zahr</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Depreciace / Apreciace (tržní) vs. Devalvace / Revalvace (admin.)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Intervence ČNB (kurzový závazek 2013–2017: 27 CZK/EUR)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Platební bilance = 0 (CA + KA + FA = 0)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Obchodní bilance ČR (tradičně přebytek)</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Pevný / Plovoucí kurz / Currency board</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Měnové riziko → Forward (F = S × (1+r_dom)/(1+r_zahr))</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Cenné papíry: Akcie / Dluhopisy (YTM) / Deriváty</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">Kolektivní investování: UCITS / ETF / Hedge fondy</div>
+        <div class="memory-arrow">→</div>
+        <div class="memory-node">NAV = (Aktiva − Závazky) / Počet podílových listů</div>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaký je rozdíl mezi valutami a devizami?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q1">Zobrazit odpověď</button>
+        <div id="t20-q1" class="hidden quiz-a">Valuty jsou fyzické hotovostní peníze v cizí měně – bankovky a mince. Devizy jsou bezhotovostní pohledávky v cizí měně, tedy zejména vklady na účtech v zahraničních bankách, šeky nebo směnky znějící na cizí měnu. Devizový trh je rozsáhlejší a likvidnější než trh valutový, proto jsou kurzy deviz obvykle výhodnější než kurzy valut.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Co je přímá kotace měnového kurzu? Příklad.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q2">Zobrazit odpověď</button>
+        <div id="t20-q2" class="hidden quiz-a">Přímá kotace vyjadřuje počet jednotek domácí měny za jednu jednotku cizí měny – říká, kolik domácí měny zaplatím za jednu zahraniční. Příkladem z pohledu ČR je zápis 25 CZK/EUR, kde za jedno euro zaplatím 25 korun. Nepřímá kotace je inverzní – vyjadřuje, kolik jednotek cizí měny dostanu za jednu jednotku domácí.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co říká absolutní parita kupní síly (PPP)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q3">Zobrazit odpověď</button>
+        <div id="t20-q3" class="hidden quiz-a">Absolutní PPP říká, že devizový kurz by se měl rovnat poměru cenových hladin dvou zemí – identické zboží by mělo stát v přepočtu na společnou měnu stejně v obou zemích. Plyne z toho, že kurz je E = P_domácí / P_zahraniční. V praxi tuto teorii ověřuje tzv. index Big Maku. Absolutní PPP je hrubým přiblížením, protože ignoruje obchodní bariéry a netransportovatelné statky.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co říká relativní PPP? Napište vztah.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q4">Zobrazit odpověď</button>
+        <div id="t20-q4" class="hidden quiz-a">Relativní PPP tvrdí, že procentní změna devizového kurzu přibližně odpovídá rozdílu inflačních měr obou zemí: ΔE/E ≈ π_domácí − π_zahraniční. Pokud domácí inflace převyšuje zahraniční, domácí měna by měla depreciovat o přibližně tento rozdíl. Relativní PPP je empiricky lépe podložená než absolutní verze, zejména v dlouhém období.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Jaký je rozdíl mezi depreciací a devalvací?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q5">Zobrazit odpověď</button>
+        <div id="t20-q5" class="hidden quiz-a">Depreciace je tržní pokles hodnoty měny vůči jiné měně při systému plovoucího kurzu – dochází k ní spontánně vlivem nabídky a poptávky na devizovém trhu. Devalvace je naproti tomu administrativní snížení hodnoty měny vládou nebo centrální bankou v rámci systému pevného kurzu – jde o záměrné politické rozhodnutí. Analogicky apreciace (tržní posílení) stojí vůči revalvaci (administrativnímu posílení).</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Jak centrální banka intervenuje na devizovém trhu pro oslabení vlastní měny?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q6">Zobrazit odpověď</button>
+        <div id="t20-q6" class="hidden quiz-a">Pro oslabení vlastní měny centrální banka prodává domácí měnu a nakupuje cizí měnu (obvykle EUR nebo USD) na devizovém trhu, čímž zvyšuje nabídku domácí měny a zvyšuje poptávku po cizí měně. Výsledkem je depreciace domácí měny. Devizové rezervy centrální banky přitom rostou. Přesně tento mechanismus použila ČNB při kurzovém závazku v letech 2013–2017.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Z jakých hlavních účtů se skládá platební bilance?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q7">Zobrazit odpověď</button>
+        <div id="t20-q7" class="hidden quiz-a">Platební bilance se skládá ze dvou hlavních účtů: běžného účtu (CA – current account) a finančního účtu (FA – financial account), přičemž v rozšířeném pojetí se vyčleňuje i kapitálový účet. Běžný účet zachycuje toky zboží, služeb, důchodů a transferů. Finanční účet zachycuje přeshraniční pohyby kapitálu – přímé a portfoliové investice, bankovní úvěry a devizové rezervy.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co zahrnuje běžný účet platební bilance?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q8">Zobrazit odpověď</button>
+        <div id="t20-q8" class="hidden quiz-a">Běžný účet zahrnuje čtyři složky: obchodní bilanci (export minus import zboží), bilanci služeb (turistika, doprava, finanční služby), bilanci prvotních důchodů (mzdy, dividendy, úroky přijaté ze zahraničí nebo vyplacené cizincům) a bilanci druhotných důchodů (remitence, zahraniční pomoc, příspěvky do EU). Saldo běžného účtu odráží, zda je země čistým věřitelem nebo dlužníkem vůči světu.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Proč musí platební bilance vždy být nulová?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q9">Zobrazit odpověď</button>
+        <div id="t20-q9" class="hidden quiz-a">Platební bilance jako celek je vždy nulová díky systému podvojného účetnictví – každá mezinárodní transakce je zaznamenána jednou jako kredit a jednou jako debet. Deficit běžného účtu musí být financován přebytkem finančního účtu (příliv kapitálu) nebo čerpáním devizových rezerv. Pokud zemi odchází více zboží a služeb, než přichází, musí přijímat kapitál nebo se zadlužovat.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Jaká jsou hlavní aktiva devizových rezerv ČNB?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q10">Zobrazit odpověď</button>
+        <div id="t20-q10" class="hidden quiz-a">Devizové rezervy ČNB tvoří především zahraniční cenné papíry (vládní dluhopisy eurozóny, USA a dalších zemí), vklady u zahraničních centrálních bank a Bank for International Settlements (BIS), zlaté rezervy a zvláštní práva čerpání (SDR) u MMF. Po kurzovém závazku 2013–2017 výrazně vzrostly a řadí ČNB k zemím s jedněmi z nejvyšších devizových rezerv ve vztahu k HDP v EU.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Jaký je rozdíl mezi pevným a plovoucím měnovým kurzem?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q11">Zobrazit odpověď</button>
+        <div id="t20-q11" class="hidden quiz-a">Při pevném (fixním) kurzu centrální banka závazně stanoví paritu domácí měny vůči jiné měně nebo koši měn a tuto paritu udržuje intervencemi. Plovoucí (flexibilní) kurz se naopak volně tvoří na devizovém trhu podle nabídky a poptávky bez systematických zásahů centrální banky. Pevný kurz zajišťuje stabilitu a nízkou nejistotu pro obchodníky, ale omezuje samostatnost měnové politiky.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Napište vzorec pro forward kurz (úroková parita).</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q12">Zobrazit odpověď</button>
+        <div id="t20-q12" class="hidden quiz-a">Krytá úroková parita říká, že forward kurz F se odvozuje ze spotového kurzu S a poměru úrokových sazeb: F = S × (1 + r_d) / (1 + r_f), kde r_d je domácí a r_f je zahraniční úroková sazba. Měna se vyšší úrokovou sazbou obchoduje na forwardovém trhu s diskontem, aby nebylo možné bez rizika profitovat na úrokovém diferenciálu (arbitráž). Tento vztah je základem měnového zajišťování.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co je YTM (výnosnost dluhopisu do splatnosti)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q13">Zobrazit odpověď</button>
+        <div id="t20-q13" class="hidden quiz-a">YTM (Yield to Maturity) je vnitřní výnosové procento dluhopisu – taková diskontní sazba, při níž se současná hodnota všech budoucích peněžních toků (kupónů a nominální hodnoty při splatnosti) rovná tržní ceně dluhopisu. YTM je klíčový ukazatel pro porovnávání dluhopisů s různými kupóny a splatnostmi. Mezi cenou dluhopisu a jeho YTM platí nepřímý vztah – při poklesu ceny YTM roste.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jaký je rozdíl mezi futures a forwardem?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q14">Zobrazit odpověď</button>
+        <div id="t20-q14" class="hidden quiz-a">Forward je soukromě sjednaná smlouva mezi dvěma stranami o koupi nebo prodeji aktiva v budoucnosti za dnes dohodnutou cenu – je nestandardizovaný a obchoduje se mimoburzovně (OTC). Futures je standardizovaný kontrakt obchodovaný na burze s denním vypořádáváním zisků a ztrát (mark-to-market) a zárukou clearingového střediska. Futures je tedy likvidnější a méně zatížen kreditním rizikem protistrany.</div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Co je NAV podílového fondu a jak se vypočítá?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t20-q15">Zobrazit odpověď</button>
+        <div id="t20-q15" class="hidden quiz-a">NAV (Net Asset Value – čistá hodnota aktiv) vyjadřuje hodnotu jednoho podílového listu a vypočítá se jako: NAV = (Celková aktiva fondu − Závazky fondu) / Počet vydaných podílových listů. Za tuto cenu fond prodává a odkupuje podílové listy (u otevřených fondů). NAV se přepočítává každý obchodní den podle tržních cen aktiv v portfoliu. ETF se od klasického podílového fondu liší tím, že se obchoduje průběžně na burze jako akcie.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

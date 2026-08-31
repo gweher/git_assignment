@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -v \"^[^a-zA-Z]*$\")",
+      "Bash(pdftotext /Users/AB0357I/Downloads/finals_ec/ssekp-bsp-ekonomika-a-management-25-26.pdf -)",
+      "Bash(python3 *)",
+      "Bash(pip3 install *)",
+      "Bash(mdimport -d 2 /Users/AB0357I/Downloads/finals_ec/ssekp-bsp-ekonomika-a-management-25-26.pdf)",
+      "Bash(mdls -name kMDItemTextContent /Users/AB0357I/Downloads/finals_ec/ssekp-bsp-ekonomika-a-management-25-26.pdf)",
+      "Bash(qlmanage -p /Users/AB0357I/Downloads/finals_ec/ssekp-bsp-ekonomika-a-management-25-26.pdf)",
+      "Bash(osascript)",
+      "Bash(swift *)",
+      "Bash(pip3 list *)",
+      "Bash(brew install *)"
+    ]
+  }
+}

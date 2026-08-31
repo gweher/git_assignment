@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Státní zkouška — Ekonomika a management</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .progress-summary { display: flex; gap: 1.5rem; justify-content: center; font-size: .85rem; margin: .7rem 0 1.5rem; flex-wrap: wrap; }
+    .progress-summary span { display: flex; align-items: center; gap: .35rem; }
+    .section-label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin: 1.5rem 0 .5rem; }
+    .quick-links { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .quick-links a { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .45rem .9rem; font-size: .82rem; font-weight: 600; color: var(--text-muted); text-decoration: none; transition: border-color .15s, color .15s; }
+    .quick-links a:hover { color: var(--accent); border-color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<div class="dashboard-header">
+  <div class="topic-badge">BSP · Ekonomika a management · SSEKP</div>
+  <h1>Státní závěrečná zkouška</h1>
+  <p>20 témat &nbsp;·&nbsp; ústní zkouška &nbsp;·&nbsp; ~15 min / téma + 2 doplňující otázky</p>
+  <div class="progress-summary" id="progress-summary">
+    <span><span class="status-dot done"></span><span id="cnt-done">0</span> zvládnuto</span>
+    <span><span class="status-dot seen"></span><span id="cnt-seen">0</span> procvičeno</span>
+    <span><span class="status-dot unseen"></span><span id="cnt-unseen">20</span> neprocvičeno</span>
+  </div>
+</div>
+
+<!-- Exam simulation -->
+<div class="sim-box">
+  <h2>🎯 Simulace zkoušky</h2>
+  <p style="font-size:.9rem;color:var(--text-muted);margin:.4rem 0 .9rem;">Náhodně vylosuje 2 témata. Zavři browser, mluv 15 minut ke každému. Pak ověř.</p>
+  <button class="reveal-btn" id="sim-start" style="width:auto;padding:.6rem 1.4rem;">Vylosovat 2 témata</button>
+  <div id="sim-result" class="hidden" style="margin-top:1rem;"></div>
+</div>
+
+<!-- Quick links -->
+<div class="section-label">Rychlá navigace</div>
+<div class="quick-links">
+  <a href="#mikro">Mikroekonomie (1–6)</a>
+  <a href="#banking">Bankovnictví (7–8)</a>
+  <a href="#accounting">Účetnictví (9–11)</a>
+  <a href="#finance">Finance (12–13)</a>
+  <a href="#macro">Makroekonomie (14–20)</a>
+</div>
+
+<!-- Topics grid -->
+<div class="section-label" id="mikro">Mikroekonomie a podniková ekonomika</div>
+<div class="topics-grid">
+
+  <a class="topic-card" href="lessons/01-spotritel.html" data-topic="01">
+    <div class="topic-card-num">Téma 1</div>
+    <div class="topic-card-title">Chování spotřebitele a formování poptávky</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/02-naklady.html" data-topic="02">
+    <div class="topic-card-num">Téma 2</div>
+    <div class="topic-card-title">Analýza nákladů a formování nabídky</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/03-konkurence.html" data-topic="03">
+    <div class="topic-card-num">Téma 3</div>
+    <div class="topic-card-title">Firma v podmínkách dokonalé a nedokonalé konkurence</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/04-kapital.html" data-topic="04">
+    <div class="topic-card-num">Téma 4</div>
+    <div class="topic-card-title">Trh kapitálu a investiční rozhodování</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/05-odvetvi.html" data-topic="05">
+    <div class="topic-card-num">Téma 5</div>
+    <div class="topic-card-title">Odvětvová struktura hospodářství</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/06-soutez.html" data-topic="06">
+    <div class="topic-card-num">Téma 6</div>
+    <div class="topic-card-title">Regulace hospodářské soutěže</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+</div>
+
+<div class="section-label" id="banking">Bankovnictví</div>
+<div class="topics-grid">
+
+  <a class="topic-card" href="lessons/07-bankovni-produkty.html" data-topic="07">
+    <div class="topic-card-num">Téma 7</div>
+    <div class="topic-card-title">Bankovní produkty a služby</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/08-banka-podnik.html" data-topic="08">
+    <div class="topic-card-num">Téma 8</div>
+    <div class="topic-card-title">Banka jako podnik</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+</div>
+
+<div class="section-label" id="accounting">Účetnictví</div>
+<div class="topics-grid">
+
+  <a class="topic-card" href="lessons/09-ucetnictvi.html" data-topic="09">
+    <div class="topic-card-num">Téma 9</div>
+    <div class="topic-card-title">Zásady účetnictví a účetní výkazy</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/10-manazerske-uctv.html" data-topic="10">
+    <div class="topic-card-num">Téma 10</div>
+    <div class="topic-card-title">Manažerské účetnictví</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/11-rozhodovaci.html" data-topic="11">
+    <div class="topic-card-num">Téma 11</div>
+    <div class="topic-card-title">Rozhodovací úlohy v manažerském účetnictví</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+</div>
+
+<div class="section-label" id="finance">Finance podniku</div>
+<div class="topics-grid">
+
+  <a class="topic-card" href="lessons/12-financni-analyza.html" data-topic="12">
+    <div class="topic-card-num">Téma 12</div>
+    <div class="topic-card-title">Finanční analýza a ukazatelé finanční analýzy</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/13-financovani.html" data-topic="13">
+    <div class="topic-card-num">Téma 13</div>
+    <div class="topic-card-title">Krátkodobé a dlouhodobé financování</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+</div>
+
+<div class="section-label" id="macro">Makroekonomie a hospodářská politika</div>
+<div class="topics-grid">
+
+  <a class="topic-card" href="lessons/14-trh-prace.html" data-topic="14">
+    <div class="topic-card-num">Téma 14</div>
+    <div class="topic-card-title">Trh práce</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/15-hosp-politika.html" data-topic="15">
+    <div class="topic-card-num">Téma 15</div>
+    <div class="topic-card-title">Hospodářská politika a makroekonomický produkt</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/16-fiskalni.html" data-topic="16">
+    <div class="topic-card-num">Téma 16</div>
+    <div class="topic-card-title">Fiskální politika</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/17-dane.html" data-topic="17">
+    <div class="topic-card-num">Téma 17</div>
+    <div class="topic-card-title">Daňová soustava ČR</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/18-penize.html" data-topic="18">
+    <div class="topic-card-num">Téma 18</div>
+    <div class="topic-card-title">Trh peněz a bankovní systém</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/19-inflace.html" data-topic="19">
+    <div class="topic-card-num">Téma 19</div>
+    <div class="topic-card-title">Inflace a nezaměstnanost</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+  <a class="topic-card" href="lessons/20-kurz.html" data-topic="20">
+    <div class="topic-card-num">Téma 20</div>
+    <div class="topic-card-title">Měnový kurz, platební bilance, cenné papíry a kolektivní investování</div>
+    <div class="topic-card-status"><span class="status-dot unseen"></span><span class="status-label">Neprocvičeno</span></div>
+  </a>
+
+</div>
+
+<script src="assets/app.js"></script>
+<script>
+  // Update progress summary on dashboard
+  document.addEventListener('DOMContentLoaded', () => {
+    let done = 0, seen = 0, unseen = 0;
+    document.querySelectorAll('.topic-card[data-topic]').forEach(card => {
+      const status = getTopicStatus(card.dataset.topic);
+      if (status === 'done') done++;
+      else if (status === 'seen') seen++;
+      else unseen++;
+    });
+    document.getElementById('cnt-done').textContent = done;
+    document.getElementById('cnt-seen').textContent = seen;
+    document.getElementById('cnt-unseen').textContent = unseen;
+  });
+</script>
+</body>
+</html>

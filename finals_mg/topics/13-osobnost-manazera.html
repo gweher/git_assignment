@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Osobnost manažera — SZZk Management</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic-id="t13">
+
+<nav class="navbar">
+  <a class="navbar__brand" href="../index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="../index.html">Dashboard</a>
+    <a class="navbar__link" href="../simulation.html">Simulace</a>
+    <a class="navbar__link" href="../revision.html">Rychlá revize</a>
+    <a class="navbar__link" href="12-psychologicke-smery.html">← Předchozí</a>
+    <a class="navbar__link" href="14-stres.html">Další →</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="breadcrumb"><a href="../index.html">Dashboard</a><span>Téma 13</span></div>
+
+  <div class="recall-bar">
+    <strong>🎯 Recall mód: Přemyslete si odpověď — pak odkryjte blueprint</strong>
+    <button id="recall-toggle-btn" class="btn btn--small btn--secondary">🎯 Recall mód</button>
+    <button id="mastered-btn" class="btn btn--small btn--success">✓ Označit jako zvládnuté</button>
+  </div>
+
+  <div class="topic-header">
+    <div class="topic-header__num">13</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Osobnost manažera</div>
+      <div class="topic-header__subtitle">Okruh: Management · FIM UHK · ~15 min ústní odpověď</div>
+    </div>
+  </div>
+
+  <div class="recall-overlay">
+    <div class="section-block">
+      <div class="section-block__header"><span class="section-block__title">💡 Memory triggers</span></div>
+      <div class="section-block__body">
+        <div class="memory-map">
+          <div class="memory-map__title">Rekonstrukce odpovědi</div>
+          <div class="memory-map__chain">
+            <span class="memory-map__kw">manažer</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">Mintzberg 10 rolí</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">interpersonální / informační / rozhodovací</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">time management</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">Pareto 80/20</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">Eisenhower matice</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">osobnost</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">temperament / IQ / EQ / charakter</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem" class="text-muted text-small">Přemyslete si strukturu. Pak klikněte "Zobrazit odpověď".</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blueprint-content">
+
+    <!-- 1. STRUKTURA ODPOVĚDI -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⏱</span> Struktura odpovědi (~15 min)</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="time-table">
+          <thead><tr><th>Část</th><th>Obsah</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr><td class="time-table__section">Úvod</td><td>Definice manažera, jeho klíčová role v organizaci, rozdíl manažer vs. lídr</td><td>1 min</td></tr>
+            <tr><td class="time-table__section">Role manažera</td><td>Mintzbergovy role — 3 skupiny, 10 rolí s příklady</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Time management</td><td>Paretovo pravidlo (80/20), Eisenhowerova matice (4 kvadranty), časoví zloději</td><td>4 min</td></tr>
+            <tr><td class="time-table__section">Administrativa</td><td>Porady, e-mail (inbox zero), cloud, minimální program</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Rozměry osobnosti</td><td>Struktura, motivace (intrinsická/extrinsická), zralost (emoční, sociální, profesní)</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Vlastnosti osobnosti</td><td>Temperament (Hippokrates, Eysenck), schopnosti (IQ/EQ), charakter, MBTI, Big Five</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Závěr</td><td>Shrnutí — efektivní manažer propojuje role, time management a rozvinutou osobnost</td><td>1 min</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 2. CO MUSÍM ŘÍCT -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">📋</span> Co musím říct</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="must-say">
+          <li><strong>Manažer vs. lídr:</strong> manažer = správa, plánování, kontrola, udržování řádu; lídr = vize, inspirace, iniciování změny <em>(Kotter)</em></li>
+          <li><strong>Mintzbergovy role (1973):</strong> 10 rolí ve 3 skupinách — interpersonální (reprezentant, vedoucí, spojovatel), informační (monitor, šiřitel, mluvčí), rozhodovací (podnikatel, řešitel problémů, alokátor zdrojů, vyjednávač)</li>
+          <li><strong>Paretovo pravidlo 80/20:</strong> 20 % příčin generuje 80 % výsledků; manažer se soustředí na prioritní 20 % aktivit s největším dopadem</li>
+          <li><strong>Eisenhowerova matice:</strong> dvě osy — důležitost × naléhavost; kvadrant I (udělej hned), II (plánuj — klíčový pro rozvoj), III (deleguj), IV (eliminuj)</li>
+          <li><strong>Vedení administrativy:</strong> porady (agenda, max. 60–90 min, zápis), e-mail (inbox zero, 2× denně), cloud (OneDrive/SharePoint/Google Drive), minimální program (nejkritičtější úkoly dne)</li>
+          <li><strong>Rozměry osobnosti:</strong> struktura (vrozené + získané, relativně stabilní), motivace (intrinsická — vnitřní zájem; extrinsická — odměna/trest), zralost (emoční, sociální, profesní)</li>
+          <li><strong>Temperament:</strong> Hippokratovy typy — sangvinik (optimistický, společenský), cholerik (impulzivní, energický), melancholik (citlivý, analytický), flegmatik (klidný, vytrvalý); Eysenck — dimenze extraverze/introverze × stabilita/neurotismus</li>
+          <li><strong>Schopnosti a inteligence:</strong> kognitivní (IQ), emoční (EQ — Goleman: sebeuvědomění, seberegulace, motivace, empatie, sociální dovednosti), sociální, praktická</li>
+          <li><strong>Charakter:</strong> morální profil manažera — integrita, hodnoty, zásady; lze rozvíjet; základ důvěryhodnosti</li>
+          <li><strong>Typologie MBTI:</strong> 4 dimenze (E/I, S/N, T/F, J/P) → 16 osobnostních typů; <strong>Big Five (OCEAN):</strong> Otevřenost, Svědomitost, Extraverze, Přívětivost, Emoční stabilita</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. KLÍČOVÉ POJMY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔑</span> Klíčové pojmy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="concept-tags">
+          <span class="concept-tag">Mintzbergovy role</span>
+          <span class="concept-tag">Paretovo pravidlo 80/20</span>
+          <span class="concept-tag">Eisenhowerova matice</span>
+          <span class="concept-tag">time management</span>
+          <span class="concept-tag">interpersonální role</span>
+          <span class="concept-tag">informační role</span>
+          <span class="concept-tag">rozhodovací role</span>
+          <span class="concept-tag">kvadrant II</span>
+          <span class="concept-tag">inbox zero</span>
+          <span class="concept-tag">minimální program</span>
+          <span class="concept-tag">intrinsická motivace</span>
+          <span class="concept-tag">extrinsická motivace</span>
+          <span class="concept-tag">emoční zralost</span>
+          <span class="concept-tag">temperament</span>
+          <span class="concept-tag">sangvinik / cholerik / melancholik / flegmatik</span>
+          <span class="concept-tag">IQ</span>
+          <span class="concept-tag">EQ (emoční inteligence)</span>
+          <span class="concept-tag">charakter</span>
+          <span class="concept-tag">MBTI</span>
+          <span class="concept-tag">Big Five (OCEAN)</span>
+          <span class="concept-tag">Eysenck</span>
+          <span class="concept-tag">manažer vs. lídr</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. KLÍČOVÉ VZTAHY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔗</span> Klíčové vztahy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="data-table">
+          <thead><tr><th>Dimenze</th><th>Manažer</th><th>Lídr</th></tr></thead>
+          <tbody>
+            <tr><td>Zaměření</td><td>Správa, kontrola, udržování</td><td>Vize, změna, inspirace</td></tr>
+            <tr><td>Otázka</td><td>Jak a kdy?</td><td>Co a proč?</td></tr>
+            <tr><td>Přístup k lidem</td><td>Řídí podřízené</td><td>Inspiruje následovníky</td></tr>
+            <tr><td>Horizont</td><td>Krátkodobý, operativní</td><td>Dlouhodobý, strategický</td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:1.5rem">
+          <strong>Eisenhowerova matice:</strong>
+          <table class="data-table" style="margin-top:0.5rem">
+            <thead><tr><th></th><th>Naléhavé</th><th>Nenaléhavé</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Důležité</strong></td><td>I — Udělej hned (krize, termíny)</td><td>II — Plánuj (rozvoj, vztahy, prevence) ★</td></tr>
+              <tr><td><strong>Nedůležité</strong></td><td>III — Deleguj (některé hovory, schůzky)</td><td>IV — Eliminuj (sociální sítě, zbytečná e-mail)</td></tr>
+            </tbody>
+          </table>
+          <div class="text-small text-muted" style="margin-top:0.4rem">★ Kvadrant II je klíčový — manažeři sem investují málo času, přitom přináší největší dlouhodobý přínos.</div>
+        </div>
+
+        <div style="margin-top:1.5rem">
+          <strong>Mintzbergovy role — přehled:</strong>
+          <table class="data-table" style="margin-top:0.5rem">
+            <thead><tr><th>Skupina</th><th>Role</th><th>Příklad</th></tr></thead>
+            <tbody>
+              <tr><td>Interpersonální</td><td>Reprezentant, Vedoucí, Spojovatel</td><td>Podepisuje smlouvy, motivuje tým, udržuje kontakty</td></tr>
+              <tr><td>Informační</td><td>Monitor, Šiřitel, Mluvčí</td><td>Sleduje prostředí, předává info, zastupuje org. navenek</td></tr>
+              <tr><td>Rozhodovací</td><td>Podnikatel, Řešitel problémů, Alokátor zdrojů, Vyjednávač</td><td>Iniciuje změny, řeší krize, přiděluje rozpočet, jedná</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. TYPICKÉ CHYBY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⚠️</span> Typické chyby</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="mistake-list">
+          <li class="mistake-item">Zaměnit manažera a lídra — jde o různé, ale doplňující se role; organizace potřebuje obojí</li>
+          <li class="mistake-item">Přeskočit Eisenhowerovu matici bez vysvětlení 4 kvadrantů — zkoušející očekává konkrétní popis každého</li>
+          <li class="mistake-item">Říct pouze „20 % dělá 80 % práce" — Paretovo pravidlo se týká příčin a výsledků, ne lidí</li>
+          <li class="mistake-item">Zaměnit temperament s charakterem — temperament je vrozený biologický základ, charakter lze rozvíjet</li>
+          <li class="mistake-item">Vynechat EQ jako součást inteligence manažera — Goleman prokázal, že EQ je pro vedení lidí důležitější než IQ</li>
+          <li class="mistake-item">Plést Big Five (OCEAN) s MBTI — jsou to různé modely; Big Five je vědecky více validovaný</li>
+          <li class="mistake-item">Vynechat kvadrant II jako klíčový — právě plánování a rozvoj (nenaléhavé, ale důležité) odlišují efektivního manažera</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6. DOPLŇUJÍCÍ OTÁZKY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">❓</span> Možné doplňující otázky</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="follow-up-list">
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak by měl manažer prakticky zavést Eisenhowerovu matici do každodenní práce?</div>
+            <div class="follow-up-a">• Každé ráno vypsat úkoly a zařadit je do matice — věnovat energii kvadrantu I, plánovat kvadrant II<br>• Naučit se delegovat kvadrant III (podřízeným nebo asistentce)<br>• Kvadrant IV tvrdě eliminovat (sociální sítě, zbytečné schůzky, passive e-mail scrolling)<br>• Kombinovat s minimálním programem — 3 nejdůležitější úkoly dne</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Proč je emoční inteligence (EQ) pro manažera důležitější než IQ?</div>
+            <div class="follow-up-a">• EQ zahrnuje sebeuvědomění, empatii, regulaci emocí a sociální dovednosti — kritické pro vedení lidí<br>• Výzkumy (Goleman) ukazují, že EQ vysvětluje až 67 % výkonu efektivních lídrů<br>• IQ pomáhá řešit technické problémy, EQ buduje vztahy a motivaci týmu<br>• Manažer s nízkým EQ vytváří strach, fluktuaci a nízkou angažovanost</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jaký je vztah mezi Hippokratovými typy temperamentu a Eysenckovou typologií?</div>
+            <div class="follow-up-a">• Eysenck mapoval Hippokratovy 4 typy na 2 dimenze: extraverze/introverze × stabilita/neurotismus<br>• Sangvinik = extravert + stabilní; cholerik = extravert + nestabilní (neurotický)<br>• Flegmatik = introvert + stabilní; melancholik = introvert + nestabilní<br>• Eysenck přidal biologický základ — arousal centrálního nervového systému</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak se liší intrinsická a extrinsická motivace v kontextu manažerské praxe?</div>
+            <div class="follow-up-a">• Intrinsická: vychází z vnitřního zájmu, zvědavosti, autonomie, smyslu práce (Deci a Ryan — Self-Determination Theory)<br>• Extrinsická: řízena vnějšími odměnami (plat, bonusy, pochvala) nebo tresty<br>• Nadměrné extrinsické odměny mohou „vytlačit" intrinsickou motivaci (crowding-out efekt)<br>• Efektivní manažer kombinuje obě — zajišťuje spravedlivou odměnu A smysluplnou práci</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co jsou tzv. „časoví zloději" a jak je manažer eliminuje?</div>
+            <div class="follow-up-a">• Typičtí zloději: zbytečné porady bez agendy, nekontrolovaná e-mailová schránka, nedelegování, prokrastinace, perfekcionismus, „otevřené dveře" bez pravidel<br>• Eliminace: inbox zero + zpracování e-mailu 2× denně, porady s agendou a časovým limitem, jasné delegování s pravomocemi<br>• Technika „time blocking": blokování časových úseků v kalendáři pro hlubokou práci<br>• Pravidlo 2 minut: pokud úkol trvá méně než 2 min, udělej ho hned</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MEMORY MAP -->
+    <div class="memory-map" style="margin-bottom:2rem">
+      <div class="memory-map__title">⚡ Memory mapa — rekonstrukce 15minutové odpovědi</div>
+      <div class="memory-map__chain">
+        <span class="memory-map__kw">manažer</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">Mintzberg</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">10 rolí</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">interpersonální</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">informační</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">rozhodovací</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">time management</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">Pareto 80/20</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">Eisenhower</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">kvadrant I–IV</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">e-mail + porady</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">osobnost</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">struktura / motivace / zralost</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">temperament</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">sangvinik…</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">IQ / EQ</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">charakter</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">MBTI</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">Big Five OCEAN</span>
+      </div>
+    </div>
+
+  </div><!-- /.blueprint-content -->
+
+  <hr class="section-divider">
+  <div class="quiz-section">
+    <div class="quiz-title">🧠 Procvičení <span class="quiz-counter">(15 otázek)</span></div>
+    <div class="quiz-grid">
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q1</span>
+          <span class="quiz-card__q-text">Vyjmenujte 3 skupiny rolí manažera dle Mintzberga a uveďte příklady z každé.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Interpersonální:</strong> reprezentant (podepisuje smlouvy), vedoucí (motivuje tým), spojovatel (udržuje kontakty).<br>
+          <strong>Informační:</strong> monitor (sleduje prostředí), šiřitel (předává informace), mluvčí (zastupuje organizaci navenek).<br>
+          <strong>Rozhodovací:</strong> podnikatel (iniciuje změny), řešitel problémů (reaguje na krize), alokátor zdrojů (přiděluje rozpočet), vyjednávač (jedná s partnery).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q2</span>
+          <span class="quiz-card__q-text">Co říká Paretovo pravidlo (80/20) a jak ho manažer využívá?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          20 % příčin (aktivit, zákazníků, produktů) generuje 80 % výsledků (tržeb, výkonu, problémů). Manažer identifikuje a soustředí svou energii na prioritní 20 % aktivit s největším dopadem — vyloučí nebo deleguje zbývajících 80 % s nízkým efektem.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q3</span>
+          <span class="quiz-card__q-text">Jak funguje Eisenhowerova matice — popište 4 kvadranty.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Dvě osy: důležitost × naléhavost.<br>
+          <strong>I (důležité + naléhavé):</strong> Udělej hned — krize, urgentní termíny.<br>
+          <strong>II (důležité + nenaléhavé):</strong> Plánuj — rozvoj, prevence, vztahy (klíčový kvadrant!).<br>
+          <strong>III (nedůležité + naléhavé):</strong> Deleguj — některé hovory a schůzky.<br>
+          <strong>IV (nedůležité + nenaléhavé):</strong> Eliminuj — zbytečné aktivity, prokrastinace.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q4</span>
+          <span class="quiz-card__q-text">Jaký je rozdíl mezi manažerem a lídrem?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Manažer:</strong> správa, plánování, organizování a kontrola; zaměřen na efektivitu procesů; ptá se „jak a kdy?"; řídí podřízené.<br>
+          <strong>Lídr:</strong> vize, inspirace a iniciování změny; zaměřen na lidi a směr; ptá se „co a proč?"; motivuje následovníky.<br>
+          Organizace potřebuje obojí — manažer udržuje chod, lídr ukazuje budoucnost.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q5</span>
+          <span class="quiz-card__q-text">Co jsou Hippokratovy temperamentové typy?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Čtyři typy dle převládající tělní tekutiny (humorální teorie):<br>
+          <strong>Sangvinik:</strong> optimistický, společenský, přizpůsobivý (krev).<br>
+          <strong>Cholerik:</strong> impulzivní, energický, vznětlivý (žluč).<br>
+          <strong>Melancholik:</strong> citlivý, analytický, introvertní (černá žluč).<br>
+          <strong>Flegmatik:</strong> klidný, vytrvalý, spolehlivý (hlen).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q6</span>
+          <span class="quiz-card__q-text">Co je emoční inteligence (EQ) a proč je pro manažera důležitá?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          EQ (Goleman) = schopnost rozpoznávat, pochopit a řídit vlastní emoce i emoce druhých. Pět složek: sebeuvědomění, seberegulace, motivace, empatie, sociální dovednosti.<br>
+          Pro manažera je klíčové, protože: buduje důvěru a vztahy, motivuje tým, zvládá konflikty a stres; výzkumy ukazují, že EQ vysvětluje až 67 % výkonu efektivních lídrů.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q7</span>
+          <span class="quiz-card__q-text">Jaký je rozdíl mezi intrinsickou a extrinsickou motivací?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Intrinsická:</strong> vychází z vnitřního zájmu, autonomie, smyslu práce, zvědavosti — člověk dělá věc pro ni samotnou (Deci a Ryan).<br>
+          <strong>Extrinsická:</strong> řízena vnějšími podněty — odměna (plat, bonus, pochvala) nebo trest.<br>
+          Nadměrné extrinsické odměny mohou potlačit intrinsickou motivaci (efekt vytěsnění). Efektivní manažer kombinuje obojí.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q8</span>
+          <span class="quiz-card__q-text">Co je model Big Five (OCEAN) osobnosti?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Pět dimenzí vědecky validovaného modelu osobnosti:<br>
+          <strong>O</strong> — Openness (Otevřenost k novým zkušenostem)<br>
+          <strong>C</strong> — Conscientiousness (Svědomitost, pořádkumilovnost)<br>
+          <strong>E</strong> — Extraversion (Extraverze, sociabilita)<br>
+          <strong>A</strong> — Agreeableness (Přívětivost, kooperativnost)<br>
+          <strong>N</strong> — Neuroticism (Emoční nestabilita). Každý člověk leží na škále pro každou dimenzi.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q9</span>
+          <span class="quiz-card__q-text">Jak vést efektivní poradu — uveďte alespoň 4 zásady.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          1. Rozeslat agendu předem (co se projednává, v jakém pořadí).<br>
+          2. Dodržovat časový limit — max. 60–90 minut.<br>
+          3. Zvát pouze relevantní účastníky (princip „need to know").<br>
+          4. Vést zápis s akcemi a odpovědnostmi (kdo, co, do kdy).<br>
+          5. Začínat a končit načas — respektovat čas účastníků.<br>
+          6. Online porady: sdílet obrazovku, technický check předem, kamera zapnutá.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q10</span>
+          <span class="quiz-card__q-text">Co je „inbox zero" filozofie a jak se aplikuje?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Inbox zero (Merlin Mann) = cíl udržovat e-mailovou schránku prázdnou nebo téměř prázdnou pomocí systematického zpracování.<br>
+          Aplikace: e-mail zpracovávat 2× denně (ne neustále); každý e-mail — 4D: Delete (smaž), Do (udělej do 2 min), Delegate (předej), Defer (přesun do úkolů). E-mail se nestane „todo listem".
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q11</span>
+          <span class="quiz-card__q-text">Co jsou „časoví zloději" a jak je manažer eliminuje?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Časoví zloději jsou aktivity, které spotřebovávají čas bez přiměřeného výstupu: zbytečné porady bez agendy, nekontrolovaný e-mail, nedelegování, prokrastinace, perfekcionismus, přerušení při hluboké práci.<br>
+          Eliminace: agenda pro porady, inbox zero, time blocking v kalendáři, jasné delegování s pravomocemi, pravidlo 2 minut.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q12</span>
+          <span class="quiz-card__q-text">Co je MBTI a jaké dimenze používá?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          MBTI (Myers-Briggs Type Indicator) je nástroj typologie osobnosti vycházející z Jungovy teorie. Čtyři dimenze:<br>
+          <strong>E/I</strong> — Extraverze / Introverze (zdroj energie)<br>
+          <strong>S/N</strong> — Sensing / Intuition (získávání informací)<br>
+          <strong>T/F</strong> — Thinking / Feeling (rozhodování)<br>
+          <strong>J/P</strong> — Judging / Perceiving (životní styl)<br>
+          Kombinace → 16 osobnostních typů (např. ENTJ, INFP…).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q13</span>
+          <span class="quiz-card__q-text">Jaký je rozdíl mezi IQ a EQ?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>IQ</strong> (Intelligence Quotient) = kognitivní inteligence — logické myšlení, abstrakce, analýza, verbální a numerické schopnosti. Relativně stabilní, geneticky podmíněn.<br>
+          <strong>EQ</strong> (Emotional Quotient / Intelligence) = emoční inteligence — rozpoznání, porozumění a řízení vlastních i cizích emocí. Lze rozvíjet tréninkem. Pro manažerskou roli klíčovější než IQ.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q14</span>
+          <span class="quiz-card__q-text">Co je „kvadrant II" v Eisenhowerově matici a proč je klíčový?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Kvadrant II = důležité, ale NENALÉHAVÉ aktivity: strategické plánování, osobní rozvoj, budování vztahů, prevence problémů, vzdělávání, sport a zdraví.<br>
+          Klíčový proto, že: manažeři ho zanedbávají (vždy je něco „naléhavého"), přitom investice do KV II snižuje objem KV I (krize) v budoucnu. Covey ho nazval „kvadrantem efektivity".
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q15</span>
+          <span class="quiz-card__q-text">Co tvoří charakter manažera a proč je důležitý?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Charakter = morální profil osobnosti — integrita (soulad slov a činů), hodnoty (co považuje za správné), zásady (jak jedná v obtížných situacích), odvaha, spravedlnost.<br>
+          Na rozdíl od temperamentu (vrozeného) lze charakter rozvíjet výchovou a zkušenostmi.<br>
+          Důležitý pro: důvěryhodnost manažera, ochotu podřízených ho následovat, etické rozhodování a udržení firemní kultury.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /.page -->
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontrola — SZZk Management</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic-id="t06">
+
+<nav class="navbar">
+  <a class="navbar__brand" href="../index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="../index.html">Dashboard</a>
+    <a class="navbar__link" href="../simulation.html">Simulace</a>
+    <a class="navbar__link" href="../revision.html">Rychlá revize</a>
+    <a class="navbar__link" href="05-vedeni-motivace.html">← Předchozí</a>
+    <a class="navbar__link" href="07-firemni-kultura.html">Další →</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb"><a href="../index.html">Dashboard</a><span>Téma 06</span></div>
+
+  <!-- RECALL MODE BAR -->
+  <div class="recall-bar">
+    <strong>🎯 Recall mód: Přemyslete si odpověď — pak odkryjte blueprint</strong>
+    <button id="recall-toggle-btn" class="btn btn--small btn--secondary">🎯 Recall mód</button>
+    <button id="mastered-btn" class="btn btn--small btn--success">✓ Označit jako zvládnuté</button>
+  </div>
+
+  <!-- TOPIC HEADER -->
+  <div class="topic-header">
+    <div class="topic-header__num">06</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Kontrola</div>
+      <div class="topic-header__subtitle">Okruh: Management · FIM UHK · ~15 min ústní odpověď</div>
+    </div>
+  </div>
+
+  <!-- RECALL OVERLAY -->
+  <div class="recall-overlay">
+    <div class="section-block">
+      <div class="section-block__header"><span class="section-block__title">💡 Memory triggers</span></div>
+      <div class="section-block__body">
+        <div class="memory-map">
+          <div class="memory-map__title">Rekonstrukce odpovědi</div>
+          <div class="memory-map__chain">
+            <span class="memory-map__kw">kontrola</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">4 fáze</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">druhy (čas/objekt/subjekt)</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">efektivita kontroly</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">audit</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">rozpočet</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">BEP = FC/(p-vc)</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">ROE/ROA/ROS</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">likvidita</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">soudy ČR</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">státní zastupitelství</span>
+            <span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">NKÚ/ČOI</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem" class="text-muted text-small">Přemyslete si strukturu. Pak klikněte "Zobrazit odpověď".</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLUEPRINT CONTENT -->
+  <div class="blueprint-content">
+
+    <!-- SECTION 1: Struktura odpovědi -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⏱</span> Struktura odpovědi (~15 min)</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="time-table">
+          <thead><tr><th>Část</th><th>Obsah</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-table__section">Definice a fáze kontroly</td>
+              <td class="time-table__content">Kontrola jako zpětnovazební funkce; 4 fáze: standardy → měření → porovnání → korekce</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Druhy a formy kontroly</td>
+              <td class="time-table__content">Dle času (předběžná, průběžná, následná); dle objektu; dle subjektu (interní/externí); přímé vs. nepřímé formy</td>
+              <td>3 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Efektivita kontroly + prevence</td>
+              <td class="time-table__content">Management by exception; Pareto princip; interní kontrolní systémy, ISO, compliance</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Audit a rozpočet</td>
+              <td class="time-table__content">Interní vs. externí audit; funkce rozpočtu (operativní, kapitálový, cash flow)</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Bod zvratu + finanční ukazatele</td>
+              <td class="time-table__content">BEP vzorec; rentabilita (ROE, ROA, ROS); likvidita (3 stupně); zadluženost</td>
+              <td>3 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Orgány ochrany práva</td>
+              <td class="time-table__content">Soustava soudů ČR; státní zastupitelství; notářství; advokacie; NKÚ, ČOI a další dozorové orgány</td>
+              <td>2 min</td>
+            </tr>
+            <tr>
+              <td class="time-table__section">Závěr</td>
+              <td class="time-table__content">Kontrola jako integrální součást managementu — propojení s plánováním</td>
+              <td>1 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Co musím říct -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">📋</span> Co musím říct</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="must-say">
+          <li><strong>Kontrola:</strong> zpětnovazební manažerská funkce; porovnání skutečného výkonu s plánovanými standardy a realizace korekčních opatření; propojuje plánování s realizací</li>
+          <li><strong>4 fáze kontrolního procesu:</strong> (1) stanovení standardů (norem výkonu), (2) měření skutečného výkonu, (3) porovnání se standardy (identifikace odchylek), (4) korekční opatření (nebo přepracování standardů)</li>
+          <li><strong>Druhy kontroly dle času:</strong> předběžná/feedforward (před realizací — preventivní), průběžná/concurrent (v průběhu realizace), následná/feedback (po dokončení — hodnocení výsledku)</li>
+          <li><strong>Druhy dle subjektu:</strong> interní kontrola (management, interní audit, compliance oddělení) vs. externí kontrola (nezávislí auditoři, státní kontrolní orgány — ČNB, ČOI, finanční úřady)</li>
+          <li><strong>Formy:</strong> přímé (osobní inspekce, namátkové kontroly, dohled) vs. nepřímé (výkazy, reporty, statistiky, KPI dashboardy)</li>
+          <li><strong>Předpoklady efektivní kontroly:</strong> objektivní měřitelné standardy, přesná a včasná měření, zaměření na klíčové odchylky (<strong>management by exception</strong>), ekonomičnost (náklady kontroly &lt; ztráty bez ní), přijatelnost pro kontrolované</li>
+          <li><strong>Prevence a systémy:</strong> systémy interní kontroly (ICS), ISO normy (9001, 27001), compliance programy, etické kodexy; <strong>Pareto princip (80/20)</strong>: 20 % faktorů způsobuje 80 % problémů — kontrola se zaměřuje na kritických 20 %</li>
+          <li><strong>Audit:</strong> interní audit (zaměstnanci, průběžně, organizační funkce) vs. <strong>externí audit</strong> (nezávislí auditoři, dle zákona č. 93/2009 Sb. o auditorech); finanční audit = ověření účetní závěrky povinné pro velké firmy</li>
+          <li><strong>Rozpočet:</strong> finanční plán na dané období; typy: operativní (výnosy/náklady), kapitálový (investice), cash flow (peněžní toky); funkce: plánování + kontrola výkonnosti</li>
+          <li><strong>Bod zvratu (BEP):</strong> Q* = FC / (p – vc); kde FC = fixní náklady, p = cena, vc = variabilní náklady na jednotku; pod BEP = ztráta, nad BEP = zisk; graficky: průsečík celkových výnosů a celkových nákladů</li>
+          <li><strong>Ukazatele rentability:</strong> ROE = čistý zisk / vlastní kapitál; ROA = EBIT / celková aktiva; ROS = zisk / tržby; měří výnosnost</li>
+          <li><strong>Ukazatele likvidity:</strong> běžná = OA / krátkodobé závazky (doporučeno 1,5–2,5); pohotová = (OA – zásoby) / KZ (doporučeno 1–1,5); okamžitá = peníze a ekvivalenty / KZ (min. 0,2)</li>
+          <li><strong>Soustava soudů ČR:</strong> Ústavní soud (Brno, ústavní stížnosti) → Nejvyšší soud (NS, Brno, civil+trestní) + Nejvyšší správní soud (NSS, Brno) → krajské soudy → okresní soudy; Správní soudy dle SŘS</li>
+          <li><strong>Státní zastupitelství:</strong> hierarchická soustava, v čele Nejvyšší státní zastupitelství (Brno); funkce: veřejná žaloba v trestních věcech, dozor nad vyšetřováním, ochrana veřejného zájmu</li>
+          <li><strong>Notářství a advokacie:</strong> notář = osoba veřejného práva — sepisuje veřejné listiny (smlouvy, závěti), ověřuje, ukládá do úschovy, spravuje dědictví; advokát = svobodné povolání — zastupuje klienty, poskytuje právní poradenství; Česká advokátní komora</li>
+          <li><strong>Dozorové orgány:</strong> NKÚ (Nejvyšší kontrolní úřad — kontrola hospodaření se státním majetkem); ČOI (Česká obchodní inspekce — ochrana spotřebitele); SÚKL (léčiva), ČIŽP (životní prostředí), finanční úřady (daně)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Klíčové pojmy -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔑</span> Klíčové pojmy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="concept-tags">
+          <span class="concept-tag">zpětná vazba</span>
+          <span class="concept-tag">4 fáze kontroly</span>
+          <span class="concept-tag">předběžná / průběžná / následná</span>
+          <span class="concept-tag">management by exception</span>
+          <span class="concept-tag">Pareto (80/20)</span>
+          <span class="concept-tag">interní audit</span>
+          <span class="concept-tag">externí audit</span>
+          <span class="concept-tag">compliance</span>
+          <span class="concept-tag">rozpočet</span>
+          <span class="concept-tag">bod zvratu (BEP)</span>
+          <span class="concept-tag">fixní náklady (FC)</span>
+          <span class="concept-tag">variabilní náklady (vc)</span>
+          <span class="concept-tag">ROE / ROA / ROS</span>
+          <span class="concept-tag">likvidita (běžná/pohotová/okamžitá)</span>
+          <span class="concept-tag">Ústavní soud</span>
+          <span class="concept-tag">Nejvyšší soud</span>
+          <span class="concept-tag">NSS</span>
+          <span class="concept-tag">státní zastupitelství</span>
+          <span class="concept-tag">NKÚ</span>
+          <span class="concept-tag">ČOI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: Klíčové vztahy -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔗</span> Klíčové vztahy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="relation-flow">
+          <strong>Kontrolní proces:</strong>
+          <span class="flow-box">Stanovení standardů</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Měření výkonu</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Porovnání (odchylka?)</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-box">Korekce / přepracování standardů</span>
+          <span class="flow-arrow">→ (zpět)</span>
+        </div>
+        <table class="data-table" style="margin-top:1rem">
+          <thead><tr><th>Ukazatel</th><th>Vzorec</th><th>Interpretace</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ROE</strong></td><td>Čistý zisk / Vlastní kapitál</td><td>Výnosnost pro vlastníky; čím vyšší, tím lepší</td></tr>
+            <tr><td><strong>ROA</strong></td><td>EBIT / Celková aktiva</td><td>Výnosnost celkových aktiv bez ohledu na financování</td></tr>
+            <tr><td><strong>ROS</strong></td><td>Zisk / Tržby</td><td>Zisková marže; % ze tržeb, které zůstane jako zisk</td></tr>
+            <tr><td><strong>Likvidita běžná</strong></td><td>OA / KZ</td><td>Schopnost platit kr. závazky; doporučeno 1,5–2,5</td></tr>
+            <tr><td><strong>Likvidita pohotová</strong></td><td>(OA – zásoby) / KZ</td><td>Bez zásob (méně likvidní); doporučeno 1–1,5</td></tr>
+            <tr><td><strong>Likvidita okamžitá</strong></td><td>Peníze / KZ</td><td>Hotovost; min. 0,2</td></tr>
+            <tr><td><strong>BEP</strong></td><td>FC / (p – vc)</td><td>Objem produkce při nulovém zisku/ztrátě</td></tr>
+          </tbody>
+        </table>
+        <table class="data-table" style="margin-top:1rem">
+          <thead><tr><th>Soud/Orgán</th><th>Sídlo</th><th>Kompetence</th></tr></thead>
+          <tbody>
+            <tr><td>Ústavní soud</td><td>Brno</td><td>Ústavní stížnosti, ochrana ústavních práv</td></tr>
+            <tr><td>Nejvyšší soud (NS)</td><td>Brno</td><td>Civil, trestní — sjednocování judikatury</td></tr>
+            <tr><td>Nejvyšší správní soud (NSS)</td><td>Brno</td><td>Správní soudnictví, přezkum správních rozhodnutí</td></tr>
+            <tr><td>Krajské soudy</td><td>Krajská města</td><td>2. instance (civil/trest), 1. instance závažné věci</td></tr>
+            <tr><td>Okresní soudy</td><td>Okresy</td><td>1. instance většiny věcí</td></tr>
+            <tr><td>NKÚ</td><td>Praha</td><td>Kontrola hospodaření se státním majetkem</td></tr>
+            <tr><td>ČOI</td><td>Praha</td><td>Ochrana spotřebitele, dozor nad trhem</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 5: Výpočet BEP — příklad -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🧮</span> Výpočet bodu zvratu — příklad</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="data-table">
+          <thead><tr><th>Vstupní data</th><th>Výpočet</th><th>Závěr</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>FC = 100 000 Kč, p = 500 Kč, vc = 300 Kč/ks</td>
+              <td>Q* = 100 000 / (500 – 300) = 100 000 / 200 = <strong>500 ks</strong></td>
+              <td>Při prodeji 500 ks jsou výnosy = celkové náklady = 250 000 Kč; nad 500 ks = zisk</td>
+            </tr>
+            <tr>
+              <td>Tržby při BEP</td>
+              <td>500 ks × 500 Kč = <strong>250 000 Kč</strong></td>
+              <td>Celkové náklady: 100 000 + 500 × 300 = 250 000 Kč ✓</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top:0.5rem" class="text-small text-muted">Přírůstkový příspěvek na krytí (p – vc) = 200 Kč/ks → každý prodaný kus nad BEP přispívá 200 Kč k zisku.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 6: Typické chyby -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⚠️</span> Typické chyby</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="mistake-list">
+          <li class="mistake-item">BEP vzorec: zaměnit p (cena) a vc (variabilní náklady na kus); jmenovatel je příspěvek na krytí fixních nákladů = p – vc</li>
+          <li class="mistake-item">ROE vs. ROA: ROE = zisk/vlastní kapitál (pohled vlastníka); ROA = EBIT/aktiva (pohled manažera celého podniku) — nepletat čitatele</li>
+          <li class="mistake-item">Interní audit vs. interní kontrola: interní audit = nezávislá, systematická funkce hodnocení; interní kontrola = každodenní systém procesů a opatření</li>
+          <li class="mistake-item">Ústavní soud není součástí soustavy obecných soudů — stojí mimo, rozhoduje jen o ústavnosti</li>
+          <li class="mistake-item">NKÚ není součástí výkonné moci — je to nezávislý kontrolní orgán; jeho závěry nejsou právně závazné (nemůže ukládat sankce přímo)</li>
+          <li class="mistake-item">Preventivní (předběžná) kontrola se realizuje PŘED zahájením procesu — nezaměňovat s průběžnou (concurrent), která probíhá BĚHEM procesu</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 7: Doplňující otázky -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">❓</span> Možné doplňující otázky</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="follow-up-list">
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak spolu souvisejí plánování a kontrola v managementu? Proč nelze kontrolovat bez plánu?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Kontrola srovnává skutečnost se standardy — standardy vznikají v procesu plánování; bez plánu není co srovnávat</li>
+                <li>Výsledky kontroly vstupují zpět do plánování (zpětná vazba) — uzavírají manažerský cyklus</li>
+                <li>Fayolův řídicí cyklus: plánování → organizování → vedení → kontrola → (zpět k plánování); kontrola propojuje minulost s budoucností</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co je "management by exception" a jaké jsou jeho výhody i rizika?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Princip: manažer se soustředí jen na výjimky — odchylky od standardů přesahující stanovenou toleranci; rutinní záležitosti deleguje</li>
+                <li>Výhody: úspora manažerského času, zaměření na skutečné problémy, podpora delegování</li>
+                <li>Rizika: pokud jsou standardy špatně nastaveny, "výjimky" neodpovídají skutečným problémům; kumulace malých odchylek mimo hranici tolerance může vést k velkým ztrátám</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jaký je rozdíl mezi solventností a likviditou firmy a proč je důležité sledovat obojí?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Likvidita = schopnost platit krátkodobé závazky (okamžitě nebo v krátkém horizontu); měří dostupnost hotovosti a likvidních aktiv</li>
+                <li>Solventnost (dlouhodobá platební schopnost) = schopnost hradit celkové závazky z celkového majetku; měří zadluženost (CK/AK)</li>
+                <li>Firma může být solventní (dostatek majetku celkem), ale nelikvidní (chybí hotovost platit faktury) → platební neschopnost = insolvence → hrozba bankrotu</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jaké jsou pravomoci a omezení Nejvyššího kontrolního úřadu (NKÚ)?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Pravomoci: kontroluje hospodaření státu se státním majetkem a plnění státního rozpočtu; vydává kontrolní závěry; prezident NKÚ je volen PS</li>
+                <li>Omezení: NKÚ nemůže ukládat sankce ani závazná opatření — pouze zveřejňuje kontrolní zprávy a předává poznatky příslušným orgánům (vláda, parlament, policie)</li>
+                <li>Nemůže kontrolovat samosprávy (obce, kraje) — ty podléhají jiným kontrolám (krajský úřad, MFČR); NKÚ = pouze státní úroveň</li>
+              </ul>
+            </div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak by firma použila analýzu bodu zvratu při rozhodování o zavedení nového produktu?</div>
+            <div class="follow-up-a">
+              <ul>
+                <li>Výpočet BEP nového produktu: potřebuje odhadnout fixní náklady (stroje, R&D), variabilní náklady/kus a plánovanou cenu → Q* = FC / (p – vc)</li>
+                <li>Porovnání BEP s realistickým objemem prodeje (z průzkumu trhu) → pokud je BEP dosažitelný, produkt stojí za zavedení</li>
+                <li>Analýza citlivosti: co se stane s BEP při změně ceny o 10 % nebo nárůstu vc? → Pomáhá identifikovat klíčové rizikové faktory a rozhodovat o marži bezpečnosti</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MEMORY MAP -->
+    <div class="memory-map" style="margin-bottom:2rem">
+      <div class="memory-map__title">⚡ Memory mapa — rekonstrukce 15minutové odpovědi</div>
+      <div class="memory-map__chain">
+        <span class="memory-map__kw">kontrola</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">4 fáze</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">standardy → měření → porovnání → korekce</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">druhy: předběžná/průběžná/následná</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">interní/externí</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">MBE + Pareto</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">audit (int./ext.)</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">rozpočet</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">BEP = FC/(p-vc)</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">ROE/ROA/ROS</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">likvidita 3 stupně</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">soudy: ÚS → NS/NSS → krajské → okresní</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">státní zastupitelství</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">notáři / advokacie</span>
+        <span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">NKÚ + ČOI + SÚKL + ČIŽP</span>
+      </div>
+    </div>
+
+  </div><!-- /.blueprint-content -->
+
+  <!-- QUIZ SECTION -->
+  <hr class="section-divider">
+  <div class="quiz-section">
+    <div class="quiz-title">🧠 Procvičení <span class="quiz-counter">(15 otázek)</span></div>
+    <div class="quiz-grid">
+
+      <div class="quiz-card" data-answer="4 fáze kontrolního procesu: (1) Stanovení standardů (norem výkonu — kvantitativní nebo kvalitativní měřítka); (2) Měření skutečného výkonu (sběr dat, reporty); (3) Porovnání výkonu se standardy (identifikace odchylek — plus i minus); (4) Korekční opatření (náprava odchylek nebo přepracování standardů, jsou-li nerealistické).">
+        <div class="quiz-card__q">1. Vyjmenujte 4 fáze kontrolního procesu.</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Předběžná (feedforward/preventivní) kontrola: realizuje se PŘED zahájením procesu; cíl: předcházet problémům; příklady: vstupní kontrola surovin, výběrové řízení zaměstnanců, schvalování rozpočtu. Následná (feedback) kontrola: realizuje se PO dokončení; cíl: hodnocení výsledku a poučení do budoucna; příklady: finanční závěrka, hodnocení projektu.">
+        <div class="quiz-card__q">2. Jaký je rozdíl mezi předběžnou a následnou kontrolou?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Bod zvratu: Q* = FC / (p – vc) = 100 000 / (500 – 300) = 100 000 / 200 = 500 kusů. Tržby při BEP = 500 × 500 = 250 000 Kč. Celkové náklady při BEP = 100 000 + 500 × 300 = 250 000 Kč. Závěr: firma musí prodat min. 500 ks, aby nebylo ve ztrátě.">
+        <div class="quiz-card__q">3. Vypočítejte bod zvratu: FC = 100 000 Kč, cena = 500 Kč, variabilní náklady = 300 Kč/ks.</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Interní audit: prováděn zaměstnanci organizace (interními auditory), průběžně, hodnotí efektivnost interních procesů a kontrol, podřízený vedení; NENÍ nezávislý na organizaci. Externí audit: prováděn nezávislými auditory (fyzické nebo právnické osoby), ověřuje zejména účetní závěrku dle zákona č. 93/2009 Sb.; povinný pro velké a střední firmy (zákonný audit); výsledek = auditorská zpráva.">
+        <div class="quiz-card__q">4. Co je interní audit a jak se liší od externího?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="3 základní ukazatele rentability: (1) ROE (Return on Equity) = čistý zisk / vlastní kapitál → výnosnost pro vlastníky; (2) ROA (Return on Assets) = EBIT / celková aktiva → výnosnost celkového vloženého kapitálu; (3) ROS (Return on Sales) = zisk / tržby → zisková marže (kolik % z tržeb je zisk).">
+        <div class="quiz-card__q">5. Jaké jsou tři základní ukazatele rentability?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Likvidita = schopnost firmy hradit krátkodobé závazky. Tři stupně: (1) Běžná likvidita = OA / krátkodobé závazky (doporučeno 1,5–2,5); (2) Pohotová likvidita = (OA – zásoby) / KZ (doporučeno 1–1,5) — vylučuje nejméně likvidní OA; (3) Okamžitá likvidita = peníze a ekvivalenty / KZ (min. 0,2) — pouze nejlikvidnější aktiva.">
+        <div class="quiz-card__q">6. Co je likvidita a jak se liší běžná, pohotová a okamžitá?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Soustava soudů ČR: Ústavní soud (Brno) — stojí mimo obecné soudy, rozhoduje o ústavnosti. Obecné soudy: Nejvyšší soud (NS, Brno) pro občanskoprávní a trestní věci + Nejvyšší správní soud (NSS, Brno) pro správní soudnictví → krajské soudy (2. instance nebo 1. instance závažných věcí) → okresní soudy (1. instance většiny věcí).">
+        <div class="quiz-card__q">7. Jak je organizována soustava soudů v ČR?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Státní zastupitelství: hierarchická soustava státních zástupců. Funkce: (1) veřejná obžaloba v trestních věcech (podává obžalobu k soudu); (2) dozor nad zákonností přípravného řízení (vyšetřování policie); (3) ochrana veřejného zájmu v občanskoprávních věcech; (4) dohled nad výkonem trestu. V čele: Nejvyšší státní zastupitelství (Brno).">
+        <div class="quiz-card__q">8. Jaká je funkce státního zastupitelství?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Management by exception (řízení výjimkami): manažer se soustředí pouze na odchylky od plánu překračující stanovenou hranici tolerance; rutinní situace jsou delegovány nebo standardizovány. Výhody: úspora manažerského času, zaměření na skutečné problémy. Kontext: pro efektivní kontrolu není třeba kontrolovat vše — Pareto princip: 20 % faktorů způsobuje 80 % problémů.">
+        <div class="quiz-card__q">9. Co je „management by exception" v kontextu kontroly?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="NKÚ (Nejvyšší kontrolní úřad): nezávislý kontrolní orgán, zřízený Ústavou ČR. Kontroluje hospodaření státu se státním majetkem, státní rozpočet, dotace EU. Prezident NKÚ jmenován prezidentem republiky na návrh PS. Výsledky = kontrolní závěry (zveřejňovány); NKÚ nemůže ukládat sankce — předává poznatky parlamentu, vládě a případně orgánům činným v trestním řízení.">
+        <div class="quiz-card__q">10. Jak funguje NKÚ (Nejvyšší kontrolní úřad)?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Notář: osoba veřejného práva (výkon státní moci) — sepisuje veřejné listiny (smlouvy, závěti, notářské zápisy), ověřuje podpisy a listiny, spravuje dědictví (soudní komisař), poskytuje úschovy; jmenován ministrem spravedlnosti; povinné členy Notářské komory. Advokát: svobodné soukromé povolání — zastupuje klienty před soudy, poskytuje právní poradenství; člen České advokátní komory; nezávislý, vázán povinností mlčenlivosti.">
+        <div class="quiz-card__q">11. Jaký je rozdíl mezi notářem a advokátem?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Compliance = souhrn opatření zajišťujících, že organizace dodržuje platné zákony, předpisy, vnitřní politiky a etické standardy. V kontextu interní kontroly: compliance program zahrnuje etický kodex, interní předpisy, školení zaměstnanců, compliance officer, whistleblowing linky, pravidelné audity dodržování. Cíl: předcházet právním rizikům, sankcím a reputačním škodám.">
+        <div class="quiz-card__q">12. Co je compliance v kontextu interní kontroly?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="ROE (Return on Equity) = čistý zisk / vlastní kapitál × 100 %. Interpretace: vyjadřuje, kolik korun zisku přinesla každá koruna vloženého vlastního kapitálu. Příklad: ROE 15 % = z každých 100 Kč vlastního kapitálu firma vydělala 15 Kč. Klíčový ukazatel pro akcionáře — srovnává se s alternativním výnosem (úroky, jiné investice). Vysoké ROE = efektivní využití VK; ale velmi vysoké může signalizovat příliš nízký vlastní kapitál (vysoká zadluženost).">
+        <div class="quiz-card__q">13. Co je ROE a jak se interpretuje?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Kontrola musí být ekonomicky efektivní: náklady na kontrolu musí být nižší než ztráty způsobené nekontrolováním. Přílišná kontrola = plýtvání zdroji, demotivace zaměstnanců (micromanagement), zpomalení procesů. Nedostatečná kontrola = neodhalené chyby, podvody, plýtvání. Optimum: Pareto princip — kontrolovat klíčové 20 % faktorů způsobujících 80 % problémů; management by exception.">
+        <div class="quiz-card__q">14. Proč musí být kontrola ekonomicky efektivní?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+      <div class="quiz-card" data-answer="Kroky korekce po odhalení odchylky: (1) Analýza příčiny odchylky (proč vznikla? jednorázová nebo systémová?); (2) Volba korekčního opatření: a) okamžitá korekce (opravit konkrétní problém — hasit požár), nebo b) základní korekce (odstranit příčinu problému — předcházet opakování); (3) Implementace korekce; (4) Ověření efektivity opatření (follow-up); (5) Případná revize standardů, jsou-li nerealistické.">
+        <div class="quiz-card__q">15. Co jsou „kroky korekce" po odhalení odchylky od standardů?</div>
+        <div class="quiz-card__a"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /.page -->
+<script src="../assets/app.js"></script>
+</body>
+</html>

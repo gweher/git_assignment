@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 10: Manažerské účetnictví</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="10">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 10 / 20</div>
+  <h1>Manažerské účetnictví</h1>
+  <p class="official-question">Manažerské účetnictví (základní charakteristika, funkce a cíle, členění nákladů, kalkulace plných a variabilních nákladů, členění kalkulací a kalkulační systém podniku, využití kalkulací, vnitropodnikové ceny, sestavování plánů a rozpočtů, nákladová a hospodářská střediska, strategické odpovědnostní řízení, balanced-scorecard, formy a způsoby vedení vnitropodnikového účetnictví)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="09-ucetnictvi.html">← Téma 9: Zásady účetnictví</a>
+  <a href="11.html">Téma 11 →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1,5 min</td><td>MU vs. finanční účetnictví</td><td>interní, pro rozhodování; nestandardizované; minulost vs. budoucnost; srovnávací tabulka</td></tr>
+          <tr><td>3 min</td><td>Členění nákladů – 4 přístupy</td><td>druhové; účelové (přímé/nepřímé); kalkulační (jednicové/režijní); dle chování (var./fix.)</td></tr>
+          <tr><td>3 min</td><td>Kalkulace plných vs. variabilních nákladů</td><td>absorpční: plná cena; příspěvkové: PÚ = cena – var. N; break-even; rozhodovací úlohy</td></tr>
+          <tr><td>1,5 min</td><td>Kalkulační systém</td><td>předběžné (plánová, operativní, propočtová) + výsledná; kalkulační vzorec</td></tr>
+          <tr><td>2 min</td><td>Vnitropodnikové ceny + střediska</td><td>nákladové / tržní / smluvní ceny; nákladové středisko vs. hospodářské středisko vs. investiční</td></tr>
+          <tr><td>1,5 min</td><td>Plány a rozpočty</td><td>plán = záměr; rozpočet = Kč; hlavní rozpočet; fixní vs. flexibilní; klouzavý</td></tr>
+          <tr><td>2 min</td><td>BSC a odpovědnostní řízení</td><td>4 perspektivy; KPI; propojení strategie + operativy; Kaplan & Norton</td></tr>
+          <tr><td>0,5 min</td><td>Závěr</td><td>jednookruhová vs. dvouokruhová soustava; MU = nástroj moderního řízení</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. MU vs. finanční účetnictví (FA)</h3>
+      <table class="structure-table">
+        <thead><tr><th>Kritérium</th><th>Manažerské účetnictví</th><th>Finanční účetnictví</th></tr></thead>
+        <tbody>
+          <tr><td>Uživatelé</td><td>interní (manažeři)</td><td>externí (investoři, věřitelé, stát)</td></tr>
+          <tr><td>Regulace</td><td>nestandardizované; dle potřeb firmy</td><td>zákonné (ZoÚ, IFRS)</td></tr>
+          <tr><td>Orientace</td><td>budoucnost (plány, kalkulace)</td><td>minulost (historické náklady)</td></tr>
+          <tr><td>Periodicita</td><td>libovolná (denní, týdenní)</td><td>roční (povinná závěrka)</td></tr>
+          <tr><td>Cíl</td><td>podpora rozhodnutí; kontrola; efektivnost</td><td>věrné zobrazení; základ pro daně</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Členění nákladů – 4 základní přístupy</h3>
+      <ul>
+        <li><strong>Druhové členění</strong> (co bylo spotřebováno): spotřeba materiálu, energie, osobní náklady (mzdy + soc./zdr.), odpisy, finanční náklady, ostatní; základní pro VZZ</li>
+        <li><strong>Účelové členění</strong> (proč vznikly):
+          <ul>
+            <li><em>Přímé náklady</em>: lze přímo přiřadit konkrétnímu výrobku/výkonu (jednicový materiál, jednicové mzdy)</li>
+            <li><em>Nepřímé (režijní) náklady</em>: nelze přiřadit přímo; přiřazují se klíčem (výrobní, správní, prodejní réžie)</li>
+          </ul>
+        </li>
+        <li><strong>Kalkulační členění</strong>: jednicové (přímo variabilní) vs. režijní (fixní + variabilní část)</li>
+        <li><strong>Dle chování vůči objemu výroby:</strong>
+          <ul>
+            <li><em>Variabilní</em>: mění se s objemem Q (přímý materiál, mzdy, energie); <span class="formula">TC<sub>var</sub> = v · Q</span></li>
+            <li><em>Fixní</em>: nemění se s Q (odpisy, nájem, manažerské mzdy); <span class="formula">FC = konst.</span></li>
+            <li><em>Semi-variabilní (smíšené)</em>: část fixní + část variabilní (energie = základní poplatek + spotřeba)</li>
+          </ul>
+        </li>
+        <li>Speciální typy: <strong>relevantní vs. irelevantní</strong> (pro rozhodnutí); <strong>oportunitní náklady</strong> (ušlý přínos nejlepší alternativy); <strong>utopené náklady (sunk costs)</strong> = v minulosti nevratně vynaložené → rozhodovací irelevantní</li>
+      </ul>
+
+      <h3>3. Kalkulace plných a variabilních nákladů</h3>
+      <ul>
+        <li><strong>Kalkulace plných nákladů (absorpční kalkulace):</strong>
+          <ul>
+            <li>Zahrnuje přímé náklady + přiřazená část fixní réžie</li>
+            <li>Výsledek: plná nákladová cena = základ pro tvorbu prodejní ceny a dlouhodobá rozhodnutí</li>
+            <li>Nevýhoda: jednotkový náklad závisí na objemu výroby (při nižším Q roste podíl fixní réžie)</li>
+          </ul>
+        </li>
+        <li><strong>Kalkulace variabilních nákladů (příspěvková, contribution costing):</strong>
+          <ul>
+            <li>Zahrnuje pouze variabilní náklady; fixní náklady = náklady střediska, nehrazeny z jednotky</li>
+            <li><span class="formula">Příspěvek na úhradu (PÚ) = Prodejní cena – Variabilní náklady na jednotku</span></li>
+            <li>Celkový PÚ musí pokrýt fixní náklady + přinést zisk</li>
+            <li>Lepší pro krátkodobá rozhodnutí (přijmout/odmítnout zakázku, optimalizace mixu)</li>
+            <li><span class="formula">Break-even point (BEP): Q<sub>BEP</sub> = FC / PÚ</span> — množství, při němž zisk = 0</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>4. Kalkulační systém podniku</h3>
+      <ul>
+        <li><strong>Předběžné kalkulace</strong> (před výrobou):
+          <ul>
+            <li><em>Propočtová</em>: přibližná; pro nový produkt v době návrhu</li>
+            <li><em>Plánová</em>: pro plánované výrobky; vychází z norem spotřeby</li>
+            <li><em>Operativní</em>: aktualizovaná plánová; odráží platné normy</li>
+          </ul>
+        </li>
+        <li><strong>Výsledná kalkulace</strong> (po výrobě): skutečné náklady; srovnání s předběžnou → odchylky</li>
+        <li>Typický <strong>kalkulační vzorec</strong>: přímý materiál + přímé mzdy + výrobní réžie + správní réžie + prodejní réžie = úplné vlastní náklady; + zisk = prodejní cena</li>
+      </ul>
+
+      <h3>5. Vnitropodnikové ceny a střediska</h3>
+      <ul>
+        <li><strong>Vnitropodnikové ceny</strong>: ceny pro interní přeúčtování výkonů mezi středisky; typy: nákladové (skutečné nebo standardní), tržní (cena externího trhu), smluvní (dohodnutá interně)</li>
+        <li><strong>Nákladové středisko:</strong> odpovídá pouze za náklady (nemá vlastní výnosy); kontrola pomocí rozpočtu nákladů</li>
+        <li><strong>Hospodářské středisko:</strong> odpovídá za náklady i výnosy → sleduje se zisk střediska</li>
+        <li><strong>Investiční středisko:</strong> odpovídá za náklady, výnosy i kapitál; hodnoceno přes ROI nebo EVA</li>
+        <li>Odpovědnostní řízení = decentralizace řízení + přidělení odpovědnosti za výsledky konkrétním manažerům</li>
+      </ul>
+
+      <h3>6. Plány a rozpočty</h3>
+      <ul>
+        <li><strong>Plán</strong> = celkový záměr (kvalitativní + kvantitativní); <strong>rozpočet</strong> = finanční vyjádření plánu v Kč</li>
+        <li><strong>Hlavní (master) rozpočet:</strong> soubor dílčích rozpočtů → provozní rozpočet (výsledovka) + finanční plán (rozvaha + CF)</li>
+        <li><strong>Fixní rozpočet:</strong> sestaven pro jeden objem výroby; nelze flexibilně porovnat při jiném Q</li>
+        <li><strong>Flexibilní (pružný) rozpočet:</strong> upraven na skutečný objem; umožňuje férové srovnání skutečnosti s plánem</li>
+        <li><strong>Klouzavý (rolling) rozpočet:</strong> pravidelně aktualizovaný (vždy dalších 12 měsíců dopředu); reaguje na změny</li>
+      </ul>
+
+      <h3>7. Balanced Scorecard (BSC) a odpovědnostní řízení</h3>
+      <ul>
+        <li>BSC (Kaplan &amp; Norton, 1992): nástroj strategického řízení výkonnosti; propojuje strategii s operativou přes KPI</li>
+        <li>Čtyři perspektivy BSC:</li>
+      </ul>
+      <table class="structure-table">
+        <thead><tr><th>Perspektiva</th><th>Klíčová otázka</th><th>Příklady KPI</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Finanční</strong></td><td>Jak se díváme na akcionáře?</td><td>ROE, ROA, EVA, obrat, marže</td></tr>
+          <tr><td><strong>Zákaznická</strong></td><td>Jak nás vidí zákazníci?</td><td>spokojenost, podíl na trhu, loajalita, NPS</td></tr>
+          <tr><td><strong>Interních procesů</strong></td><td>V čem musíme vynikat?</td><td>produktivita, kvalita, čas cyklu, inovace</td></tr>
+          <tr><td><strong>Učení se a růstu</strong></td><td>Jak se zdokonalujeme?</td><td>spokojenost zaměstnanců, školení, IT kapacity</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Kauzální řetězec: Učení se a růst → Procesy → Zákazníci → Finance</li>
+      </ul>
+
+      <h3>8. Formy vnitropodnikového účetnictví</h3>
+      <ul>
+        <li><strong>Jednookruhová soustava:</strong> MU integrováno do FA; data manažerského charakteru na analytických účtech (detailní členění syntetických účtů); jednoduchá, méně přehledná</li>
+        <li><strong>Dvouokruhová soustava:</strong> MU vedeno odděleně od FA na účtech třídy 8x nebo 9x; přehledné, ale složitější; propojení přes převodové účty</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><span class="term-name">Manažerské účetnictví</span><span class="term-def">interní; pro rozhodování manažerů; nestandardizované</span></div>
+        <div class="term-item"><span class="term-name">Přímé náklady</span><span class="term-def">přímo přiřaditelné výrobku; jednicový materiál, jednicové mzdy</span></div>
+        <div class="term-item"><span class="term-name">Nepřímé (režijní) náklady</span><span class="term-def">přiřazují se klíčem; výrobní/správní/prodejní réžie</span></div>
+        <div class="term-item"><span class="term-name">Variabilní náklady</span><span class="term-def">mění se s objemem výroby Q; v · Q</span></div>
+        <div class="term-item"><span class="term-name">Fixní náklady</span><span class="term-def">nemění se s Q; odpisy, nájem</span></div>
+        <div class="term-item"><span class="term-name">Sunk costs (utopené)</span><span class="term-def">nevratně vynaložené v minulosti; rozhodovací irelevantní</span></div>
+        <div class="term-item"><span class="term-name">Kalkulace plných nákladů</span><span class="term-def">absorpční; zahrnuje variabilní + fixní réžie na jednotku</span></div>
+        <div class="term-item"><span class="term-name">Kalkulace variabilních N</span><span class="term-def">příspěvková; jen variabilní N; lepší pro krátkodobá rozhodnutí</span></div>
+        <div class="term-item"><span class="term-name">Příspěvek na úhradu (PÚ)</span><span class="term-def">cena – variabilní N/kus; hradí fixní N + přináší zisk</span></div>
+        <div class="term-item"><span class="term-name">Break-even point (BEP)</span><span class="term-def">BEP = FC / PÚ; objem výroby při nulovém zisku</span></div>
+        <div class="term-item"><span class="term-name">Kalkulační systém</span><span class="term-def">předběžné (propočtová, plánová, operativní) + výsledná kalkulace</span></div>
+        <div class="term-item"><span class="term-name">Nákladové středisko</span><span class="term-def">odpovídá jen za náklady</span></div>
+        <div class="term-item"><span class="term-name">Hospodářské středisko</span><span class="term-def">odpovídá za náklady i výnosy (zisk)</span></div>
+        <div class="term-item"><span class="term-name">Balanced Scorecard (BSC)</span><span class="term-def">4 perspektivy: finanční, zákaznická, procesy, učení; Kaplan & Norton</span></div>
+        <div class="term-item"><span class="term-name">Flexibilní rozpočet</span><span class="term-def">upraven na skutečný objem; umožňuje férové porovnání</span></div>
+        <div class="term-item"><span class="term-name">Dvouokruhová soustava</span><span class="term-def">MU odděleno od FA; účty 8x/9x; propojení přes převodové účty</span></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+        <strong>Kalkulace plných vs. variabilních nákladů – rozdíl v zisku:</strong><br>
+        Při rostoucím stavu zásob: absorpční kalkulace vykáže <em>vyšší</em> zisk (část fixní réžie "zavřena" do zásob).<br>
+        Příspěvková kalkulace vykáže <em>nižší</em> zisk (všechny fixní N = náklad období).
+      </div>
+      <div class="relation-box">
+        <strong>Break-even analýza:</strong><br>
+        <span class="formula">BEP (Kč) = FC / (1 – v/p) = FC / (PÚ%)</span><br>
+        <span class="formula">BEP (ks) = FC / PÚ/ks</span><br>
+        Nad BEP každá prodaná jednotka přidává zisk ve výši PÚ/ks.
+      </div>
+      <div class="relation-box">
+        <strong>Kauzální řetězec BSC:</strong><br>
+        Učení se a růst (kvalifikace, IT) → zlepšení Procesů → lepší obsluha Zákazníků → vyšší Finanční výsledky<br>
+        Strategie se promítá přes KPI ve všech čtyřech perspektivách současně.
+      </div>
+      <div class="relation-box">
+        <strong>Odpovědnostní řízení – hierarchie středisek:</strong><br>
+        Nákladové středisko (–) → Hospodářské středisko (+/–) → Investiční středisko (ROI/EVA)<br>
+        S rostoucí odpovědností roste i autonomie a kontrolní složitost.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Příspěvek na úhradu a BEP:</strong> Firma prodává výrobek za 500 Kč/ks. Variabilní náklady = 300 Kč/ks. FC = 400 000 Kč/měsíc.<br>
+      <span class="formula">PÚ = 500 – 300 = 200 Kč/ks</span><br>
+      <span class="formula">BEP = 400 000 / 200 = 2 000 ks/měsíc</span><br>
+      Při prodeji 2 500 ks: Zisk = (2 500 – 2 000) × 200 = 100 000 Kč</p>
+
+      <p><strong>Rozhodovací úloha – přijmout zakázku pod plnou cenou?</strong><br>
+      Plná cena = 450 Kč/ks (vč. 150 Kč fixní réžie). Zákazník nabízí 350 Kč/ks.<br>
+      Variabilní N = 300 Kč/ks; PÚ = 350 – 300 = 50 Kč/ks &gt; 0 → zakázku přijmout (při volné kapacitě), i když je pod plnou cenou.</p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li><strong>Záměna příspěvku na úhradu a zisku:</strong> PÚ = cena – var. N; zisk = PÚ × Q – FC. PÚ je vždy ≥ zisku (PÚ musí nejprve pokrýt fixní náklady).</li>
+        <li><strong>Záměna nákladového a hospodářského střediska:</strong> Nákladové = jen náklady; hospodářské = náklady + výnosy. Zisk střediska lze sledovat jen u hospodářského.</li>
+        <li><strong>Záměna kalkulace plných a variabilních nákladů:</strong> Absorpční zahrnuje i přiřazenou fixní réžii; příspěvková nikoliv. Volba závisí na účelu (cenotvorba vs. krátkodobé rozhodování).</li>
+        <li><strong>Tvrzení, že utopené náklady jsou relevantní:</strong> Sunk costs jsou irelevantní pro budoucí rozhodnutí; bereme je jako sunk. Chyba = zahrnout je do rozhodovací analýzy.</li>
+        <li><strong>BSC = pouze finanční měřítka:</strong> BSC byl vytvořen právě proto, aby se management neorientoval jen na financie; 3 ze 4 perspektiv jsou nefinanční.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Proč je kalkulace variabilních nákladů vhodnější pro rozhodovací úlohy než kalkulace plných nákladů?</li>
+        <li>Co je příspěvek na úhradu a jak se používá?</li>
+        <li>Jak se liší nákladové a hospodářské středisko?</li>
+        <li>Jaké jsou čtyři perspektivy Balanced Scorecard?</li>
+        <li>Co jsou utopené náklady a proč jsou rozhodovací irelevantní?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 10</h2>
+      <p class="recall-question">Manažerské účetnictví (charakteristika, členění nákladů, kalkulace plných/variabilních nákladů, kalkulační systém, vnitropodnikové ceny, střediska, rozpočty, BSC, formy vedení MU)</p>
+    </div>
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">MU = interní, budoucnost</span>
+        <span class="pill">přímé vs. nepřímé náklady</span>
+        <span class="pill">variabilní vs. fixní náklady</span>
+        <span class="pill">sunk costs = irelevantní</span>
+        <span class="pill">PÚ = cena – var. N; BEP = FC/PÚ</span>
+        <span class="pill">absorpční vs. příspěvková kalkulace</span>
+        <span class="pill">BSC: 4 perspektivy</span>
+        <span class="pill">jednookruhová vs. dvouokruhová</span>
+      </div>
+    </div>
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1,5 min</td><td>MU vs. finanční účetnictví</td><td>interní, pro rozhodování; nestandardizované; minulost vs. budoucnost</td></tr>
+          <tr><td>3 min</td><td>Členění nákladů – 4 přístupy</td><td>druhové; účelové (přímé/nepřímé); kalkulační (jednicové/režijní); dle chování</td></tr>
+          <tr><td>3 min</td><td>Kalkulace plných vs. variabilních nákladů</td><td>absorpční: plná cena; příspěvkové: PÚ = cena – var. N; BEP; rozhodovací úlohy</td></tr>
+          <tr><td>1,5 min</td><td>Kalkulační systém</td><td>předběžné (plánová, operativní, propočtová) + výsledná; kalkulační vzorec</td></tr>
+          <tr><td>2 min</td><td>Vnitropodnikové ceny + střediska</td><td>typy cen; nákladové / hospodářské / investiční středisko</td></tr>
+          <tr><td>1,5 min</td><td>Plány a rozpočty</td><td>fixní vs. flexibilní; klouzavý; hlavní rozpočet</td></tr>
+          <tr><td>2 min</td><td>BSC a odpovědnostní řízení</td><td>4 perspektivy; KPI; kauzální řetězec; Kaplan & Norton 1992</td></tr>
+          <tr><td>0,5 min</td><td>Závěr – formy vedení MU</td><td>jednookruhová vs. dvouokruhová soustava</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>MU vs. FA</h3>
+      <ul>
+        <li>MU = interní, nestandardizované, orientované na budoucnost, libovolná periodicita</li>
+        <li>FA = externí, zákonné, historické, roční závěrka</li>
+      </ul>
+      <h3>4 přístupy k členění nákladů</h3>
+      <ul>
+        <li>Druhové: materiál, energie, mzdy, odpisy, fin. N</li>
+        <li>Účelové: přímé (přiřaditelné) vs. nepřímé (réžie – klíčem)</li>
+        <li>Kalkulační: jednicové vs. režijní</li>
+        <li>Dle chování: variabilní (mění se s Q) vs. fixní (nemění se); sunk costs = irelevantní</li>
+      </ul>
+      <h3>Kalkulace</h3>
+      <ul>
+        <li>Plné náklady (absorpční): zahrnuje fixní réžii; základ pro cenotvorbu; nevýhoda: závislost na Q</li>
+        <li>Variabilní (příspěvková): <span class="formula">PÚ = cena – var. N/ks</span>; <span class="formula">BEP = FC / PÚ</span>; lepší pro rozhodování</li>
+      </ul>
+      <h3>Kalkulační systém</h3>
+      <ul>
+        <li>Předběžné: propočtová, plánová, operativní; Výsledná: skutečné N, srovnání s předběžnou</li>
+        <li>Kalkulační vzorec: PM + PP + VR + SR + správní/prodejní réžie = úplné VN + zisk = prodejní cena</li>
+      </ul>
+      <h3>Střediska</h3>
+      <ul>
+        <li>Nákladové: jen náklady; Hospodářské: náklady + výnosy; Investiční: + kapitál (ROI, EVA)</li>
+        <li>Vnitropodnikové ceny: nákladové / tržní / smluvní</li>
+      </ul>
+      <h3>Rozpočty</h3>
+      <ul>
+        <li>Plán = záměr; Rozpočet = Kč; fixní vs. flexibilní (upraven na skutečné Q) vs. klouzavý</li>
+      </ul>
+      <h3>BSC – 4 perspektivy</h3>
+      <ul>
+        <li>Finanční (ROE, EVA) → Zákaznická (spokojenost) → Procesy (produktivita) → Učení (školení, IT)</li>
+        <li>Kauzální řetězec: Učení → Procesy → Zákazníci → Finance</li>
+      </ul>
+      <h3>Formy MU</h3>
+      <ul>
+        <li>Jednookruhová: MU integrováno do FA, analytické účty</li>
+        <li>Dvouokruhová: MU odděleno (8x, 9x), propojení přes převodové účty</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Proč je kalkulace variabilních nákladů vhodnější pro rozhodovací úlohy než kalkulace plných nákladů?</li>
+        <li>Co je příspěvek na úhradu a jak se používá?</li>
+        <li>Jak se liší nákladové a hospodářské středisko?</li>
+        <li>Jaké jsou čtyři perspektivy Balanced Scorecard?</li>
+        <li>Co jsou utopené náklady a proč jsou rozhodovací irelevantní?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY MAP TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 10: Manažerské účetnictví</div>
+      <div class="memory-chain">
+        <span class="kw">MU = interní + budoucnost</span><span class="arr">→</span>
+        <span class="kw">druhové členění N</span><span class="arr">→</span>
+        <span class="kw">přímé vs. nepřímé N</span><span class="arr">→</span>
+        <span class="kw">variabilní vs. fixní N</span><span class="arr">→</span>
+        <span class="kw">sunk costs = irelevantní</span><span class="arr">→</span>
+        <span class="kw">kalkulace plných N (absorpční)</span><span class="arr">→</span>
+        <span class="kw">kalkulace var. N (příspěvková)</span><span class="arr">→</span>
+        <span class="kw">PÚ = cena – var. N</span><span class="arr">→</span>
+        <span class="kw">BEP = FC / PÚ</span><span class="arr">→</span>
+        <span class="kw">kalkulační systém</span><span class="arr">→</span>
+        <span class="kw">předběžná → výsledná kalkulace</span><span class="arr">→</span>
+        <span class="kw">vnitropodnikové ceny</span><span class="arr">→</span>
+        <span class="kw">nákladové středisko</span><span class="arr">→</span>
+        <span class="kw">hospodářské středisko</span><span class="arr">→</span>
+        <span class="kw">flexibilní rozpočet</span><span class="arr">→</span>
+        <span class="kw">BSC – 4 perspektivy</span><span class="arr">→</span>
+        <span class="kw">finanční → zákaznická → procesy → učení</span><span class="arr">→</span>
+        <span class="kw">dvouokruhová soustava 8x/9x</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaký je hlavní rozdíl mezi manažerským a finančním účetnictvím?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q1">Zobrazit odpověď</button>
+        <div id="t10-q1" class="hidden quiz-a">Finanční účetnictví je povinné, standardizované (zákon, IFRS) a orientované na externí uživatele (investoři, věřitelé, stát). Manažerské účetnictví je dobrovolné, interní a slouží výhradně pro potřeby řízení podniku – manažerům při plánování, kontrole a rozhodování. Manažerské účetnictví není regulováno právními předpisy, jeho forma a obsah závisí na potřebách konkrétního podniku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Co jsou přímé a nepřímé náklady?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q2">Zobrazit odpověď</button>
+        <div id="t10-q2" class="hidden quiz-a">Přímé náklady (jednicové) lze jednoznačně přiřadit konkrétnímu výrobku nebo výkonu – např. spotřeba materiálu na výrobek nebo přímé mzdy dělníků. Nepřímé náklady (režijní) nelze přímo přiřadit a jsou společné pro více výkonů (výrobní režie, správní režie, odbytová režie). Nepřímé náklady se na výkony rozvrhují pomocí rozvrhové základny (obvykle počet odpracovaných hodin nebo objem výroby).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co jsou variabilní a fixní náklady?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q3">Zobrazit odpověď</button>
+        <div id="t10-q3" class="hidden quiz-a">Variabilní náklady se mění úměrně s objemem produkce – s každou vyrobenou jednotkou navíc rostou (např. spotřeba materiálu, obaly). Fixní náklady zůstávají v daném rozsahu kapacity neměnné bez ohledu na objem výroby (nájemné, odpisy strojů, manažerské platy). Semi-variabilní (smíšené) náklady mají fixní složku i variabilní složku (např. elektřina = fixní základ + spotřeba dle výroby).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Co jsou utopené náklady (sunk costs) a proč jsou rozhodovací irelevantní?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q4">Zobrazit odpověď</button>
+        <div id="t10-q4" class="hidden quiz-a">Utopené náklady jsou již vzniklé náklady, které nelze žádným budoucím rozhodnutím zpětně získat (např. zaplacená nereklasifikovatelná investice do stroje). Jsou rozhodovací irelevantní, protože nemohou ovlivnit budoucí peněžní toky – co je utopeno, zůstane utopeno bez ohledu na přijaté rozhodnutí. Správný manažerský přístup je tyto náklady při rozhodování ignorovat a soustředit se jen na relevantní (přírůstkové) náklady a výnosy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co jsou oportunitní náklady?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q5">Zobrazit odpověď</button>
+        <div id="t10-q5" class="hidden quiz-a">Oportunitní náklady jsou ušlý prospěch (výnos nebo úspora) z nejlepší nevyužité alternativy použití daného zdroje. Nejsou zachyceny v účetnictví, ale jsou klíčové pro ekonomické rozhodování. Například pokud podnik využívá vlastní nemovitost pro výrobu, oportunitním nákladem je nájemné, které by mohl získat pronájmem. Zahrnují se do kalkulací vnitropodnikových cen a hodnocení investic.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co je kalkulace plných nákladů (absorpční kalkulace)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q6">Zobrazit odpověď</button>
+        <div id="t10-q6" class="hidden quiz-a">Kalkulace plných nákladů (full costing, absorpční kalkulace) přiřazuje výkonu veškeré náklady – jak přímé (jednicové), tak nepřímé (režijní), a to jak variabilní, tak fixní. Fixní režijní náklady se na výkony rozvrhují pomocí rozvrhové základny. Výsledkem je plná (úplná) vlastní cena výkonu. Výhodou je soulad s účetnictvím a daňovými předpisy; nevýhodou je, že výše ziskovosti výkonu závisí na zvoleném způsobu rozvrhování fixních nákladů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je kalkulace variabilních nákladů?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q7">Zobrazit odpověď</button>
+        <div id="t10-q7" class="hidden quiz-a">Kalkulace variabilních nákladů (direct costing) přiřazuje výkonu pouze variabilní náklady; fixní náklady jsou považovány za náklady období a do kalkulace výkonu se nezapočítávají. Výsledkem je variabilní (neúplná) vlastní cena. Umožňuje lépe analyzovat příspěvek na úhradu (PÚ) a je vhodná pro krátkodobá rozhodnutí (přijmout zakázku, vyřadit výrobek). Nevýhodou je, že nekoresponduje s účetními předpisy pro oceňování zásob.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je příspěvek na úhradu (PÚ) a jak se počítá?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q8">Zobrazit odpověď</button>
+        <div id="t10-q8" class="hidden quiz-a">Příspěvek na úhradu (PÚ, contribution margin) je rozdíl mezi tržbami a variabilními náklady: PÚ = Tržby − Variabilní náklady (nebo na jednotku: PÚ/j = Prodejní cena − Variabilní náklady/j). PÚ vyjadřuje, kolik peněz po pokrytí variabilních nákladů zbývá na úhradu fixních nákladů a tvorbu zisku. Produkt je krátkodobě přijatelný, pokud PÚ > 0, i když nevykazuje zisk při plné kalkulaci.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Jaký je rozdíl mezi předběžnou a výslednou kalkulací?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q9">Zobrazit odpověď</button>
+        <div id="t10-q9" class="hidden quiz-a">Předběžná kalkulace se sestavuje před zahájením výroby na základě odhadů nebo plánovaných hodnot; slouží k plánování, oceňování nedokončené výroby a stanovení prodejní ceny. Výsledná (skutečná) kalkulace se sestavuje po dokončení výkonu na základě skutečně vynaložených nákladů. Porovnáním předběžné a výsledné kalkulace se zjišťují odchylky a hodnotí se hospodárnost výroby.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Co je kalkulační vzorec?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q10">Zobrazit odpověď</button>
+        <div id="t10-q10" class="hidden quiz-a">Kalkulační vzorec je standardizovaná struktura položek, do nichž se třídí náklady při kalkulaci výkonu. Typický kalkulační vzorec zahrnuje: přímý materiál, přímé mzdy, ostatní přímé náklady, výrobní (provozní) režii, správní režii a odbytovou režii → součtem je vlastní náklad výkonu; po připočtení zisku (resp. ziskové přirážky) vzniká prodejní cena. Každý podnik si kalkulační vzorec přizpůsobuje svým potřebám.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co jsou vnitropodnikové ceny a jaké jsou jejich typy?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q11">Zobrazit odpověď</button>
+        <div id="t10-q11" class="hidden quiz-a">Vnitropodnikové (transferové) ceny jsou ceny, za které si střediska uvnitř podniku navzájem předávají výkony, polotovary nebo služby. Slouží k hodnocení výkonnosti středisek a motivaci manažerů. Základní typy: (1) ceny na bázi nákladů (skutečné nebo plánované); (2) ceny na bázi tržních cen (nejčastěji u divizí); (3) smluvní (negociované) ceny dohodnuté mezi středisky; (4) duální ceny (kupující platí jinak než prodávající).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je flexibilní rozpočet a proč je lepší než fixní?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q12">Zobrazit odpověď</button>
+        <div id="t10-q12" class="hidden quiz-a">Fixní (statický) rozpočet se sestavuje pro jeden konkrétní objem aktivity a není přizpůsobován skutečnému objemu. Flexibilní rozpočet přepočítává plánované náklady na skutečný objem produkce – variabilní náklady se mění úměrně výkonu, fixní zůstávají konstantní. Flexibilní rozpočet je pro kontrolu hospodárnosti vhodnější, protože porovnává skutečné náklady s náklady, které by měly být vynaloženy při skutečném objemu výroby, a eliminuje cenový vliv objemu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Jaký je rozdíl mezi nákladovým a hospodářským střediskem?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q13">Zobrazit odpověď</button>
+        <div id="t10-q13" class="hidden quiz-a">Nákladové středisko je organizační jednotka, za niž se sledují pouze náklady – manažer střediska odpovídá za nepřekročení nákladového rozpočtu, ale nemá vliv na výnosy (např. účetní oddělení). Hospodářské (ziskové) středisko sleduje jak náklady, tak výnosy a odpovídá za dosažení plánovaného hospodářského výsledku (zisku). Manažer hospodářského střediska má tedy širší odpovědnost a větší autonomii při rozhodování.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jaké jsou čtyři perspektivy Balanced Scorecard (BSC)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q14">Zobrazit odpověď</button>
+        <div id="t10-q14" class="hidden quiz-a">Balanced Scorecard (Kaplan a Norton) sleduje výkonnost podniku ze čtyř perspektiv: (1) Finanční perspektiva – jak podnik vnímají akcionáři? (ROE, EVA, tržby); (2) Zákaznická perspektiva – jak podnik hodnotí zákazníci? (spokojenost, loajalita, podíl na trhu); (3) Perspektiva interních procesů – v čem musíme vynikat? (efektivita procesů, kvalita, inovace); (4) Perspektiva učení se a růstu – jak si udržíme schopnost se zlepšovat? (kompetence zaměstnanců, IT systémy, kultura).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Co je dvouokruhová soustava vnitropodnikového účetnictví?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t10-q15">Zobrazit odpověď</button>
+        <div id="t10-q15" class="hidden quiz-a">Dvouokruhová soustava odděluje finanční účetnictví (první okruh, účty tříd 0–9) od vnitropodnikového účetnictví (druhý okruh, zpravidla účty třídy 8 a 9). Oba okruhy jsou propojeny spojovatelnými účty (přenosovými účty), aby bylo možné kontrolovat vzájemnou shodu. Výhodou je, že vnitropodnikové informace jsou přísně interní a nesmísí se s výkazy finančního účetnictví. Alternativou je jednookruhová soustava, kde jsou vnitropodnikové účty integrovány do jedné soustavy.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 2: Analýza nákladů a formování nabídky</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="02">
+
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 2 / 20</div>
+  <h1>Analýza nákladů a formování nabídky</h1>
+  <p class="official-question">Analýza nákladů a formování nabídky (produkční funkce; celkový, průměrný a mezní produkt; zákon klesajících výnosů, výnosy z rozsahu; celkový, průměrný a mezní příjem v podmínkách dokonalé a nedokonalé konkurence; variabilní, fixní a celkové náklady; explicitní a implicitní náklady, průměrné a mezní náklady; celkový, čistý a účetní zisk)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="01-spotritel.html" class="nav-prev">← Téma 1: Chování spotřebitele</a>
+  <a href="03-konkurence.html" class="nav-next">Téma 3: Firma v podmínkách konkurence →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- BLUEPRINT TAB -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>3 min</td><td>Produkční funkce a produkty</td><td>Q = f(K,L); TP, AP, MP — vzorce; krátkodobá vs. dlouhodobá</td></tr>
+          <tr><td>2 min</td><td>Zákon klesajících výnosů vs. výnosy z rozsahu</td><td>Krátkodobý zákon (fixní K) vs. dlouhodobé IRS/CRS/DRS</td></tr>
+          <tr><td>2 min</td><td>Příjmy v DK a NK</td><td>TR, AR, MR; v DK: P=AR=MR; v NK: MR &lt; AR = P</td></tr>
+          <tr><td>5 min</td><td>Náklady – druhy, vzorce, tvary křivek</td><td>FC, VC, TC; AFC, AVC, ATC, MC; U-tvar; MC protíná AVC a ATC v minimu</td></tr>
+          <tr><td>2 min</td><td>Zisky – typy a rozdíly</td><td>Explicitní vs. implicitní náklady; účetní zisk, ekonomický zisk, normální zisk</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>Propojení: produkce → příjmy → náklady → zisk = základ rozhodování firmy</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+
+      <h3>1. Produkční funkce a produkty</h3>
+      <ul>
+        <li>Produkční funkce: <span class="formula">Q = f(K, L)</span> — výstup závisí na kapitálu a práci</li>
+        <li>Krátkodobá: K fixní, L variabilní; Dlouhodobá: obě vstupy variabilní</li>
+        <li>Celkový produkt: <span class="formula">TP = Q</span>; průměrný: <span class="formula">AP = TP / L</span>; mezní: <span class="formula">MP = ΔTP / ΔL</span></li>
+        <li>MP nejprve roste (specializace), pak klesá (zákon klesajících výnosů)</li>
+        <li>AP roste, dokud MP &gt; AP; klesá, když MP &lt; AP; MP = AP v maximu AP</li>
+      </ul>
+
+      <h3>2. Zákon klesajících výnosů vs. výnosy z rozsahu</h3>
+      <ul>
+        <li>Zákon klesajících výnosů (krátkodobý): při fixním K každá další jednotka L přidává stále méně k TP</li>
+        <li>Výnosy z rozsahu (dlouhodobé): rostoucí IRS (zdvojení vstupů → více než dvojnásobný výstup), konstantní CRS, klesající DRS</li>
+        <li>Příčiny IRS: specializace, nedělitelnost technologie, výhody z rozsahu; příčiny DRS: koordinační problémy</li>
+      </ul>
+
+      <h3>3. Příjmy v dokonalé a nedokonalé konkurenci</h3>
+      <ul>
+        <li>Celkový příjem: <span class="formula">TR = P · Q</span></li>
+        <li>Průměrný příjem: <span class="formula">AR = TR / Q = P</span></li>
+        <li>Mezní příjem: <span class="formula">MR = ΔTR / ΔQ</span></li>
+        <li>Dokonalá konkurence (DK): firma je price-taker → <span class="formula">P = AR = MR</span> (vodorovná poptávka)</li>
+        <li>Nedokonalá konkurence (NK): firma čelí klesající poptávce → <span class="formula">MR &lt; AR = P</span></li>
+      </ul>
+
+      <h3>4. Náklady firmy</h3>
+      <ul>
+        <li>Fixní náklady (FC): nezávisí na Q (nájemné, odpisy); Variabilní (VC): rostou s Q (suroviny, mzdy)</li>
+        <li><span class="formula">TC = FC + VC</span>; <span class="formula">AFC = FC/Q</span>; <span class="formula">AVC = VC/Q</span>; <span class="formula">ATC = TC/Q = AFC + AVC</span></li>
+        <li>Mezní náklady: <span class="formula">MC = ΔTC/ΔQ = ΔVC/ΔQ</span> (FC se nemění)</li>
+        <li>Tvar křivek: ATC a AVC mají U-tvar; MC klesá pak roste; MC protíná AVC v minimu AVC, ATC v minimu ATC</li>
+        <li>ATC min = efektivní výrobní kapacita firmy</li>
+      </ul>
+
+      <h3>5. Explicitní, implicitní náklady a zisky</h3>
+      <ul>
+        <li>Explicitní náklady: skutečné peněžní výdaje (mzdy, nájemné, suroviny)</li>
+        <li>Implicitní náklady: oportunitní náklady vlastních zdrojů (mzda vlastníka, úrok z vlastního kapitálu)</li>
+        <li>Účetní zisk = TR − explicitní náklady</li>
+        <li>Ekonomický (čistý) zisk = TR − explicitní − implicitní náklady</li>
+        <li>Normální zisk = nulový ekonomický zisk (vlastníci dostávají oportunitní výnos)</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-item"><div class="term-name">Produkční funkce</div><div class="term-def">Technická závislost výstupu Q na vstupech K a L: Q = f(K,L)</div></div>
+        <div class="term-item"><div class="term-name">Mezní produkt (MP)</div><div class="term-def">Přírůstek TP z použití další jednotky variabilního vstupu: MP = ΔTP/ΔL</div></div>
+        <div class="term-item"><div class="term-name">Zákon klesajících výnosů</div><div class="term-def">Krátkodobý jev: při fixním K každá další L přidává stále méně k TP</div></div>
+        <div class="term-item"><div class="term-name">Výnosy z rozsahu</div><div class="term-def">Dlouhodobý jev: jak se mění výstup při proporcionálním růstu všech vstupů (IRS/CRS/DRS)</div></div>
+        <div class="term-item"><div class="term-name">Fixní náklady (FC)</div><div class="term-def">Náklady nezávislé na objemu výroby; existují i při Q = 0</div></div>
+        <div class="term-item"><div class="term-name">Variabilní náklady (VC)</div><div class="term-def">Náklady rostoucí s výrobou; při Q = 0 jsou nulové</div></div>
+        <div class="term-item"><div class="term-name">Mezní náklady (MC)</div><div class="term-def">Přírůstek TC z výroby další jednotky: MC = ΔTC/ΔQ</div></div>
+        <div class="term-item"><div class="term-name">Průměrné náklady (ATC)</div><div class="term-def">Celkové náklady na jednotku výstupu: ATC = TC/Q</div></div>
+        <div class="term-item"><div class="term-name">Mezní příjem (MR)</div><div class="term-def">Přírůstek TR z prodeje další jednotky: MR = ΔTR/ΔQ</div></div>
+        <div class="term-item"><div class="term-name">Explicitní náklady</div><div class="term-def">Skutečné účetní výdaje firmy (platby dodavatelům, zaměstnancům)</div></div>
+        <div class="term-item"><div class="term-name">Implicitní náklady</div><div class="term-def">Oportunitní náklady vlastních zdrojů použitých ve firmě</div></div>
+        <div class="term-item"><div class="term-name">Ekonomický zisk</div><div class="term-def">TR minus veškeré náklady (explicitní i implicitní); čistý přínos nad oportunitní výnosy</div></div>
+        <div class="term-item"><div class="term-name">Účetní zisk</div><div class="term-def">TR minus pouze explicitní (účetní) náklady; vyšší než ekonomický zisk</div></div>
+        <div class="term-item"><div class="term-name">Normální zisk</div><div class="term-def">Nulový ekonomický zisk; implicitní náklady jsou pokryty — vlastníci dostávají oportunitní výnos</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+
+      <div class="relation-box">
+Produkce (krátkodobá):
+  TP → AP = TP/L → MP = ΔTP/ΔL
+
+  MP &gt; AP  →  AP roste
+  MP = AP  →  AP v maximu
+  MP &lt; AP  →  AP klesá
+  MP = 0   →  TP v maximu
+
+Zákon klesajících výnosů:
+  K fixní, L↑  →  MP nejprve ↑ pak ↓
+      </div>
+
+      <div class="relation-box">
+Náklady a jejich vztahy:
+  TC = FC + VC
+  ATC = AFC + AVC = TC/Q
+  MC = ΔTC/ΔQ = ΔVC/ΔQ
+
+  MC &lt; ATC  →  ATC klesá
+  MC = ATC  →  ATC v minimu  ← efektivní bod
+  MC &gt; ATC  →  ATC roste
+
+  (totéž platí pro MC a AVC)
+      </div>
+
+      <div class="relation-box">
+Příjmy:
+  DK: poptávka vodorovná → P = AR = MR
+  NK: poptávka klesající  → MR &lt; AR = P
+
+Zisky:
+  Účetní zisk = TR − N_explicitní
+  Ekonomický zisk = TR − N_explicitní − N_implicitní
+  Normální zisk: ekonomický zisk = 0
+      </div>
+
+      <div class="relation-box">
+Výnosy z rozsahu (dlouhodobé):
+  Zdvojím vstupy K a L:
+  IRS (rostoucí): výstup &gt; 2Q   (efekty rozsahu)
+  CRS (konstantní): výstup = 2Q  (neutrální)
+  DRS (klesající): výstup &lt; 2Q  (koordinační náklady)
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <p><strong>Příklad 1 – Vztah MC a ATC:</strong> Restaurace vyrábí 100 jídel/den, ATC = 150 Kč. Přidá 101. jídlo s MC = 120 Kč. Protože MC &lt; ATC, průměrné náklady klesnou. Pokud MC = 200 Kč, ATC poroste. Proto MC protíná ATC v minimu.</p>
+      <p><strong>Příklad 2 – Ekonomický vs. účetní zisk:</strong> Podnikatel vydělá TR = 500 000 Kč. Explicitní náklady = 350 000 Kč → účetní zisk = 150 000 Kč. Ale mohl by pracovat jako zaměstnanec za 120 000 Kč (implicitní náklady). Ekonomický zisk = 150 000 − 120 000 = 30 000 Kč. Normální zisk by byl při ekonomickém zisku = 0.</p>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <div class="mistake-item">Záměna zákona klesajících výnosů (krátkodobý, fixní K) s klesajícími výnosy z rozsahu (dlouhodobý, všechny vstupy variabilní) — jsou to odlišné pojmy.</div>
+      <div class="mistake-item">Tvrzení, že MC = ATC v minimu bez vysvětlení proč — je třeba říct: MC &lt; ATC → ATC klesá, MC &gt; ATC → ATC roste, tedy průsečík = minimum.</div>
+      <div class="mistake-item">Zaměňování účetního a ekonomického zisku při výpočtu výnosnosti — firma může mít kladný účetní zisk ale záporný ekonomický (bylo by výhodnější podnikat jinak).</div>
+      <div class="mistake-item">Říci, že MR = P v nedokonalé konkurenci — toto platí jen v DK; v NK (monopol, oligopol) je MR &lt; P.</div>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč MC protíná ATC v jeho minimu?</div>
+        <div class="followup-a">Odpověď: Pokud MC &lt; ATC, průměr klesá (nová jednotka je levnější než průměr). Pokud MC &gt; ATC, průměr roste. Průsečík nastane právě v minimu ATC — matematicky analogie průměru a marginálu.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Jaký je rozdíl mezi zákonem klesajících výnosů a klesajícími výnosy z rozsahu?</div>
+        <div class="followup-a">Odpověď: Zákon klesajících výnosů je krátkodobý fenomén — jeden vstup (K) je fixní, přidáváme L. Klesající výnosy z rozsahu jsou dlouhodobé — všechny vstupy se proporcionálně zvyšují, výstup roste pomaleji. Příčiny jsou odlišné (fyzická kapacita vs. koordinační problémy velkých firem).</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč je ekonomický zisk nižší než účetní?</div>
+        <div class="followup-a">Odpověď: Ekonomický zisk zahrnuje navíc implicitní náklady — oportunitní náklady vlastních zdrojů (vlastníkův čas, kapitál). Účetní systém tyto náklady nezachycuje. Normální zisk (ekonomický = 0) znamená, že vlastník dostává přesně svůj oportunitní výnos.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč je MR &lt; P u monopolu?</div>
+        <div class="followup-a">Odpověď: Monopol čelí klesající tržní poptávce. Aby prodal další jednotku, musí snížit cenu pro všechny kupující (ne jen pro okrajového). Ztráta z nižší ceny u předchozích jednotek snižuje MR pod novou cenu P. MR = P − (snížení ceny × předchozí množství).</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Jak se mění tvar TC při různých výnosech z rozsahu?</div>
+        <div class="followup-a">Odpověď: Při IRS TC roste pomaleji než Q (výroba je stále efektivnější). Při CRS TC roste proporcionálně s Q (ATC konstantní). Při DRS TC roste rychleji než Q (ATC roste). V praxi firmy prochází fázemi: IRS (malá výroba) → CRS → DRS (příliš velká výroba).</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- RECALL TAB -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 2</h2>
+      <p class="recall-question">Analýza nákladů a formování nabídky (produkční funkce; celkový, průměrný a mezní produkt; zákon klesajících výnosů, výnosy z rozsahu; celkový, průměrný a mezní příjem v podmínkách dokonalé a nedokonalé konkurence; variabilní, fixní a celkové náklady; explicitní a implicitní náklady, průměrné a mezní náklady; celkový, čistý a účetní zisk)</p>
+    </div>
+
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="trigger-pill">Q = f(K,L)</span>
+        <span class="trigger-pill">TP / AP / MP</span>
+        <span class="trigger-pill">Zákon klesajících výnosů</span>
+        <span class="trigger-pill">IRS / CRS / DRS</span>
+        <span class="trigger-pill">TR / AR / MR</span>
+        <span class="trigger-pill">FC + VC = TC</span>
+        <span class="trigger-pill">MC = min ATC</span>
+        <span class="trigger-pill">Ekonomický zisk</span>
+      </div>
+    </div>
+
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>3 min</td><td>Produkční funkce a produkty</td><td>Q = f(K,L); TP, AP, MP; krátkodobá vs. dlouhodobá</td></tr>
+          <tr><td>2 min</td><td>Zákon klesajících výnosů vs. výnosy z rozsahu</td><td>Krátkodobý zákon vs. IRS/CRS/DRS</td></tr>
+          <tr><td>2 min</td><td>Příjmy v DK a NK</td><td>TR, AR, MR; DK: P=AR=MR; NK: MR &lt; AR</td></tr>
+          <tr><td>5 min</td><td>Náklady – druhy, vzorce, tvary křivek</td><td>FC, VC, TC; AFC, AVC, ATC, MC; MC protíná v minimu</td></tr>
+          <tr><td>2 min</td><td>Zisky – typy a rozdíly</td><td>Explicitní vs. implicitní; účetní vs. ekonomický zisk</td></tr>
+          <tr><td>1 min</td><td>Závěr</td><td>Produkce → příjmy → náklady → zisk</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <h3>Produkční funkce</h3>
+      <ul>
+        <li><span class="formula">Q = f(K,L)</span>; krátkodobá: K fixní, L variabilní</li>
+        <li><span class="formula">AP = TP/L</span>; <span class="formula">MP = ΔTP/ΔL</span></li>
+        <li>MP = AP → maximum AP; MP = 0 → maximum TP</li>
+      </ul>
+      <h3>Zákon klesajících výnosů</h3>
+      <ul>
+        <li>Krátkodobý: fixní K, přibývající L → MP klesá</li>
+        <li>IRS/CRS/DRS: dlouhodobé, všechny vstupy variabilní</li>
+      </ul>
+      <h3>Náklady</h3>
+      <ul>
+        <li><span class="formula">TC = FC + VC</span>; <span class="formula">MC = ΔTC/ΔQ</span></li>
+        <li>MC &lt; ATC → ATC klesá; MC = ATC → minimum ATC</li>
+      </ul>
+      <h3>Zisky</h3>
+      <ul>
+        <li>Účetní zisk = TR − N_explicitní</li>
+        <li>Ekonomický zisk = TR − N_explicitní − N_implicitní</li>
+        <li>Normální zisk = ekonomický zisk = 0</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč MC protíná ATC v jeho minimu?</div>
+        <div class="followup-a">MC &lt; ATC → ATC klesá; MC &gt; ATC → ATC roste; průsečík = minimum ATC.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Rozdíl: zákon klesajících výnosů vs. klesající výnosy z rozsahu?</div>
+        <div class="followup-a">Klesající výnosy: krátkodobé, fixní K. DRS: dlouhodobé, všechny vstupy variabilní.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč je ekonomický zisk nižší než účetní?</div>
+        <div class="followup-a">Zahrnuje implicitní (oportunitní) náklady vlastních zdrojů, které účetnictví nezachycuje.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Proč MR &lt; P u monopolu?</div>
+        <div class="followup-a">Klesající poptávka: prodej další jednotky vyžaduje snížení ceny pro všechny kupující.</div>
+      </div>
+      <div class="followup-item">
+        <div class="followup-q">Q: Tvar TC při různých výnosech z rozsahu?</div>
+        <div class="followup-a">IRS: TC roste pomaleji než Q; CRS: proporcionálně; DRS: rychleji.</div>
+      </div>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- MEMORY MAP TAB -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 2: Analýza nákladů a formování nabídky</div>
+      <div class="memory-chain">
+        <span class="kw">Q = f(K,L)</span><span class="arr">→</span>
+        <span class="kw">TP / AP / MP</span><span class="arr">→</span>
+        <span class="kw">Zákon klesajících výnosů</span><span class="arr">→</span>
+        <span class="kw">IRS / CRS / DRS</span><span class="arr">→</span>
+        <span class="kw">TR = P·Q</span><span class="arr">→</span>
+        <span class="kw">AR = P</span><span class="arr">→</span>
+        <span class="kw">MR = ΔTR/ΔQ</span><span class="arr">→</span>
+        <span class="kw">DK: P=MR vs. NK: MR&lt;P</span><span class="arr">→</span>
+        <span class="kw">FC + VC = TC</span><span class="arr">→</span>
+        <span class="kw">AFC / AVC / ATC</span><span class="arr">→</span>
+        <span class="kw">MC = ΔTC/ΔQ</span><span class="arr">→</span>
+        <span class="kw">MC protíná ATC v minimu</span><span class="arr">→</span>
+        <span class="kw">Explicitní vs. implicitní</span><span class="arr">→</span>
+        <span class="kw">Účetní zisk</span><span class="arr">→</span>
+        <span class="kw">Ekonomický zisk</span><span class="arr">→</span>
+        <span class="kw">Normální zisk = 0</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1–2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Co je produkční funkce a co vyjadřuje?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q1">Zobrazit odpověď</button>
+        <div id="t02-q1" class="hidden quiz-a">Produkční funkce zachycuje technologický vztah mezi množstvím použitých výrobních faktorů a maximálním dosaženým výstupem (produktem). Zapisuje se jako Q = f(K, L), kde K je kapitál a L práce. Vyjadřuje technologické možnosti firmy při efektivním využití vstupů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Definujte celkový produkt (TP), průměrný produkt (AP) a mezní produkt práce (MP).</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q2">Zobrazit odpověď</button>
+        <div id="t02-q2" class="hidden quiz-a">Celkový produkt (TP) je celkové množství výstupu vyrobeného při daném množství práce. Průměrný produkt práce (APL) je výstup na jednoho pracovníka: APL = TP/L. Mezní produkt práce (MPL) je přírůstek celkového produktu při zaměstnání jednoho dalšího pracovníka: MPL = ΔTP/ΔL. Mezní produkt nejprve roste, pak klesá.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Formulujte zákon klesajících výnosů a uveďte, kdy platí.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q3">Zobrazit odpověď</button>
+        <div id="t02-q3" class="hidden quiz-a">Zákon klesajících výnosů říká, že při přidávání dalších jednotek variabilního faktoru (práce) k fixnímu faktoru (kapitálu) bude mezní produkt variabilního faktoru od určitého bodu klesat. Platí v krátkém období, kdy alespoň jeden výrobní faktor je fixní. Důvodem je přetěžování fixní kapacity stále většími množstvími variabilního faktoru.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Jaký je rozdíl mezi zákonem klesajících výnosů a klesajícími výnosy z rozsahu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q4">Zobrazit odpověď</button>
+        <div id="t02-q4" class="hidden quiz-a">Zákon klesajících výnosů se týká krátkého období a popisuje, co se děje při změně jednoho variabilního faktoru při fixním druhém faktoru. Klesající výnosy z rozsahu jsou jevem dlouhého období — popisují situaci, kdy proporcionální zvýšení všech vstupů vede k méně než proporcionálnímu zvýšení výstupu. Jsou to tedy různé koncepty platící v různých časových horizontech.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Co jsou rostoucí, konstantní a klesající výnosy z rozsahu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q5">Zobrazit odpověď</button>
+        <div id="t02-q5" class="hidden quiz-a">Rostoucí výnosy z rozsahu nastávají, když zdvojnásobení všech vstupů vede k více než dvojnásobnému výstupu — firmy z toho profitují při expanzi (ekonomiky z rozsahu). Konstantní výnosy znamenají přesně proporcionální vztah vstupů a výstupu. Klesající výnosy z rozsahu nastávají, když zdvojnásobení vstupů přinese méně než dvojnásobný výstup, typicky kvůli manažerské neefektivitě při přílišné velikosti firmy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Jak se liší celkový příjem (TR), průměrný příjem (AR) a mezní příjem (MR) v dokonalé konkurenci?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q6">Zobrazit odpověď</button>
+        <div id="t02-q6" class="hidden quiz-a">V dokonalé konkurenci je cena P pro firmu konstantní (price-taker). Celkový příjem TR = P·Q roste lineárně s výstupem. Průměrný příjem AR = TR/Q = P, takže AR = P. Mezní příjem MR = ΔTR/ΔQ = P, tedy MR = AR = P. Křivka poptávky (a zároveň MR) je pro firmu v DK vodorovná přímka na úrovni tržní ceny.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Proč je mezní příjem (MR) nižší než cena (P) v nedokonalé konkurenci?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q7">Zobrazit odpověď</button>
+        <div id="t02-q7" class="hidden quiz-a">V nedokonalé konkurenci čelí firma klesající poptávkové křivce — aby prodala více, musí snížit cenu pro všechny jednotky, ne jen pro poslední. Proto je přírůstek příjmu z prodeje další jednotky (MR) nižší než její prodejní cena P; matematicky platí MR = P·(1 − 1/|Ed|). MR < P je tak typický znak tržní síly firmy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co jsou fixní a variabilní náklady? Uveďte příklady každého.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q8">Zobrazit odpověď</button>
+        <div id="t02-q8" class="hidden quiz-a">Fixní náklady (FC) se v krátkém období nemění s objemem výroby — firma je musí platit i při nulové produkci; příklady: nájemné, splátky leasingu, odpisy strojů, fixní složka mezd managementu. Variabilní náklady (VC) rostou s výstupem; příklady: mzdy výrobních dělníků, suroviny, energie spotřebovaná při výrobě. Celkové náklady TC = FC + VC.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Napište vzorce pro průměrné celkové náklady (ATC), průměrné variabilní náklady (AVC) a mezní náklady (MC).</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q9">Zobrazit odpověď</button>
+        <div id="t02-q9" class="hidden quiz-a">Průměrné celkové náklady ATC = TC/Q = AFC + AVC. Průměrné variabilní náklady AVC = VC/Q. Průměrné fixní náklady AFC = FC/Q (s růstem Q klesají). Mezní náklady MC = ΔTC/ΔQ = ΔVC/ΔQ, tedy náklady na výrobu poslední jednotky. Křivka MC má tvar písmene U a protíná křivky AVC i ATC v jejich minimech.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Proč křivka mezních nákladů (MC) protíná křivku ATC v jejím minimu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q10">Zobrazit odpověď</button>
+        <div id="t02-q10" class="hidden quiz-a">Jde o matematický vztah průměru a marginální veličiny: pokud je MC nižší než ATC, průměr klesá; pokud je MC vyšší než ATC, průměr roste. V bodě, kde MC = ATC, dosahuje ATC svého minima. Stejná logika platí pro průsečík MC s AVC — MC protíná AVC také v minimu AVC.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co jsou explicitní náklady? Uveďte příklady.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q11">Zobrazit odpověď</button>
+        <div id="t02-q11" class="hidden quiz-a">Explicitní náklady jsou přímé peněžní výdaje firmy za nakoupené výrobní faktory — faktury, které firma skutečně platí. Příklady: mzdy zaměstnanců, nájemné za prostory, platby za suroviny a energie, pojistné, náklady na reklamu. Tvoří základ účetních nákladů a jsou zachyceny v účetnictví firmy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co jsou implicitní náklady? Uveďte příklady.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q12">Zobrazit odpověď</button>
+        <div id="t02-q12" class="hidden quiz-a">Implicitní náklady jsou alternativní náklady vlastních zdrojů použitých v podnikání — nevyžadují přímou peněžní platbu, ale představují ušlý výnos. Příklady: ušlá mzda podnikatele, kdyby pracoval jinde; ušlý úrok z vlastního kapitálu vloženého do firmy; ušlé nájemné z vlastní budovy využívané pro výrobu. Jsou součástí ekonomických, nikoli účetních nákladů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Jaký je rozdíl mezi účetním a ekonomickým ziskem?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q13">Zobrazit odpověď</button>
+        <div id="t02-q13" class="hidden quiz-a">Účetní zisk = celkové příjmy − explicitní (účetní) náklady. Ekonomický zisk = celkové příjmy − ekonomické náklady (explicitní + implicitní). Ekonomický zisk je proto vždy nižší nebo roven účetnímu zisku. Firma může vykazovat účetní zisk, ale nulový nebo záporný ekonomický zisk, pokud vlastní zdroje vydělávají méně než jejich nejlepší alternativní využití.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Co je normální zisk a jak se vztahuje k ekonomickému zisku?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q14">Zobrazit odpověď</button>
+        <div id="t02-q14" class="hidden quiz-a">Normální zisk je minimální výnos, který musí firma dosahovat, aby majitelé byli ochotni v podnikání pokračovat — pokrývá implicitní náklady vlastníků (odměna za podnikatelské riziko a alternativní využití kapitálu). Je součástí ekonomických nákladů. Ekonomický zisk = 0 znamená, že firma dosahuje právě normálního zisku — zdroje jsou alokované efektivně a vlastníci jsou spokojeni.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Jak vypadá křivka celkových nákladů (TC) při klesajících výnosech z rozsahu a proč?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t02-q15">Zobrazit odpověď</button>
+        <div id="t02-q15" class="hidden quiz-a">Při klesajících výnosech z rozsahu roste TC s výstupem stále rychleji — křivka TC je konvexní (prohnutá nahoru). S každou další jednotkou výstupu jsou potřeba více než proporcionálně větší vstupy, takže náklady rostou nadproporcionálně. Průměrné náklady ATC tak s výstupem rostou a minimální efektivní velikost firmy se nachází při nižším objemu výroby.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

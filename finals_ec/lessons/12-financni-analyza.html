@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 12: Finanční analýza a ukazatelé finanční analýzy</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="12">
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 12 / 20</div>
+  <h1>Finanční analýza a ukazatelé finanční analýzy</h1>
+  <p class="official-question">Finanční analýza a ukazatelé finanční analýzy (podstata, etapy a postupy finanční analýzy, komparativní analýza, trendová analýza, absolutní ukazatele a jejich vypovídací schopnost, finanční plán; ukazatelé rentability, aktivity, likvidity, zadluženosti, ukazatelé kapitálového trhu, pyramidový rozklad, ukazatel EVA, Altmanův Z-score model, alternativní modely predikce finanční tísně)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="11-rozhodovaci.html">← Téma 11</a>
+  <a href="13-financovani.html">Téma 13 →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0–1:30 min</td><td>Podstata FA, zdroje dat, uživatelé</td><td>Rozvaha, VZZ, CF; management, investoři, věřitelé, stát</td></tr>
+          <tr><td>1:30–3 min</td><td>Horizontální a vertikální analýza</td><td>Horizont.: Δ% a Δabs. v čase; Vertikální: % z celku</td></tr>
+          <tr><td>3–5 min</td><td>Ukazatelé rentability</td><td>ROA, ROE, ROS, ROCE — vzorce a interpretace</td></tr>
+          <tr><td>5–8 min</td><td>Ukazatelé aktivity + likvidity</td><td>Obrat aktiv, DSO, DPO, CCC; L1/L2/L3, NWC</td></tr>
+          <tr><td>8–10 min</td><td>Ukazatelé zadluženosti + kap. trhu</td><td>Debt ratio, D/E, úrokové krytí; P/E, EPS</td></tr>
+          <tr><td>10–12:30 min</td><td>Du Pont rozklad + EVA</td><td>ROE = ROS × obrat A × fin. páka; EVA = NOPAT − WACC×C</td></tr>
+          <tr><td>12:30–14:30 min</td><td>Predikční modely: Z-score + IN05</td><td>Altman: Z&gt;2,99 zdravá; šedá zóna; tíseň; IN05 pro ČR</td></tr>
+          <tr><td>14:30–15 min</td><td>Závěr</td><td>FA = komplexní pohled; nutno srovnávat s odvětvím a časem</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+      <ul>
+        <li><strong>Podstata FA:</strong> Zhodnocení finanční situace podniku z účetních výkazů (rozvaha, VZZ, CF, příloha). Uživatelé: management, investoři, věřitelé, stát — každý sleduje jiné ukazatele.</li>
+        <li><strong>Absolutní ukazatele:</strong> Horizontální analýza = změna položek v čase (Δ% a Δabs.); vertikální analýza = struktura (% z celku — např. podíl aktiv nebo výnosů).</li>
+        <li><strong>Rentabilita:</strong> <span class="formula">ROA = EBIT/A</span>; <span class="formula">ROE = ČZ/VK</span>; <span class="formula">ROS = ČZ/Tržby</span>; <span class="formula">ROCE = EBIT/(VK + dl. cizí K)</span></li>
+        <li><strong>Aktivita:</strong> <span class="formula">DSO = Pohledávky/(T/360)</span>; <span class="formula">DPO = Závazky/(N/360)</span>; <span class="formula">CCC = DSO + DOZ − DPO</span> (kratší CCC = lepší)</li>
+        <li><strong>Likvidita:</strong> L1 (okamžitá) ≥ 0,2; L2 (pohotová) ≥ 1; L3 (běžná) 1,5–2,5; <span class="formula">NWC = OA − KZ</span></li>
+        <li><strong>Zadluženost:</strong> <span class="formula">Debt ratio = CK/A</span>; <span class="formula">Úrokové krytí = EBIT/úroky</span> (≥ 3 bezpečné); debt ratio + equity ratio = 1</li>
+        <li><strong>Du Pont rozklad:</strong> <span class="formula">ROE = ROS × obrat aktiv × finanční páka = ČZ/T × T/A × A/VK</span></li>
+        <li><strong>EVA:</strong> <span class="formula">EVA = NOPAT − WACC × C</span>; EVA &gt; 0 → podnik tvoří ekonomickou hodnotu nad úrovní kapitálových nákladů (liší se od účetního zisku!).</li>
+        <li><strong>Altmanův Z-score:</strong> <span class="formula">Z = 1,2X₁ + 1,4X₂ + 3,3X₃ + 0,6X₄ + 1,0X₅</span>; Z &gt; 2,99 = zdravá; 1,81–2,99 = šedá zóna; &lt; 1,81 = finanční tíseň.</li>
+        <li><strong>IN05 (Neumaier):</strong> Index pro české podmínky; IN &gt; 1,6 tvoří hodnotu; &lt; 0,9 finanční tíseň.</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-card"><div class="term-name">ROA</div><div class="term-def">Rentabilita aktiv = EBIT/A; výnosnost celkového majetku</div></div>
+        <div class="term-card"><div class="term-name">ROE</div><div class="term-def">Rentabilita vlastního kapitálu = ČZ/VK; výnosnost pro akcionáře</div></div>
+        <div class="term-card"><div class="term-name">ROS</div><div class="term-def">Rentabilita tržeb = ČZ/Tržby; zisková marže</div></div>
+        <div class="term-card"><div class="term-name">ROCE</div><div class="term-def">EBIT/(VK+dl.CK); rentabilita dlouhodobě investovaného kapitálu</div></div>
+        <div class="term-card"><div class="term-name">DSO / DPO</div><div class="term-def">Doba inkasa pohledávek / doba splatnosti závazků (ve dnech)</div></div>
+        <div class="term-card"><div class="term-name">CCC</div><div class="term-def">Cash Conversion Cycle = DSO + DOZ − DPO; délka cash cyklu</div></div>
+        <div class="term-card"><div class="term-name">L1 / L2 / L3</div><div class="term-def">Okamžitá/pohotová/běžná likvidita; benchmarky: 0,2 / 1 / 1,5–2,5</div></div>
+        <div class="term-card"><div class="term-name">NWC</div><div class="term-def">Net Working Capital = OA − KZ; polštář pro splácení kr. závazků</div></div>
+        <div class="term-card"><div class="term-name">Debt ratio</div><div class="term-def">CK/A; podíl cizího kapitálu na financování aktiv</div></div>
+        <div class="term-card"><div class="term-name">Úrokové krytí</div><div class="term-def">EBIT/úroky; schopnost splácet úroky; ≥ 3 bezpečné</div></div>
+        <div class="term-card"><div class="term-name">P/E</div><div class="term-def">Cena akcie / EPS; kolik Kč platím za 1 Kč zisku</div></div>
+        <div class="term-card"><div class="term-name">EPS</div><div class="term-def">ČZ / počet akcií; zisk na akcii</div></div>
+        <div class="term-card"><div class="term-name">Du Pont analýza</div><div class="term-def">ROE = ROS × obrat A × fin. páka; rozklad rentability</div></div>
+        <div class="term-card"><div class="term-name">EVA</div><div class="term-def">NOPAT − WACC×C; ekonomická přidaná hodnota nad náklady kapitálu</div></div>
+        <div class="term-card"><div class="term-name">Altmanův Z-score</div><div class="term-def">Model predikce bankrotu; prahové hodnoty 1,81 a 2,99</div></div>
+        <div class="term-card"><div class="term-name">IN05</div><div class="term-def">Neumaierův index pro ČR; prahové hodnoty 0,9 a 1,6</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+DU PONT ROZKLAD ROE:
+──────────────────────────────────────────────────────
+ROE  =  ROS  ×  Obrat aktiv  ×  Finanční páka
+     =  ČZ/T  ×    T/A       ×     A/VK
+
+Rozložení říká: nízké ROE → kde je problém?
+  - Nízká zisková marže (ROS)?  → snižovat N nebo zvyšovat ceny
+  - Nízký obrat aktiv?          → nevyužívám majetek efektivně
+  - Nízká finanční páka?        → konzerv. financování (může být záměr)
+──────────────────────────────────────────────────────
+      </div>
+      <div class="relation-box">
+EVA vs. ÚČETNÍ ZISK:
+──────────────────────────────────────────────────────
+Účetní zisk: Výnosy − Náklady (dle účetních pravidel)
+EVA:  NOPAT − WACC × C
+
+Podnik může mít kladný účetní zisk ALE zápornou EVA
+→ nevytváří hodnotu pro vlastníky
+(WACC zahrnuje i náklady vlastního kapitálu!)
+──────────────────────────────────────────────────────
+      </div>
+      <div class="relation-box">
+ALTMANŮV Z-SCORE (originální, kótované firmy):
+  Z = 1,2·X₁ + 1,4·X₂ + 3,3·X₃ + 0,6·X₄ + 1,0·X₅
+  X₁ = NWC/A       X₂ = ner.zisk/A    X₃ = EBIT/A
+  X₄ = tržní VK/CK  X₅ = Tržby/A
+
+  Z > 2,99  → zdravá firma
+  1,81–2,99 → šedá zóna (nelze jednoznačně určit)
+  Z < 1,81  → finanční tíseň (riziko bankrotu)
+
+IN05 (pro českou ekonomiku):
+  IN = 0,13·A/CK + 0,04·EBIT/ú + 3,97·EBIT/A
+       + 0,21·výnosy/A + 0,09·OA/(KZ+KBÚ)
+  IN > 1,6 → tvoří hodnotu; < 0,9 → finanční tíseň
+      </div>
+      <div class="relation-box">
+CASH CONVERSION CYCLE:
+  CCC = DSO + DOZ − DPO
+
+  DSO = Pohledávky / (T/360)   … inkaso od zákazníků
+  DOZ = Zásoby / (T/360)       … doba obratu zásob
+  DPO = Závazky / (N/360)      … splácení dodavatelům
+
+  Kratší CCC → méně vázaného kapitálu → lepší likvidita
+  Záporné CCC (retail) → financují zákazníky dodavatelé
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <ul>
+        <li><strong>Du Pont:</strong> ROE = 15 %. Rozklad: ROS = 5 %, obrat aktiv = 1,5, fin. páka = 2. Kde lze zlepšit? Obrat aktiv je nízký → optimalizovat zásoby a pohledávky.</li>
+        <li><strong>EVA:</strong> NOPAT = 10 mil. Kč, C = 80 mil. Kč, WACC = 12 %. EVA = 10 − 0,12 × 80 = 10 − 9,6 = 0,4 mil. Kč (mírně tvoří hodnotu).</li>
+        <li><strong>Altman Z:</strong> Firma s X₁=0,1; X₂=0,05; X₃=0,06; X₄=0,5; X₅=0,8 → Z = 0,12 + 0,07 + 0,198 + 0,3 + 0,8 = 1,49 → finanční tíseň.</li>
+        <li><strong>CCC:</strong> DSO=45, DOZ=30, DPO=40 → CCC = 35 dní; firma potřebuje 35 dní externího financování oběžného majetku.</li>
+      </ul>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li>Záměna ROA a ROE — ROA měří výnosnost celkových aktiv, ROE jen vlastního kapitálu.</li>
+        <li>Tvrzení, že kladný účetní zisk = tvorba hodnoty — EVA může být záporná (náklady VK nejsou v účetnictví).</li>
+        <li>Posuzování likvidity jen z L3 — ignoruje strukturu OA (zásoby jsou nejméně likvidní); sledovat i L1 a L2.</li>
+        <li>Altman Z-score: záměna prahových hodnot pro kótované a nekótované firmy (pro nekótované jsou jiné váhy a prahy).</li>
+        <li>Interpretace CCC: záporné CCC není nutně špatné (supermakety financovány dodavateli).</li>
+        <li>Neporovnávání s odvětvovým průměrem — ukazatelé mají smysl jen v kontextu srovnání.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Jak funguje Du Pont rozklad ROE?</li>
+        <li>Co je EVA a jak se liší od účetního zisku?</li>
+        <li>Jak interpretujete výsledek Altmanova Z-score?</li>
+        <li>Proč samotný ukazatel likvidity L3 nestačí pro hodnocení likvidity?</li>
+        <li>Co je Cash Conversion Cycle a jaká je jeho interpretace?</li>
+      </ol>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 12</h2>
+      <p class="recall-question">Finanční analýza a ukazatelé finanční analýzy (podstata, etapy, komparativní a trendová analýza, absolutní ukazatele; rentabilita, aktivita, likvidita, zadluženost, kapitálový trh, pyramidový rozklad, EVA, Altmanův Z-score, IN05)</p>
+    </div>
+
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">rozvaha/VZZ/CF</span>
+        <span class="pill">horiz./vert. analýza</span>
+        <span class="pill">ROA/ROE/ROS</span>
+        <span class="pill">DSO/DPO/CCC</span>
+        <span class="pill">L1/L2/L3</span>
+        <span class="pill">debt ratio</span>
+        <span class="pill">P/E EPS</span>
+        <span class="pill">Du Pont</span>
+        <span class="pill">EVA NOPAT WACC</span>
+        <span class="pill">Z-score</span>
+        <span class="pill">IN05</span>
+        <span class="pill">šedá zóna</span>
+      </div>
+    </div>
+
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>0–1:30 min</td><td>Podstata FA, zdroje dat, uživatelé</td><td>Rozvaha, VZZ, CF; management, investoři, věřitelé, stát</td></tr>
+          <tr><td>1:30–3 min</td><td>Horizontální a vertikální analýza</td><td>Horizont.: Δ% a Δabs. v čase; Vertikální: % z celku</td></tr>
+          <tr><td>3–5 min</td><td>Ukazatelé rentability</td><td>ROA, ROE, ROS, ROCE — vzorce a interpretace</td></tr>
+          <tr><td>5–8 min</td><td>Ukazatelé aktivity + likvidity</td><td>Obrat aktiv, DSO, DPO, CCC; L1/L2/L3, NWC</td></tr>
+          <tr><td>8–10 min</td><td>Ukazatelé zadluženosti + kap. trhu</td><td>Debt ratio, D/E, úrokové krytí; P/E, EPS</td></tr>
+          <tr><td>10–12:30 min</td><td>Du Pont rozklad + EVA</td><td>ROE = ROS × obrat A × fin. páka; EVA = NOPAT − WACC×C</td></tr>
+          <tr><td>12:30–14:30 min</td><td>Predikční modely: Z-score + IN05</td><td>Altman: Z&gt;2,99 zdravá; šedá zóna; tíseň; IN05 pro ČR</td></tr>
+          <tr><td>14:30–15 min</td><td>Závěr</td><td>FA = komplexní pohled; nutno srovnávat s odvětvím a časem</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <ul>
+        <li>FA = zhodnocení finanční situace z účetních výkazů; zdroje: rozvaha, VZZ, CF</li>
+        <li>Horizontální: Δ% v čase; vertikální: % z celku</li>
+        <li>ROA = EBIT/A; ROE = ČZ/VK; ROS = ČZ/T; ROCE = EBIT/(VK+dlCK)</li>
+        <li>CCC = DSO + DOZ − DPO; kratší = lepší; méně vázaného kapitálu</li>
+        <li>L1 ≥ 0,2; L2 ≥ 1; L3 = 1,5–2,5; NWC = OA − KZ</li>
+        <li>Debt ratio = CK/A; úrokové krytí = EBIT/úroky ≥ 3</li>
+        <li>Du Pont: ROE = ROS × obrat A × fin. páka = ČZ/T × T/A × A/VK</li>
+        <li>EVA = NOPAT − WACC × C; EVA &gt; 0 = tvorba hodnoty; liší se od účetního zisku</li>
+        <li>Z-score: &gt;2,99 zdravá; 1,81–2,99 šedá zóna; &lt;1,81 tíseň</li>
+        <li>IN05: pro ČR; IN &gt; 1,6 tvoří hodnotu; &lt; 0,9 finanční tíseň</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Jak funguje Du Pont rozklad ROE?</li>
+        <li>Co je EVA a jak se liší od účetního zisku?</li>
+        <li>Jak interpretujete výsledek Altmanova Z-score?</li>
+        <li>Proč samotný ukazatel likvidity L3 nestačí pro hodnocení likvidity?</li>
+        <li>Co je Cash Conversion Cycle a jaká je jeho interpretace?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 12: Finanční analýza</div>
+      <div class="memory-chain">
+        <span class="memory-node">Rozvaha/VZZ/CF</span> →
+        <span class="memory-node">Horiz. analýza</span> →
+        <span class="memory-node">Vert. analýza</span> →
+        <span class="memory-node">ROA/ROE/ROS</span> →
+        <span class="memory-node">ROCE</span> →
+        <span class="memory-node">DSO/DPO</span> →
+        <span class="memory-node">CCC</span> →
+        <span class="memory-node">L1/L2/L3</span> →
+        <span class="memory-node">NWC</span> →
+        <span class="memory-node">Debt ratio</span> →
+        <span class="memory-node">Úrok. krytí</span> →
+        <span class="memory-node">P/E EPS</span> →
+        <span class="memory-node">Du Pont</span> →
+        <span class="memory-node">EVA NOPAT</span> →
+        <span class="memory-node">Z-score</span> →
+        <span class="memory-node">IN05 šedá zóna</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1-2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Jaké jsou zdroje dat pro finanční analýzu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q1">Zobrazit odpověď</button>
+        <div id="t12-q1" class="hidden quiz-a">Hlavními zdroji dat jsou výkazy účetní závěrky: rozvaha, výkaz zisku a ztráty a přehled o peněžních tocích (cash flow). Doplňkovými zdroji jsou výroční zprávy, přílohy k účetní závěrce, zprávy auditora a oborové statistiky.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Co je horizontální analýza?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q2">Zobrazit odpověď</button>
+        <div id="t12-q2" class="hidden quiz-a">Horizontální analýza sleduje vývoj jednotlivých položek výkazů v čase – porovnává absolutní i relativní změny mezi po sobě jdoucími obdobími. Umožňuje identifikovat trendy a odhalit neobvyklé výkyvy v hospodaření podniku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co je vertikální analýza?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q3">Zobrazit odpověď</button>
+        <div id="t12-q3" class="hidden quiz-a">Vertikální analýza vyjadřuje jednotlivé položky výkazu jako procentní podíl ze zvolené základny (např. celková aktiva, tržby). Umožňuje hodnotit strukturu majetku, zdrojů nebo nákladů a porovnávat firmu s odvětvovým průměrem bez ohledu na absolutní velikost.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Napište vzorec pro ROA a vysvětlete jeho interpretaci.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q4">Zobrazit odpověď</button>
+        <div id="t12-q4" class="hidden quiz-a">ROA = EBIT / Celková aktiva. Ukazatel vyjadřuje, kolik korun zisku před úroky a daněmi podnik vyprodukuje na každou korunu vloženého majetku. Čím vyšší je ROA, tím efektivněji firma využívá svá aktiva k tvorbě zisku.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Napište vzorec pro ROE.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q5">Zobrazit odpověď</button>
+        <div id="t12-q5" class="hidden quiz-a">ROE = Čistý zisk (EAT) / Vlastní kapitál. Ukazatel měří výnosnost prostředků vložených vlastníky – říká, kolik korun čistého zisku připadá na každou korunu vlastního kapitálu. Je klíčovým měřítkem pro akcionáře při hodnocení jejich investice.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co je ROS (rentabilita tržeb)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q6">Zobrazit odpověď</button>
+        <div id="t12-q6" class="hidden quiz-a">ROS (Return on Sales) = Čistý zisk / Tržby. Ukazatel vyjadřuje, kolik korun zisku podnik získá z každé koruny tržeb, tedy tzv. ziskovou marži. Nízká ROS může signalizovat cenový tlak nebo vysoké náklady relative k tržbám.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je obrat aktiv a co nám říká?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q7">Zobrazit odpověď</button>
+        <div id="t12-q7" class="hidden quiz-a">Obrat aktiv = Tržby / Celková aktiva. Ukazatel měří, kolikrát za rok se celková aktiva „otočí" prostřednictvím tržeb. Vyšší hodnota znamená efektivnější využití aktiv; nízká hodnota signalizuje, že firma drží nadbytek majetku vzhledem k objemu prodeje.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je DSO (doba inkasa pohledávek)? Napište vzorec.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q8">Zobrazit odpověď</button>
+        <div id="t12-q8" class="hidden quiz-a">DSO (Days Sales Outstanding) = Pohledávky / (Tržby / 365). Ukazuje průměrný počet dní, po které firma čeká na úhradu od odběratelů. Čím nižší je DSO, tím rychleji firma inkasuje své pohledávky a tím menší je potřeba pracovního kapitálu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Co je Cash Conversion Cycle (CCC)?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q9">Zobrazit odpověď</button>
+        <div id="t12-q9" class="hidden quiz-a">CCC = DIO (doba obratu zásob) + DSO (doba inkasa pohledávek) − DPO (doba splatnosti závazků). Vyjadřuje počet dní, po které jsou peníze firmy vázány v provozním cyklu. Čím kratší je CCC, tím méně pracovního kapitálu firma potřebuje k financování svého provozu.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Jaký je rozdíl mezi okamžitou (L1), pohotovou (L2) a běžnou (L3) likviditou?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q10">Zobrazit odpověď</button>
+        <div id="t12-q10" class="hidden quiz-a">L1 (okamžitá) = Peněžní prostředky / Krátkodobé závazky; zahrnuje jen nejlikvidnější aktiva. L2 (pohotová) = (Oběžná aktiva − Zásoby) / Krátkodobé závazky; vylučuje zásoby jako nejméně likvidní složku. L3 (běžná) = Oběžná aktiva / Krátkodobé závazky; zahrnuje veškerá oběžná aktiva – je nejméně přísnou mírou likvidity.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Co je debt ratio a jak ho interpretujeme?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q11">Zobrazit odpověď</button>
+        <div id="t12-q11" class="hidden quiz-a">Debt ratio = Cizí kapitál / Celková aktiva. Ukazatel vyjadřuje, jaký podíl aktiv je financován cizími zdroji. Hodnota nad 0,5 naznačuje vyšší zadluženost a zvýšené finanční riziko; optimální úroveň závisí na odvětví a stabilitě výnosů firmy.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je úrokové krytí? Jaká hodnota je bezpečná?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q12">Zobrazit odpověď</button>
+        <div id="t12-q12" class="hidden quiz-a">Úrokové krytí = EBIT / Nákladové úroky. Ukazuje, kolikrát je firma schopna pokrýt své úrokové náklady provozním ziskem. Za bezpečnou se obecně považuje hodnota alespoň 3; hodnota pod 1,5 signalizuje, že firma má potíže se splácením úroků.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Jak funguje Du Pont rozklad ROE?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q13">Zobrazit odpověď</button>
+        <div id="t12-q13" class="hidden quiz-a">Du Pont rozklad rozkládá ROE na tři multiplikativní faktory: ROE = ROS × Obrat aktiv × Finanční páka (= Aktiva / Vlastní kapitál). Tento rozklad odhaluje, zda za změnou ROE stojí ziskovost, efektivita využití aktiv, nebo míra zadlužení, a tím usnadňuje cílenou diagnostiku výkonnosti.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Co je EVA? Jak se liší od účetního zisku?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q14">Zobrazit odpověď</button>
+        <div id="t12-q14" class="hidden quiz-a">EVA (Economic Value Added) = NOPAT − (WACC × Investovaný kapitál). Na rozdíl od účetního zisku EVA zohledňuje náklady na vlastní kapitál, které v účetnictví jako náklad nefigurují. Kladná EVA znamená, že firma tvoří skutečnou ekonomickou hodnotu pro vlastníky nad rámec jejich požadované výnosnosti.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Co znamená, když Altmanův Z-score firmy je 1,5?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t12-q15">Zobrazit odpověď</button>
+        <div id="t12-q15" class="hidden quiz-a">Z-score 1,5 spadá do tzv. šedé zóny (1,23–2,9 pro revidovaný model), ale blíže k hranici finanční tísně (pod 1,23). Firma vykazuje zvýšené riziko finančních potíží a bankrotu; věřitelé i management by měli pečlivě sledovat vývoj a přijmout preventivní opatření.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

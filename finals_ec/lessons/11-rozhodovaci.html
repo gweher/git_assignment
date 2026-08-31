@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téma 11: Rozhodovací úlohy v manažerském účetnictví</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic="11">
+<div class="site-header">
+  <div class="breadcrumb"><a href="../index.html">← Přehled témat</a></div>
+  <div class="topic-badge">Téma 11 / 20</div>
+  <h1>Rozhodovací úlohy v manažerském účetnictví</h1>
+  <p class="official-question">Rozhodovací úlohy v manažerském účetnictví (úlohy na existující kapacitě a budoucí kapacitě, cenová rozhodování, citlivostní analýza, optimalizační úlohy, úlohy „buď anebo", stanovení dolního limitu ceny, investiční rozhodování, metody hodnocení investic – doba návratnosti, čistá současná hodnota, index rentability, vnitřní výnosové procento, nákladové metody)</p>
+</div>
+
+<div class="inline-nav">
+  <a href="10-nakladove.html">← Téma 10</a>
+  <a href="12-financni-analyza.html">Téma 12 →</a>
+</div>
+
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="blueprint">📋 Blueprint</button>
+    <button class="tab-btn" data-tab="recall">🔄 Recall Mode</button>
+    <button class="tab-btn" data-tab="memory">⚡ Paměťová mapa</button>
+    <button class="tab-btn" data-tab="questions">📝 Otázky (15)</button>
+  </div>
+
+  <!-- ===== BLUEPRINT TAB ===== -->
+  <div class="tab-panel active" id="blueprint">
+
+    <div class="section structure">
+      <div class="section-title">Struktura odpovědi (~15 min)</div>
+      <table class="structure-table">
+        <thead>
+          <tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0–1 min</td><td>Princip relevantních nákladů</td><td>Relevantní = budoucí + rozdílové; utopené náklady jsou irelevantní</td></tr>
+          <tr><td>1–3 min</td><td>Úlohy na existující / budoucí kapacitě</td><td>Přijmout zakázku: cena ≥ var. N; budoucí kapacita: přírůstkové výnosy vs. přírůstkové N</td></tr>
+          <tr><td>3–5 min</td><td>Cenová rozhodování + dolní limit ceny</td><td>Krátkodobý DL = var. N; dlouhodobý DL = plné N; transfer pricing</td></tr>
+          <tr><td>5–7:30 min</td><td>Citlivostní analýza + optimalizační úlohy</td><td>Sensitivity: změna 1 proměnné; omezující faktor → max. PÚ/jedn. faktoru; LP</td></tr>
+          <tr><td>7:30–9 min</td><td>Make or buy</td><td>Var. výr. N vs. nákupní cena + oportunitní náklady uvolněné kapacity</td></tr>
+          <tr><td>9–14 min</td><td>Metody hodnocení investic</td><td>Payback, NPV, PI, IRR, nákladové metody – vzorce + kritéria přijetí</td></tr>
+          <tr><td>14–15 min</td><td>Závěr – srovnání metod</td><td>NPV = nejlepší; IRR problém nestandardních CF; Payback ignoruje čas</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section must-say">
+      <div class="section-title">Co musím říct</div>
+      <ul>
+        <li><strong>Relevantní náklady</strong> = budoucí, rozdílové náklady a výnosy; <strong>utopené náklady</strong> (sunk costs) jsou pro rozhodování irelevantní — již byly vynaloženy a nezmění se.</li>
+        <li><strong>Přijmout zakázku</strong> za nižší cenu: podmínka <span class="formula">cena ≥ variabilní náklady</span> (příspěvek na úhradu ≥ 0), <em>pokud je volná kapacita</em> a fixní náklady se nezmění.</li>
+        <li><strong>Dolní limit ceny</strong>: krátkodobý = <span class="formula">var. N (+ oportunitní N při omezené kapacitě)</span>; dlouhodobý = <span class="formula">plné N</span> pro trvalou ziskovost.</li>
+        <li><strong>Citlivostní analýza</strong>: sleduje, jak změna jedné proměnné (cena, objem, var. N) ovlivní výsledek; hledá break-even point.</li>
+        <li><strong>Omezující faktor</strong>: maximalizuji <span class="formula">PÚ / jednotku omezujícího faktoru</span>; více omezení → lineární programování.</li>
+        <li><strong>Make or buy</strong>: porovnání var. výrobních nákladů s nákupní cenou; zahrnout oportunitní využití uvolněné kapacity.</li>
+        <li><strong>NPV</strong> = <span class="formula">Σ CF_t / (1+r)^t − I₀</span>; NPV &gt; 0 → přijmout; respektuje čas i všechny peněžní toky.</li>
+        <li><strong>IRR</strong> = r* kde NPV = 0; přijmout pokud IRR &gt; WACC; problém: více IRR u nestandardních CF.</li>
+        <li><strong>PI</strong> = <span class="formula">PV(CF) / I₀</span>; PI &gt; 1 přijmout; vhodný pro srovnání investic různé velikosti.</li>
+        <li><strong>Payback</strong> = <span class="formula">I₀ / roční CF</span>; ignoruje čas a CF po splacení — nevhodný jako hlavní kritérium.</li>
+      </ul>
+    </div>
+
+    <div class="section terms">
+      <div class="section-title">Klíčové pojmy</div>
+      <div class="terms-grid">
+        <div class="term-card"><div class="term-name">Relevantní náklady</div><div class="term-def">Budoucí, rozdílové náklady ovlivněné rozhodnutím</div></div>
+        <div class="term-card"><div class="term-name">Utopené náklady</div><div class="term-def">Minulé, neměnitelné náklady — irelevantní pro rozhodování</div></div>
+        <div class="term-card"><div class="term-name">Oportunitní náklady</div><div class="term-def">Ušlý prospěch nejlepší nevybrané alternativy</div></div>
+        <div class="term-card"><div class="term-name">Příspěvek na úhradu (PÚ)</div><div class="term-def">PÚ = Tržby − Variabilní náklady</div></div>
+        <div class="term-card"><div class="term-name">Dolní limit ceny</div><div class="term-def">Minimální cena: krátkodobě var. N, dlouhodobě plné N</div></div>
+        <div class="term-card"><div class="term-name">Citlivostní analýza</div><div class="term-def">Dopad změny jedné proměnné na výsledek</div></div>
+        <div class="term-card"><div class="term-name">Omezující faktor</div><div class="term-def">Kapacitní bottleneck; alokace dle PÚ/jed. faktoru</div></div>
+        <div class="term-card"><div class="term-name">Make or buy</div><div class="term-def">Vyrábět vlastní vs. nakoupit (+ oportunitní N)</div></div>
+        <div class="term-card"><div class="term-name">NPV (ČSH)</div><div class="term-def">Σ CF_t/(1+r)^t − I₀; NPV &gt; 0 → přijmout</div></div>
+        <div class="term-card"><div class="term-name">IRR (VVP)</div><div class="term-def">Diskontní sazba, při níž NPV = 0; přijmout pokud IRR &gt; WACC</div></div>
+        <div class="term-card"><div class="term-name">PI (Index rentability)</div><div class="term-def">PV(CF)/I₀; PI &gt; 1 přijmout; srovnání různých velikostí</div></div>
+        <div class="term-card"><div class="term-name">Payback (Doba návratnosti)</div><div class="term-def">I₀/roční CF; ignoruje čas a pozdější CF</div></div>
+        <div class="term-card"><div class="term-name">WACC</div><div class="term-def">Vážené průměrné náklady kapitálu; diskontní sazba pro NPV/IRR</div></div>
+        <div class="term-card"><div class="term-name">Discounting (diskontování)</div><div class="term-def">Převod budoucích CF na současnou hodnotu</div></div>
+      </div>
+    </div>
+
+    <div class="section relations">
+      <div class="section-title">Klíčové vztahy</div>
+      <div class="relation-box">
+ROZHODOVACÍ ÚLOHY — LOGIKA:
+──────────────────────────────────────────────────────
+Relevantní náklady = budoucí + rozdílové
+Irelevantní = utopené náklady + společné náklady
+
+PŘIJMOUT ZAKÁZKU (volná kapacita):
+  cena ≥ var. N  →  PÚ ≥ 0  →  přijmout
+
+PŘIJMOUT ZAKÁZKU (plná kapacita):
+  cena ≥ var. N + oportunitní N (ušlý PÚ)
+
+OMEZUJÍCÍ FAKTOR:
+  Pořadí = PÚ / jednotku omezujícího faktoru ↓
+
+DOLNÍ LIMIT CENY:
+  Krátkodobý: DL = var. N (+ OppN)
+  Dlouhodobý: DL = plné N (fixní + variabilní)
+──────────────────────────────────────────────────────
+      </div>
+      <div class="relation-box">
+METODY HODNOCENÍ INVESTIC:
+──────────────────────────────────────────────────────
+Payback  = I₀ / roční CF          [jednoduché, ignor. čas]
+NPV      = Σ CF_t/(1+r)^t − I₀   [nejlepší metoda]
+PI       = PV(CF) / I₀            [srovnání různých I]
+IRR      = r* kde NPV = 0         [IRR > WACC → přijmout]
+
+Závislost: PI = (NPV + I₀) / I₀ = NPV/I₀ + 1
+Pořadí metod: NPV > IRR > PI > Payback
+──────────────────────────────────────────────────────
+      </div>
+      <div class="relation-box">
+MAKE OR BUY:
+  Vyrábět, pokud: var. výr. N + OppN (kap.) < nákupní cena
+  Nakoupit, pokud: nákupní cena < var. výr. N + OppN (kap.)
+
+JOINT PRODUCTS (zpracování dál?):
+  Zpracovávat dál: přír. výnosy > přír. N zpracování
+  Náklady předchozích fází = utopené → irelevantní
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Příklady</div>
+      <ul>
+        <li><strong>Citlivostní analýza:</strong> Firma má fixní náklady 100 000 Kč, var. N = 60 Kč/ks, cena = 100 Kč. Break-even = 2 500 ks. O kolik % se musí snížit objem, aby projekt byl ztrátový? → 2 500/3 000 − 1 = −16,7 %.</li>
+        <li><strong>Omezující faktor:</strong> Stroj má 1 000 hodin/měsíc. Výrobek A: PÚ = 200 Kč, stroj. čas 2 h → PÚ/h = 100; Výrobek B: PÚ = 150 Kč, 1 h → PÚ/h = 150. Přednost: B.</li>
+        <li><strong>NPV příklad:</strong> I₀ = 1 000 000, CF = 300 000/rok, r = 10 %, n = 5 let. NPV = 300 000 × 3,791 − 1 000 000 = 137 300 Kč &gt; 0 → přijmout.</li>
+        <li><strong>Make or buy:</strong> Výroba součástky: var. N = 80 Kč, nákupní cena = 95 Kč. Bez volné kapacity → vyrábět vlastní. Při volné kapacitě s OppN = 20 Kč → celkové náklady výroby = 100 &gt; 95 → nakoupit.</li>
+      </ul>
+    </div>
+
+    <div class="section mistakes">
+      <div class="section-title">Typické chyby</div>
+      <ul>
+        <li>Zařazení utopených nákladů do rozhodovací analýzy — minulé výdaje jsou irelevantní.</li>
+        <li>Ignorování oportunitních nákladů při plné kapacitě (dolní limit ceny je vyšší než jen var. N).</li>
+        <li>Záměna IRR a WACC — přijmout pokud IRR &gt; WACC, ne IRR &gt; 0.</li>
+        <li>Použití payback jako hlavního kritéria — ignoruje CF po uplynutí doby návratnosti a nerespektuje čas.</li>
+        <li>Nepořadování výrobků dle PÚ/jednotku omezujícího faktoru (ne dle celkového PÚ).</li>
+        <li>U IRR: předpoklad reinvestice za IRR (nerealistický), u nestandardních CF může být více IRR.</li>
+      </ul>
+    </div>
+
+    <div class="section followups">
+      <div class="section-title">Možné doplňující otázky</div>
+      <ol>
+        <li>Kdy je dolní limit ceny roven variabilním nákladům a kdy plným nákladům?</li>
+        <li>Proč jsou utopené náklady pro rozhodování irelevantní?</li>
+        <li>Jaké jsou výhody NPV oproti době návratnosti?</li>
+        <li>Co je omezující faktor a jak ho zohledníme při výběru výrobního programu?</li>
+        <li>Jaký je problém s metodou IRR při nestandardních cash flow?</li>
+      </ol>
+      <div style="margin-top:1rem;">
+        <strong>Vzorové odpovědi:</strong>
+        <ul>
+          <li><em>Dolní limit ceny:</em> Krátkodobě (volná kapacita, fixní N se nemění) = var. N; dlouhodobě (musíme pokrýt i fixní N pro trvalou ziskovost) = plné N; při plné kapacitě krátkodobě = var. N + oportunitní N.</li>
+          <li><em>Utopené náklady:</em> Nelze je změnit žádným rozhodnutím — jsou mimo naši kontrolu. Zahrnout je by vedlo k chybným rozhodnutím (srovnáváme jen budoucí alternativy).</li>
+          <li><em>NPV vs. Payback:</em> NPV respektuje časovou hodnotu peněz, bere v úvahu VŠECHNY CF po celou dobu životnosti, a poskytuje absolutní míru přidané hodnoty. Payback nic z toho nedělá.</li>
+          <li><em>IRR problém:</em> U nestandardních CF (střídání kladných a záporných) může být více hodnot IRR nebo žádná — nelze jednoznačně rozhodnout. Navíc předpokládá reinvestici za IRR, což je nerealistické.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+      <button class="reveal-btn outline" id="btn-mark-seen">Označit jako procvičeno</button>
+      <button class="reveal-btn secondary" id="btn-mark-done">Označit jako zvládnuto</button>
+    </div>
+  </div>
+
+  <!-- ===== RECALL TAB ===== -->
+  <div class="tab-panel" id="recall">
+    <div class="recall-header">
+      <h2>Recall Mode — Téma 11</h2>
+      <p class="recall-question">Rozhodovací úlohy v manažerském účetnictví (úlohy na existující kapacitě a budoucí kapacitě, cenová rozhodování, citlivostní analýza, optimalizační úlohy, úlohy „buď anebo", stanovení dolního limitu ceny, investiční rozhodování, metody hodnocení investic)</p>
+    </div>
+
+    <div class="triggers">
+      <div class="triggers-title">Paměťové spouštěče</div>
+      <div class="trigger-pills">
+        <span class="pill">relevantní N</span>
+        <span class="pill">utopené N</span>
+        <span class="pill">volná kapacita</span>
+        <span class="pill">dolní limit ceny</span>
+        <span class="pill">citlivostní analýza</span>
+        <span class="pill">omezující faktor</span>
+        <span class="pill">make or buy</span>
+        <span class="pill">NPV</span>
+        <span class="pill">IRR</span>
+        <span class="pill">payback</span>
+        <span class="pill">PI</span>
+        <span class="pill">WACC</span>
+      </div>
+    </div>
+
+    <p class="notice">Zavři oči nebo odlož screen. Mluv ~15 minut. Pak odhaluj postupně.</p>
+
+    <button class="reveal-btn" data-reveal="recall-structure">Odhal strukturu odpovědi</button>
+    <div id="recall-structure" class="hidden section structure">
+      <table class="structure-table">
+        <thead><tr><th class="time-col">Čas</th><th>Část</th><th>Klíčový obsah</th></tr></thead>
+        <tbody>
+          <tr><td>0–1 min</td><td>Princip relevantních nákladů</td><td>Relevantní = budoucí + rozdílové; utopené náklady jsou irelevantní</td></tr>
+          <tr><td>1–3 min</td><td>Úlohy na existující / budoucí kapacitě</td><td>Přijmout zakázku: cena ≥ var. N; budoucí kapacita: přírůstkové výnosy vs. přírůstkové N</td></tr>
+          <tr><td>3–5 min</td><td>Cenová rozhodování + dolní limit ceny</td><td>Krátkodobý DL = var. N; dlouhodobý DL = plné N; transfer pricing</td></tr>
+          <tr><td>5–7:30 min</td><td>Citlivostní analýza + optimalizační úlohy</td><td>Sensitivity: změna 1 proměnné; omezující faktor → max. PÚ/jedn. faktoru; LP</td></tr>
+          <tr><td>7:30–9 min</td><td>Make or buy</td><td>Var. výr. N vs. nákupní cena + oportunitní náklady uvolněné kapacity</td></tr>
+          <tr><td>9–14 min</td><td>Metody hodnocení investic</td><td>Payback, NPV, PI, IRR, nákladové metody – vzorce + kritéria přijetí</td></tr>
+          <tr><td>14–15 min</td><td>Závěr – srovnání metod</td><td>NPV = nejlepší; IRR problém nestandardních CF; Payback ignoruje čas</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-mustsay">Odhal must-say body</button>
+    <div id="recall-mustsay" class="hidden section must-say">
+      <ul>
+        <li>Relevantní náklady = budoucí + rozdílové; utopené náklady = irelevantní (nelze změnit)</li>
+        <li>Přijmout zakázku (volná kap.): cena ≥ var. N → PÚ ≥ 0</li>
+        <li>Dolní limit ceny: krátkodobý = var. N; dlouhodobý = plné N</li>
+        <li>Citlivostní analýza: dopad změny 1 proměnné; hledá break-even</li>
+        <li>Omezující faktor: max. PÚ/jednotku bottlenecku; LP pro více omezení</li>
+        <li>Make or buy: var. N + OppN vs. nákupní cena</li>
+        <li>NPV = Σ CF_t/(1+r)^t − I₀; NPV &gt; 0 → přijmout (nejlepší metoda)</li>
+        <li>IRR = r* kde NPV = 0; přijmout pokud IRR &gt; WACC; problém: více IRR</li>
+        <li>PI = PV(CF)/I₀; PI &gt; 1 → přijmout; vhodný pro různé velikosti I</li>
+        <li>Payback = I₀/CF; jednoduché ale ignoruje čas + CF po splacení</li>
+      </ul>
+    </div>
+
+    <button class="reveal-btn" data-reveal="recall-followups">Odhal doplňující otázky</button>
+    <div id="recall-followups" class="hidden section followups">
+      <ol>
+        <li>Kdy je dolní limit ceny roven variabilním nákladům a kdy plným nákladům?</li>
+        <li>Proč jsou utopené náklady pro rozhodování irelevantní?</li>
+        <li>Jaké jsou výhody NPV oproti době návratnosti?</li>
+        <li>Co je omezující faktor a jak ho zohledníme při výběru výrobního programu?</li>
+        <li>Jaký je problém s metodou IRR při nestandardních cash flow?</li>
+      </ol>
+    </div>
+
+    <button class="reveal-btn outline" id="btn-reset-recall" style="margin-top:.5rem;">↺ Začít znovu</button>
+  </div>
+
+  <!-- ===== MEMORY TAB ===== -->
+  <div class="tab-panel" id="memory">
+    <div class="section memory-map">
+      <div class="section-title">Paměťová mapa — Téma 11: Rozhodovací úlohy v MÚ</div>
+      <div class="memory-chain">
+        <span class="memory-node">Relevantní N</span> →
+        <span class="memory-node">Utopené N</span> →
+        <span class="memory-node">Oportunitní N</span> →
+        <span class="memory-node">Volná kapacita</span> →
+        <span class="memory-node">PÚ ≥ 0</span> →
+        <span class="memory-node">Dolní limit ceny</span> →
+        <span class="memory-node">Citlivostní analýza</span> →
+        <span class="memory-node">Omezující faktor</span> →
+        <span class="memory-node">PÚ/jedn. faktoru</span> →
+        <span class="memory-node">Make or buy</span> →
+        <span class="memory-node">Payback</span> →
+        <span class="memory-node">NPV</span> →
+        <span class="memory-node">PI</span> →
+        <span class="memory-node">IRR vs. WACC</span> →
+        <span class="memory-node">Srovnání metod</span>
+      </div>
+      <p class="memory-hint">Projdi řetězec a ke každému klíčovému slovu řekni 1-2 věty. Celkem ~15 min.</p>
+    </div>
+  </div>
+  <div class="tab-panel" id="questions">
+    <div class="questions-meta">
+      <span>15 procvičovacích otázek · přečti → odpověz si → odhal</span>
+    </div>
+    <div class="quiz-list">
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">1.</span> Co jsou relevantní náklady a proč je důležité je odlišit?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q1">Zobrazit odpověď</button>
+        <div id="t11-q1" class="hidden quiz-a">Relevantní náklady jsou budoucí náklady, které se liší mezi jednotlivými rozhodovacími alternativami. Odlišení je klíčové proto, že do rozhodování smíme zahrnout pouze náklady, jež se změní v závislosti na zvoleném postupu – nevýznamné a neměnné náklady by výsledek analýzy zkreslovaly.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">2.</span> Co jsou utopené náklady? Proč je nesmíme zahrnout do rozhodování?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q2">Zobrazit odpověď</button>
+        <div id="t11-q2" class="hidden quiz-a">Utopené náklady (sunk costs) jsou náklady, které již byly v minulosti vynaloženy a nelze je žádným budoucím rozhodnutím ovlivnit ani získat zpět. Do rozhodování je nezahrnujeme, protože jsou pro budoucí alternativy irelevantní – jejich zahrnutí by vedlo k ekonomicky chybným závěrům.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">3.</span> Co jsou oportunitní náklady? Příklad.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q3">Zobrazit odpověď</button>
+        <div id="t11-q3" class="hidden quiz-a">Oportunitní náklady představují hodnotu nejlepší nevyužité alternativy, které se vzdáváme zvolením dané možnosti. Příkladem je situace, kdy firma využije vlastní stroj pro novou zakázku místo jeho pronájmu – ušlý příjem z pronájmu jsou oportunitní náklady tohoto rozhodnutí.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">4.</span> Firma má volnou kapacitu. Kdy přijme zakázku za cenu nižší než jsou plné náklady?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q4">Zobrazit odpověď</button>
+        <div id="t11-q4" class="hidden quiz-a">Firma s volnou kapacitou přijme zakázku tehdy, pokud nabídnutá cena pokryje alespoň variabilní (přímé) náklady zakázky a přispěje ke krytí fixních nákladů. Fixní náklady jsou totiž v krátkém období neměnné a vznikají bez ohledu na to, zda zakázku firma přijme či ne.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">5.</span> Jak se liší rozhodování na existující kapacitě od rozhodování na budoucí kapacitě?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q5">Zobrazit odpověď</button>
+        <div id="t11-q5" class="hidden quiz-a">Při rozhodování na existující kapacitě jsou fixní náklady sunk costs a do kalkulace vstupují jen variabilní náklady. Při rozhodování na budoucí kapacitě jsou i fixní náklady relevantní, protože ještě nebyly vynaloženy a jejich výše závisí na přijatém rozhodnutí – proto musí cena pokrýt plné náklady.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">6.</span> Co je krátkodobý dolní limit ceny?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q6">Zobrazit odpověď</button>
+        <div id="t11-q6" class="hidden quiz-a">Krátkodobý dolní limit ceny je minimální cena, za niž je firma ochotna v krátkém období přijmout zakázku bez toho, aby na ní prodělávala. Rovná se variabilním nákladům na výrobu dané zakázky (případně navýšeným o oportunitní náklady, pokud je kapacita plně využita).</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">7.</span> Co je dlouhodobý dolní limit ceny?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q7">Zobrazit odpověď</button>
+        <div id="t11-q7" class="hidden quiz-a">Dlouhodobý dolní limit ceny odpovídá plným (úplným) nákladům výroby, tedy součtu variabilních a fixních nákladů. V dlouhém období musí cena pokrýt veškeré náklady, aby podnik byl schopen přežít – v opačném případě by opakovaně generoval ztrátu a nebyl životaschopný.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">8.</span> Co je citlivostní analýza v manažerském účetnictví?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q8">Zobrazit odpověď</button>
+        <div id="t11-q8" class="hidden quiz-a">Citlivostní analýza zkoumá, jak se změní výsledek rozhodnutí (např. NPV nebo zisk), pokud se změní jedna nebo více vstupních proměnných (cena, objem prodeje, náklady). Umožňuje identifikovat klíčové faktory rizika a stanovit tzv. breakeven hodnoty jednotlivých parametrů.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">9.</span> Co je omezující faktor (bottleneck)? Jak ovlivní výběr výrobního programu?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q9">Zobrazit odpověď</button>
+        <div id="t11-q9" class="hidden quiz-a">Omezující faktor je zdroj, jehož kapacita je nedostatečná pro splnění celkové poptávky (např. strojové hodiny, pracovní hodiny, materiál). Při existenci bottlenecku firma seřadí produkty podle příspěvku ke krytí na jednotku omezujícího faktoru a upřednostní ty s nejvyšší hodnotou tohoto ukazatele.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">10.</span> Popište rozhodovací úlohu make or buy.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q10">Zobrazit odpověď</button>
+        <div id="t11-q10" class="hidden quiz-a">Úloha make or buy řeší, zda je výhodnější výrobek nebo komponentu vyrábět vlastními silami, nebo ji nakoupit od externího dodavatele. Rozhodující jsou relevantní náklady výroby (variabilní náklady, ušlé oportunitní příjmy z uvolněné kapacity) ve srovnání s cenou externího nákupu; fixní náklady, které zůstanou beze změny, jsou irelevantní.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">11.</span> Napište vzorec pro čistou současnou hodnotu (NPV) a uveďte rozhodovací kritérium.</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q11">Zobrazit odpověď</button>
+        <div id="t11-q11" class="hidden quiz-a">NPV = Σ (CF_t / (1+r)^t) − I₀, kde CF_t jsou peněžní toky v čase t, r je diskontní sazba a I₀ je počáteční investice. Projekt přijmeme, pokud NPV ≥ 0; při výběru mezi více projekty volíme ten s nejvyšší kladnou NPV.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">12.</span> Co je index rentability (PI) a kdy projekt přijmeme?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q12">Zobrazit odpověď</button>
+        <div id="t11-q12" class="hidden quiz-a">Index rentability (Profitability Index) se vypočítá jako součet diskontovaných budoucích peněžních toků dělený počáteční investicí: PI = PV(CF) / I₀. Projekt přijmeme, pokud PI ≥ 1 (tj. NPV ≥ 0); PI je obzvlášť užitečný při porovnávání projektů s různou výší investice.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">13.</span> Co je IRR? Kdy je projekt přijatelný?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q13">Zobrazit odpověď</button>
+        <div id="t11-q13" class="hidden quiz-a">Vnitřní výnosové procento (IRR) je taková diskontní sazba, při níž je NPV projektu rovna nule. Projekt je přijatelný, pokud IRR ≥ požadované výnosnosti (náklady kapitálu); čím vyšší je IRR nad touto hranicí, tím atraktivnější je investice.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">14.</span> Jaký je hlavní nedostatek doby návratnosti jako metody hodnocení investic?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q14">Zobrazit odpověď</button>
+        <div id="t11-q14" class="hidden quiz-a">Hlavním nedostatkem doby návratnosti je, že ignoruje peněžní toky po uplynutí doby návratnosti a nezohledňuje časovou hodnotu peněz. Dvě investice se stejnou dobou návratnosti tak mohou mít výrazně odlišnou NPV, přičemž metoda doby návratnosti je nerozeznává.</div>
+      </div>
+      <div class="quiz-item">
+        <div class="quiz-q"><span class="quiz-num">15.</span> Co jsou nákladové metody hodnocení investic? Kdy se používají?</div>
+        <button class="reveal-btn outline quiz-reveal" data-reveal="t11-q15">Zobrazit odpověď</button>
+        <div id="t11-q15" class="hidden quiz-a">Nákladové metody porovnávají alternativní investice pouze na základě nákladů, nikoli výnosů – používají se tehdy, kdy generované příjmy jsou u všech variant totožné nebo je nelze spolehlivě odhadnout. Typickými nástroji jsou metoda ročních průměrných nákladů nebo metoda celkových diskontovaných nákladů (LCC).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

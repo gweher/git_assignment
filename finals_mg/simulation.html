@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulace zkoušky — SZZk Management</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="navbar__brand" href="index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="index.html">Dashboard</a>
+    <a class="navbar__link navbar__link--active" href="simulation.html">Simulace zkoušky</a>
+    <a class="navbar__link" href="revision.html">Rychlá revize</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb"><a href="index.html">Dashboard</a><span>Simulace zkoušky</span></div>
+
+  <div class="topic-header">
+    <div class="topic-header__num">🎲</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Simulace ústní zkoušky</div>
+      <div class="topic-header__subtitle">Náhodně vybere 2 témata · 15 min každé · procvičení struktury a klíčových bodů</div>
+    </div>
+  </div>
+
+  <div class="callout callout--info mb-2">
+    <strong>Jak simulace probíhá:</strong> Obdržíte 2 náhodná témata. Ke každému vidíte pouze otázku a memory triggers.
+    Přemyslete si odpověď a mluvte ~15 minut. Pak postupně odkrývejte strukturu, must-say body a doplňující otázky.
+  </div>
+
+  <div id="sim-start">
+    <div class="sim-panel" style="max-width:480px;margin:2rem auto;text-align:center;">
+      <div class="sim-panel__title">Připraven/a na zkoušku?</div>
+      <div class="sim-panel__subtitle">Systém náhodně vybere 2 z 18 témat, stejně jako při skutečné zkoušce.</div>
+      <button class="btn btn--primary" style="margin-top:1rem;font-size:1rem;padding:.7rem 2rem" onclick="startSimulation()">
+        🎲 Spustit simulaci
+      </button>
+    </div>
+  </div>
+
+  <div id="sim-area" class="hidden"></div>
+
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

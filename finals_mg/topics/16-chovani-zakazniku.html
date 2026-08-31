@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chování zákazníků — SZZk Management</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-topic-id="t16">
+
+<nav class="navbar">
+  <a class="navbar__brand" href="../index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link" href="../index.html">Dashboard</a>
+    <a class="navbar__link" href="../simulation.html">Simulace</a>
+    <a class="navbar__link" href="../revision.html">Rychlá revize</a>
+    <a class="navbar__link" href="15-marketingove-rizeni.html">← Předchozí</a>
+    <a class="navbar__link" href="17-marketingovy-mix.html">Další →</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="breadcrumb"><a href="../index.html">Dashboard</a><span>Téma 16</span></div>
+
+  <div class="recall-bar">
+    <strong>🎯 Recall mód: Přemyslete si odpověď — pak odkryjte blueprint</strong>
+    <button id="recall-toggle-btn" class="btn btn--small btn--secondary">🎯 Recall mód</button>
+    <button id="mastered-btn" class="btn btn--small btn--success">✓ Označit jako zvládnuté</button>
+  </div>
+
+  <div class="topic-header">
+    <div class="topic-header__num">16</div>
+    <div class="topic-header__meta">
+      <div class="topic-header__title">Chování zákazníků</div>
+      <div class="topic-header__subtitle">Okruh: Management · FIM UHK · ~15 min ústní odpověď</div>
+    </div>
+  </div>
+
+  <div class="recall-overlay">
+    <div class="section-block">
+      <div class="section-block__header"><span class="section-block__title">💡 Memory triggers</span></div>
+      <div class="section-block__body">
+        <div class="memory-map">
+          <div class="memory-map__title">Rekonstrukce odpovědi</div>
+          <div class="memory-map__chain">
+            <span class="memory-map__kw">B2C black box</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">4 faktory</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">5 kroků rozhodování</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">B2B nákupní centrum</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">typologie zákazníků</span><span class="memory-map__arrow">→</span>
+            <span class="memory-map__kw">výzkum + segmentace</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem" class="text-muted text-small">Přemyslete si strukturu. Pak klikněte "Zobrazit odpověď".</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blueprint-content">
+
+    <!-- 1. STRUKTURA ODPOVĚDI -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⏱</span> Struktura odpovědi (~15 min)</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <table class="time-table">
+          <thead><tr><th>Část</th><th>Obsah</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr><td class="time-table__section">Úvod</td><td>Definice nákupního chování; model černé skříňky; proč je to pro marketing klíčové</td><td>1 min</td></tr>
+            <tr><td class="time-table__section">B2C — faktory a typy</td><td>4 skupiny faktorů (kulturní, sociální, osobní, psychologické); typy nákupního chování (4 typy dle zapojení)</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Rozhodovací proces B2C</td><td>5 kroků: rozpoznání potřeby → hledání → hodnocení → nákup → ponákupní chování; kognitivní disonance</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">B2B — nákupní chování</td><td>Odlišnosti od B2C; nákupní centrum (7 rolí); typy nákupů</td><td>3 min</td></tr>
+            <tr><td class="time-table__section">Typologie zákazníků</td><td>Dle loajality, chování, hodnoty; customer experience</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Marketingový výzkum</td><td>Definice; 5 kroků procesu; primární vs. sekundární data; focus group</td><td>2 min</td></tr>
+            <tr><td class="time-table__section">Segmentace a pokrytí trhu</td><td>Kritéria segmentace; 4 strategie pokrytí (targeting)</td><td>1 min</td></tr>
+            <tr><td class="time-table__section">Závěr</td><td>Znalost zákazníka jako základ efektivního marketingu</td><td>1 min</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 2. CO MUSÍM ŘÍCT -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">📋</span> Co musím říct</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="must-say">
+          <li><strong>Model černé skříňky (B2C):</strong> marketingové podněty (4P) + ostatní vlivy prostředí → „černá skříňka" zákazníka (charakteristiky + rozhodovací proces) → nákupní rozhodnutí; firma nevidí přímo dovnitř, musí dedukovat z chování</li>
+          <li><strong>4 skupiny faktorů:</strong> (1) Kulturní — kultura, subkultura, společenská třída; (2) Sociální — referenční skupiny, rodina (role: iniciátor, ovlivňovatel, rozhodovatel, kupující, uživatel), sociální role; (3) Osobní — věk, životní styl, osobnost, příjem, životní cyklus rodiny; (4) Psychologické — motivace, vnímání, učení, přesvědčení a postoje</li>
+          <li><strong>Typy nákupního chování (4 typy):</strong> komplexní/extenzivní (vysoké zapojení, velké rozdíly — drahé zboží), disonančně snižující (vysoké zapojení, malé rozdíly), habituální/zvykové (nízké zapojení, malé rozdíly — rutinní nákup), hledající rozmanitost (nízké zapojení, velké rozdíly — přepínání značek)</li>
+          <li><strong>5 kroků spotřebitelského rozhodovacího procesu:</strong> (1) Rozpoznání potřeby, (2) Hledání informací (interní + externí), (3) Hodnocení alternativ, (4) Nákupní rozhodnutí, (5) Ponákupní chování (spokojenost, loajalita, kognitivní disonance)</li>
+          <li><strong>Kognitivní disonance:</strong> pochybnosti a nepohodlí po nákupu — zákazník se ptá „rozhodl jsem správně?"; marketing reaguje: potvrzení rozhodnutí, servis, záruky</li>
+          <li><strong>B2B nákupní chování — odlišnosti:</strong> méně zákazníků, větší objemy, dlouhodobé vztahy, racionálnější rozhodování, profesionální nákupčí, formální procesy (výběrová řízení)</li>
+          <li><strong>Nákupní centrum (B2B — Webster a Wind):</strong> 7 rolí — iniciátor (zjistí potřebu), uživatel (bude produkt používat), ovlivňovatel (ovlivňuje specifikace), rozhodovatel (schvaluje finální volbu), schvalovatel (autorizuje), kupující (formálně nakupuje), strážce (kontroluje informační tok)</li>
+          <li><strong>Typy B2B nákupů:</strong> přímé opakované (rutinní reorder), modifikované opakované (změna podmínek), nové nákupy (poprvé — nejvíce členů nákupního centra)</li>
+          <li><strong>Typologie zákazníků:</strong> dle loajality (věrní, přepínající, latentní, negativní); dle chování (impulzivní, analytický, expresivní, amiabilní); dle hodnoty (klíčoví, potenciální, marginální, nežádoucí)</li>
+          <li><strong>Customer experience (CX):</strong> celkový zážitek zákazníka ze všech kontaktních bodů (touchpoints) s firmou; rozdíl: spokojenost = kognitivní, loajalita = behaviorální; CX je klíčový diferenciátor</li>
+          <li><strong>Marketingový výzkum — 5 kroků:</strong> (1) Definice problému a cílů, (2) Plán výzkumu, (3) Sběr dat, (4) Analýza dat, (5) Závěry a doporučení</li>
+          <li><strong>Primární vs. sekundární data:</strong> primární = shromažďovaná nově pro konkrétní účel (dotazníky, rozhovory, focus groups, experiment, pozorování); sekundární = již existující (statistiky, interní záznamy, výzkumy třetích stran)</li>
+          <li><strong>Strategie pokrytí trhu (targeting):</strong> nediferencovaný (jeden program pro všechny), diferencovaný (různé programy pro různé segmenty), koncentrovaný (jeden segment), mikromarketing (individualizovaný)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. KLÍČOVÉ POJMY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔑</span> Klíčové pojmy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <div class="concept-tags">
+          <span class="concept-tag">model černé skříňky</span>
+          <span class="concept-tag">kulturní faktory</span>
+          <span class="concept-tag">sociální faktory</span>
+          <span class="concept-tag">psychologické faktory</span>
+          <span class="concept-tag">komplexní nákupní chování</span>
+          <span class="concept-tag">habituální chování</span>
+          <span class="concept-tag">kognitivní disonance</span>
+          <span class="concept-tag">5 kroků rozhodovacího procesu</span>
+          <span class="concept-tag">B2C vs. B2B</span>
+          <span class="concept-tag">nákupní centrum</span>
+          <span class="concept-tag">initiátor / rozhodovatel / kupující</span>
+          <span class="concept-tag">přímý reorder / nový nákup</span>
+          <span class="concept-tag">typologie zákazníků</span>
+          <span class="concept-tag">customer experience (CX)</span>
+          <span class="concept-tag">marketingový výzkum</span>
+          <span class="concept-tag">primární data</span>
+          <span class="concept-tag">sekundární data</span>
+          <span class="concept-tag">focus group</span>
+          <span class="concept-tag">segmentace</span>
+          <span class="concept-tag">mikromarketing</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. KLÍČOVÉ VZTAHY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">🔗</span> Klíčové vztahy</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+
+        <strong>Srovnání B2C vs. B2B nákupního chování:</strong>
+        <table class="data-table" style="margin-top:0.5rem;margin-bottom:1.5rem">
+          <thead><tr><th>Dimenze</th><th>B2C (spotřebitelský)</th><th>B2B (organizační)</th></tr></thead>
+          <tbody>
+            <tr><td>Počet zákazníků</td><td>Mnoho (masový trh)</td><td>Málo (omezený trh)</td></tr>
+            <tr><td>Objem nákupů</td><td>Malý, individuální</td><td>Velký, smluvní</td></tr>
+            <tr><td>Motivace</td><td>Emocionální i racionální</td><td>Převážně racionální (ROI, TCO)</td></tr>
+            <tr><td>Rozhodovací proces</td><td>Individuální nebo rodinný</td><td>Skupinové (nákupní centrum)</td></tr>
+            <tr><td>Vztahy</td><td>Krátkodobé, transakční</td><td>Dlouhodobé, partnerské</td></tr>
+            <tr><td>Délka procesu</td><td>Rychlá až impulsivní</td><td>Dlouhá, formalizovaná</td></tr>
+          </tbody>
+        </table>
+
+        <strong>5 kroků spotřebitelského rozhodovacího procesu:</strong>
+        <div class="relation-flow" style="display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin-top:0.5rem;margin-bottom:1.5rem">
+          <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.5rem 0.8rem;border-radius:6px;font-size:0.82rem;text-align:center">1. Rozpoznání<br>potřeby</div>
+          <span style="color:var(--text-muted)">→</span>
+          <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.5rem 0.8rem;border-radius:6px;font-size:0.82rem;text-align:center">2. Hledání<br>informací</div>
+          <span style="color:var(--text-muted)">→</span>
+          <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.5rem 0.8rem;border-radius:6px;font-size:0.82rem;text-align:center">3. Hodnocení<br>alternativ</div>
+          <span style="color:var(--text-muted)">→</span>
+          <div style="background:var(--surface-2,#f8f9fa);border:1px solid var(--border);padding:0.5rem 0.8rem;border-radius:6px;font-size:0.82rem;text-align:center">4. Nákupní<br>rozhodnutí</div>
+          <span style="color:var(--text-muted)">→</span>
+          <div style="background:var(--primary-light,#cce5ff);border:1px solid var(--primary);padding:0.5rem 0.8rem;border-radius:6px;font-size:0.82rem;text-align:center">5. Ponákupní<br>chování</div>
+        </div>
+
+        <strong>Typy nákupního chování (2×2 matice):</strong>
+        <table class="data-table" style="margin-top:0.5rem">
+          <thead><tr><th></th><th>Velké rozdíly mezi značkami</th><th>Malé rozdíly mezi značkami</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Vysoké zapojení</strong></td><td>Komplexní/extenzivní (auto, dům)</td><td>Disonančně snižující (koberec)</td></tr>
+            <tr><td><strong>Nízké zapojení</strong></td><td>Hledající rozmanitost (sušenky)</td><td>Habituální/zvykové (mléko)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5. TYPICKÉ CHYBY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">⚠️</span> Typické chyby</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="mistake-list">
+          <li class="mistake-item">Popsat nákupní centrum jako „tým nákupčích" — je to funkční role v rozhodovacím procesu, ne oddělení; jedna osoba může zastávat více rolí</li>
+          <li class="mistake-item">Vynechat kognitivní disonanci v ponákupní fázi — je to klíčový fenomén pro retenci zákazníků a post-purchase komunikaci</li>
+          <li class="mistake-item">Říct, že B2B je čistě racionální — emoce a vztahy hrají roli i v B2B; zejména u nových nákupů a osobního prodeje</li>
+          <li class="mistake-item">Plést primární a sekundární data — primární = shromažďuji já, nová; sekundární = existující od jiných nebo dříve</li>
+          <li class="mistake-item">Vynechat 4 typy nákupního chování dle zapojení — zkoušející tyto typy přímo vyžaduje, nestačí jen „impulzivní vs. racionální"</li>
+          <li class="mistake-item">Nezaložit segmentaci na 4 podmínkách (měřitelnost, dostupnost, dostatečnost, akceschopnost) — samovolné vyjmenování kritérií nestačí</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6. DOPLŇUJÍCÍ OTÁZKY -->
+    <div class="section-block">
+      <div class="section-block__header">
+        <span class="section-block__title"><span class="section-block__icon">❓</span> Možné doplňující otázky</span>
+        <button class="section-block__toggle">▲</button>
+      </div>
+      <div class="section-block__body">
+        <ul class="follow-up-list">
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak firma může snížit kognitivní disonanci zákazníka po nákupu?</div>
+            <div class="follow-up-a">• Potvrdit správnost rozhodnutí — follow-up e-mail, uvítací komunikace, přátelský zákaznický servis<br>• Poskytnout jasné instrukce k produktu, záruky, garance spokojenosti<br>• Testimonials a recenze jiných zákazníků — sociální důkaz<br>• Proaktivní komunikace výhod a hodnoty zakoupeného produktu</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak se liší nákupní rozhodovací proces u nového B2B nákupu vs. přímého opakovaného nákupu?</div>
+            <div class="follow-up-a">• Nový nákup: nejvíce členů nákupního centra zapojeno, nejdelší a nejkomplexnější proces; vysoké riziko; detailní specifikace, výběrové řízení<br>• Přímý opakovaný nákup (straight rebuy): rutinní reorder bez změn; minimum rozhodovatelů; klíčová je loajalita a snadnost procesu (EDI, automatické objednávky)<br>• Modifikovaný opakovaný nákup: mezistupeň — mění se podmínky (cena, specifikace), zapojí se více hráčů</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Co je focus group a kdy ho marketér preferuje před dotazníkem?</div>
+            <div class="follow-up-a">• Focus group = kvalitativní metoda — řízená skupinová diskuze (6–10 účastníků) moderovaná tazatelem; odhaluje postoje, motivace, asociace, skrytá přesvědčení<br>• Preferujeme ho před dotazníkem, když: potřebujeme porozumět „proč", ne jen „kolik"; generujeme hypotézy pro kvantitativní výzkum; testujeme nový produkt nebo kampaň; zkoumáme neuvědomělé motivy<br>• Nevýhoda: malý vzorek, vliv skupinové dynamiky, obtížná generalizace</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Jak ovlivňují referenční skupiny nákupní chování spotřebitele?</div>
+            <div class="follow-up-a">• Referenční skupiny = skupiny, jejichž normy, hodnoty a chování spotřebitel přijímá jako referenční bod pro vlastní rozhodnutí (přátelé, rodina, celebrity, profesní komunity)<br>• Typy vlivu: informační (doporučení), normativní (tlak skupiny), identifikační (ztotožnění se)<br>• Marketingová relevance: WOM (word of mouth), influencer marketing, sociální důkaz, budování komunity kolem značky</div>
+          </li>
+          <li class="follow-up-item">
+            <div class="follow-up-q">Proč je customer experience (CX) důležitější než samotný produkt?</div>
+            <div class="follow-up-a">• CX zahrnuje všechny kontaktní body (touchpoints) od první reklamy přes nákup až po servis — zákazník hodnotí celkový zážitek, ne jen produkt<br>• V době komoditizace (podobné produkty) CX stává se klíčovým diferenciátorem<br>• Zákazníci sdílí negativní zkušenosti (word of mouth, recenze) rychleji než pozitivní — jeden špatný zážitek může eliminovat mnoho předchozích pozitivních<br>• Výzkumy: zákazníci jsou ochotni zaplatit prémium za skvělý CX (Forrester Research)</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MEMORY MAP -->
+    <div class="memory-map" style="margin-bottom:2rem">
+      <div class="memory-map__title">⚡ Memory mapa — rekonstrukce 15minutové odpovědi</div>
+      <div class="memory-map__chain">
+        <span class="memory-map__kw">chování zákazníků</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">B2C</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">black box</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">4 faktory</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">kulturní/sociální/osobní/psychol.</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">4 typy nákupu</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">komplexní / habituální</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">5 kroků B2C</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">kognitivní disonance</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">B2B</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">nákupní centrum</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">7 rolí</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">typologie zákazníků</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">CX</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">výzkum 5 kroků</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">primární / sekundární data</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">segmentace</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">pokrytí trhu</span><span class="memory-map__arrow">→</span>
+        <span class="memory-map__kw">mikromarketing</span>
+      </div>
+    </div>
+
+  </div><!-- /.blueprint-content -->
+
+  <hr class="section-divider">
+  <div class="quiz-section">
+    <div class="quiz-title">🧠 Procvičení <span class="quiz-counter">(15 otázek)</span></div>
+    <div class="quiz-grid">
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q1</span>
+          <span class="quiz-card__q-text">Co je „model černé skříňky" v nákupním chování?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Model černé skříňky (Kotler) = schéma nákupního chování spotřebitele. Marketingové podněty (produkt, cena, distribuce, komunikace) + ostatní vlivy prostředí vstupují do „černé skříňky" zákazníka.<br>
+          Vnitřek černé skříňky: (1) charakteristiky zákazníka (kulturní, sociální, osobní, psychologické); (2) rozhodovací proces (5 kroků).<br>
+          Výstup: nákupní rozhodnutí (co, kde, kdy, kolik koupit). Firma nevidí přímo, co se „uvnitř" děje — musí zkoumat výzkumem.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q2</span>
+          <span class="quiz-card__q-text">Vyjmenujte 5 kroků spotřebitelského rozhodovacího procesu.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          1. <strong>Rozpoznání potřeby</strong> — stimul (vnitřní: hlad; vnější: reklama) upozorní na mezeru mezi aktuálním a žádoucím stavem.<br>
+          2. <strong>Hledání informací</strong> — interní (paměť, zkušenosti) + externí (rodina, internet, recenze).<br>
+          3. <strong>Hodnocení alternativ</strong> — porovnávání dle atributů důležitých pro zákazníka.<br>
+          4. <strong>Nákupní rozhodnutí</strong> — mohou ho ovlivnit postoje druhých nebo nepředvídané situační faktory.<br>
+          5. <strong>Ponákupní chování</strong> — spokojenost/nespokojenost, loajalita, kognitivní disonance, recenze.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q3</span>
+          <span class="quiz-card__q-text">Jaký je rozdíl mezi B2C a B2B nákupním chováním (3 rozdíly)?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>1. Počet zákazníků a objem:</strong> B2C = masový trh, malé nákupy; B2B = omezený počet zákazníků, velké objemy.<br>
+          <strong>2. Rozhodovací proces:</strong> B2C = individuální nebo rodinné rozhodnutí; B2B = skupinové (nákupní centrum), formalizované, delší.<br>
+          <strong>3. Motivace:</strong> B2C = emocionální i racionální; B2B = převážně racionální (TCO, ROI, technické parametry, dodací podmínky).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q4</span>
+          <span class="quiz-card__q-text">Co je „nákupní centrum" v B2B a jaké role obsahuje?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Nákupní centrum (Webster a Wind) = všichni lidé podílející se na B2B nákupním rozhodnutí. Není to formální útvar — jde o funkční role.<br>
+          7 rolí: <strong>Iniciátor</strong> (zjistí potřebu a spustí proces), <strong>Uživatel</strong> (bude produkt přímo využívat), <strong>Ovlivňovatel</strong> (ovlivňuje specifikace — technici), <strong>Rozhodovatel</strong> (schvaluje finální výběr), <strong>Schvalovatel</strong> (autorizuje rozpočet), <strong>Kupující</strong> (formálně uzavírá kontrakt), <strong>Strážce/gatekeeper</strong> (kontroluje tok informací k ostatním).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q5</span>
+          <span class="quiz-card__q-text">Co je kognitivní disonance po nákupu?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Kognitivní disonance (Festinger) = psychologický diskomfort vznikající po nákupu, kdy zákazník pochybuje o správnosti svého rozhodnutí, zejména pokud šlo o drahý nebo komplexní nákup.<br>
+          Projevy: přemýšlení o nevybrané alternativě, hledání potvrzení rozhodnutí, pocit lítosti.<br>
+          Reakce marketingu: follow-up komunikace, záruky a garance, posttransackní servis, pozitivní recenze a testimonials. Snížení disonance zvyšuje spokojenost a loajalitu.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q6</span>
+          <span class="quiz-card__q-text">Jaké jsou typy nákupního chování dle zapojení zákazníka?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Matice 2×2: osa zapojení (vysoké/nízké) × osa rozdílnosti značek (velká/malá):<br>
+          <strong>Komplexní (extenzivní):</strong> vysoké zapojení + velké rozdíly — drahé produkty (auto, elektronika); zákazník aktivně shromažďuje info, porovnává.<br>
+          <strong>Disonančně snižující:</strong> vysoké zapojení + malé rozdíly — rozhodne se rychle, ale po nákupu hledá potvrzení (koberec, nábytek).<br>
+          <strong>Habituální (zvykové):</strong> nízké zapojení + malé rozdíly — rutinní nákup, loajalita z setrvačnosti (mléko, zubní pasta).<br>
+          <strong>Hledající rozmanitost:</strong> nízké zapojení + velké rozdíly — přepínání značek z nudy (sušenky, limonády).
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q7</span>
+          <span class="quiz-card__q-text">Co jsou psychografická segmentační kritéria?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Psychografická kritéria segmentují zákazníky podle jejich psychologického profilu, nikoliv jen demografických faktů:<br>
+          • <strong>Životní styl</strong> — aktivity, zájmy, hodnoty (AIO — Activities, Interests, Opinions)<br>
+          • <strong>Osobnostní rysy</strong> — impulzivní, konzervativní, odvážný<br>
+          • <strong>Hodnoty a přesvědčení</strong> — ekologická orientace, religiozita, politické postoje<br>
+          • <strong>Sociální třída a statusová motivace</strong><br>
+          Využití: VALS framework (Values, Attitudes, Lifestyles) — 8 segmentů. Psychografická data pomáhají vysvětlit „proč" za nákupem, co demografická data neodhalí.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q8</span>
+          <span class="quiz-card__q-text">Jaký je proces marketingového výzkumu (5 kroků)?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          1. <strong>Definice problému a cílů výzkumu</strong> — nejkritičtější krok; špatně definovaný problém = nepoužitelné výsledky.<br>
+          2. <strong>Plán výzkumu</strong> — výběr metod (kvantitativní/kvalitativní), zdrojů dat, vzorku, časového harmonogramu, rozpočtu.<br>
+          3. <strong>Sběr dat</strong> — dotazníky, rozhovory, focus groups, observace, experiment.<br>
+          4. <strong>Analýza dat</strong> — statistická analýza (SPSS, Excel), kódování kvalitativních dat.<br>
+          5. <strong>Interpretace závěrů a doporučení</strong> — zpráva pro management s konkrétními doporučeními.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q9</span>
+          <span class="quiz-card__q-text">Co je rozdíl mezi primárními a sekundárními daty?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Primární data:</strong> nově shromažďovaná přímo pro daný výzkumný záměr — dotazníkové šetření, hloubkové rozhovory, focus groups, pozorování, experiment. Výhoda: přesně odpovídají potřebám. Nevýhoda: drahé, časově náročné.<br>
+          <strong>Sekundární data:</strong> již existující data shromážděná pro jiný účel — interní (prodejní data, CRM), externí (statistiky ČSÚ, Eurostat, výzkumné zprávy, odborné publikace). Výhoda: rychlé a levné. Nevýhoda: nemusí přesně odpovídat potřebám, mohou být zastaralé.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q10</span>
+          <span class="quiz-card__q-text">Co je focus group a k čemu slouží?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Focus group = kvalitativní výzkumná metoda — řízená skupinová diskuze 6–10 vybraných účastníků moderovaná zkušeným facilitátorem.<br>
+          Slouží k: pochopení postojů, motivací a pocitů zákazníků; testování nových produktů, konceptů nebo reklamních materiálů; generování hypotéz pro kvantitativní výzkum; identifikaci neočekávaných témat.<br>
+          Výhody: bohaté, hluboké informace; skupinová dynamika odhaluje skryté postoje. Nevýhody: malý vzorek, nelze zobecnit, riziko skupinového myšlení (groupthink), nákladnější na provedení.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q11</span>
+          <span class="quiz-card__q-text">Jaké jsou podmínky efektivní segmentace?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Segment je použitelný, pokud splňuje čtyři podmínky (Kotler):<br>
+          <strong>Měřitelnost</strong> — lze změřit velikost a kupní sílu segmentu.<br>
+          <strong>Dostupnost</strong> — segment lze efektivně oslovit a obsluhovat prostřednictvím dostupných distribučních a komunikačních kanálů.<br>
+          <strong>Dostatečná velikost (substantialita)</strong> — segment je dost velký nebo ziskový, aby ospravedlnil samostatný marketingový program.<br>
+          <strong>Akceschopnost (actionability)</strong> — firma má kapacity a zdroje pro tvorbu a realizaci efektivního programu pro daný segment.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q12</span>
+          <span class="quiz-card__q-text">Co je „habituální nákupní chování" a uveďte příklad.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          Habituální (zvykové) nákupní chování = nízké zapojení zákazníka v kombinaci s malými rozdíly mezi značkami. Zákazník kupuje z rutiny a setrvačnosti — neprochází rozsáhlým rozhodovacím procesem, jednoduše sáhne po „své" značce.<br>
+          Příklady: mléko, chleba, zubní pasta, čisticí prostředky, noviny.<br>
+          Marketingová strategie: budování brand awareness opakováním; akce v místě prodeje; packaging (vizuální rozpoznatelnost na polici); cenová dostupnost; nenarušovat rutinu zákazníka.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q13</span>
+          <span class="quiz-card__q-text">Vyjmenujte 4 faktory ovlivňující nákupní chování spotřebitele.</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>1. Kulturní faktory:</strong> kultura (základní hodnoty a normy společnosti), subkultura (etnická, náboženská, věková), společenská třída (vliv na preference a vnímání statusu).<br>
+          <strong>2. Sociální faktory:</strong> referenční skupiny (přátelé, kolegové, celebrity), rodina (role členů v nákupu), sociální role a statusy.<br>
+          <strong>3. Osobní faktory:</strong> věk a životní cyklus rodiny, zaměstnání, ekonomická situace, životní styl, osobnost.<br>
+          <strong>4. Psychologické faktory:</strong> motivace (Maslow, Herzberg), vnímání, učení (zkušenosti), přesvědčení a postoje.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q14</span>
+          <span class="quiz-card__q-text">Co je diferencovaný marketing vs. mikromarketing?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          <strong>Diferencovaný marketing:</strong> firma si vybere více segmentů a pro každý navrhne samostatný marketingový program (různé produkty, ceny, komunikace). Příklad: Volkswagen (Škoda, VW, Audi, Porsche — různé segmenty). Vyšší náklady, ale lepší pokrytí trhu.<br>
+          <strong>Mikromarketing (individualizovaný / one-to-one marketing):</strong> extrémní segmentace až na úroveň jednotlivce — personalizace nabídky, komunikace a produktu. Příklady: Nike ID (vlastní design bot), Amazon doporučení, personalizované e-maily. Umožněno digitálními daty.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-card__q">
+          <span class="quiz-card__q-num">Q15</span>
+          <span class="quiz-card__q-text">Co je customer experience (CX) a proč je důležitý?</span>
+          <button class="quiz-card__reveal-btn">Odkrýt</button>
+        </div>
+        <div class="quiz-card__a">
+          CX = souhrn všech zkušeností, pocitů a vjemů, které zákazník získá na všech kontaktních bodech (touchpoints) s firmou — od první reklamy, přes nákup, až po zákaznický servis a reklamace.<br>
+          Důležitost: v době komoditizace se produkty stále více podobají → CX se stává klíčovým diferenciátorem; zákazníci s výbornou zkušeností jsou více loajální, více utrácejí, doporučují ostatním; negativní zkušenost se rychle šíří online. Rozdíl: spokojenost = hodnocení konkrétní transakce; CX = celkový dlouhodobý vztah.
+          <div class="quiz-card__actions">
+            <button class="btn btn--small btn--success quiz-card__action" data-result="correct">✓ Věděl/a</button>
+            <button class="btn btn--small quiz-card__action" style="background:var(--accent-light);color:var(--accent)" data-result="incorrect">✗ Nevěděl/a</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /.page -->
+<script src="../assets/app.js"></script>
+</body>
+</html>

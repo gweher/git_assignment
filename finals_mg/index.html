@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SZZk Management — Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="navbar__brand" href="index.html">🎓 SZZk Management</a>
+  <div class="navbar__links">
+    <a class="navbar__link navbar__link--active" href="index.html">Dashboard</a>
+    <a class="navbar__link" href="simulation.html">Simulace zkoušky</a>
+    <a class="navbar__link" href="revision.html">Rychlá revize</a>
+  </div>
+</nav>
+
+<div class="page page--wide">
+
+  <div class="dashboard-hero">
+    <h1>Státní závěrečná zkouška</h1>
+    <p>FIM UHK — okruh Management &nbsp;|&nbsp; 18 témat &nbsp;|&nbsp; Ústní zkouška: 2× 15 min + 2 doplňující otázky</p>
+    <div class="dashboard-stats">
+      <div class="stat"><div class="stat__num" id="progress-count">0</div><div class="stat__label">Zvládnuto</div></div>
+      <div class="stat"><div class="stat__num">18</div><div class="stat__label">Celkem témat</div></div>
+    </div>
+    <div style="margin-top:1rem;max-width:300px;margin-left:auto;margin-right:auto;">
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="action-bar">
+    <a class="btn btn--primary" href="simulation.html">🎲 Spustit simulaci zkoušky</a>
+    <a class="btn btn--secondary" href="revision.html">⚡ Rychlá revize (memory mapy)</a>
+    <button class="btn btn--secondary btn--small" onclick="resetProgress()" style="margin-left:auto">Reset pokroku</button>
+  </div>
+
+  <h2 style="font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.8rem">Témata</h2>
+
+  <div class="topic-grid">
+
+    <!-- Topic 1 -->
+    <div data-topic-id="t01">
+      <a class="topic-card" href="topics/01-principy-managementu.html">
+        <div class="topic-card__num">01</div>
+        <div class="topic-card__name">Východiska a základní principy managementu</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 2 -->
+    <div data-topic-id="t02">
+      <a class="topic-card" href="topics/02-planovani-strategie.html">
+        <div class="topic-card__num">02</div>
+        <div class="topic-card__name">Plánování a strategické řízení organizace</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 3 -->
+    <div data-topic-id="t03">
+      <a class="topic-card" href="topics/03-organizovani.html">
+        <div class="topic-card__num">03</div>
+        <div class="topic-card__name">Organizování</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 4 -->
+    <div data-topic-id="t04">
+      <a class="topic-card" href="topics/04-rizeni-lz.html">
+        <div class="topic-card__num">04</div>
+        <div class="topic-card__name">Řízení lidských zdrojů</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 5 -->
+    <div data-topic-id="t05">
+      <a class="topic-card" href="topics/05-vedeni-motivace.html">
+        <div class="topic-card__num">05</div>
+        <div class="topic-card__name">Vedení a motivace zaměstnanců</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 6 -->
+    <div data-topic-id="t06">
+      <a class="topic-card" href="topics/06-kontrola.html">
+        <div class="topic-card__num">06</div>
+        <div class="topic-card__name">Kontrola</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 7 -->
+    <div data-topic-id="t07">
+      <a class="topic-card" href="topics/07-firemni-kultura.html">
+        <div class="topic-card__num">07</div>
+        <div class="topic-card__name">Firemní kultura a komunikace</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 8 -->
+    <div data-topic-id="t08">
+      <a class="topic-card" href="topics/08-rozhodovani-informace.html">
+        <div class="topic-card__num">08</div>
+        <div class="topic-card__name">Rozhodování a informace</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 9 -->
+    <div data-topic-id="t09">
+      <a class="topic-card" href="topics/09-podnikani.html">
+        <div class="topic-card__num">09</div>
+        <div class="topic-card__name">Podnikání a podnikatelská odpovědnost</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 10 -->
+    <div data-topic-id="t10">
+      <a class="topic-card" href="topics/10-soukrome-pravo.html">
+        <div class="topic-card__num">10</div>
+        <div class="topic-card__name">Základy českého soukromého práva</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 11 -->
+    <div data-topic-id="t11">
+      <a class="topic-card" href="topics/11-verejne-pravo.html">
+        <div class="topic-card__num">11</div>
+        <div class="topic-card__name">Základy českého veřejného práva</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 12 -->
+    <div data-topic-id="t12">
+      <a class="topic-card" href="topics/12-psychologicke-smery.html">
+        <div class="topic-card__num">12</div>
+        <div class="topic-card__name">Moderní psychologické směry</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 13 -->
+    <div data-topic-id="t13">
+      <a class="topic-card" href="topics/13-osobnost-manazera.html">
+        <div class="topic-card__num">13</div>
+        <div class="topic-card__name">Osobnost manažera</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 14 -->
+    <div data-topic-id="t14">
+      <a class="topic-card" href="topics/14-stres.html">
+        <div class="topic-card__num">14</div>
+        <div class="topic-card__name">Stres a jeho zvládání</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 15 -->
+    <div data-topic-id="t15">
+      <a class="topic-card" href="topics/15-marketingove-rizeni.html">
+        <div class="topic-card__num">15</div>
+        <div class="topic-card__name">Marketingové řízení</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 16 -->
+    <div data-topic-id="t16">
+      <a class="topic-card" href="topics/16-chovani-zakazniku.html">
+        <div class="topic-card__num">16</div>
+        <div class="topic-card__name">Chování zákazníků</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 17 -->
+    <div data-topic-id="t17">
+      <a class="topic-card" href="topics/17-marketingovy-mix.html">
+        <div class="topic-card__num">17</div>
+        <div class="topic-card__name">Marketingový mix (tvorba a řízení)</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Topic 18 -->
+    <div data-topic-id="t18">
+      <a class="topic-card" href="topics/18-internetovy-marketing.html">
+        <div class="topic-card__num">18</div>
+        <div class="topic-card__name">Internetový marketing</div>
+        <div class="topic-card__footer">
+          <div class="topic-card__links">
+            <span class="topic-card__link">Blueprint</span>
+            <span class="topic-card__link">Recall</span>
+            <span class="topic-card__link">15 otázek</span>
+          </div>
+          <span class="badge badge--pending">Nezačato</span>
+        </div>
+      </a>
+    </div>
+
+  </div><!-- /.topic-grid -->
+
+  <hr class="section-divider">
+  <p class="text-muted text-small" style="text-align:center">
+    FIM UHK &nbsp;·&nbsp; Okruh Management &nbsp;·&nbsp; SZZk 2025/26 &nbsp;·&nbsp;
+    <a href="RESOURCES.md" style="color:var(--accent)">Literatura</a>
+  </p>
+
+</div><!-- /.page -->
+
+<script src="assets/app.js"></script>
+</body>
+</html>

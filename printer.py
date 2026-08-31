@@ -3,8 +3,5 @@ if __name__ == "__main__":
     print_reversed(s)
     print_twice(s)
 
-def print_twice(s):
-    print(s)
-    print(s)
-def print_reversed(s):
-    print(s[::-1])
+  def print_header():
+      print("Thanks, now I'll print your string reversed, and twice")
